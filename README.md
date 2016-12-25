@@ -1,4 +1,4 @@
-# asSTL anothers STL
+# aSTL anothers STL
 Eine etwas andere Standard Template Libary Implantierung für den Bereich der spiele Programmierung oder Netzwerk Bereich. Für den spiele Bereich sind mathe Klassen vor implantiert unter include/math:
 
 * template <typename T> class vector2 | vec2f<float>, vec2d<double>  
