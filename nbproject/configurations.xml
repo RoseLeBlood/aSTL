@@ -40,7 +40,7 @@
           <itemPath>include/math/ray.hpp</itemPath>
           <itemPath>include/math/rectangle.hpp</itemPath>
           <itemPath>include/math/utils.hpp</itemPath>
-          <itemPath>D:/annas/Documents/asstl/asstl/include/math/vector2.hpp</itemPath>
+          <itemPath>include/math/vector2.hpp</itemPath>
           <itemPath>include/math/vector3.hpp</itemPath>
           <itemPath>include/math/vector4.hpp</itemPath>
         </logicalFolder>
@@ -56,12 +56,12 @@
         <itemPath>include/auto_ptr.hpp</itemPath>
         <itemPath>include/basic_string.hpp</itemPath>
         <itemPath>include/buffer_allocator.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/clone_ptr.hpp</itemPath>
+        <itemPath>include/clone_ptr.hpp</itemPath>
         <itemPath>include/common.hpp</itemPath>
         <itemPath>include/config.h</itemPath>
         <itemPath>include/cow_string_storage.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/deleter.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/event.hpp</itemPath>
+        <itemPath>include/deleter.hpp</itemPath>
+        <itemPath>include/event.hpp</itemPath>
         <itemPath>include/filestream.hpp</itemPath>
         <itemPath>include/fixed_array.hpp</itemPath>
         <itemPath>include/fixed_list.hpp</itemPath>
@@ -83,14 +83,14 @@
         <itemPath>include/memorystream.hpp</itemPath>
         <itemPath>include/mutex.hpp</itemPath>
         <itemPath>include/new.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/node_ptr.hpp</itemPath>
+        <itemPath>include/node_ptr.hpp</itemPath>
         <itemPath>include/pair.hpp</itemPath>
         <itemPath>include/property.hpp</itemPath>
         <itemPath>include/radix_sorter.hpp</itemPath>
         <itemPath>include/random.hpp</itemPath>
         <itemPath>include/rb_tree.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/ringbuffer.hpp</itemPath>
-        <itemPath>D:/annas/Documents/asstl/asstl/include/save_ptr.hpp</itemPath>
+        <itemPath>include/ringbuffer.hpp</itemPath>
+        <itemPath>include/save_ptr.hpp</itemPath>
         <itemPath>include/scoped_ptr.hpp</itemPath>
         <itemPath>include/shared_ptr.hpp</itemPath>
         <itemPath>include/simple_string_storage.hpp</itemPath>
@@ -138,7 +138,6 @@
       <itemPath>slist.cpp</itemPath>
       <itemPath>spinlock.cpp</itemPath>
       <itemPath>split.cpp</itemPath>
-      <itemPath>D:/annas/Documents/asstl/asstl/wostream.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -154,6 +153,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>platform</Elem>
+    <Elem>include</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -177,46 +177,6 @@
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="D:/annas/Documents/asstl/asstl/include/clone_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/deleter.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/event.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/math/vector2.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/node_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/ringbuffer.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/save_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/wostream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
       <item path="PLATFORM.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="application.cpp" ex="false" tool="1" flavor2="0">
@@ -243,11 +203,17 @@
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/clone_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/config.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/cow_string_storage.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -359,6 +325,8 @@
       </item>
       <item path="include/math/utils.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/math/vector2.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/math/vector3.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/vector4.hpp" ex="false" tool="3" flavor2="0">
@@ -371,6 +339,8 @@
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/node_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/pair.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/property.hpp" ex="false" tool="3" flavor2="0">
@@ -380,6 +350,10 @@
       <item path="include/random.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/rb_tree.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/ringbuffer.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/save_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/scoped_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -488,46 +462,6 @@
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="D:/annas/Documents/asstl/asstl/include/clone_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/deleter.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/event.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/math/vector2.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/node_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/ringbuffer.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/include/save_ptr.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="D:/annas/Documents/asstl/asstl/wostream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
       <item path="PLATFORM.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="application.cpp" ex="false" tool="1" flavor2="0">
@@ -554,11 +488,17 @@
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/clone_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/config.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/cow_string_storage.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -670,6 +610,8 @@
       </item>
       <item path="include/math/utils.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/math/vector2.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/math/vector3.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/vector4.hpp" ex="false" tool="3" flavor2="0">
@@ -682,6 +624,8 @@
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/node_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/pair.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/property.hpp" ex="false" tool="3" flavor2="0">
@@ -691,6 +635,10 @@
       <item path="include/random.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/rb_tree.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/ringbuffer.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/save_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/scoped_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>

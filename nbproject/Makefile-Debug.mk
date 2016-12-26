@@ -35,7 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/10693597/wostream.o \
 	${OBJECTDIR}/PLATFORM.o \
 	${OBJECTDIR}/application.o \
 	${OBJECTDIR}/asstl.o \
@@ -70,18 +69,13 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a
-	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a ${OBJECTFILES} 
-	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a
-
-${OBJECTDIR}/_ext/10693597/wostream.o: /D/annas/Documents/asstl/asstl/wostream.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/10693597
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/10693597/wostream.o /D/annas/Documents/asstl/asstl/wostream.cpp
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a
+	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a ${OBJECTFILES} 
+	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a
 
 ${OBJECTDIR}/PLATFORM.o: PLATFORM.cpp
 	${MKDIR} -p ${OBJECTDIR}
