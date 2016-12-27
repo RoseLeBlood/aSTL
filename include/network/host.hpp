@@ -39,28 +39,12 @@
 #include <stdio.h>
 
 
-#define HOST_NAME_LENGTH 64
 
 namespace std
 {
     namespace network
     {
-        class host
-        {
-        public:
-            enum type 
-            {
-                name, 
-                addr
-            };
-            host();
-            host(string& hostName, host::type t);
-            ~host() { endhostent(); }
-
-
-        private:
-            struct hostent *m_hostPtr;    // 
-        };
+        
     }
 }
 

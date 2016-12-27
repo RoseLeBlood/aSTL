@@ -65,7 +65,7 @@ namespace std
                 create(size, BC);
                 auto x = std::_min<int>( (m_vecSize.x * m_vecSize.y *4),
                         str->size() );
-                byte colorBlock[4];
+                unsigned char colorBlock[4];
                 for (int i = 0; i < x; i++) {
                     
                     if (str->read(colorBlock, 0, 4) == 4)

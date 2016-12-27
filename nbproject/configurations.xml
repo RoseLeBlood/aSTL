@@ -45,7 +45,10 @@
           <itemPath>include/math/vector4.hpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="network" projectFiles="true">
+          <itemPath>include/network/address.hpp</itemPath>
+          <itemPath>include/network/endpoint.hpp</itemPath>
           <itemPath>include/network/host.hpp</itemPath>
+          <itemPath>include/network/socket.hpp</itemPath>
         </logicalFolder>
         <itemPath>include/algorithm.hpp</itemPath>
         <itemPath>include/alignment.hpp</itemPath>
@@ -124,6 +127,9 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="math" projectFiles="true">
         <itemPath>math/math.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="network" projectFiles="true">
+        <itemPath>network/address.cpp</itemPath>
       </logicalFolder>
       <itemPath>PLATFORM.cpp</itemPath>
       <itemPath>application.cpp</itemPath>
@@ -335,7 +341,13 @@
       </item>
       <item path="include/mutex.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/network/address.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/network/endpoint.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/network/socket.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -410,6 +422,8 @@
       <item path="math/math.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -620,7 +634,13 @@
       </item>
       <item path="include/mutex.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/network/address.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/network/endpoint.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/network/socket.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -695,6 +715,8 @@
       <item path="math/math.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
       </item>
