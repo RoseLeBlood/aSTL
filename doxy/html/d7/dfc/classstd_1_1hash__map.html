@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>aSTL: std::hash_map&lt; TKey, TValue, THashFunc, TLoadFactor4, TKeyEqualFunc, TAllocator &gt; Template-Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">aSTL
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/dfc/classstd_1_1hash__map.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Klassen</a> &#124;
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pub-static-attribs">Statische öffentliche Attribute</a> &#124;
+<a href="../../db/dc6/classstd_1_1hash__map-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">std::hash_map&lt; TKey, TValue, THashFunc, TLoadFactor4, TKeyEqualFunc, TAllocator &gt; Template-Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:a0f6c532205411b540ec3944a800af7a9"><td class="memItemLeft" align="right" valign="top"><a id="a0f6c532205411b540ec3944a800af7a9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = <a class="el" href="../../d8/d71/structstd_1_1pair.html">std::pair</a>&lt; TKey, TValue &gt;</td></tr>
+<tr class="separator:a0f6c532205411b540ec3944a800af7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0184160910227db0a21270a73f4388b1"><td class="memItemLeft" align="right" valign="top"><a id="a0184160910227db0a21270a73f4388b1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = TKey</td></tr>
+<tr class="separator:a0184160910227db0a21270a73f4388b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae36636fbec2978707e432f3347604a1"><td class="memItemLeft" align="right" valign="top"><a id="aae36636fbec2978707e432f3347604a1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>mapped_type</b> = TValue</td></tr>
+<tr class="separator:aae36636fbec2978707e432f3347604a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7adfa757a0e38a8808b438a3b5ffcb"><td class="memItemLeft" align="right" valign="top"><a id="a2f7adfa757a0e38a8808b438a3b5ffcb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b> = TAllocator</td></tr>
+<tr class="separator:a2f7adfa757a0e38a8808b438a3b5ffcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c568f705c794e073742b6e2a097028c"><td class="memItemLeft" align="right" valign="top"><a id="a8c568f705c794e073742b6e2a097028c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = node_iterator&lt; node *, <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> *, <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> &amp; &gt;</td></tr>
+<tr class="separator:a8c568f705c794e073742b6e2a097028c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74fb625fdc3c546c3a715eebaa2ee65"><td class="memItemLeft" align="right" valign="top"><a id="ac74fb625fdc3c546c3a715eebaa2ee65"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = node_iterator&lt; const node *, const <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> *, const <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> &amp; &gt;</td></tr>
+<tr class="separator:ac74fb625fdc3c546c3a715eebaa2ee65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae621d7dd13388d61a3902721c14ee9e4"><td class="memItemLeft" align="right" valign="top"><a id="ae621d7dd13388d61a3902721c14ee9e4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = int</td></tr>
+<tr class="separator:ae621d7dd13388d61a3902721c14ee9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a087483f9caa1686ed87f9a5feb994e9f"><td class="memItemLeft" align="right" valign="top"><a id="a087483f9caa1686ed87f9a5feb994e9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_map</b> (const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>)</td></tr>
+<tr class="separator:a087483f9caa1686ed87f9a5feb994e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c4e673de0e58166882c6ed96462ec5"><td class="memItemLeft" align="right" valign="top"><a id="a67c4e673de0e58166882c6ed96462ec5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_map</b> (size_type initial_bucket_count, const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
+<tr class="separator:a67c4e673de0e58166882c6ed96462ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc72d5b4c34c82fff147d0242e70907"><td class="memItemLeft" align="right" valign="top"><a id="abbc72d5b4c34c82fff147d0242e70907"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_map</b> (size_type initial_bucket_count, const THashFunc &amp;hashFunc, const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
+<tr class="separator:abbc72d5b4c34c82fff147d0242e70907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeaef14412d11d3665b7ee03ce8167e"><td class="memItemLeft" align="right" valign="top"><a id="abbeaef14412d11d3665b7ee03ce8167e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_map</b> (const <a class="el" href="../../d7/dfc/classstd_1_1hash__map.html">hash_map</a> &amp;rhs, const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
+<tr class="separator:abbeaef14412d11d3665b7ee03ce8167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08a2d1a964aeb9a951470fe2094365c"><td class="memItemLeft" align="right" valign="top"><a id="ab08a2d1a964aeb9a951470fe2094365c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_map</b> (e_noinitialize)</td></tr>
+<tr class="separator:ab08a2d1a964aeb9a951470fe2094365c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ed96f1be7ed753cc2cc867dcfa145c"><td class="memItemLeft" align="right" valign="top"><a id="aa5ed96f1be7ed753cc2cc867dcfa145c"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="separator:aa5ed96f1be7ed753cc2cc867dcfa145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac942b37d78941e335132b5be4c0decf8"><td class="memItemLeft" align="right" valign="top"><a id="ac942b37d78941e335132b5be4c0decf8"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:ac942b37d78941e335132b5be4c0decf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29af640c852bd91d9f3120de48af09a4"><td class="memItemLeft" align="right" valign="top"><a id="a29af640c852bd91d9f3120de48af09a4"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="separator:a29af640c852bd91d9f3120de48af09a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dfd8d3e9f16a91cfcec1da113cf0d6"><td class="memItemLeft" align="right" valign="top"><a id="a60dfd8d3e9f16a91cfcec1da113cf0d6"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a60dfd8d3e9f16a91cfcec1da113cf0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c06e077c0c8fe241eec53e8a83878e7"><td class="memItemLeft" align="right" valign="top"><a id="a4c06e077c0c8fe241eec53e8a83878e7"></a>
+mapped_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const key_type &amp;key)</td></tr>
+<tr class="separator:a4c06e077c0c8fe241eec53e8a83878e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af867c3e55204a7272a63090b9532d108"><td class="memItemLeft" align="right" valign="top"><a id="af867c3e55204a7272a63090b9532d108"></a>
+<a class="el" href="../../d7/dfc/classstd_1_1hash__map.html">hash_map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d7/dfc/classstd_1_1hash__map.html">hash_map</a> &amp;rhs)</td></tr>
+<tr class="separator:af867c3e55204a7272a63090b9532d108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0736afd0f5faf429b9e783159cc468"><td class="memItemLeft" align="right" valign="top"><a id="a6d0736afd0f5faf429b9e783159cc468"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="../../d7/dfc/classstd_1_1hash__map.html">hash_map</a> &amp;rhs)</td></tr>
+<tr class="separator:a6d0736afd0f5faf429b9e783159cc468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b27e9a83eec938d1e58db17a3aef7cf"><td class="memItemLeft" align="right" valign="top"><a id="a5b27e9a83eec938d1e58db17a3aef7cf"></a>
+<a class="el" href="../../d8/d71/structstd_1_1pair.html">std::pair</a>&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> &amp;v)</td></tr>
+<tr class="separator:a5b27e9a83eec938d1e58db17a3aef7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbc160c53ad90c20ca971041c452e4a"><td class="memItemLeft" align="right" valign="top"><a id="a3dbc160c53ad90c20ca971041c452e4a"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (const key_type &amp;key)</td></tr>
+<tr class="separator:a3dbc160c53ad90c20ca971041c452e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a408de888fa23a618aad1bff199ca5"><td class="memItemLeft" align="right" valign="top"><a id="a51a408de888fa23a618aad1bff199ca5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (iterator it)</td></tr>
+<tr class="separator:a51a408de888fa23a618aad1bff199ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42806c4f3f13201def62f5941b8e00eb"><td class="memItemLeft" align="right" valign="top"><a id="a42806c4f3f13201def62f5941b8e00eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (iterator from, iterator to)</td></tr>
+<tr class="separator:a42806c4f3f13201def62f5941b8e00eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5631b3855f63fe7fcbec6a5a2e833bf9"><td class="memItemLeft" align="right" valign="top"><a id="a5631b3855f63fe7fcbec6a5a2e833bf9"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;key)</td></tr>
+<tr class="separator:a5631b3855f63fe7fcbec6a5a2e833bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4979a31b6451b84bf96e7539488c09e7"><td class="memItemLeft" align="right" valign="top"><a id="a4979a31b6451b84bf96e7539488c09e7"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;key) const</td></tr>
+<tr class="separator:a4979a31b6451b84bf96e7539488c09e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed595a441504e3f9fe72586977b4d47"><td class="memItemLeft" align="right" valign="top"><a id="a1ed595a441504e3f9fe72586977b4d47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:a1ed595a441504e3f9fe72586977b4d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4245d4f69f2eb800e0551a636bc47667"><td class="memItemLeft" align="right" valign="top"><a id="a4245d4f69f2eb800e0551a636bc47667"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b> (size_type min_size)</td></tr>
+<tr class="separator:a4245d4f69f2eb800e0551a636bc47667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc02bf0729e38222747967f092cab2a7"><td class="memItemLeft" align="right" valign="top"><a id="abc02bf0729e38222747967f092cab2a7"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>bucket_count</b> () const</td></tr>
+<tr class="separator:abc02bf0729e38222747967f092cab2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5349fd97f7f98dd602766f9723d60708"><td class="memItemLeft" align="right" valign="top"><a id="a5349fd97f7f98dd602766f9723d60708"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a5349fd97f7f98dd602766f9723d60708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748b8e657cccf59fb68037e8674bb06b"><td class="memItemLeft" align="right" valign="top"><a id="a748b8e657cccf59fb68037e8674bb06b"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="separator:a748b8e657cccf59fb68037e8674bb06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e6cfa92f0e1b586d8772913effcde1"><td class="memItemLeft" align="right" valign="top"><a id="a07e6cfa92f0e1b586d8772913effcde1"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>nonempty_bucket_count</b> () const</td></tr>
+<tr class="separator:a07e6cfa92f0e1b586d8772913effcde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803cd3be4245068d16bb9ce91cdde2c6"><td class="memItemLeft" align="right" valign="top"><a id="a803cd3be4245068d16bb9ce91cdde2c6"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>used_memory</b> () const</td></tr>
+<tr class="separator:a803cd3be4245068d16bb9ce91cdde2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ea375fd912b2cbe33549238abfd172"><td class="memItemLeft" align="right" valign="top"><a id="a22ea375fd912b2cbe33549238abfd172"></a>
+const allocator_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocator</b> () const</td></tr>
+<tr class="separator:a22ea375fd912b2cbe33549238abfd172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0024e7c6ca0c291a6ec58a21e62ab74"><td class="memItemLeft" align="right" valign="top"><a id="ac0024e7c6ca0c291a6ec58a21e62ab74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_allocator</b> (const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>)</td></tr>
+<tr class="separator:ac0024e7c6ca0c291a6ec58a21e62ab74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Statische öffentliche Attribute</h2></td></tr>
+<tr class="memitem:a9e1d8352311f11becfc84c265758d528"><td class="memItemLeft" align="right" valign="top"><a id="a9e1d8352311f11becfc84c265758d528"></a>
+static const size_type&#160;</td><td class="memItemRight" valign="bottom"><b>kNodeSize</b> = sizeof(node)</td></tr>
+<tr class="separator:a9e1d8352311f11becfc84c265758d528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0448ff5b4f8318418e10f74df705701"><td class="memItemLeft" align="right" valign="top"><a id="ac0448ff5b4f8318418e10f74df705701"></a>
+static const size_type&#160;</td><td class="memItemRight" valign="bottom"><b>kInitialCapacity</b> = 64</td></tr>
+<tr class="separator:ac0448ff5b4f8318418e10f74df705701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><h3>template&lt;typename TKey, typename TValue, class THashFunc = std::hash&lt;TKey&gt;, int TLoadFactor4 = 6, class TKeyEqualFunc = std::equal_to&lt;TKey&gt;, class TAllocator = std::allocator&gt;<br />
+class std::hash_map&lt; TKey, TValue, THashFunc, TLoadFactor4, TKeyEqualFunc, TAllocator &gt;</h3>
+
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d8/da1/hash__map_8hpp_source.html#l00045">45</a> der Datei <a class="el" href="../../d8/da1/hash__map_8hpp_source.html">hash_map.hpp</a>.</p>
+</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>include/<a class="el" href="../../d8/da1/hash__map_8hpp_source.html">hash_map.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d7/dfc/classstd_1_1hash__map.html">hash_map</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

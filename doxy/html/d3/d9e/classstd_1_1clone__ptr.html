@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>aSTL: std::clone_ptr&lt; T &gt; Template-Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">aSTL
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Suchen');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d3/d9e/classstd_1_1clone__ptr.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pro-methods">Geschützte Methoden</a> &#124;
+<a href="../../d5/df6/classstd_1_1clone__ptr-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">std::clone_ptr&lt; T &gt; Template-Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:acccfc124f6c9cdbc127041e212e4029e"><td class="memItemLeft" align="right" valign="top"><a id="acccfc124f6c9cdbc127041e212e4029e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:acccfc124f6c9cdbc127041e212e4029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e281411ce52a3b022cd183669ae953"><td class="memItemLeft" align="right" valign="top"><a id="ae5e281411ce52a3b022cd183669ae953"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="separator:ae5e281411ce52a3b022cd183669ae953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05328da220cce16675feadc6b5318907"><td class="memItemLeft" align="right" valign="top"><a id="a05328da220cce16675feadc6b5318907"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T &amp;</td></tr>
+<tr class="separator:a05328da220cce16675feadc6b5318907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d2657bfa111a29ba7c37e5817469fc"><td class="memItemLeft" align="right" valign="top"><a id="aa3d2657bfa111a29ba7c37e5817469fc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>self_type</b> = <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a>&lt; value_type &gt;</td></tr>
+<tr class="separator:aa3d2657bfa111a29ba7c37e5817469fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090515c63737302f82821c0c02c6d048"><td class="memItemLeft" align="right" valign="top"><a id="a090515c63737302f82821c0c02c6d048"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>cloneptrinterface</b> = <a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">clone_ptr_interface</a></td></tr>
+<tr class="separator:a090515c63737302f82821c0c02c6d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:ad22c0a1e53be2a1af01ac17e281af6f7"><td class="memItemLeft" align="right" valign="top"><a id="ad22c0a1e53be2a1af01ac17e281af6f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clone_ptr</b> (T *v)</td></tr>
+<tr class="separator:ad22c0a1e53be2a1af01ac17e281af6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2820df09fdd10405256df50300935bbd"><td class="memItemLeft" align="right" valign="top"><a id="a2820df09fdd10405256df50300935bbd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clone_ptr</b> (<a class="el" href="../../d4/d23/classstd_1_1save__ptr.html">save_ptr</a> const &amp;other)</td></tr>
+<tr class="separator:a2820df09fdd10405256df50300935bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf684c71995b4298d9f12bde9690c84"><td class="memItemLeft" align="right" valign="top"><a id="a0bf684c71995b4298d9f12bde9690c84"></a>
+<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const &amp;other)</td></tr>
+<tr class="separator:a0bf684c71995b4298d9f12bde9690c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5523a0c507daaffbd80b658f07e85"><td class="memItemLeft" align="right" valign="top"><a id="a19a5523a0c507daaffbd80b658f07e85"></a>
+value_type const  *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const</td></tr>
+<tr class="separator:a19a5523a0c507daaffbd80b658f07e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fed4072d9ed61d8ce37ecac2e69b407"><td class="memItemLeft" align="right" valign="top"><a id="a3fed4072d9ed61d8ce37ecac2e69b407"></a>
+value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="separator:a3fed4072d9ed61d8ce37ecac2e69b407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3184353a10ee4e533eb47ee819bd8246"><td class="memItemLeft" align="right" valign="top"><a id="a3184353a10ee4e533eb47ee819bd8246"></a>
+value_type const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:a3184353a10ee4e533eb47ee819bd8246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"><td class="memItemLeft" align="right" valign="top"><a id="a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"></a>
+value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="separator:a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2292a414285aaca8beddd7f6ba8e0d02"><td class="memItemLeft" align="right" valign="top"><a id="a2292a414285aaca8beddd7f6ba8e0d02"></a>
+value_type const  *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="separator:a2292a414285aaca8beddd7f6ba8e0d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924891314cbcbdba878604cf18d3eab8"><td class="memItemLeft" align="right" valign="top"><a id="a924891314cbcbdba878604cf18d3eab8"></a>
+value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
+<tr class="separator:a924891314cbcbdba878604cf18d3eab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d848302129ed35c5ceb851729ce9ecb"><td class="memItemLeft" align="right" valign="top"><a id="a1d848302129ed35c5ceb851729ce9ecb"></a>
+value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="separator:a1d848302129ed35c5ceb851729ce9ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75adfcfb85ae278ac2d6f8d8381208f"><td class="memItemLeft" align="right" valign="top"><a id="ae75adfcfb85ae278ac2d6f8d8381208f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> (value_type *p=NULL)</td></tr>
+<tr class="separator:ae75adfcfb85ae278ac2d6f8d8381208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6cf95ffbbb9b1c4daff348f89c060f"><td class="memItemLeft" align="right" valign="top"><a id="ade6cf95ffbbb9b1c4daff348f89c060f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">self_type</a> &amp;other)</td></tr>
+<tr class="separator:ade6cf95ffbbb9b1c4daff348f89c060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Geschützte Methoden</h2></td></tr>
+<tr class="memitem:ac4dad000e4436a6a72040221752043b5"><td class="memItemLeft" align="right" valign="top"><a id="ac4dad000e4436a6a72040221752043b5"></a>
+<a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">cloneptrinterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> ()</td></tr>
+<tr class="separator:ac4dad000e4436a6a72040221752043b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><h3>template&lt;typename T = std::clone_ptr_interface&gt;<br />
+class std::clone_ptr&lt; T &gt;</h3>
+
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00046">46</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>include/<a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
