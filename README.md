@@ -15,11 +15,9 @@ Weitere Futures:
 * another stdout and stdin output see: test/HelloWorld/main.cpp - class std::Console  
 
 Geplante Implantierungen:
-* network class for socket, tcp, ud
-*img load and save
+* network class for socket, tcp, udp
+* img load and save
 * network streams
 * hash funktions
 * thread and threadsafe
 
-##Dokumentation:
-https://roseleblood.github.io/aSTL/html/index.html
