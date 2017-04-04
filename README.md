@@ -20,3 +20,6 @@ Geplante Implantierungen:
 * network streams
 * hash funktions
 * thread and threadsafe
+
+##Dokumentation:
+https://roseleblood.github.io/aSTL/html/index.html
