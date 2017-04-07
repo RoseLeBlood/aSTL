@@ -19,6 +19,12 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,7 +35,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
+   &#160;<span id="projectnumber">0.22.8</span>
    </div>
+   <div id="projectbrief">Heinberg</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +105,8 @@ $(document).ready(function(){initNavTree('d3/dcc/md__r_e_a_d_m_e.html','../../')
 <li>another stdout and stdin output see: <a class="el" href="../../d7/d93/_hello_world_2main_8cpp_source.html">test/HelloWorld/main.cpp</a> - class <a class="el" href="../../de/de6/classstd_1_1_console.html">std::Console</a></li>
 </ul>
 <p>Geplante Implantierungen:</p><ul>
-<li>network class for socket, tcp, ud *img load and save</li>
+<li>network class for socket, tcp, udp</li>
+<li>img load and save</li>
 <li>network streams</li>
 <li>hash funktions</li>
 <li>thread and threadsafe </li>

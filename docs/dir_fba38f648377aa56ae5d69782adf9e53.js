@@ -11,6 +11,7 @@ var dir_fba38f648377aa56ae5d69782adf9e53 =
     [ "ray.hpp", "db/d1d/ray_8hpp_source.html", null ],
     [ "rectangle.hpp", "d6/d95/rectangle_8hpp_source.html", null ],
     [ "utils.hpp", "d8/dbd/math_2utils_8hpp_source.html", null ],
+    [ "vecf_sse.hpp", "df/dcb/vecf__sse_8hpp_source.html", null ],
     [ "vector2.hpp", "d9/de5/vector2_8hpp_source.html", null ],
     [ "vector3.hpp", "dc/d5c/vector3_8hpp_source.html", null ],
     [ "vector4.hpp", "d9/d75/vector4_8hpp_source.html", null ]

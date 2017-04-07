@@ -228,7 +228,7 @@ var NAVTREEINDEX3 =
 "d9/d50/classstd_1_1fixed__vector.html#aff926d7ce688c5f2cd445c34d6eb458a":[1,0,0,36,0],
 "d9/d58/test_2math_2_8dep_8inc_source.html":[2,0,5,2,1],
 "d9/d59/isaac__engine_8hpp_source.html":[2,0,1,1,8],
-"d9/d75/vector4_8hpp_source.html":[2,0,1,2,13],
+"d9/d75/vector4_8hpp_source.html":[2,0,1,2,14],
 "d9/da0/matrix4x4_8hpp_source.html":[2,0,1,2,4],
 "d9/da2/spinlock_8cpp_source.html":[2,0,18],
 "d9/da2/structstd_1_1iterator__traits_3_01_t_01_5_01_4.html":[1,0,0,78],

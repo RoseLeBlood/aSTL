@@ -2,9 +2,9 @@ var NAVTREE =
 [
   [ "aSTL", "index.html", [
     [ "aSTL anothers STL", "d3/dcc/md__r_e_a_d_m_e.html", null ],
-    [ "Klassen", "annotated.html", [
-      [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
-      [ "Klassen-Verzeichnis", "classes.html", null ],
+    [ "Datenstrukturen", "annotated.html", [
+      [ "Datenstrukturen", "annotated.html", "annotated_dup" ],
+      [ "Datenstruktur-Verzeichnis", "classes.html", null ],
       [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ]
     ] ],
     [ "Dateien", null, [

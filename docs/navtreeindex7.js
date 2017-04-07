@@ -76,6 +76,7 @@ var NAVTREEINDEX7 =
 "df/dc3/classstd_1_1mutex.html#af03525f947d6fa5ccf61a2d606e153f5":[1,0,0,87,2],
 "df/dc3/classstd_1_1mutex.html#afff5d536962e1bae585ae71f0c6268ae":[1,0,0,87,0],
 "df/dc8/simple__string__storage_8hpp_source.html":[2,0,1,50],
+"df/dcb/vecf__sse_8hpp_source.html":[2,0,1,2,11],
 "df/dd6/classstd_1_1crc32.html":[1,0,0,23],
 "df/dd6/classstd_1_1crc32.html#a3295c6438e2896b58ef66347e8304035":[1,0,0,23,0],
 "df/dd6/classstd_1_1crc32.html#a6714c469f8590d25825e6fcddbbf775f":[1,0,0,23,1],

@@ -11,7 +11,7 @@ var NAVTREEINDEX4 =
 "d9/dd9/alignment_8hpp_source.html":[2,0,1,5],
 "d9/dde/iterator_8hpp_source.html":[2,0,1,33],
 "d9/de4/slist_8o_8d_source.html":[2,0,0,0,0,12],
-"d9/de5/vector2_8hpp_source.html":[2,0,1,2,11],
+"d9/de5/vector2_8hpp_source.html":[2,0,1,2,12],
 "d9/def/classstd_1_1math_1_1color.html":[1,0,0,2,1],
 "d9/def/classstd_1_1math_1_1color.html#a00afc8a2cf9d380f771fe4bec687a22c":[1,0,0,2,1,11],
 "d9/def/classstd_1_1math_1_1color.html#a11806fad3f523b8a32bcc5770e4166a3":[1,0,0,2,1,19],

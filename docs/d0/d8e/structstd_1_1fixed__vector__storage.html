@@ -19,6 +19,12 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,7 +35,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
+   &#160;<span id="projectnumber">0.22.8</span>
    </div>
+   <div id="projectbrief">Heinberg</div>
   </td>
  </tr>
  </tbody>
@@ -82,8 +90,7 @@ $(document).ready(function(){initNavTree('d0/d8e/structstd_1_1fixed__vector__sto
   <div class="summary">
 <a href="#pub-types">Öffentliche Typen</a> &#124;
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pub-attribs">Öffentliche Attribute</a> &#124;
-<a href="../../df/d20/structstd_1_1fixed__vector__storage-members.html">Aufstellung aller Elemente</a>  </div>
+<a href="#pub-attribs">Datenfelder</a>  </div>
   <div class="headertitle">
 <div class="title">std::fixed_vector_storage&lt; T, TAllocator, TCapacity, TGrowOnOverflow &gt; Template-Strukturreferenz</div>  </div>
 </div><!--header-->
@@ -133,7 +140,7 @@ base_vector::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>get
 <tr class="separator:a9d42b9fb8c1c7b6bfa5a645d0aea3d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Öffentliche Attribute</h2></td></tr>
+Datenfelder</h2></td></tr>
 <tr class="memitem:aa1d4636ba756a77dcce4e1ec66355e27"><td class="memItemLeft" align="right" valign="top"><a id="aa1d4636ba756a77dcce4e1ec66355e27"></a>
 T *&#160;</td><td class="memItemRight" valign="bottom"><b>m_begin</b></td></tr>
 <tr class="separator:aa1d4636ba756a77dcce4e1ec66355e27"><td class="memSeparator" colspan="2">&#160;</td></tr>

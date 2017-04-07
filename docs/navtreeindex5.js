@@ -119,7 +119,7 @@ var NAVTREEINDEX5 =
 "dc/d45/classstd_1_1simple__wstring__storage.html#afe8a816a165fd89ec543eae64a07c4c5":[1,0,0,106,1],
 "dc/d45/classstd_1_1simple__wstring__storage.html#afff6eb6d82dbb90f493ebd9a92ad0862":[1,0,0,106,17],
 "dc/d54/type__traits_8hpp_source.html":[2,0,1,66],
-"dc/d5c/vector3_8hpp_source.html":[2,0,1,2,12],
+"dc/d5c/vector3_8hpp_source.html":[2,0,1,2,13],
 "dc/d67/classstd_1_1graphic_1_1image.html":[1,0,0,0,0],
 "dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29":[1,0,0,0,0,1],
 "dc/d67/classstd_1_1graphic_1_1image.html#a3ee8b1df66a9434c391ee2e9dcc2ec04":[1,0,0,0,0,9],
