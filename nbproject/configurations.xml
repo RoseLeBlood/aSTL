@@ -40,6 +40,7 @@
           <itemPath>include/math/ray.hpp</itemPath>
           <itemPath>include/math/rectangle.hpp</itemPath>
           <itemPath>include/math/utils.hpp</itemPath>
+          <itemPath>include/math/vecf_sse.hpp</itemPath>
           <itemPath>include/math/vector2.hpp</itemPath>
           <itemPath>include/math/vector3.hpp</itemPath>
           <itemPath>include/math/vector4.hpp</itemPath>
@@ -71,7 +72,6 @@
         <itemPath>include/fixed_sorted_vector.hpp</itemPath>
         <itemPath>include/fixed_substring.hpp</itemPath>
         <itemPath>include/fixed_vector.hpp</itemPath>
-        <itemPath>include/float_sse.hpp</itemPath>
         <itemPath>include/functional.hpp</itemPath>
         <itemPath>include/hash.hpp</itemPath>
         <itemPath>include/hash_map.hpp</itemPath>
@@ -234,8 +234,6 @@
       </item>
       <item path="include/fixed_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/float_sse.hpp" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/functional.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/graphic/image.hpp" ex="false" tool="3" flavor2="0">
@@ -333,6 +331,8 @@
       <item path="include/math/rectangle.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/math/vecf_sse.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/vector2.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -529,8 +529,6 @@
       </item>
       <item path="include/fixed_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/float_sse.hpp" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/functional.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/graphic/image.hpp" ex="false" tool="3" flavor2="0">
@@ -628,6 +626,8 @@
       <item path="include/math/rectangle.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/math/vecf_sse.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/vector2.hpp" ex="false" tool="3" flavor2="0">
       </item>
