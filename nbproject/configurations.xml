@@ -71,6 +71,7 @@
         <itemPath>include/fixed_sorted_vector.hpp</itemPath>
         <itemPath>include/fixed_substring.hpp</itemPath>
         <itemPath>include/fixed_vector.hpp</itemPath>
+        <itemPath>include/float_sse.hpp</itemPath>
         <itemPath>include/functional.hpp</itemPath>
         <itemPath>include/hash.hpp</itemPath>
         <itemPath>include/hash_map.hpp</itemPath>
@@ -232,6 +233,8 @@
       <item path="include/fixed_substring.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/float_sse.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/functional.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -525,6 +528,8 @@
       <item path="include/fixed_substring.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/float_sse.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/functional.hpp" ex="false" tool="3" flavor2="0">
       </item>

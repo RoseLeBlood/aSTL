@@ -99,4 +99,6 @@
 #define ASSTL_HASH_DEFAULT ASSTL_HASH_ADLER32
 #endif
 
-
+#ifndef ASSTL_USE_SSE
+#define ASSTL_USE_SSE
+#endif
