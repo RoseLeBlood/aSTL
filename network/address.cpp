@@ -44,7 +44,7 @@ namespace std {
             m_address = ((addr[3] << 24 | addr[2] <<16 | addr[1] << 8| addr[0]) & 0x0FFFFFFFF);
         }
         ip_address4::ip_address4(const ip_address4& v)
-            : ip_address_base(v.getFamely()) {
+            : ip_address_base(v.getFamily()) {
             m_address = v.m_address;
         }
         void ip_address4::getaddress(unsigned short b[4]) {
@@ -100,7 +100,7 @@ namespace std {
             }
         }
         ip_address6::ip_address6(const ip_address6& v) 
-            : ip_address_base(v.getFamely()), m_scopid(v.m_scopid) {
+            : ip_address_base(v.getFamily()), m_scopid(v.m_scopid) {
             for(int i =0; i < 8; i++)
                 m_numbers[i] = v.m_numbers[i];            
         }

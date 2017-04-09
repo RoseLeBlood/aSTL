@@ -43,7 +43,7 @@ namespace std {
             ip_address_base() : m_addr(AddrFamily::Unknown) {}
             ip_address_base(AddrFamily addr) : m_addr(addr) { }
             
-            virtual AddrFamily getFamely() {
+            virtual AddrFamily getFamily() {
                 return m_addr; 
             }
             

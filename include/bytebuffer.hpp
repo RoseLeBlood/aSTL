@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,24 +23,16 @@
  */
 
 /* 
- * File:   IUnknown.hpp
+ * File:   bytebuffer.hpp
  * Author: annas
  *
- * Created on 30. November 2016, 14:24
+ * Created on 9. April 2017, 23:25
  */
 
-#ifndef IUNKNOWN_HPP
-#define IUNKNOWN_HPP
-
-namespace std
-{
-    class object
-    {
-    public:
-        
-    };
-}
+#ifndef BYTEBUFFER_HPP
+#define BYTEBUFFER_HPP
 
 
-#endif /* IUNKNOWN_HPP */
+
+#endif /* BYTEBUFFER_HPP */
 

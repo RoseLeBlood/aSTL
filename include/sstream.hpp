@@ -39,7 +39,8 @@
 
 namespace std 
 {
-    template< typename E, typename TAlloc = std::allocator > struct basic_stringstream
+    template< typename E, typename TAlloc = std::allocator > 
+    class basic_stringstream
     {
         using value_type = E;
         using buffer_type =  std::vector<value_type, TAlloc>;

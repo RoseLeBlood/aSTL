@@ -43,7 +43,7 @@ namespace std
         clone_ptr_interface* clone() = 0;
     };
     template<typename T = std::clone_ptr_interface>
-    class clone_ptr
+    class clone_ptr 
     {
     public:
         using value_type = T;

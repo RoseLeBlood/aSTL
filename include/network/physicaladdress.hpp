@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,24 +23,39 @@
  */
 
 /* 
- * File:   IUnknown.hpp
+ * File:   physicaladdress.hpp
  * Author: annas
  *
- * Created on 30. November 2016, 14:24
+ * Created on 9. April 2017, 22:01
  */
 
-#ifndef IUNKNOWN_HPP
-#define IUNKNOWN_HPP
+#ifndef PHYSICALADDRESS_HPP
+#define PHYSICALADDRESS_HPP
 
-namespace std
+#include "../common.hpp"
+
+namespace std 
 {
-    class object
+    namespace net 
     {
-    public:
-        
-    };
+        class physicaladdress : public object  {
+        public:
+            physicaladdress();
+            physicaladdress(unsigned char *addr, int elements);
+            physicaladdress(const physicaladdress& orig);
+            virtual ~physicaladdress();
+            
+            
+        private:
+            unsigned char* m_cAddress;
+            int m_iElements;
+        };
+        class Mac48Address : public physicaladdress {
+        public:
+            Mac48Address(unsigned char* addr) : physicaladdress(addr, 6) {}
+            Mac48Address(const Mac48Address& orig) : physicaladdress(orig) {}
+        };
+    }
 }
-
-
-#endif /* IUNKNOWN_HPP */
+#endif /* PHYSICALADDRESS_HPP */
 

@@ -64,7 +64,7 @@ namespace std
 	typedef char ERR_InvalidStringRepSize[sizeof(string_rep) == 6 ? 1 : -1];
 
 
-	template<typename E, class TAllocator> class cow_string_storage
+	template<typename E, class TAllocator> class cow_string_storage  
 	{
 	        typedef char ERR_CharTypeTooBigSeeM_BufferComment[sizeof(E) <= 2 ? 1 : -1];
 	public:

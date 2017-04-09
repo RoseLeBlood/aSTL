@@ -36,7 +36,7 @@
 
 namespace std
 {
-	class buffer_allocator
+	class buffer_allocator 
 	{
 	public:
 	        explicit buffer_allocator(const char* name, char* mem, size_t bufferSize)

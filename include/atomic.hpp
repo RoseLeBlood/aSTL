@@ -48,7 +48,7 @@ namespace std
             SeqCst = __ATOMIC_SEQ_CST
         };
     }
-    template <typename T > class atomic
+    template <typename T > class atomic 
     {
         public:
             using value_type = T;

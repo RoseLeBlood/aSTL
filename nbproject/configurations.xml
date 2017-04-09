@@ -49,6 +49,7 @@
           <itemPath>include/network/address.hpp</itemPath>
           <itemPath>include/network/endpoint.hpp</itemPath>
           <itemPath>include/network/host.hpp</itemPath>
+          <itemPath>include/network/physicaladdress.hpp</itemPath>
           <itemPath>include/network/socket.hpp</itemPath>
         </logicalFolder>
         <itemPath>include/algorithm.hpp</itemPath>
@@ -56,10 +57,12 @@
         <itemPath>include/allocator.hpp</itemPath>
         <itemPath>include/application.hpp</itemPath>
         <itemPath>include/arguments.hpp</itemPath>
+        <itemPath>include/array.hpp</itemPath>
         <itemPath>include/atomic.hpp</itemPath>
         <itemPath>include/auto_ptr.hpp</itemPath>
         <itemPath>include/basic_string.hpp</itemPath>
         <itemPath>include/buffer_allocator.hpp</itemPath>
+        <itemPath>include/bytebuffer.hpp</itemPath>
         <itemPath>include/clone_ptr.hpp</itemPath>
         <itemPath>include/common.hpp</itemPath>
         <itemPath>include/config.h</itemPath>
@@ -131,6 +134,7 @@
       </logicalFolder>
       <logicalFolder name="f2" displayName="network" projectFiles="true">
         <itemPath>network/address.cpp</itemPath>
+        <itemPath>network/physicaladdress.cpp</itemPath>
       </logicalFolder>
       <itemPath>PLATFORM.cpp</itemPath>
       <itemPath>application.cpp</itemPath>
@@ -202,6 +206,8 @@
       </item>
       <item path="include/arguments.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/array.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/atomic.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/auto_ptr.hpp" ex="false" tool="3" flavor2="0">
@@ -209,6 +215,8 @@
       <item path="include/basic_string.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/bytebuffer.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/clone_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -350,6 +358,11 @@
       </item>
       <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/network/physicaladdress.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/network/socket.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
@@ -427,6 +440,8 @@
       <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -497,6 +512,8 @@
       </item>
       <item path="include/arguments.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/array.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/atomic.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/auto_ptr.hpp" ex="false" tool="3" flavor2="0">
@@ -504,6 +521,8 @@
       <item path="include/basic_string.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/bytebuffer.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/clone_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -645,6 +664,11 @@
       </item>
       <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/network/physicaladdress.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/network/socket.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
@@ -722,6 +746,8 @@
       <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
       </item>

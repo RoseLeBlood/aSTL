@@ -38,7 +38,7 @@
 
 namespace std
 {
-    class __auto_ptr_base
+    class __auto_ptr_base 
     {
     public:
         void  set(const volatile void* p) { 

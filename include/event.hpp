@@ -39,7 +39,7 @@
 namespace std 
 {
     template<typename TYPE>
-    class delegateparam
+    class delegateparam 
     {
     public:
 	delegateparam() {

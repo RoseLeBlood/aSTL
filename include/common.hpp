@@ -35,7 +35,7 @@
 
 
 #include "config.h"
-
+#include "unknown.hpp"
 
 #undef __STRICT_ANSI__ 
 #include <assert.h>
@@ -84,8 +84,11 @@ namespace std
             static void* mAlloc(size_t size);
             static void* mReAlloc(void* old, size_t newSize);
             static void  mFree(void* mem);
-               
-                
+              
+            template <typename T>
+            static T* mAllocE(int elements) {
+                return (T*)Sys::mAlloc(sizeof(T) * elements);
+            }    
             typedef struct mutex_struct {} mutex_type ;
             enum class mutex_init_t {
                 Normal,

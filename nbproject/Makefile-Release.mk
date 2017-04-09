@@ -46,6 +46,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/math/math.o \
 	${OBJECTDIR}/mutex.o \
 	${OBJECTDIR}/network/address.o \
+	${OBJECTDIR}/network/physicaladdress.o \
 	${OBJECTDIR}/new.o \
 	${OBJECTDIR}/slist.o \
 	${OBJECTDIR}/spinlock.o \
@@ -132,6 +133,11 @@ ${OBJECTDIR}/network/address.o: network/address.cpp
 	${MKDIR} -p ${OBJECTDIR}/network
 	${RM} "$@.d"
 	$(COMPILE.cc) -O3 -w -s -Iinclude -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/network/address.o network/address.cpp
+
+${OBJECTDIR}/network/physicaladdress.o: network/physicaladdress.cpp
+	${MKDIR} -p ${OBJECTDIR}/network
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -w -s -Iinclude -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/network/physicaladdress.o network/physicaladdress.cpp
 
 ${OBJECTDIR}/new.o: new.cpp
 	${MKDIR} -p ${OBJECTDIR}

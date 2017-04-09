@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,24 +23,33 @@
  */
 
 /* 
- * File:   IUnknown.hpp
+ * File:   physicaladdress.cpp
  * Author: annas
- *
- * Created on 30. November 2016, 14:24
+ * 
+ * Created on 9. April 2017, 22:01
  */
 
-#ifndef IUNKNOWN_HPP
-#define IUNKNOWN_HPP
+#include "../include/network/physicaladdress.hpp"
+#include "../include/common.hpp"
 
-namespace std
-{
-    class object
-    {
-    public:
+namespace std {
+    namespace net {
+   
+        physicaladdress::physicaladdress(unsigned char *addr, int elements) {
+            m_iElements = elements;
+            m_cAddress = std::Sys::mAllocE<unsigned char>(m_iElements);
+            std::Sys::MemCpy(this->m_cAddress, addr, m_iElements);
+        }
+        physicaladdress::physicaladdress(const physicaladdress& orig) {
+            m_iElements = orig.m_iElements;
+            m_cAddress = std::Sys::mAllocE<unsigned char>(m_iElements);
+            std::Sys::MemCpy(this->m_cAddress, orig.m_cAddress, m_iElements);
+        }
+
+        physicaladdress::~physicaladdress() {
+            std::Sys::mFree(m_cAddress);
+        }
         
-    };
+        
+    }
 }
-
-
-#endif /* IUNKNOWN_HPP */
-

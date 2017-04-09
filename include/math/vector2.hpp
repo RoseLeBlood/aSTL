@@ -36,7 +36,7 @@
 #include "../algorithm.hpp"
 #include "../common.hpp"
 #include "../unknown.hpp"
-
+#include "../string.hpp"
 
 namespace std 
 {
