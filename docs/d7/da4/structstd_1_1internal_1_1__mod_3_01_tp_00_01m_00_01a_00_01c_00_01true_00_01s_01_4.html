@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,16 +82,18 @@ $(document).ready(function(){initNavTree('d7/da4/structstd_1_1internal_1_1__mod_
 
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Öffentliche, statische Methoden</a>  </div>
+<a href="#pub-static-methods">Öffentliche, statische Methoden</a> &#124;
+<a href="../../de/dc2/structstd_1_1internal_1_1__mod_3_01_tp_00_01m_00_01a_00_01c_00_01true_00_01s_01_4-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::internal::_mod&lt; Tp, m, a, c, true, s &gt; Template-Strukturreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html">subtract_with_carry_engine.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Öffentliche, statische Methoden</h2></td></tr>
-<tr class="memitem:a25307ee68f2d4aaeae4ae6bf483c8089"><td class="memItemLeft" align="right" valign="top"><a id="a25307ee68f2d4aaeae4ae6bf483c8089"></a>
-static Tp&#160;</td><td class="memItemRight" valign="bottom"><b>calc</b> (Tp x)</td></tr>
+<tr class="memitem:a25307ee68f2d4aaeae4ae6bf483c8089"><td class="memItemLeft" align="right" valign="top">static Tp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/structstd_1_1internal_1_1__mod_3_01_tp_00_01m_00_01a_00_01c_00_01true_00_01s_01_4.html#a25307ee68f2d4aaeae4ae6bf483c8089">calc</a> (Tp x)</td></tr>
 <tr class="separator:a25307ee68f2d4aaeae4ae6bf483c8089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -106,7 +102,38 @@ struct std::internal::_mod&lt; Tp, m, a, c, true, s &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html#l00040">40</a> der Datei <a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html">subtract_with_carry_engine.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a25307ee68f2d4aaeae4ae6bf483c8089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25307ee68f2d4aaeae4ae6bf483c8089">&#9670;&nbsp;</a></span>calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tp , Tp m, Tp a, Tp c, bool s&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Tp std::internal::_mod&lt; Tp, m, a, c, true, s &gt;::calc </td>
+          <td>(</td>
+          <td class="paramtype">Tp&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html#l00041">41</a> der Datei <a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html">subtract_with_carry_engine.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                 {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                Tp res = a * x + c;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">if</span> (m) res %= m; </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
 <li>include/hash/<a class="el" href="../../d4/da5/subtract__with__carry__engine_8hpp_source.html">subtract_with_carry_engine.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -114,7 +141,7 @@ struct std::internal::_mod&lt; Tp, m, a, c, true, s &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="../../d7/da4/structstd_1_1internal_1_1__mod_3_01_tp_00_01m_00_01a_00_01c_00_01true_00_01s_01_4.html">_mod&lt; Tp, m, a, c, true, s &gt;</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../da/d3e/namespacestd_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d7/da4/structstd_1_1internal_1_1__mod_3_01_tp_00_01m_00_01a_00_01c_00_01true_00_01s_01_4.html">_mod&lt; Tp, m, a, c, true, s &gt;</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

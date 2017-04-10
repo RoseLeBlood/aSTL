@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -90,59 +84,54 @@ $(document).ready(function(){initNavTree('dc/d67/classstd_1_1graphic_1_1image.ht
   <div class="summary">
 <a href="#pub-types">Öffentliche Typen</a> &#124;
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pub-attribs">Datenfelder</a> &#124;
-<a href="#pro-methods">Geschützte Methoden</a>  </div>
+<a href="#pub-attribs">Öffentliche Attribute</a> &#124;
+<a href="#pro-methods">Geschützte Methoden</a> &#124;
+<a href="../../d4/db3/classstd_1_1graphic_1_1image-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::graphic::image&lt; T, BC &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:a0cecbc60cab8b704a352caa62f449a29"><td class="memItemLeft" align="right" valign="top"><a id="a0cecbc60cab8b704a352caa62f449a29"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>color_type</b> = <a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">std::math::color</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a0cecbc60cab8b704a352caa62f449a29"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> = <a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">std::math::color</a>&lt; T &gt;</td></tr>
 <tr class="separator:a0cecbc60cab8b704a352caa62f449a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af2ee421db1bb04d277b6085bb5aaaf"><td class="memItemLeft" align="right" valign="top"><a id="a6af2ee421db1bb04d277b6085bb5aaaf"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>basic_color</b> = BC</td></tr>
+<tr class="memitem:a6af2ee421db1bb04d277b6085bb5aaaf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a6af2ee421db1bb04d277b6085bb5aaaf">basic_color</a> = BC</td></tr>
 <tr class="separator:a6af2ee421db1bb04d277b6085bb5aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57294997edb2f920b2f16a78af3d1024"><td class="memItemLeft" align="right" valign="top"><a id="a57294997edb2f920b2f16a78af3d1024"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>self_type</b> = <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a>&lt; T, BC &gt;</td></tr>
+<tr class="memitem:a57294997edb2f920b2f16a78af3d1024"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a57294997edb2f920b2f16a78af3d1024">self_type</a> = <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a>&lt; T, BC &gt;</td></tr>
 <tr class="separator:a57294997edb2f920b2f16a78af3d1024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f06ada5514346d0ead8337c1704829"><td class="memItemLeft" align="right" valign="top"><a id="a98f06ada5514346d0ead8337c1704829"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; int &gt;</td></tr>
+<tr class="memitem:a98f06ada5514346d0ead8337c1704829"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> = <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; int &gt;</td></tr>
 <tr class="separator:a98f06ada5514346d0ead8337c1704829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a502fd25cd5a1222d71e75d80048dd0d1"><td class="memItemLeft" align="right" valign="top"><a id="a502fd25cd5a1222d71e75d80048dd0d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>image</b> (<a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::string</a> name, <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> size)</td></tr>
+<tr class="memitem:aeb80ccef5c95783522d812cd425c44d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#aeb80ccef5c95783522d812cd425c44d9">image</a> ()</td></tr>
+<tr class="separator:aeb80ccef5c95783522d812cd425c44d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502fd25cd5a1222d71e75d80048dd0d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a502fd25cd5a1222d71e75d80048dd0d1">image</a> (<a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a> name, <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> size)</td></tr>
 <tr class="separator:a502fd25cd5a1222d71e75d80048dd0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca994882a7dca2a4ee80f994fdfb51e"><td class="memItemLeft" align="right" valign="top"><a id="aaca994882a7dca2a4ee80f994fdfb51e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>image</b> (<a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::string</a> name, <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> size, <a class="el" href="../../df/d5b/classstd_1_1stream.html">stream</a> *str)</td></tr>
+<tr class="memitem:aaca994882a7dca2a4ee80f994fdfb51e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#aaca994882a7dca2a4ee80f994fdfb51e">image</a> (<a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a> name, <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> size, <a class="el" href="../../df/d5b/classstd_1_1stream.html">stream</a> *<a class="el" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>)</td></tr>
 <tr class="separator:aaca994882a7dca2a4ee80f994fdfb51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7bf239e438b2299f1a171ee518bcf4a"><td class="memItemLeft" align="right" valign="top"><a id="af7bf239e438b2299f1a171ee518bcf4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setpixel</b> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> pos, <a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">color_type</a> col)</td></tr>
+<tr class="memitem:a4eed32c7539e069e72fe373a0cbec580"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a4eed32c7539e069e72fe373a0cbec580">~image</a> ()</td></tr>
+<tr class="separator:a4eed32c7539e069e72fe373a0cbec580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bf239e438b2299f1a171ee518bcf4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#af7bf239e438b2299f1a171ee518bcf4a">setpixel</a> (<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> pos, <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> col)</td></tr>
 <tr class="separator:af7bf239e438b2299f1a171ee518bcf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a432a81f679066bdcf202cdeda0614fe2"><td class="memItemLeft" align="right" valign="top"><a id="a432a81f679066bdcf202cdeda0614fe2"></a>
-<a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">color_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getpixel</b> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> pos)</td></tr>
+<tr class="memitem:a432a81f679066bdcf202cdeda0614fe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a432a81f679066bdcf202cdeda0614fe2">getpixel</a> (<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> pos)</td></tr>
 <tr class="separator:a432a81f679066bdcf202cdeda0614fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ee8b1df66a9434c391ee2e9dcc2ec04"><td class="memItemLeft" align="right" valign="top"><a id="a3ee8b1df66a9434c391ee2e9dcc2ec04"></a>
-<a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">color_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="memitem:a3ee8b1df66a9434c391ee2e9dcc2ec04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a3ee8b1df66a9434c391ee2e9dcc2ec04">get</a> ()</td></tr>
 <tr class="separator:a3ee8b1df66a9434c391ee2e9dcc2ec04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d6b26d6ac9427c4e397ac3d516f29e"><td class="memItemLeft" align="right" valign="top"><a id="a78d6b26d6ac9427c4e397ac3d516f29e"></a>
-<a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">color_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> pos)</td></tr>
+<tr class="memitem:a78d6b26d6ac9427c4e397ac3d516f29e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a78d6b26d6ac9427c4e397ac3d516f29e">operator[]</a> (<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> pos)</td></tr>
 <tr class="separator:a78d6b26d6ac9427c4e397ac3d516f29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Datenfelder</h2></td></tr>
-<tr class="memitem:a86377ea7d357b4ade3c88d4971f74ecb"><td class="memItemLeft" align="right" valign="top"><a id="a86377ea7d357b4ade3c88d4971f74ecb"></a>
-<a class="el" href="../../dd/dbc/classstd_1_1value__property.html">std::prop_t</a>&lt; <a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
+Öffentliche Attribute</h2></td></tr>
+<tr class="memitem:a86377ea7d357b4ade3c88d4971f74ecb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dcc/namespacestd.html#a9bab045530510573cba434238fcdc985">std::prop_t</a>&lt; <a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a86377ea7d357b4ade3c88d4971f74ecb">Name</a></td></tr>
 <tr class="separator:a86377ea7d357b4ade3c88d4971f74ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Geschützte Methoden</h2></td></tr>
-<tr class="memitem:a9420d700b354b796a08951c9f12caf8a"><td class="memItemLeft" align="right" valign="top"><a id="a9420d700b354b796a08951c9f12caf8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">size_type</a> size, <a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">color_type</a> color)</td></tr>
+<tr class="memitem:a9420d700b354b796a08951c9f12caf8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">create</a> (<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> size, <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> color)</td></tr>
 <tr class="separator:a9420d700b354b796a08951c9f12caf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -151,7 +140,449 @@ class std::graphic::image&lt; T, BC &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00046">46</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="a6af2ee421db1bb04d277b6085bb5aaaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af2ee421db1bb04d277b6085bb5aaaf">&#9670;&nbsp;</a></span>basic_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a6af2ee421db1bb04d277b6085bb5aaaf">basic_color</a> =  BC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00050">50</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0cecbc60cab8b704a352caa62f449a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cecbc60cab8b704a352caa62f449a29">&#9670;&nbsp;</a></span>color_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a> =  <a class="el" href="../../d9/def/classstd_1_1math_1_1color.html">std::math::color</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00049">49</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a57294997edb2f920b2f16a78af3d1024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57294997edb2f920b2f16a78af3d1024">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a57294997edb2f920b2f16a78af3d1024">self_type</a> =  <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a>&lt;T, BC&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00051">51</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a98f06ada5514346d0ead8337c1704829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f06ada5514346d0ead8337c1704829">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a> =  <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00052">52</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="aeb80ccef5c95783522d812cd425c44d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb80ccef5c95783522d812cd425c44d9">&#9670;&nbsp;</a></span>image() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00056">56</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">std::graphic::image&lt; T, BC &gt;::create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                     {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">create</a>(<a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>(32,32), BC);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div><div class="ttc" id="classstd_1_1graphic_1_1image_html_a98f06ada5514346d0ead8337c1704829"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">std::graphic::image::size_type</a></div><div class="ttdeci">std::math::vector2&lt; int &gt; size_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00052">image.hpp:52</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a9420d700b354b796a08951c9f12caf8a"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">std::graphic::image::create</a></div><div class="ttdeci">void create(size_type size, color_type color)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00098">image.hpp:98</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a502fd25cd5a1222d71e75d80048dd0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502fd25cd5a1222d71e75d80048dd0d1">&#9670;&nbsp;</a></span>image() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00059">59</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">std::graphic::image&lt; T, BC &gt;::create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                  {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">create</a>(size, BC);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a86377ea7d357b4ade3c88d4971f74ecb">Name</a> = name;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div><div class="ttc" id="classstd_1_1graphic_1_1image_html_a9420d700b354b796a08951c9f12caf8a"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">std::graphic::image::create</a></div><div class="ttdeci">void create(size_type size, color_type color)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00098">image.hpp:98</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a86377ea7d357b4ade3c88d4971f74ecb"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a86377ea7d357b4ade3c88d4971f74ecb">std::graphic::image::Name</a></div><div class="ttdeci">std::prop_t&lt; std::string &gt; Name</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00054">image.hpp:54</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaca994882a7dca2a4ee80f994fdfb51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaca994882a7dca2a4ee80f994fdfb51e">&#9670;&nbsp;</a></span>image() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d5b/classstd_1_1stream.html">stream</a> *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00063">63</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">std::graphic::image&lt; T, BC &gt;::create()</a>, <a class="el" href="../../d9/d0f/stream_8hpp_source.html#l00068">std::stream::read()</a>, <a class="el" href="../../d9/d0f/stream_8hpp_source.html#l00073">std::stream::size()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00064">std::math::vector2&lt; T &gt;::x</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00065">std::math::vector2&lt; T &gt;::y</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                               {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a86377ea7d357b4ade3c88d4971f74ecb">Name</a> = name;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">create</a>(size, BC);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keyword">auto</span> x = std::_min&lt;int&gt;( (m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> * m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> *4),</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <a class="code" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>-&gt;size() );</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> colorBlock[4];</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; x; i++) {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>-&gt;read(colorBlock, 0, 4) == 4)</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            m_imgData[i] = <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>(  colorBlock[0], </div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                    colorBlock[1], </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                    colorBlock[2],</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                    colorBlock[3]);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }   </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a9420d700b354b796a08951c9f12caf8a"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a9420d700b354b796a08951c9f12caf8a">std::graphic::image::create</a></div><div class="ttdeci">void create(size_type size, color_type color)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00098">image.hpp:98</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a0cecbc60cab8b704a352caa62f449a29"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">std::graphic::image::color_type</a></div><div class="ttdeci">std::math::color&lt; T &gt; color_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00049">image.hpp:49</a></div></div>
+<div class="ttc" id="utils_8hpp_html_aa11cf742f6008935afc301cac1feec01"><div class="ttname"><a href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a></div><div class="ttdeci">std::string str(T begin, T end)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d93/utils_8hpp_source.html#l00039">utils.hpp:39</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a86377ea7d357b4ade3c88d4971f74ecb"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a86377ea7d357b4ade3c88d4971f74ecb">std::graphic::image::Name</a></div><div class="ttdeci">std::prop_t&lt; std::string &gt; Name</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00054">image.hpp:54</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4eed32c7539e069e72fe373a0cbec580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eed32c7539e069e72fe373a0cbec580">&#9670;&nbsp;</a></span>~image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::~<a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00078">78</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span>(m_imgData) { <span class="keyword">delete</span> m_imgData; }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a9420d700b354b796a08951c9f12caf8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9420d700b354b796a08951c9f12caf8a">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">98</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00064">std::math::vector2&lt; T &gt;::x</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00065">std::math::vector2&lt; T &gt;::y</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d3/d42/image_8hpp_source.html#l00056">std::graphic::image&lt; T, BC &gt;::image()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                           {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;               m_imgData = <span class="keyword">new</span> <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>[size.x * size.y]; </div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">               #pragma openmp</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;               <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size.x * size.y; i++) {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                   m_imgData[i] = <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a6af2ee421db1bb04d277b6085bb5aaaf">basic_color</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;               }  </div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div><div class="ttc" id="classstd_1_1graphic_1_1image_html_a6af2ee421db1bb04d277b6085bb5aaaf"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a6af2ee421db1bb04d277b6085bb5aaaf">std::graphic::image::basic_color</a></div><div class="ttdeci">BC basic_color</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00050">image.hpp:50</a></div></div>
+<div class="ttc" id="classstd_1_1graphic_1_1image_html_a0cecbc60cab8b704a352caa62f449a29"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">std::graphic::image::color_type</a></div><div class="ttdeci">std::math::color&lt; T &gt; color_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00049">image.hpp:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3ee8b1df66a9434c391ee2e9dcc2ec04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee8b1df66a9434c391ee2e9dcc2ec04">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>* <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00091">91</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                              {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span> m_imgData;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a432a81f679066bdcf202cdeda0614fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432a81f679066bdcf202cdeda0614fe2">&#9670;&nbsp;</a></span>getpixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>&amp; <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::getpixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00086">86</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00064">std::math::vector2&lt; T &gt;::x</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00065">std::math::vector2&lt; T &gt;::y</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d3/d42/image_8hpp_source.html#l00094">std::graphic::image&lt; T, BC &gt;::operator[]()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">if</span>(pos.x &lt; m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> &amp;&amp; pos.y &lt; m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> ) {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <span class="keywordflow">return</span> m_imgData[ pos.x + pos.y * m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>];</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a78d6b26d6ac9427c4e397ac3d516f29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d6b26d6ac9427c4e397ac3d516f29e">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>&amp; <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00094">94</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/d42/image_8hpp_source.html#l00086">std::graphic::image&lt; T, BC &gt;::getpixel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                   {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                 <span class="keywordflow">return</span> <a class="code" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a432a81f679066bdcf202cdeda0614fe2">getpixel</a>(pos);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div><div class="ttc" id="classstd_1_1graphic_1_1image_html_a432a81f679066bdcf202cdeda0614fe2"><div class="ttname"><a href="../../dc/d67/classstd_1_1graphic_1_1image.html#a432a81f679066bdcf202cdeda0614fe2">std::graphic::image::getpixel</a></div><div class="ttdeci">color_type &amp; getpixel(size_type pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d42/image_8hpp_source.html#l00086">image.hpp:86</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7bf239e438b2299f1a171ee518bcf4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bf239e438b2299f1a171ee518bcf4a">&#9670;&nbsp;</a></span>setpixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::setpixel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a98f06ada5514346d0ead8337c1704829">size_type</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html#a0cecbc60cab8b704a352caa62f449a29">color_type</a>&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00081">81</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00064">std::math::vector2&lt; T &gt;::x</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00065">std::math::vector2&lt; T &gt;::y</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                          {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span>(pos.x &lt; m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> &amp;&amp; pos.y &lt; m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> ) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    m_imgData[ pos.x + pos.y * m_vecSize.<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>] = col;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                } </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a id="a86377ea7d357b4ade3c88d4971f74ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86377ea7d357b4ade3c88d4971f74ecb">&#9670;&nbsp;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::math::color&lt; T &gt; BC = std::math::colors_base&lt;T&gt;::Navy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dcc/namespacestd.html#a9bab045530510573cba434238fcdc985">std::prop_t</a>&lt;<a class="el" href="../../d8/dcc/namespacestd.html#a0483b2f6e0275d3d056134767b5e99ef">std::string</a>&gt; <a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">std::graphic::image</a>&lt; T, BC &gt;::Name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d3/d42/image_8hpp_source.html#l00054">54</a> der Datei <a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/graphic/<a class="el" href="../../d3/d42/image_8hpp_source.html">image.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -159,7 +590,7 @@ class std::graphic::image&lt; T, BC &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><b>graphic</b></li><li class="navelem"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d7/d62/namespacestd_1_1graphic.html">graphic</a></li><li class="navelem"><a class="el" href="../../dc/d67/classstd_1_1graphic_1_1image.html">image</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

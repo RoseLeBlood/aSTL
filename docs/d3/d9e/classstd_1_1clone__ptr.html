@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -90,73 +84,62 @@ $(document).ready(function(){initNavTree('d3/d9e/classstd_1_1clone__ptr.html','.
   <div class="summary">
 <a href="#pub-types">Öffentliche Typen</a> &#124;
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pro-methods">Geschützte Methoden</a>  </div>
+<a href="#pro-methods">Geschützte Methoden</a> &#124;
+<a href="../../d5/df6/classstd_1_1clone__ptr-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::clone_ptr&lt; T &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:acccfc124f6c9cdbc127041e212e4029e"><td class="memItemLeft" align="right" valign="top"><a id="acccfc124f6c9cdbc127041e212e4029e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="memitem:acccfc124f6c9cdbc127041e212e4029e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> = T</td></tr>
 <tr class="separator:acccfc124f6c9cdbc127041e212e4029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e281411ce52a3b022cd183669ae953"><td class="memItemLeft" align="right" valign="top"><a id="ae5e281411ce52a3b022cd183669ae953"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="memitem:ae5e281411ce52a3b022cd183669ae953"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ae5e281411ce52a3b022cd183669ae953">pointer</a> = T *</td></tr>
 <tr class="separator:ae5e281411ce52a3b022cd183669ae953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05328da220cce16675feadc6b5318907"><td class="memItemLeft" align="right" valign="top"><a id="a05328da220cce16675feadc6b5318907"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T &amp;</td></tr>
+<tr class="memitem:a05328da220cce16675feadc6b5318907"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a05328da220cce16675feadc6b5318907">reference</a> = T &amp;</td></tr>
 <tr class="separator:a05328da220cce16675feadc6b5318907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d2657bfa111a29ba7c37e5817469fc"><td class="memItemLeft" align="right" valign="top"><a id="aa3d2657bfa111a29ba7c37e5817469fc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>self_type</b> = <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a>&lt; value_type &gt;</td></tr>
+<tr class="memitem:aa3d2657bfa111a29ba7c37e5817469fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#aa3d2657bfa111a29ba7c37e5817469fc">self_type</a> = <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a>&lt; <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> &gt;</td></tr>
 <tr class="separator:aa3d2657bfa111a29ba7c37e5817469fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a090515c63737302f82821c0c02c6d048"><td class="memItemLeft" align="right" valign="top"><a id="a090515c63737302f82821c0c02c6d048"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cloneptrinterface</b> = <a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">clone_ptr_interface</a></td></tr>
+<tr class="memitem:a090515c63737302f82821c0c02c6d048"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a090515c63737302f82821c0c02c6d048">cloneptrinterface</a> = <a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">clone_ptr_interface</a></td></tr>
 <tr class="separator:a090515c63737302f82821c0c02c6d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:ad22c0a1e53be2a1af01ac17e281af6f7"><td class="memItemLeft" align="right" valign="top"><a id="ad22c0a1e53be2a1af01ac17e281af6f7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>clone_ptr</b> (T *v)</td></tr>
+<tr class="memitem:a7c018b7ab17f078f067552755102746e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a7c018b7ab17f078f067552755102746e">clone_ptr</a> ()</td></tr>
+<tr class="separator:a7c018b7ab17f078f067552755102746e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22c0a1e53be2a1af01ac17e281af6f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ad22c0a1e53be2a1af01ac17e281af6f7">clone_ptr</a> (T *v)</td></tr>
 <tr class="separator:ad22c0a1e53be2a1af01ac17e281af6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2820df09fdd10405256df50300935bbd"><td class="memItemLeft" align="right" valign="top"><a id="a2820df09fdd10405256df50300935bbd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>clone_ptr</b> (<a class="el" href="../../d4/d23/classstd_1_1save__ptr.html">save_ptr</a> const &amp;other)</td></tr>
+<tr class="memitem:a2820df09fdd10405256df50300935bbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a2820df09fdd10405256df50300935bbd">clone_ptr</a> (<a class="el" href="../../d4/d23/classstd_1_1save__ptr.html">save_ptr</a> const &amp;other)</td></tr>
 <tr class="separator:a2820df09fdd10405256df50300935bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf684c71995b4298d9f12bde9690c84"><td class="memItemLeft" align="right" valign="top"><a id="a0bf684c71995b4298d9f12bde9690c84"></a>
-<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const &amp;other)</td></tr>
+<tr class="memitem:a0bf684c71995b4298d9f12bde9690c84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a0bf684c71995b4298d9f12bde9690c84">operator=</a> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const &amp;other)</td></tr>
 <tr class="separator:a0bf684c71995b4298d9f12bde9690c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a5523a0c507daaffbd80b658f07e85"><td class="memItemLeft" align="right" valign="top"><a id="a19a5523a0c507daaffbd80b658f07e85"></a>
-value_type const  *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const</td></tr>
+<tr class="memitem:ae64f5601317041c7fac7de4a812a335e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ae64f5601317041c7fac7de4a812a335e">~clone_ptr</a> ()</td></tr>
+<tr class="separator:ae64f5601317041c7fac7de4a812a335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5523a0c507daaffbd80b658f07e85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a19a5523a0c507daaffbd80b658f07e85">get</a> () const</td></tr>
 <tr class="separator:a19a5523a0c507daaffbd80b658f07e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fed4072d9ed61d8ce37ecac2e69b407"><td class="memItemLeft" align="right" valign="top"><a id="a3fed4072d9ed61d8ce37ecac2e69b407"></a>
-value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="memitem:a3fed4072d9ed61d8ce37ecac2e69b407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a3fed4072d9ed61d8ce37ecac2e69b407">get</a> ()</td></tr>
 <tr class="separator:a3fed4072d9ed61d8ce37ecac2e69b407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3184353a10ee4e533eb47ee819bd8246"><td class="memItemLeft" align="right" valign="top"><a id="a3184353a10ee4e533eb47ee819bd8246"></a>
-value_type const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="memitem:a3184353a10ee4e533eb47ee819bd8246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a3184353a10ee4e533eb47ee819bd8246">operator*</a> () const</td></tr>
 <tr class="separator:a3184353a10ee4e533eb47ee819bd8246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"><td class="memItemLeft" align="right" valign="top"><a id="a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"></a>
-value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="memitem:a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a1c9765ca3bc8aa2f8f79d4d7dc7d16ff">operator*</a> ()</td></tr>
 <tr class="separator:a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2292a414285aaca8beddd7f6ba8e0d02"><td class="memItemLeft" align="right" valign="top"><a id="a2292a414285aaca8beddd7f6ba8e0d02"></a>
-value_type const  *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="memitem:a2292a414285aaca8beddd7f6ba8e0d02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a2292a414285aaca8beddd7f6ba8e0d02">operator-&gt;</a> () const</td></tr>
 <tr class="separator:a2292a414285aaca8beddd7f6ba8e0d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924891314cbcbdba878604cf18d3eab8"><td class="memItemLeft" align="right" valign="top"><a id="a924891314cbcbdba878604cf18d3eab8"></a>
-value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
+<tr class="memitem:a924891314cbcbdba878604cf18d3eab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a924891314cbcbdba878604cf18d3eab8">operator-&gt;</a> ()</td></tr>
 <tr class="separator:a924891314cbcbdba878604cf18d3eab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d848302129ed35c5ceb851729ce9ecb"><td class="memItemLeft" align="right" valign="top"><a id="a1d848302129ed35c5ceb851729ce9ecb"></a>
-value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="memitem:a1d848302129ed35c5ceb851729ce9ecb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a1d848302129ed35c5ceb851729ce9ecb">release</a> ()</td></tr>
 <tr class="separator:a1d848302129ed35c5ceb851729ce9ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae75adfcfb85ae278ac2d6f8d8381208f"><td class="memItemLeft" align="right" valign="top"><a id="ae75adfcfb85ae278ac2d6f8d8381208f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> (value_type *p=NULL)</td></tr>
+<tr class="memitem:ae75adfcfb85ae278ac2d6f8d8381208f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ae75adfcfb85ae278ac2d6f8d8381208f">reset</a> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *p=NULL)</td></tr>
 <tr class="separator:ae75adfcfb85ae278ac2d6f8d8381208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade6cf95ffbbb9b1c4daff348f89c060f"><td class="memItemLeft" align="right" valign="top"><a id="ade6cf95ffbbb9b1c4daff348f89c060f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">self_type</a> &amp;other)</td></tr>
+<tr class="memitem:ade6cf95ffbbb9b1c4daff348f89c060f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ade6cf95ffbbb9b1c4daff348f89c060f">swap</a> (<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#aa3d2657bfa111a29ba7c37e5817469fc">self_type</a> &amp;other)</td></tr>
 <tr class="separator:ade6cf95ffbbb9b1c4daff348f89c060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Geschützte Methoden</h2></td></tr>
-<tr class="memitem:ac4dad000e4436a6a72040221752043b5"><td class="memItemLeft" align="right" valign="top"><a id="ac4dad000e4436a6a72040221752043b5"></a>
-<a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">cloneptrinterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> ()</td></tr>
+<tr class="memitem:ac4dad000e4436a6a72040221752043b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a090515c63737302f82821c0c02c6d048">cloneptrinterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ac4dad000e4436a6a72040221752043b5">clone</a> ()</td></tr>
 <tr class="separator:ac4dad000e4436a6a72040221752043b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -165,7 +148,550 @@ class std::clone_ptr&lt; T &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00046">46</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="a090515c63737302f82821c0c02c6d048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090515c63737302f82821c0c02c6d048">&#9670;&nbsp;</a></span>cloneptrinterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a090515c63737302f82821c0c02c6d048">cloneptrinterface</a> =  <a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html">clone_ptr_interface</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00053">53</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5e281411ce52a3b022cd183669ae953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e281411ce52a3b022cd183669ae953">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#ae5e281411ce52a3b022cd183669ae953">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00050">50</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a05328da220cce16675feadc6b5318907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05328da220cce16675feadc6b5318907">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a05328da220cce16675feadc6b5318907">reference</a> =  T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00051">51</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa3d2657bfa111a29ba7c37e5817469fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d2657bfa111a29ba7c37e5817469fc">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#aa3d2657bfa111a29ba7c37e5817469fc">self_type</a> =  <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a>&lt;<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00052">52</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acccfc124f6c9cdbc127041e212e4029e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccfc124f6c9cdbc127041e212e4029e">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00049">49</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a7c018b7ab17f078f067552755102746e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c018b7ab17f078f067552755102746e">&#9670;&nbsp;</a></span>clone_ptr() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00055">55</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;: m_ptr(0) { }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad22c0a1e53be2a1af01ac17e281af6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22c0a1e53be2a1af01ac17e281af6f7">&#9670;&nbsp;</a></span>clone_ptr() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00057">57</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;: m_ptr(v) { }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2820df09fdd10405256df50300935bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2820df09fdd10405256df50300935bbd">&#9670;&nbsp;</a></span>clone_ptr() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d23/classstd_1_1save__ptr.html">save_ptr</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00059">59</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/df4/save__ptr_8hpp_source.html#l00056">std::save_ptr&lt; T &gt;::get()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                         {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(other.get() != NULL)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                m_ptr = other-&gt;clone();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae64f5601317041c7fac7de4a812a335e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64f5601317041c7fac7de4a812a335e">&#9670;&nbsp;</a></span>~clone_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::~<a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00070">70</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                     {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span>(m_ptr) <span class="keyword">delete</span> m_ptr;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="ac4dad000e4436a6a72040221752043b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dad000e4436a6a72040221752043b5">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#a090515c63737302f82821c0c02c6d048">cloneptrinterface</a>* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00110">110</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../df/d21/classstd_1_1clone__ptr__interface.html#a58112dc7e4ae7ceca4a056b9d58ebeb9">std::clone_ptr_interface::clone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span>(m_ptr != NULL)</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> m_ptr-&gt;clone();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a19a5523a0c507daaffbd80b658f07e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a5523a0c507daaffbd80b658f07e85">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00074">74</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                      {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> m_ptr; </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3fed4072d9ed61d8ce37ecac2e69b407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fed4072d9ed61d8ce37ecac2e69b407">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a>* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00077">77</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                          { </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> m_ptr; </div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3184353a10ee4e533eb47ee819bd8246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3184353a10ee4e533eb47ee819bd8246">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const&amp; <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00081">81</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                             { </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> *m_ptr; </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a1c9765ca3bc8aa2f8f79d4d7dc7d16ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9765ca3bc8aa2f8f79d4d7dc7d16ff">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a>&amp; <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00084">84</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                 { </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> *m_ptr; </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2292a414285aaca8beddd7f6ba8e0d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2292a414285aaca8beddd7f6ba8e0d02">&#9670;&nbsp;</a></span>operator->() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> const* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00087">87</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                             {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> m_ptr; </div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a924891314cbcbdba878604cf18d3eab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924891314cbcbdba878604cf18d3eab8">&#9670;&nbsp;</a></span>operator->() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a>* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00090">90</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                 { </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> m_ptr; </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0bf684c71995b4298d9f12bde9690c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf684c71995b4298d9f12bde9690c84">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a> const&amp; <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00063">63</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00205">std::swap()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                           {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span>(other != <span class="keyword">this</span>) {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="../../d3/d9e/classstd_1_1clone__ptr.html#a7c018b7ab17f078f067552755102746e">clone_ptr</a> tmp(other);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="../../d3/d9e/classstd_1_1clone__ptr.html#ade6cf95ffbbb9b1c4daff348f89c060f">swap</a>(tmp);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div><div class="ttc" id="classstd_1_1clone__ptr_html_a7c018b7ab17f078f067552755102746e"><div class="ttname"><a href="../../d3/d9e/classstd_1_1clone__ptr.html#a7c018b7ab17f078f067552755102746e">std::clone_ptr::clone_ptr</a></div><div class="ttdeci">clone_ptr()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/clone__ptr_8hpp_source.html#l00055">clone_ptr.hpp:55</a></div></div>
+<div class="ttc" id="classstd_1_1clone__ptr_html_ade6cf95ffbbb9b1c4daff348f89c060f"><div class="ttname"><a href="../../d3/d9e/classstd_1_1clone__ptr.html#ade6cf95ffbbb9b1c4daff348f89c060f">std::clone_ptr::swap</a></div><div class="ttdeci">void swap(self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/clone__ptr_8hpp_source.html#l00103">clone_ptr.hpp:103</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1d848302129ed35c5ceb851729ce9ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d848302129ed35c5ceb851729ce9ecb">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a>* <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00093">93</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                              { </div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *tmp = m_ptr; </div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            m_ptr = NULL; </div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> tmp; </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }       </div><div class="ttc" id="classstd_1_1clone__ptr_html_acccfc124f6c9cdbc127041e212e4029e"><div class="ttname"><a href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">std::clone_ptr::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/clone__ptr_8hpp_source.html#l00049">clone_ptr.hpp:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae75adfcfb85ae278ac2d6f8d8381208f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75adfcfb85ae278ac2d6f8d8381208f">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>p</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00098">98</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span>(m_ptr) <span class="keyword">delete</span> m_ptr;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                m_ptr = p;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ade6cf95ffbbb9b1c4daff348f89c060f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6cf95ffbbb9b1c4daff348f89c060f">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = std::clone_ptr_interface&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">std::clone_ptr</a>&lt; T &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html#aa3d2657bfa111a29ba7c37e5817469fc">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html#l00103">103</a> der Datei <a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {                         </div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">value_type</a> *tmp = other.m_ptr;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            other.m_ptr = m_ptr;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            m_ptr = tmp;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="ttc" id="classstd_1_1clone__ptr_html_acccfc124f6c9cdbc127041e212e4029e"><div class="ttname"><a href="../../d3/d9e/classstd_1_1clone__ptr.html#acccfc124f6c9cdbc127041e212e4029e">std::clone_ptr::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dce/clone__ptr_8hpp_source.html#l00049">clone_ptr.hpp:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../d6/dce/clone__ptr_8hpp_source.html">clone_ptr.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -173,7 +699,7 @@ class std::clone_ptr&lt; T &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d3/d9e/classstd_1_1clone__ptr.html">clone_ptr</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

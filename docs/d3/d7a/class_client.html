@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,7 +82,8 @@ $(document).ready(function(){initNavTree('d3/d7a/class_client.html','../../');})
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Öffentliche Methoden</a>  </div>
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../d4/d4a/class_client-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">Client Klassenreferenz</div>  </div>
 </div><!--header-->
@@ -96,14 +91,46 @@ $(document).ready(function(){initNavTree('d3/d7a/class_client.html','../../');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a3c14e2611a04ccbf423516a8f5232301"><td class="memItemLeft" align="right" valign="top"><a id="a3c14e2611a04ccbf423516a8f5232301"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Client</b> (<a class="el" href="../../dc/db6/class_server.html">Server</a> *p_server)</td></tr>
+<tr class="memitem:a3c14e2611a04ccbf423516a8f5232301"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/class_client.html#a3c14e2611a04ccbf423516a8f5232301">Client</a> (<a class="el" href="../../dc/db6/class_server.html">Server</a> *p_server)</td></tr>
 <tr class="separator:a3c14e2611a04ccbf423516a8f5232301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock">
 <p class="definition">Definiert in Zeile <a class="el" href="../../de/d6c/event_2main_8cpp_source.html#l00027">27</a> der Datei <a class="el" href="../../de/d6c/event_2main_8cpp_source.html">main.cpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a3c14e2611a04ccbf423516a8f5232301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c14e2611a04ccbf423516a8f5232301">&#9670;&nbsp;</a></span>Client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Client::Client </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db6/class_server.html">Server</a> *&#160;</td>
+          <td class="paramname"><em>p_server</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../de/d6c/event_2main_8cpp_source.html#l00040">40</a> der Datei <a class="el" href="../../de/d6c/event_2main_8cpp_source.html">main.cpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d6c/event_2main_8cpp_source.html#l00018">Server::MessageSent</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        p_server-&gt;<a class="code" href="../../dc/db6/class_server.html#a7b7d40fe3ed1a575f396dea67dedaa0c">MessageSent</a> += <span class="keyword">new</span> <a class="code" href="../../de/d6c/event_2main_8cpp.html#aa3b88bcd23bb595caf8033b9114e0bc6">ClientDelegate</a>(<span class="keyword">this</span>, &amp;Client::MessageSentHandler);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="ttc" id="class_server_html_a7b7d40fe3ed1a575f396dea67dedaa0c"><div class="ttname"><a href="../../dc/db6/class_server.html#a7b7d40fe3ed1a575f396dea67dedaa0c">Server::MessageSent</a></div><div class="ttdeci">ServerEvent MessageSent</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/event_2main_8cpp_source.html#l00018">main.cpp:18</a></div></div>
+<div class="ttc" id="event_2main_8cpp_html_aa3b88bcd23bb595caf8033b9114e0bc6"><div class="ttname"><a href="../../de/d6c/event_2main_8cpp.html#aa3b88bcd23bb595caf8033b9114e0bc6">ClientDelegate</a></div><div class="ttdeci">std::delegate&lt; Client, Server, std::string &gt; ClientDelegate</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6c/event_2main_8cpp_source.html#l00013">main.cpp:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>test/event/<a class="el" href="../../de/d6c/event_2main_8cpp_source.html">main.cpp</a></li>
 </ul>
 </div><!-- contents -->

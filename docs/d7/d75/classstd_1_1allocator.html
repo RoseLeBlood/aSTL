@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,34 +82,248 @@ $(document).ready(function(){initNavTree('d7/d75/classstd_1_1allocator.html','..
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Öffentliche Methoden</a>  </div>
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../d3/d52/classstd_1_1allocator-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::allocator Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:aa957a2c573d01776e3e57678901802d4"><td class="memItemLeft" align="right" valign="top"><a id="aa957a2c573d01776e3e57678901802d4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>allocator</b> (const char *name=&quot;asdef&quot;)</td></tr>
+<tr class="memitem:aa957a2c573d01776e3e57678901802d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#aa957a2c573d01776e3e57678901802d4">allocator</a> (const char *name=&quot;asdef&quot;)</td></tr>
 <tr class="separator:aa957a2c573d01776e3e57678901802d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa134fbfdd3f8043f97cef77ce1956a40"><td class="memItemLeft" align="right" valign="top"><a id="aa134fbfdd3f8043f97cef77ce1956a40"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (unsigned int bytes, int flags=0)</td></tr>
+<tr class="memitem:a2391d38030fc1dca45118d2369ace201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#a2391d38030fc1dca45118d2369ace201">~allocator</a> ()</td></tr>
+<tr class="separator:a2391d38030fc1dca45118d2369ace201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa134fbfdd3f8043f97cef77ce1956a40"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#aa134fbfdd3f8043f97cef77ce1956a40">allocate</a> (unsigned int bytes, int flags=0)</td></tr>
 <tr class="separator:aa134fbfdd3f8043f97cef77ce1956a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf631da5e35403653507f2de025c7966"><td class="memItemLeft" align="right" valign="top"><a id="acf631da5e35403653507f2de025c7966"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>allocate_aligned</b> (unsigned int bytes, unsigned int alignment, int flags=0)</td></tr>
+<tr class="memitem:acf631da5e35403653507f2de025c7966"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#acf631da5e35403653507f2de025c7966">allocate_aligned</a> (unsigned int bytes, unsigned int alignment, int flags=0)</td></tr>
 <tr class="separator:acf631da5e35403653507f2de025c7966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023ddc78c271be016433e2e59a98df1c"><td class="memItemLeft" align="right" valign="top"><a id="a023ddc78c271be016433e2e59a98df1c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate</b> (void *ptr, unsigned int bytes)</td></tr>
+<tr class="memitem:a023ddc78c271be016433e2e59a98df1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#a023ddc78c271be016433e2e59a98df1c">deallocate</a> (void *ptr, unsigned int bytes)</td></tr>
 <tr class="separator:a023ddc78c271be016433e2e59a98df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0194676fc6dcf5df82e2b0c866b038"><td class="memItemLeft" align="right" valign="top"><a id="acb0194676fc6dcf5df82e2b0c866b038"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const</td></tr>
+<tr class="memitem:acb0194676fc6dcf5df82e2b0c866b038"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classstd_1_1allocator.html#acb0194676fc6dcf5df82e2b0c866b038">get_name</a> () const</td></tr>
 <tr class="separator:acb0194676fc6dcf5df82e2b0c866b038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock">
 <p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00041">41</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="aa957a2c573d01776e3e57678901802d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa957a2c573d01776e3e57678901802d4">&#9670;&nbsp;</a></span>allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::allocator::allocator </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;asdef&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00044">44</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;:       m_name(name) {}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2391d38030fc1dca45118d2369ace201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2391d38030fc1dca45118d2369ace201">&#9670;&nbsp;</a></span>~allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::allocator::~allocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00045">45</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00071">allocate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="aa134fbfdd3f8043f97cef77ce1956a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa134fbfdd3f8043f97cef77ce1956a40">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * std::allocator::allocate </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00071">71</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../dc/d1d/list_8hpp_source.html#l00308">std::list&lt; TYPE &gt;::set_allocator()</a> und <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00045">~allocator()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">operator</span> <span class="keyword">new</span>(bytes);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acf631da5e35403653507f2de025c7966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf631da5e35403653507f2de025c7966">&#9670;&nbsp;</a></span>allocate_aligned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* std::allocator::allocate_aligned </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00050">50</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00076">deallocate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="comment">//return memalign(bytes, alignment);</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a023ddc78c271be016433e2e59a98df1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023ddc78c271be016433e2e59a98df1c">&#9670;&nbsp;</a></span>deallocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::allocator::deallocate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00076">76</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00050">allocate_aligned()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">operator</span> <span class="keyword">delete</span>(ptr);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acb0194676fc6dcf5df82e2b0c866b038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0194676fc6dcf5df82e2b0c866b038">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* std::allocator::get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00057">57</a> der Datei <a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d5/d61/allocator_8hpp_source.html#l00062">std::operator==()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{ <span class="keywordflow">return</span> m_name; }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../d5/d61/allocator_8hpp_source.html">allocator.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -123,7 +331,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

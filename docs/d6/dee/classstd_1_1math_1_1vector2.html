@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -90,11 +84,14 @@ $(document).ready(function(){initNavTree('d6/dee/classstd_1_1math_1_1vector2.htm
   <div class="summary">
 <a href="#pub-types">Öffentliche Typen</a> &#124;
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pub-attribs">Datenfelder</a>  </div>
+<a href="#pub-attribs">Öffentliche Attribute</a> &#124;
+<a href="../../d6/d13/classstd_1_1math_1_1vector2-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::math::vector2&lt; T &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für std::math::vector2&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -107,78 +104,58 @@ Klassendiagramm für std::math::vector2&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:ad3b7f5d2a9dc82c95aec07a9188a24a4"><td class="memItemLeft" align="right" valign="top"><a id="ad3b7f5d2a9dc82c95aec07a9188a24a4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="memitem:ad3b7f5d2a9dc82c95aec07a9188a24a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> = T</td></tr>
 <tr class="separator:ad3b7f5d2a9dc82c95aec07a9188a24a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3809c62b21e253d3f3e3ef3d479a6c7e"><td class="memItemLeft" align="right" valign="top"><a id="a3809c62b21e253d3f3e3ef3d479a6c7e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>self_type</b> = <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a3809c62b21e253d3f3e3ef3d479a6c7e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> = <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a>&lt; T &gt;</td></tr>
 <tr class="separator:a3809c62b21e253d3f3e3ef3d479a6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5bb2db695b1806be1c13e74e7cd275e"><td class="memItemLeft" align="right" valign="top"><a id="ad5bb2db695b1806be1c13e74e7cd275e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="memitem:ad5bb2db695b1806be1c13e74e7cd275e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a> = T *</td></tr>
 <tr class="separator:ad5bb2db695b1806be1c13e74e7cd275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a0fa44017cca9648ee256c9992380f071"><td class="memItemLeft" align="right" valign="top"><a id="a0fa44017cca9648ee256c9992380f071"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vector2</b> (value_type _x, value_type _y)</td></tr>
+<tr class="memitem:a4db902d2a54ed962b5a0a9776d0104f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4db902d2a54ed962b5a0a9776d0104f5">vector2</a> ()</td></tr>
+<tr class="separator:a4db902d2a54ed962b5a0a9776d0104f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa44017cca9648ee256c9992380f071"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a0fa44017cca9648ee256c9992380f071">vector2</a> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> _x, <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> _y)</td></tr>
 <tr class="separator:a0fa44017cca9648ee256c9992380f071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186b32a5d43845dca75b9dd30e368b80"><td class="memItemLeft" align="right" valign="top"><a id="a186b32a5d43845dca75b9dd30e368b80"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vector2</b> (value_type _f)</td></tr>
+<tr class="memitem:a186b32a5d43845dca75b9dd30e368b80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a186b32a5d43845dca75b9dd30e368b80">vector2</a> (<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> _f)</td></tr>
 <tr class="separator:a186b32a5d43845dca75b9dd30e368b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a1a556d4f1df7e3ae87fb363c9f584"><td class="memItemLeft" align="right" valign="top"><a id="ad1a1a556d4f1df7e3ae87fb363c9f584"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vector2</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> &amp;vec)</td></tr>
+<tr class="memitem:ad1a1a556d4f1df7e3ae87fb363c9f584"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad1a1a556d4f1df7e3ae87fb363c9f584">vector2</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> &amp;vec)</td></tr>
 <tr class="separator:ad1a1a556d4f1df7e3ae87fb363c9f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f318106b11f77c22fbba6fd439d3d5"><td class="memItemLeft" align="right" valign="top"><a id="ae5f318106b11f77c22fbba6fd439d3d5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vector2</b> (const pointer lpvec)</td></tr>
+<tr class="memitem:ae5f318106b11f77c22fbba6fd439d3d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ae5f318106b11f77c22fbba6fd439d3d5">vector2</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a> lpvec)</td></tr>
 <tr class="separator:ae5f318106b11f77c22fbba6fd439d3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e64c3eb965fb21609f8ac42dd8c883c"><td class="memItemLeft" align="right" valign="top"><a id="a9e64c3eb965fb21609f8ac42dd8c883c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>operator pointer</b> ()</td></tr>
+<tr class="memitem:a9e64c3eb965fb21609f8ac42dd8c883c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a9e64c3eb965fb21609f8ac42dd8c883c">operator pointer</a> ()</td></tr>
 <tr class="separator:a9e64c3eb965fb21609f8ac42dd8c883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070a6ea92ea521013728f1bd84567eaa"><td class="memItemLeft" align="right" valign="top"><a id="a070a6ea92ea521013728f1bd84567eaa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>operator void *</b> ()</td></tr>
+<tr class="memitem:a070a6ea92ea521013728f1bd84567eaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a070a6ea92ea521013728f1bd84567eaa">operator void *</a> ()</td></tr>
 <tr class="separator:a070a6ea92ea521013728f1bd84567eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9251e46bfbc3d2908b385b6f29e3308"><td class="memItemLeft" align="right" valign="top"><a id="af9251e46bfbc3d2908b385b6f29e3308"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;v)</td></tr>
+<tr class="memitem:af9251e46bfbc3d2908b385b6f29e3308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#af9251e46bfbc3d2908b385b6f29e3308">operator=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;v)</td></tr>
 <tr class="separator:af9251e46bfbc3d2908b385b6f29e3308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2437ef3d85b932775a2a1f512c3749"><td class="memItemLeft" align="right" valign="top"><a id="a2c2437ef3d85b932775a2a1f512c3749"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;v)</td></tr>
+<tr class="memitem:a2c2437ef3d85b932775a2a1f512c3749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a2c2437ef3d85b932775a2a1f512c3749">operator+=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;v)</td></tr>
 <tr class="separator:a2c2437ef3d85b932775a2a1f512c3749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6493e1d8d28b8415e075c0e484a6f71"><td class="memItemLeft" align="right" valign="top"><a id="aa6493e1d8d28b8415e075c0e484a6f71"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;v)</td></tr>
+<tr class="memitem:aa6493e1d8d28b8415e075c0e484a6f71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aa6493e1d8d28b8415e075c0e484a6f71">operator-=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;v)</td></tr>
 <tr class="separator:aa6493e1d8d28b8415e075c0e484a6f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562d00d31f97f67b65ebe13f85897317"><td class="memItemLeft" align="right" valign="top"><a id="a562d00d31f97f67b65ebe13f85897317"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;v)</td></tr>
+<tr class="memitem:a562d00d31f97f67b65ebe13f85897317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a562d00d31f97f67b65ebe13f85897317">operator*=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;v)</td></tr>
 <tr class="separator:a562d00d31f97f67b65ebe13f85897317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd4130d3768eb3b6a0af77b55236fa6"><td class="memItemLeft" align="right" valign="top"><a id="a0cd4130d3768eb3b6a0af77b55236fa6"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/=</b> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;v)</td></tr>
+<tr class="memitem:a0cd4130d3768eb3b6a0af77b55236fa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a0cd4130d3768eb3b6a0af77b55236fa6">operator/=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;v)</td></tr>
 <tr class="separator:a0cd4130d3768eb3b6a0af77b55236fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c201d55810f0a7fba2b1b45a890a6e"><td class="memItemLeft" align="right" valign="top"><a id="a52c201d55810f0a7fba2b1b45a890a6e"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/=</b> (const value_type &amp;f)</td></tr>
+<tr class="memitem:a52c201d55810f0a7fba2b1b45a890a6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a52c201d55810f0a7fba2b1b45a890a6e">operator/=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> &amp;f)</td></tr>
 <tr class="separator:a52c201d55810f0a7fba2b1b45a890a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b63907e9fbaaf46de6d01406f9c179"><td class="memItemLeft" align="right" valign="top"><a id="a15b63907e9fbaaf46de6d01406f9c179"></a>
-<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const value_type &amp;f)</td></tr>
+<tr class="memitem:a15b63907e9fbaaf46de6d01406f9c179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a15b63907e9fbaaf46de6d01406f9c179">operator*=</a> (const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> &amp;f)</td></tr>
 <tr class="separator:a15b63907e9fbaaf46de6d01406f9c179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae674a49b989a97d2b27c0074ecf9a58d"><td class="memTemplParams" colspan="2"><a id="ae674a49b989a97d2b27c0074ecf9a58d"></a>
-template&lt;typename E  = char, class TAllocator  = std::allocator, typename TStorage  = std::simple_string_storage&lt;E, TAllocator&gt;&gt; </td></tr>
-<tr class="memitem:ae674a49b989a97d2b27c0074ecf9a58d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::basic_string</a>&lt; E, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_string</b> ()</td></tr>
+<tr class="memitem:ae674a49b989a97d2b27c0074ecf9a58d"><td class="memTemplParams" colspan="2">template&lt;typename E  = char, class TAllocator  = std::allocator, typename TStorage  = std::simple_string_storage&lt;E, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ae674a49b989a97d2b27c0074ecf9a58d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::basic_string</a>&lt; E, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ae674a49b989a97d2b27c0074ecf9a58d">to_string</a> ()</td></tr>
 <tr class="separator:ae674a49b989a97d2b27c0074ecf9a58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Datenfelder</h2></td></tr>
-<tr class="memitem:a96f56ac62f45d533b1091f4728702c60"><td class="memItemLeft" ><a id="a96f56ac62f45d533b1091f4728702c60"></a>
-union {</td></tr>
-<tr class="memitem:a8a7c83e59188d219aadedfdc087f4443"><td class="memItemLeft" ><a id="a8a7c83e59188d219aadedfdc087f4443"></a>
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a2047cfdd4e37a4341744d817e132ef3d"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;value_type&#160;&#160;&#160;<b>x</b></td></tr>
+Öffentliche Attribute</h2></td></tr>
+<tr class="memitem:a96f56ac62f45d533b1091f4728702c60"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a8a7c83e59188d219aadedfdc087f4443"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a2047cfdd4e37a4341744d817e132ef3d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a></td></tr>
 <tr class="separator:a2047cfdd4e37a4341744d817e132ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1aa075182febdd72afb7ef5a85b73b"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;value_type&#160;&#160;&#160;<b>y</b></td></tr>
+<tr class="memitem:a5e1aa075182febdd72afb7ef5a85b73b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a></td></tr>
 <tr class="separator:a5e1aa075182febdd72afb7ef5a85b73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7c83e59188d219aadedfdc087f4443"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a8a7c83e59188d219aadedfdc087f4443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc8121f50c5a7839aa0afbc34301c24"><td class="memItemLeft" >
-&#160;&#160;&#160;value_type&#160;&#160;&#160;<b>c</b> [2]</td></tr>
+<tr class="memitem:a0fc8121f50c5a7839aa0afbc34301c24"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;&#160;&#160;<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4337410ad0f0c467f27c02b7ea812885">c</a> [2]</td></tr>
 <tr class="separator:a0fc8121f50c5a7839aa0afbc34301c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f56ac62f45d533b1091f4728702c60"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a96f56ac62f45d533b1091f4728702c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +166,626 @@ class std::math::vector2&lt; T &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00046">46</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="ad5bb2db695b1806be1c13e74e7cd275e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bb2db695b1806be1c13e74e7cd275e">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00058">58</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3809c62b21e253d3f3e3ef3d479a6c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3809c62b21e253d3f3e3ef3d479a6c7e">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> =  <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00057">57</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3b7f5d2a9dc82c95aec07a9188a24a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b7f5d2a9dc82c95aec07a9188a24a4">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00056">56</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a4db902d2a54ed962b5a0a9776d0104f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db902d2a54ed962b5a0a9776d0104f5">&#9670;&nbsp;</a></span>vector2() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00072">72</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0fa44017cca9648ee256c9992380f071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa44017cca9648ee256c9992380f071">&#9670;&nbsp;</a></span>vector2() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;</td>
+          <td class="paramname"><em>_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;</td>
+          <td class="paramname"><em>_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00073">73</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;: <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>(_x), <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a>(_y)  {}</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a186b32a5d43845dca75b9dd30e368b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186b32a5d43845dca75b9dd30e368b80">&#9670;&nbsp;</a></span>vector2() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a>&#160;</td>
+          <td class="paramname"><em>_f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00074">74</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;: <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>(_f), <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a>(_f)          {}</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1a1a556d4f1df7e3ae87fb363c9f584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a1a556d4f1df7e3ae87fb363c9f584">&#9670;&nbsp;</a></span>vector2() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00075">75</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;: <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>(vec.x), <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a>(vec.y)    {}</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5f318106b11f77c22fbba6fd439d3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f318106b11f77c22fbba6fd439d3d5">&#9670;&nbsp;</a></span>vector2() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::<a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a>&#160;</td>
+          <td class="paramname"><em>lpvec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00076">76</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;: <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>(lpvec[0]), <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a>(lpvec[1])  {}</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a9e64c3eb965fb21609f8ac42dd8c883c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e64c3eb965fb21609f8ac42dd8c883c">&#9670;&nbsp;</a></span>operator pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00078">78</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">pointer</a>)(<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4337410ad0f0c467f27c02b7ea812885">c</a>); }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_ad5bb2db695b1806be1c13e74e7cd275e"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad5bb2db695b1806be1c13e74e7cd275e">std::math::vector2::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00058">vector2.hpp:58</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a4337410ad0f0c467f27c02b7ea812885"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4337410ad0f0c467f27c02b7ea812885">std::math::vector2::c</a></div><div class="ttdeci">value_type c[2]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00067">vector2.hpp:67</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a070a6ea92ea521013728f1bd84567eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070a6ea92ea521013728f1bd84567eaa">&#9670;&nbsp;</a></span>operator void *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator void * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00079">79</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)(<a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4337410ad0f0c467f27c02b7ea812885">c</a>); }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_a4337410ad0f0c467f27c02b7ea812885"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a4337410ad0f0c467f27c02b7ea812885">std::math::vector2::c</a></div><div class="ttdeci">value_type c[2]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00067">vector2.hpp:67</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a562d00d31f97f67b65ebe13f85897317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562d00d31f97f67b65ebe13f85897317">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00087">87</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                        { </div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> *= v.x; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> *= v.y; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a15b63907e9fbaaf46de6d01406f9c179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b63907e9fbaaf46de6d01406f9c179">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00094">94</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                            { </div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> *= f; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> *= f; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c2437ef3d85b932775a2a1f512c3749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2437ef3d85b932775a2a1f512c3749">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00083">83</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                        {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> += v.x; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> += v.y; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa6493e1d8d28b8415e075c0e484a6f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6493e1d8d28b8415e075c0e484a6f71">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00085">85</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                        { </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> -= v.x; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> -= v.y; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0cd4130d3768eb3b6a0af77b55236fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd4130d3768eb3b6a0af77b55236fa6">&#9670;&nbsp;</a></span>operator/=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00089">89</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                        { </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> /= v.x; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> /= v.y; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a52c201d55810f0a7fba2b1b45a890a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c201d55810f0a7fba2b1b45a890a6e">&#9670;&nbsp;</a></span>operator/=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00092">92</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                            { </div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> /= f; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> /= f; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af9251e46bfbc3d2908b385b6f29e3308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9251e46bfbc3d2908b385b6f29e3308">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a>&amp; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a3809c62b21e253d3f3e3ef3d479a6c7e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00081">81</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                        { </div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a> = v.x; <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> = v.y; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae674a49b989a97d2b27c0074ecf9a58d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae674a49b989a97d2b27c0074ecf9a58d">&#9670;&nbsp;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename E  = char, class TAllocator  = std::allocator, typename TStorage  = std::simple_string_storage&lt;E, TAllocator&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/de8/classstd_1_1basic__string.html">std::basic_string</a>&lt;E, TAllocator, TStorage&gt; <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::to_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00098">98</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d3/d85/math_2main_8cpp_source.html#l00019">vec2()</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00194">std::vec2_string()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                                 {   </div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">return</span> std::frmstring&lt;E, TAllocator, TStorage&gt;(<span class="stringliteral">&quot;{ %.3f %.3f }&quot;</span>, <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">x</a>, <a class="code" href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">y</a> ); }</div><div class="ttc" id="classstd_1_1math_1_1vector2_html_aabf2756a88e9d8f7c499526dacb31cbd"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#aabf2756a88e9d8f7c499526dacb31cbd">std::math::vector2::y</a></div><div class="ttdeci">value_type y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00065">vector2.hpp:65</a></div></div>
+<div class="ttc" id="classstd_1_1math_1_1vector2_html_a12dbe4a515a676edb5902b95c7a3ac54"><div class="ttname"><a href="../../d6/dee/classstd_1_1math_1_1vector2.html#a12dbe4a515a676edb5902b95c7a3ac54">std::math::vector2::x</a></div><div class="ttdeci">value_type x</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de5/vector2_8hpp_source.html#l00064">vector2.hpp:64</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a id="a96f56ac62f45d533b1091f4728702c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f56ac62f45d533b1091f4728702c60">&#9670;&nbsp;</a></span>@26</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4337410ad0f0c467f27c02b7ea812885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4337410ad0f0c467f27c02b7ea812885">&#9670;&nbsp;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::c[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00067">67</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00078">std::math::vector2&lt; int &gt;::operator pointer()</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00079">std::math::vector2&lt; int &gt;::operator void *()</a>.</p>
+
+</div>
+</div>
+<a id="a12dbe4a515a676edb5902b95c7a3ac54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12dbe4a515a676edb5902b95c7a3ac54">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00064">64</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00186">std::math::_max()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00183">std::math::_min()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00169">std::math::angle()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">std::graphic::image&lt; T, BC &gt;::create()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00166">std::math::dot()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00086">std::graphic::image&lt; T, BC &gt;::getpixel()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00063">std::graphic::image&lt; T, BC &gt;::image()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00153">std::math::lenght()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00156">std::math::lenghtSq()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00179">std::math::nearEqual()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00159">std::math::normalize()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00162">std::math::normalizeEx()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00137">std::math::operator!=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00109">std::math::operator*()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00087">std::math::vector2&lt; int &gt;::operator*=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00103">std::math::operator+()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00083">std::math::vector2&lt; int &gt;::operator+=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00106">std::math::operator-()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00085">std::math::vector2&lt; int &gt;::operator-=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00112">std::math::operator/()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00089">std::math::vector2&lt; int &gt;::operator/=()</a>, <a class="el" href="../../dc/d5c/vector3_8hpp_source.html#l00077">std::math::vector3&lt; value_type &gt;::operator=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00081">std::math::vector2&lt; int &gt;::operator=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00134">std::math::operator==()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00149">std::math::operator&gt;()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00143">std::math::operator&gt;=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00189">std::math::scale()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00081">std::graphic::image&lt; T, BC &gt;::setpixel()</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00098">std::math::vector2&lt; int &gt;::to_string()</a>.</p>
+
+</div>
+</div>
+<a id="aabf2756a88e9d8f7c499526dacb31cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf2756a88e9d8f7c499526dacb31cbd">&#9670;&nbsp;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html#ad3b7f5d2a9dc82c95aec07a9188a24a4">value_type</a> <a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">std::math::vector2</a>&lt; T &gt;::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00065">65</a> der Datei <a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00186">std::math::_max()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00183">std::math::_min()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00169">std::math::angle()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00098">std::graphic::image&lt; T, BC &gt;::create()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00166">std::math::dot()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00086">std::graphic::image&lt; T, BC &gt;::getpixel()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00063">std::graphic::image&lt; T, BC &gt;::image()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00153">std::math::lenght()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00156">std::math::lenghtSq()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00179">std::math::nearEqual()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00159">std::math::normalize()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00162">std::math::normalizeEx()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00137">std::math::operator!=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00109">std::math::operator*()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00087">std::math::vector2&lt; int &gt;::operator*=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00103">std::math::operator+()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00083">std::math::vector2&lt; int &gt;::operator+=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00106">std::math::operator-()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00085">std::math::vector2&lt; int &gt;::operator-=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00112">std::math::operator/()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00089">std::math::vector2&lt; int &gt;::operator/=()</a>, <a class="el" href="../../dc/d5c/vector3_8hpp_source.html#l00077">std::math::vector3&lt; value_type &gt;::operator=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00081">std::math::vector2&lt; int &gt;::operator=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00134">std::math::operator==()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00149">std::math::operator&gt;()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00143">std::math::operator&gt;=()</a>, <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00189">std::math::scale()</a>, <a class="el" href="../../d3/d42/image_8hpp_source.html#l00081">std::graphic::image&lt; T, BC &gt;::setpixel()</a> und <a class="el" href="../../d9/de5/vector2_8hpp_source.html#l00098">std::math::vector2&lt; int &gt;::to_string()</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/math/<a class="el" href="../../d9/de5/vector2_8hpp_source.html">vector2.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -197,7 +793,7 @@ class std::math::vector2&lt; T &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><b>math</b></li><li class="navelem"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../dd/d32/namespacestd_1_1math.html">math</a></li><li class="navelem"><a class="el" href="../../d6/dee/classstd_1_1math_1_1vector2.html">vector2</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

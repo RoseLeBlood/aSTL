@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -89,50 +83,246 @@ $(document).ready(function(){initNavTree('d5/d88/structstd_1_1string__rep.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pub-attribs">Datenfelder</a> &#124;
-<a href="#pub-static-attribs">Statische öffentliche Attribute</a>  </div>
+<a href="#pub-attribs">Öffentliche Attribute</a> &#124;
+<a href="#pub-static-attribs">Statische öffentliche Attribute</a> &#124;
+<a href="../../d0/d6a/structstd_1_1string__rep-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::string_rep Strukturreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a2b07a0e88e164ee6406b2d1b9c6112c5"><td class="memItemLeft" align="right" valign="top"><a id="a2b07a0e88e164ee6406b2d1b9c6112c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> ()</td></tr>
+<tr class="memitem:a2b07a0e88e164ee6406b2d1b9c6112c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a2b07a0e88e164ee6406b2d1b9c6112c5">add_ref</a> ()</td></tr>
 <tr class="separator:a2b07a0e88e164ee6406b2d1b9c6112c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9d46356d507f4750b7f66b84d741bd2"><td class="memItemLeft" align="right" valign="top"><a id="ad9d46356d507f4750b7f66b84d741bd2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="memitem:ad9d46356d507f4750b7f66b84d741bd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#ad9d46356d507f4750b7f66b84d741bd2">release</a> ()</td></tr>
 <tr class="separator:ad9d46356d507f4750b7f66b84d741bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976c3e095976d5098eafa69b61abc016"><td class="memItemLeft" align="right" valign="top"><a id="a976c3e095976d5098eafa69b61abc016"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (short new_capacity=0)</td></tr>
+<tr class="memitem:a976c3e095976d5098eafa69b61abc016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a976c3e095976d5098eafa69b61abc016">init</a> (short new_capacity=0)</td></tr>
 <tr class="separator:a976c3e095976d5098eafa69b61abc016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Datenfelder</h2></td></tr>
-<tr class="memitem:a811ba699f524a07fca87451ec9b7bd9a"><td class="memItemLeft" align="right" valign="top"><a id="a811ba699f524a07fca87451ec9b7bd9a"></a>
-short&#160;</td><td class="memItemRight" valign="bottom"><b>refs</b></td></tr>
+Öffentliche Attribute</h2></td></tr>
+<tr class="memitem:a811ba699f524a07fca87451ec9b7bd9a"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">refs</a></td></tr>
 <tr class="separator:a811ba699f524a07fca87451ec9b7bd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c75d5341c4689f99f5357e4c7686edd"><td class="memItemLeft" align="right" valign="top"><a id="a8c75d5341c4689f99f5357e4c7686edd"></a>
-short&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="memitem:a8c75d5341c4689f99f5357e4c7686edd"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a8c75d5341c4689f99f5357e4c7686edd">size</a></td></tr>
 <tr class="separator:a8c75d5341c4689f99f5357e4c7686edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9703e294128a2ee943237571af5bedf0"><td class="memItemLeft" align="right" valign="top"><a id="a9703e294128a2ee943237571af5bedf0"></a>
-short&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
+<tr class="memitem:a9703e294128a2ee943237571af5bedf0"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a9703e294128a2ee943237571af5bedf0">capacity</a></td></tr>
 <tr class="separator:a9703e294128a2ee943237571af5bedf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1f5949512a20b084a87b276f65307c"><td class="memItemLeft" align="right" valign="top"><a id="abf1f5949512a20b084a87b276f65307c"></a>
-<a class="el" href="../../d5/d7a/classstd_1_1spinlock.html">std::spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><b>loc</b></td></tr>
+<tr class="memitem:abf1f5949512a20b084a87b276f65307c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7a/classstd_1_1spinlock.html">std::spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#abf1f5949512a20b084a87b276f65307c">loc</a></td></tr>
 <tr class="separator:abf1f5949512a20b084a87b276f65307c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Statische öffentliche Attribute</h2></td></tr>
-<tr class="memitem:a27eaff980cafbaf9800eb280170cbd53"><td class="memItemLeft" align="right" valign="top"><a id="a27eaff980cafbaf9800eb280170cbd53"></a>
-static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxCapacity</b> = (1 &lt;&lt; (sizeof(short) &lt;&lt; 3)) &gt;&gt; 1</td></tr>
+<tr class="memitem:a27eaff980cafbaf9800eb280170cbd53"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html#a27eaff980cafbaf9800eb280170cbd53">kMaxCapacity</a> = (1 &lt;&lt; (sizeof(short) &lt;&lt; 3)) &gt;&gt; 1</td></tr>
 <tr class="separator:a27eaff980cafbaf9800eb280170cbd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock">
 <p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00038">38</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a2b07a0e88e164ee6406b2d1b9c6112c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b07a0e88e164ee6406b2d1b9c6112c5">&#9670;&nbsp;</a></span>add_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::string_rep::add_ref </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00040">40</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00060">loc</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">refs</a> und <a class="el" href="../../d1/de1/spinlock_8hpp_source.html#l00060">SPINLOCK</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       { </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="../../d1/de1/spinlock_8hpp.html#ad471a84d75ecab71bd463b417baaf4af">SPINLOCK</a>(<a class="code" href="../../d5/d88/structstd_1_1string__rep.html#abf1f5949512a20b084a87b276f65307c">loc</a>) {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    ++<a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">refs</a>; </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div><div class="ttc" id="structstd_1_1string__rep_html_a811ba699f524a07fca87451ec9b7bd9a"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">std::string_rep::refs</a></div><div class="ttdeci">short refs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">cow_string_storage.hpp:57</a></div></div>
+<div class="ttc" id="spinlock_8hpp_html_ad471a84d75ecab71bd463b417baaf4af"><div class="ttname"><a href="../../d1/de1/spinlock_8hpp.html#ad471a84d75ecab71bd463b417baaf4af">SPINLOCK</a></div><div class="ttdeci">#define SPINLOCK(m)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de1/spinlock_8hpp_source.html#l00060">spinlock.hpp:60</a></div></div>
+<div class="ttc" id="structstd_1_1string__rep_html_abf1f5949512a20b084a87b276f65307c"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#abf1f5949512a20b084a87b276f65307c">std::string_rep::loc</a></div><div class="ttdeci">std::spinlock loc</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00060">cow_string_storage.hpp:60</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a976c3e095976d5098eafa69b61abc016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976c3e095976d5098eafa69b61abc016">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::string_rep::init </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>new_capacity</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00051">51</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00059">capacity</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">refs</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00058">size</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00257">std::cow_string_storage&lt; E, TAllocator &gt;::get_data()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00217">std::cow_string_storage&lt; E, TAllocator &gt;::make_unique()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                              {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">refs</a> = 1;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a8c75d5341c4689f99f5357e4c7686edd">size</a> = 0;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a9703e294128a2ee943237571af5bedf0">capacity</a> = new_capacity;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="ttc" id="structstd_1_1string__rep_html_a811ba699f524a07fca87451ec9b7bd9a"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">std::string_rep::refs</a></div><div class="ttdeci">short refs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">cow_string_storage.hpp:57</a></div></div>
+<div class="ttc" id="structstd_1_1string__rep_html_a9703e294128a2ee943237571af5bedf0"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#a9703e294128a2ee943237571af5bedf0">std::string_rep::capacity</a></div><div class="ttdeci">short capacity</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00059">cow_string_storage.hpp:59</a></div></div>
+<div class="ttc" id="structstd_1_1string__rep_html_a8c75d5341c4689f99f5357e4c7686edd"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#a8c75d5341c4689f99f5357e4c7686edd">std::string_rep::size</a></div><div class="ttdeci">short size</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00058">cow_string_storage.hpp:58</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad9d46356d507f4750b7f66b84d741bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d46356d507f4750b7f66b84d741bd2">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool std::string_rep::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00045">45</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00060">loc</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">refs</a> und <a class="el" href="../../d1/de1/spinlock_8hpp_source.html#l00060">SPINLOCK</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00257">std::cow_string_storage&lt; E, TAllocator &gt;::get_data()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                       { </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="../../d1/de1/spinlock_8hpp.html#ad471a84d75ecab71bd463b417baaf4af">SPINLOCK</a>(<a class="code" href="../../d5/d88/structstd_1_1string__rep.html#abf1f5949512a20b084a87b276f65307c">loc</a>) {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    --<a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">refs</a>; </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">refs</a> &lt;= 0; </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div><div class="ttc" id="structstd_1_1string__rep_html_a811ba699f524a07fca87451ec9b7bd9a"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#a811ba699f524a07fca87451ec9b7bd9a">std::string_rep::refs</a></div><div class="ttdeci">short refs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">cow_string_storage.hpp:57</a></div></div>
+<div class="ttc" id="spinlock_8hpp_html_ad471a84d75ecab71bd463b417baaf4af"><div class="ttname"><a href="../../d1/de1/spinlock_8hpp.html#ad471a84d75ecab71bd463b417baaf4af">SPINLOCK</a></div><div class="ttdeci">#define SPINLOCK(m)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de1/spinlock_8hpp_source.html#l00060">spinlock.hpp:60</a></div></div>
+<div class="ttc" id="structstd_1_1string__rep_html_abf1f5949512a20b084a87b276f65307c"><div class="ttname"><a href="../../d5/d88/structstd_1_1string__rep.html#abf1f5949512a20b084a87b276f65307c">std::string_rep::loc</a></div><div class="ttdeci">std::spinlock loc</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/cow__string__storage_8hpp_source.html#l00060">cow_string_storage.hpp:60</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a id="a9703e294128a2ee943237571af5bedf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9703e294128a2ee943237571af5bedf0">&#9670;&nbsp;</a></span>capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short std::string_rep::capacity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00059">59</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00165">std::cow_string_storage&lt; E, TAllocator &gt;::append()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00257">std::cow_string_storage&lt; E, TAllocator &gt;::get_data()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00051">init()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00207">std::cow_string_storage&lt; E, TAllocator &gt;::invariant()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00217">std::cow_string_storage&lt; E, TAllocator &gt;::make_unique()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00153">std::cow_string_storage&lt; E, TAllocator &gt;::resize()</a>.</p>
+
+</div>
+</div>
+<a id="a27eaff980cafbaf9800eb280170cbd53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27eaff980cafbaf9800eb280170cbd53">&#9670;&nbsp;</a></span>kMaxCapacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t std::string_rep::kMaxCapacity = (1 &lt;&lt; (sizeof(short) &lt;&lt; 3)) &gt;&gt; 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00062">62</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00083">std::cow_string_storage&lt; E, TAllocator &gt;::cow_string_storage()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00257">std::cow_string_storage&lt; E, TAllocator &gt;::get_data()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00217">std::cow_string_storage&lt; E, TAllocator &gt;::make_unique()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00102">std::cow_string_storage&lt; E, TAllocator &gt;::ow_string_storage()</a>.</p>
+
+</div>
+</div>
+<a id="abf1f5949512a20b084a87b276f65307c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1f5949512a20b084a87b276f65307c">&#9670;&nbsp;</a></span>loc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d7a/classstd_1_1spinlock.html">std::spinlock</a> std::string_rep::loc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00060">60</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00040">add_ref()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00045">release()</a>.</p>
+
+</div>
+</div>
+<a id="a811ba699f524a07fca87451ec9b7bd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811ba699f524a07fca87451ec9b7bd9a">&#9670;&nbsp;</a></span>refs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short std::string_rep::refs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00057">57</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00040">add_ref()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00051">init()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00207">std::cow_string_storage&lt; E, TAllocator &gt;::invariant()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00217">std::cow_string_storage&lt; E, TAllocator &gt;::make_unique()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00045">release()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00127">std::cow_string_storage&lt; E, TAllocator &gt;::~cow_string_storage()</a>.</p>
+
+</div>
+</div>
+<a id="a8c75d5341c4689f99f5357e4c7686edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c75d5341c4689f99f5357e4c7686edd">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short std::string_rep::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00058">58</a> der Datei <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00165">std::cow_string_storage&lt; E, TAllocator &gt;::append()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00051">init()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00207">std::cow_string_storage&lt; E, TAllocator &gt;::invariant()</a>, <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00217">std::cow_string_storage&lt; E, TAllocator &gt;::make_unique()</a> und <a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html#l00153">std::cow_string_storage&lt; E, TAllocator &gt;::resize()</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../da/da1/cow__string__storage_8hpp_source.html">cow_string_storage.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -140,7 +330,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxCa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html">string_rep</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d5/d88/structstd_1_1string__rep.html">string_rep</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,11 +82,14 @@ $(document).ready(function(){initNavTree('d2/d56/classstd_1_1delegate.html','../
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Öffentliche Methoden</a>  </div>
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../d5/d4c/classstd_1_1delegate-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::delegate&lt; TReciever, TSender, TYPE &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für std::delegate&lt; TReciever, TSender, TYPE &gt;:</div>
 <div class="dyncontent">
@@ -105,17 +102,13 @@ Klassendiagramm für std::delegate&lt; TReciever, TSender, TYPE &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a6de38154ded4084ffd51ce715e4a1462"><td class="memItemLeft" align="right" valign="top"><a id="a6de38154ded4084ffd51ce715e4a1462"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b> (TReciever *p_ptr2Object, callFunction p_ptr2Func)</td></tr>
+<tr class="memitem:a6de38154ded4084ffd51ce715e4a1462"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d56/classstd_1_1delegate.html#a6de38154ded4084ffd51ce715e4a1462">delegate</a> (TReciever *p_ptr2Object, callFunction p_ptr2Func)</td></tr>
 <tr class="separator:a6de38154ded4084ffd51ce715e4a1462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b369061192308f7d73dca61f85bf0a"><td class="memItemLeft" align="right" valign="top"><a id="ae6b369061192308f7d73dca61f85bf0a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">delegate_base</a>&lt; TSender, TYPE &gt; *pOther)</td></tr>
+<tr class="memitem:ae6b369061192308f7d73dca61f85bf0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d56/classstd_1_1delegate.html#ae6b369061192308f7d73dca61f85bf0a">equals</a> (const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">delegate_base</a>&lt; TSender, TYPE &gt; *pOther)</td></tr>
 <tr class="separator:ae6b369061192308f7d73dca61f85bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ae5ec5d50d32161b4bc1bb0774eb45"><td class="memItemLeft" align="right" valign="top"><a id="a50ae5ec5d50d32161b4bc1bb0774eb45"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const TSender *pSender, <a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *pParam)</td></tr>
+<tr class="memitem:a50ae5ec5d50d32161b4bc1bb0774eb45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d56/classstd_1_1delegate.html#a50ae5ec5d50d32161b4bc1bb0774eb45">operator()</a> (const TSender *pSender, <a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *pParam)</td></tr>
 <tr class="separator:a50ae5ec5d50d32161b4bc1bb0774eb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07df08df73357e8af6ba5b0c9c1c310e"><td class="memItemLeft" align="right" valign="top"><a id="a07df08df73357e8af6ba5b0c9c1c310e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>call</b> (const TSender *pSender, <a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *pParam)</td></tr>
+<tr class="memitem:a07df08df73357e8af6ba5b0c9c1c310e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d56/classstd_1_1delegate.html#a07df08df73357e8af6ba5b0c9c1c310e">call</a> (const TSender *pSender, <a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *pParam)</td></tr>
 <tr class="separator:a07df08df73357e8af6ba5b0c9c1c310e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -124,7 +117,165 @@ class std::delegate&lt; TReciever, TSender, TYPE &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d94/event_8hpp_source.html#l00064">64</a> der Datei <a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a6de38154ded4084ffd51ce715e4a1462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de38154ded4084ffd51ce715e4a1462">&#9670;&nbsp;</a></span>delegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TReciever, class TSender, typename TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d56/classstd_1_1delegate.html">std::delegate</a>&lt; TReciever, TSender, TYPE &gt;::<a class="el" href="../../d2/d56/classstd_1_1delegate.html">delegate</a> </td>
+          <td>(</td>
+          <td class="paramtype">TReciever *&#160;</td>
+          <td class="paramname"><em>p_ptr2Object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callFunction&#160;</td>
+          <td class="paramname"><em>p_ptr2Func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d94/event_8hpp_source.html#l00072">72</a> der Datei <a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                              {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            m_ptr2Func      = p_ptr2Func;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            m_ptr2Object    = p_ptr2Object;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a07df08df73357e8af6ba5b0c9c1c310e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07df08df73357e8af6ba5b0c9c1c310e">&#9670;&nbsp;</a></span>call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TReciever, class TSender, typename TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../d2/d56/classstd_1_1delegate.html">std::delegate</a>&lt; TReciever, TSender, TYPE &gt;::call </td>
+          <td>(</td>
+          <td class="paramtype">const TSender *&#160;</td>
+          <td class="paramname"><em>pSender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *&#160;</td>
+          <td class="paramname"><em>pParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a061ae14141ab1f76c9da686e0bd01bbd">std::delegate_base&lt; TSender, TYPE &gt;</a>.</p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d94/event_8hpp_source.html#l00089">89</a> der Datei <a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                          {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            assert(pSender != NULL);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            (m_ptr2Object-&gt;*m_ptr2Func)(pSender, pParam);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae6b369061192308f7d73dca61f85bf0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b369061192308f7d73dca61f85bf0a">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TReciever, class TSender, typename TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d2/d56/classstd_1_1delegate.html">std::delegate</a>&lt; TReciever, TSender, TYPE &gt;::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">delegate_base</a>&lt; TSender, TYPE &gt; *&#160;</td>
+          <td class="paramname"><em>pOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a2fab43be575a5aa942c6fc7a02b8135c">std::delegate_base&lt; TSender, TYPE &gt;</a>.</p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d94/event_8hpp_source.html#l00077">77</a> der Datei <a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                           {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">const</span> delegate&lt;TReciever, TSender, TYPE&gt;* other;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            other = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>delegate&lt;TReciever, TSender, TYPE&gt;*<span class="keyword">&gt;</span>(pOther);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            assert(other != NULL);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            assert(m_ptr2Object != NULL);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> other-&gt;m_ptr2Object == m_ptr2Object &amp;&amp; other-&gt;m_ptr2Func == m_ptr2Func;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a50ae5ec5d50d32161b4bc1bb0774eb45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ae5ec5d50d32161b4bc1bb0774eb45">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TReciever, class TSender, typename TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../d2/d56/classstd_1_1delegate.html">std::delegate</a>&lt; TReciever, TSender, TYPE &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const TSender *&#160;</td>
+          <td class="paramname"><em>pSender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ded/classstd_1_1delegateparam.html">delegateparam</a>&lt; TYPE &gt; *&#160;</td>
+          <td class="paramname"><em>pParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a25669d5d725da362ebf98676822dd0b5">std::delegate_base&lt; TSender, TYPE &gt;</a>.</p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d94/event_8hpp_source.html#l00084">84</a> der Datei <a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                                                    {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        assert(pSender != NULL);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        (m_ptr2Object-&gt;*m_ptr2Func)(pSender, pParam);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../dc/d94/event_8hpp_source.html">event.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -132,7 +283,7 @@ class std::delegate&lt; TReciever, TSender, TYPE &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d2/d56/classstd_1_1delegate.html">delegate</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d2/d56/classstd_1_1delegate.html">delegate</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

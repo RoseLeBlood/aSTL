@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -90,11 +84,16 @@ $(document).ready(function(){initNavTree('db/df2/classstd_1_1intrusive__slist.ht
   <div class="summary">
 <a href="#pub-types">Öffentliche Typen</a> &#124;
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
-<a href="#pub-static-methods">Öffentliche, statische Methoden</a>  </div>
+<a href="#pub-static-methods">Öffentliche, statische Methoden</a> &#124;
+<a href="#pro-static-methods">Geschützte, statische Methoden</a> &#124;
+<a href="#pro-attribs">Geschützte Attribute</a> &#124;
+<a href="../../d8/dde/classstd_1_1intrusive__slist-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::intrusive_slist&lt; T &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für std::intrusive_slist&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -107,106 +106,76 @@ Klassendiagramm für std::intrusive_slist&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:ae5446c6d34d73aa0b13b0020222d7d5a"><td class="memItemLeft" align="right" valign="top"><a id="ae5446c6d34d73aa0b13b0020222d7d5a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = T</td></tr>
+<tr class="memitem:ae5446c6d34d73aa0b13b0020222d7d5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ae5446c6d34d73aa0b13b0020222d7d5a">node_type</a> = T</td></tr>
 <tr class="separator:ae5446c6d34d73aa0b13b0020222d7d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ed571253c53ecdc01255a454ad484e"><td class="memItemLeft" align="right" valign="top"><a id="a21ed571253c53ecdc01255a454ad484e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="memitem:a21ed571253c53ecdc01255a454ad484e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> = T</td></tr>
 <tr class="separator:a21ed571253c53ecdc01255a454ad484e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64569adb87947836e41992cfffd6f79"><td class="memItemLeft" align="right" valign="top"><a id="aa64569adb87947836e41992cfffd6f79"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt; T *, T &amp; &gt;</td></tr>
+<tr class="memitem:aa64569adb87947836e41992cfffd6f79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> = <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt; T *, T &amp; &gt;</td></tr>
 <tr class="separator:aa64569adb87947836e41992cfffd6f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee88cb325da875b68d2eb2e2c7ff58d4"><td class="memItemLeft" align="right" valign="top"><a id="aee88cb325da875b68d2eb2e2c7ff58d4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt; const T *, const T &amp; &gt;</td></tr>
+<tr class="memitem:aee88cb325da875b68d2eb2e2c7ff58d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> = <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt; const T *, const T &amp; &gt;</td></tr>
 <tr class="separator:aee88cb325da875b68d2eb2e2c7ff58d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classstd_1_1intrusive__slist__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstd_1_1intrusive__slist__base')"><img src="../../closed.png" alt="-"/>&#160;Öffentliche Typen geerbt von <a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html">std::intrusive_slist_base</a></td></tr>
-<tr class="memitem:a3513173e280ec0848049a3f0e1847590 inherit pub_types_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a3513173e280ec0848049a3f0e1847590"></a>
-typedef int&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
-<tr class="separator:a3513173e280ec0848049a3f0e1847590 inherit pub_types_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3513173e280ec0848049a3f0e1847590"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">size_type</a></td></tr>
+<tr class="separator:a3513173e280ec0848049a3f0e1847590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a55492712468088f2683f039c4352cb07"><td class="memItemLeft" align="right" valign="top"><a id="a55492712468088f2683f039c4352cb07"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>push_front</b> (value_type *v)</td></tr>
+<tr class="memitem:a55492712468088f2683f039c4352cb07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a55492712468088f2683f039c4352cb07">push_front</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:a55492712468088f2683f039c4352cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58c1104499f83a541450e1e0c32ba5f"><td class="memItemLeft" align="right" valign="top"><a id="ad58c1104499f83a541450e1e0c32ba5f"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:ad58c1104499f83a541450e1e0c32ba5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ad58c1104499f83a541450e1e0c32ba5f">begin</a> ()</td></tr>
 <tr class="separator:ad58c1104499f83a541450e1e0c32ba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ab838818c85b1c8d85436b092f481e"><td class="memItemLeft" align="right" valign="top"><a id="ab9ab838818c85b1c8d85436b092f481e"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="memitem:ab9ab838818c85b1c8d85436b092f481e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ab9ab838818c85b1c8d85436b092f481e">begin</a> () const</td></tr>
 <tr class="separator:ab9ab838818c85b1c8d85436b092f481e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af316ee7bea8bd0598fc29de0b9738967"><td class="memItemLeft" align="right" valign="top"><a id="af316ee7bea8bd0598fc29de0b9738967"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="memitem:af316ee7bea8bd0598fc29de0b9738967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#af316ee7bea8bd0598fc29de0b9738967">end</a> ()</td></tr>
 <tr class="separator:af316ee7bea8bd0598fc29de0b9738967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d822b92297a340823a8435fa453649"><td class="memItemLeft" align="right" valign="top"><a id="ac4d822b92297a340823a8435fa453649"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="memitem:ac4d822b92297a340823a8435fa453649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ac4d822b92297a340823a8435fa453649">end</a> () const</td></tr>
 <tr class="separator:ac4d822b92297a340823a8435fa453649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab326be7e53d51ee275351d5f1e2c1cc1"><td class="memItemLeft" align="right" valign="top"><a id="ab326be7e53d51ee275351d5f1e2c1cc1"></a>
-value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="memitem:ab326be7e53d51ee275351d5f1e2c1cc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ab326be7e53d51ee275351d5f1e2c1cc1">front</a> ()</td></tr>
 <tr class="separator:ab326be7e53d51ee275351d5f1e2c1cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c80606b235025a9f2434318456906a9"><td class="memItemLeft" align="right" valign="top"><a id="a3c80606b235025a9f2434318456906a9"></a>
-const value_type *&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const</td></tr>
+<tr class="memitem:a3c80606b235025a9f2434318456906a9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a3c80606b235025a9f2434318456906a9">front</a> () const</td></tr>
 <tr class="separator:a3c80606b235025a9f2434318456906a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36e271f4d325c2fc2527576627a447c"><td class="memItemLeft" align="right" valign="top"><a id="ad36e271f4d325c2fc2527576627a447c"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> pos, value_type *v)</td></tr>
+<tr class="memitem:ad36e271f4d325c2fc2527576627a447c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ad36e271f4d325c2fc2527576627a447c">insert</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> pos, <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:ad36e271f4d325c2fc2527576627a447c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2dc616e3f7772e916a339ab082b456"><td class="memItemLeft" align="right" valign="top"><a id="a5a2dc616e3f7772e916a339ab082b456"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>insert_after</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> pos, value_type *v)</td></tr>
+<tr class="memitem:a5a2dc616e3f7772e916a339ab082b456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a5a2dc616e3f7772e916a339ab082b456">insert_after</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> pos, <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:a5a2dc616e3f7772e916a339ab082b456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed130258f1be9ec18370d36cf68f5e2a"><td class="memItemLeft" align="right" valign="top"><a id="aed130258f1be9ec18370d36cf68f5e2a"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> pos)</td></tr>
+<tr class="memitem:aed130258f1be9ec18370d36cf68f5e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aed130258f1be9ec18370d36cf68f5e2a">erase</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> pos)</td></tr>
 <tr class="separator:aed130258f1be9ec18370d36cf68f5e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6369fdb191ef31c3e56b42a12551a09"><td class="memItemLeft" align="right" valign="top"><a id="ab6369fdb191ef31c3e56b42a12551a09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>erase_after</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> pos)</td></tr>
+<tr class="memitem:ab6369fdb191ef31c3e56b42a12551a09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">erase_after</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> pos)</td></tr>
 <tr class="separator:ab6369fdb191ef31c3e56b42a12551a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f06e7d3d8344a099af60c702095e4c0"><td class="memItemLeft" align="right" valign="top"><a id="a8f06e7d3d8344a099af60c702095e4c0"></a>
-<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> first, <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> last)</td></tr>
+<tr class="memitem:a8f06e7d3d8344a099af60c702095e4c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a8f06e7d3d8344a099af60c702095e4c0">erase</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> first, <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> last)</td></tr>
 <tr class="separator:a8f06e7d3d8344a099af60c702095e4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d510b255050ed76a3a44a411a025df5"><td class="memItemLeft" align="right" valign="top"><a id="a3d510b255050ed76a3a44a411a025df5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="memitem:a3d510b255050ed76a3a44a411a025df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a3d510b255050ed76a3a44a411a025df5">clear</a> ()</td></tr>
 <tr class="separator:a3d510b255050ed76a3a44a411a025df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classstd_1_1intrusive__slist__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstd_1_1intrusive__slist__base')"><img src="../../closed.png" alt="-"/>&#160;Öffentliche Methoden geerbt von <a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html">std::intrusive_slist_base</a></td></tr>
-<tr class="memitem:a448ca4bdfb63bbf9aebda8c674e34e8c inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a448ca4bdfb63bbf9aebda8c674e34e8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_front</b> ()</td></tr>
-<tr class="separator:a448ca4bdfb63bbf9aebda8c674e34e8c inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71d5fd055a3cb2f1986d2c5dac26b5c5 inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a71d5fd055a3cb2f1986d2c5dac26b5c5"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
-<tr class="separator:a71d5fd055a3cb2f1986d2c5dac26b5c5 inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7386e6071de9910260190deb4683aecc inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a7386e6071de9910260190deb4683aecc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
-<tr class="separator:a7386e6071de9910260190deb4683aecc inherit pub_methods_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448ca4bdfb63bbf9aebda8c674e34e8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a448ca4bdfb63bbf9aebda8c674e34e8c">pop_front</a> ()</td></tr>
+<tr class="separator:a448ca4bdfb63bbf9aebda8c674e34e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d5fd055a3cb2f1986d2c5dac26b5c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a71d5fd055a3cb2f1986d2c5dac26b5c5">size</a> () const</td></tr>
+<tr class="separator:a71d5fd055a3cb2f1986d2c5dac26b5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7386e6071de9910260190deb4683aecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a7386e6071de9910260190deb4683aecc">empty</a> () const</td></tr>
+<tr class="separator:a7386e6071de9910260190deb4683aecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Öffentliche, statische Methoden</h2></td></tr>
-<tr class="memitem:ae599531c55e0522dfa1766ea8dc8c09c"><td class="memItemLeft" align="right" valign="top"><a id="ae599531c55e0522dfa1766ea8dc8c09c"></a>
-static <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>previous</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a> nextIt)</td></tr>
+<tr class="memitem:ae599531c55e0522dfa1766ea8dc8c09c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">previous</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> nextIt)</td></tr>
 <tr class="separator:ae599531c55e0522dfa1766ea8dc8c09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12b5e99e52ef6fa2f4bd1de61b5626cf"><td class="memItemLeft" align="right" valign="top"><a id="a12b5e99e52ef6fa2f4bd1de61b5626cf"></a>
-static <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>previous</b> (<a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">const_iterator</a> nextIt)</td></tr>
+<tr class="memitem:a12b5e99e52ef6fa2f4bd1de61b5626cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a12b5e99e52ef6fa2f4bd1de61b5626cf">previous</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> nextIt)</td></tr>
 <tr class="separator:a12b5e99e52ef6fa2f4bd1de61b5626cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113d25fd9cc185857868412574fa330e"><td class="memItemLeft" align="right" valign="top"><a id="a113d25fd9cc185857868412574fa330e"></a>
-static <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_iterator</b> (value_type *v)</td></tr>
+<tr class="memitem:a113d25fd9cc185857868412574fa330e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a113d25fd9cc185857868412574fa330e">get_iterator</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:a113d25fd9cc185857868412574fa330e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483abfcdc1d9767e304b7b20f2a2ac32"><td class="memItemLeft" align="right" valign="top"><a id="a483abfcdc1d9767e304b7b20f2a2ac32"></a>
-static <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_iterator</b> (const value_type *v)</td></tr>
+<tr class="memitem:a483abfcdc1d9767e304b7b20f2a2ac32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a483abfcdc1d9767e304b7b20f2a2ac32">get_iterator</a> (const <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:a483abfcdc1d9767e304b7b20f2a2ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db782bb03074cbd7c5b9ff93e9a5047"><td class="memItemLeft" align="right" valign="top"><a id="a9db782bb03074cbd7c5b9ff93e9a5047"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (value_type *v)</td></tr>
+<tr class="memitem:a9db782bb03074cbd7c5b9ff93e9a5047"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a9db782bb03074cbd7c5b9ff93e9a5047">remove</a> (<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *v)</td></tr>
 <tr class="separator:a9db782bb03074cbd7c5b9ff93e9a5047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Weitere Geerbte Elemente</h2></td></tr>
-<tr class="inherit_header pro_static_methods_classstd_1_1intrusive__slist__base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classstd_1_1intrusive__slist__base')"><img src="../../closed.png" alt="-"/>&#160;Geschützte, statische Methoden geerbt von <a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html">std::intrusive_slist_base</a></td></tr>
-<tr class="memitem:a186f18bcbe2031fb85d0b4c822e993a6 inherit pro_static_methods_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a186f18bcbe2031fb85d0b4c822e993a6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>link_after</b> (<a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *node, <a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *prevNode)</td></tr>
-<tr class="separator:a186f18bcbe2031fb85d0b4c822e993a6 inherit pro_static_methods_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c875859ecec47505ac8c48294e97de inherit pro_static_methods_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="a04c875859ecec47505ac8c48294e97de"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>unlink_after</b> (<a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *node)</td></tr>
-<tr class="separator:a04c875859ecec47505ac8c48294e97de inherit pro_static_methods_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classstd_1_1intrusive__slist__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstd_1_1intrusive__slist__base')"><img src="../../closed.png" alt="-"/>&#160;Geschützte Attribute geerbt von <a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html">std::intrusive_slist_base</a></td></tr>
-<tr class="memitem:add1ccfba2c0c4c08504aa50cb9a826a2 inherit pro_attribs_classstd_1_1intrusive__slist__base"><td class="memItemLeft" align="right" valign="top"><a id="add1ccfba2c0c4c08504aa50cb9a826a2"></a>
-<a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_root</b></td></tr>
-<tr class="separator:add1ccfba2c0c4c08504aa50cb9a826a2 inherit pro_attribs_classstd_1_1intrusive__slist__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Geschützte, statische Methoden</h2></td></tr>
+<tr class="memitem:a186f18bcbe2031fb85d0b4c822e993a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a186f18bcbe2031fb85d0b4c822e993a6">link_after</a> (<a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *node, <a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *prevNode)</td></tr>
+<tr class="separator:a186f18bcbe2031fb85d0b4c822e993a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c875859ecec47505ac8c48294e97de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a04c875859ecec47505ac8c48294e97de">unlink_after</a> (<a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *node)</td></tr>
+<tr class="separator:a04c875859ecec47505ac8c48294e97de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Geschützte Attribute</h2></td></tr>
+<tr class="memitem:add1ccfba2c0c4c08504aa50cb9a826a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a></td></tr>
+<tr class="separator:add1ccfba2c0c4c08504aa50cb9a826a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -214,7 +183,897 @@ class std::intrusive_slist&lt; T &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00142">142</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="aee88cb325da875b68d2eb2e2c7ff58d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee88cb325da875b68d2eb2e2c7ff58d4">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> =  <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt;const T*, const T&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00148">148</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa64569adb87947836e41992cfffd6f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64569adb87947836e41992cfffd6f79">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> =  <a class="el" href="../../da/d4b/classstd_1_1intrusive__slist__iterator.html">intrusive_slist_iterator</a>&lt;T*, T&amp;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">147</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5446c6d34d73aa0b13b0020222d7d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5446c6d34d73aa0b13b0020222d7d5a">&#9670;&nbsp;</a></span>node_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#ae5446c6d34d73aa0b13b0020222d7d5a">node_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00145">145</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3513173e280ec0848049a3f0e1847590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3513173e280ec0848049a3f0e1847590">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">std::intrusive_slist_base::size_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00117">117</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a21ed571253c53ecdc01255a454ad484e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ed571253c53ecdc01255a454ad484e">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::<a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00146">146</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="ad58c1104499f83a541450e1e0c32ba5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58c1104499f83a541450e1e0c32ba5f">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00155">155</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            { </div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>(upcast(<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>.<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">next</a>)); </div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_aa64569adb87947836e41992cfffd6f79"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">std::intrusive_slist::iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; T *, T &amp; &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">intrusive_slist.hpp:147</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a6f1e6427f2b49b202b70c55bdf9729bd"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">std::intrusive_slist_node::next</a></div><div class="ttdeci">intrusive_slist_node * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">intrusive_slist.hpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab9ab838818c85b1c8d85436b092f481e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ab838818c85b1c8d85436b092f481e">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00159">159</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            { </div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>(upcast(<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>.<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">next</a>)); </div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a6f1e6427f2b49b202b70c55bdf9729bd"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">std::intrusive_slist_node::next</a></div><div class="ttdeci">intrusive_slist_node * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">intrusive_slist.hpp:51</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_aee88cb325da875b68d2eb2e2c7ff58d4"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">std::intrusive_slist::const_iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; const T *, const T &amp; &gt; const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00148">intrusive_slist.hpp:148</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d510b255050ed76a3a44a411a025df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d510b255050ed76a3a44a411a025df5">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00243">243</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            {</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aed130258f1be9ec18370d36cf68f5e2a">erase</a>(<a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ad58c1104499f83a541450e1e0c32ba5f">begin</a>(), <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#af316ee7bea8bd0598fc29de0b9738967">end</a>());</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_af316ee7bea8bd0598fc29de0b9738967"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#af316ee7bea8bd0598fc29de0b9738967">std::intrusive_slist::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00163">intrusive_slist.hpp:163</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_aed130258f1be9ec18370d36cf68f5e2a"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aed130258f1be9ec18370d36cf68f5e2a">std::intrusive_slist::erase</a></div><div class="ttdeci">iterator erase(iterator pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00191">intrusive_slist.hpp:191</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_ad58c1104499f83a541450e1e0c32ba5f"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ad58c1104499f83a541450e1e0c32ba5f">std::intrusive_slist::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00155">intrusive_slist.hpp:155</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7386e6071de9910260190deb4683aecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7386e6071de9910260190deb4683aecc">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool std::intrusive_slist_base::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00126">126</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            { </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">return</span> !<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>.<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a84edcff163f8a249579ff8281a378beb">in_list</a>(); </div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a84edcff163f8a249579ff8281a378beb"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a84edcff163f8a249579ff8281a378beb">std::intrusive_slist_node::in_list</a></div><div class="ttdeci">bool in_list() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00046">intrusive_slist.hpp:46</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af316ee7bea8bd0598fc29de0b9738967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af316ee7bea8bd0598fc29de0b9738967">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00163">163</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            { </div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>(upcast(&amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>)); </div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_aa64569adb87947836e41992cfffd6f79"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">std::intrusive_slist::iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; T *, T &amp; &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">intrusive_slist.hpp:147</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac4d822b92297a340823a8435fa453649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d822b92297a340823a8435fa453649">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00167">167</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            { </div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>(upcast(&amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>)); </div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_aee88cb325da875b68d2eb2e2c7ff58d4"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">std::intrusive_slist::const_iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; const T *, const T &amp; &gt; const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00148">intrusive_slist.hpp:148</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aed130258f1be9ec18370d36cf68f5e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed130258f1be9ec18370d36cf68f5e2a">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00191">191</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                pos = <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">previous</a>(pos);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">erase_after</a>(pos);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">return</span> ++pos;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_ae599531c55e0522dfa1766ea8dc8c09c"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">std::intrusive_slist::previous</a></div><div class="ttdeci">static iterator previous(iterator nextIt)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00203">intrusive_slist.hpp:203</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_ab6369fdb191ef31c3e56b42a12551a09"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">std::intrusive_slist::erase_after</a></div><div class="ttdeci">void erase_after(iterator pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00197">intrusive_slist.hpp:197</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8f06e7d3d8344a099af60c702095e4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f06e7d3d8344a099af60c702095e4c0">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00232">232</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00084">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::next()</a> und <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00080">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span> (first != last)</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                {</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <span class="keywordflow">while</span> (first.next() != last.node())</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                            <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">erase_after</a>(first);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">erase_after</a>(<a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">previous</a>(first));</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                }</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="keywordflow">return</span> first;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_ae599531c55e0522dfa1766ea8dc8c09c"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">std::intrusive_slist::previous</a></div><div class="ttdeci">static iterator previous(iterator nextIt)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00203">intrusive_slist.hpp:203</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_ab6369fdb191ef31c3e56b42a12551a09"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ab6369fdb191ef31c3e56b42a12551a09">std::intrusive_slist::erase_after</a></div><div class="ttdeci">void erase_after(iterator pos)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00197">intrusive_slist.hpp:197</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab6369fdb191ef31c3e56b42a12551a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6369fdb191ef31c3e56b42a12551a09">&#9670;&nbsp;</a></span>erase_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::erase_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00197">197</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00080">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    <a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a04c875859ecec47505ac8c48294e97de">unlink_after</a>(pos.node());</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_a04c875859ecec47505ac8c48294e97de"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a04c875859ecec47505ac8c48294e97de">std::intrusive_slist_base::unlink_after</a></div><div class="ttdeci">static void unlink_after(intrusive_slist_node *node)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d57/intrusive__slist_8cpp_source.html#l00051">intrusive_slist.cpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab326be7e53d51ee275351d5f1e2c1cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab326be7e53d51ee275351d5f1e2c1cc1">&#9670;&nbsp;</a></span>front() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a>* <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00172">172</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            { </div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    <span class="keywordflow">return</span> upcast(<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>.<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">next</a>); </div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a6f1e6427f2b49b202b70c55bdf9729bd"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">std::intrusive_slist_node::next</a></div><div class="ttdeci">intrusive_slist_node * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">intrusive_slist.hpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3c80606b235025a9f2434318456906a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c80606b235025a9f2434318456906a9">&#9670;&nbsp;</a></span>front() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a>* <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00176">176</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            { </div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">return</span> upcast(<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>.<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">next</a>); </div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a6f1e6427f2b49b202b70c55bdf9729bd"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">std::intrusive_slist_node::next</a></div><div class="ttdeci">intrusive_slist_node * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">intrusive_slist.hpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a113d25fd9cc185857868412574fa330e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113d25fd9cc185857868412574fa330e">&#9670;&nbsp;</a></span>get_iterator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::get_iterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00220">220</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                assert(v-&gt;in_list());</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>(v);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_aa64569adb87947836e41992cfffd6f79"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">std::intrusive_slist::iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; T *, T &amp; &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">intrusive_slist.hpp:147</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a483abfcdc1d9767e304b7b20f2a2ac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483abfcdc1d9767e304b7b20f2a2ac32">&#9670;&nbsp;</a></span>get_iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::get_iterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00226">226</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            {</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                assert(v-&gt;in_list());</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>(v);</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_aee88cb325da875b68d2eb2e2c7ff58d4"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">std::intrusive_slist::const_iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; const T *, const T &amp; &gt; const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00148">intrusive_slist.hpp:148</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad36e271f4d325c2fc2527576627a447c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36e271f4d325c2fc2527576627a447c">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00181">181</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#a5a2dc616e3f7772e916a339ab082b456">insert_after</a>(<a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">previous</a>(pos), v);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_ae599531c55e0522dfa1766ea8dc8c09c"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#ae599531c55e0522dfa1766ea8dc8c09c">std::intrusive_slist::previous</a></div><div class="ttdeci">static iterator previous(iterator nextIt)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00203">intrusive_slist.hpp:203</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist_html_a5a2dc616e3f7772e916a339ab082b456"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#a5a2dc616e3f7772e916a339ab082b456">std::intrusive_slist::insert_after</a></div><div class="ttdeci">iterator insert_after(iterator pos, value_type *v)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00185">intrusive_slist.hpp:185</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5a2dc616e3f7772e916a339ab082b456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2dc616e3f7772e916a339ab082b456">&#9670;&nbsp;</a></span>insert_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::insert_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00185">185</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00080">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            {</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a186f18bcbe2031fb85d0b4c822e993a6">link_after</a>(v, pos.node());</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>(v);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_aa64569adb87947836e41992cfffd6f79"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">std::intrusive_slist::iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; T *, T &amp; &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">intrusive_slist.hpp:147</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist__base_html_a186f18bcbe2031fb85d0b4c822e993a6"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a186f18bcbe2031fb85d0b4c822e993a6">std::intrusive_slist_base::link_after</a></div><div class="ttdeci">static void link_after(intrusive_slist_node *node, intrusive_slist_node *prevNode)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d57/intrusive__slist_8cpp_source.html#l00045">intrusive_slist.cpp:45</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a186f18bcbe2031fb85d0b4c822e993a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186f18bcbe2031fb85d0b4c822e993a6">&#9670;&nbsp;</a></span>link_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::intrusive_slist_base::link_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *&#160;</td>
+          <td class="paramname"><em>prevNode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html#l00045">45</a> der Datei <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html">intrusive_slist.cpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00046">std::intrusive_slist_node::in_list()</a> und <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">std::intrusive_slist_node::next</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        assert(!node-&gt;in_list());</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        node-&gt;next = prevNode-&gt;next;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        prevNode-&gt;next = node;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a448ca4bdfb63bbf9aebda8c674e34e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448ca4bdfb63bbf9aebda8c674e34e8c">&#9670;&nbsp;</a></span>pop_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::intrusive_slist_base::pop_front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00120">120</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a04c875859ecec47505ac8c48294e97de">unlink_after</a>(&amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist__base_html_a04c875859ecec47505ac8c48294e97de"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a04c875859ecec47505ac8c48294e97de">std::intrusive_slist_base::unlink_after</a></div><div class="ttdeci">static void unlink_after(intrusive_slist_node *node)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d57/intrusive__slist_8cpp_source.html#l00051">intrusive_slist.cpp:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae599531c55e0522dfa1766ea8dc8c09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae599531c55e0522dfa1766ea8dc8c09c">&#9670;&nbsp;</a></span>previous() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::previous </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a>&#160;</td>
+          <td class="paramname"><em>nextIt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00203">203</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00080">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                assert(nextIt.node()-&gt;in_list());</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">iterator</a> prevIt = nextIt;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">while</span> (nextIt.node() != prevIt.next())</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        ++prevIt;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">return</span> prevIt;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_aa64569adb87947836e41992cfffd6f79"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aa64569adb87947836e41992cfffd6f79">std::intrusive_slist::iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; T *, T &amp; &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00147">intrusive_slist.hpp:147</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a12b5e99e52ef6fa2f4bd1de61b5626cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b5e99e52ef6fa2f4bd1de61b5626cf">&#9670;&nbsp;</a></span>previous() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::previous </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>nextIt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00211">211</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00080">std::intrusive_slist_iterator&lt; Pointer, Reference &gt;::node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            {</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                assert(nextIt.node()-&gt;in_list());</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <a class="code" href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">const_iterator</a> prevIt = nextIt;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">while</span> (nextIt.node() != prevIt.next())</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                        ++prevIt;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordflow">return</span> prevIt;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist_html_aee88cb325da875b68d2eb2e2c7ff58d4"><div class="ttname"><a href="../../db/df2/classstd_1_1intrusive__slist.html#aee88cb325da875b68d2eb2e2c7ff58d4">std::intrusive_slist::const_iterator</a></div><div class="ttdeci">intrusive_slist_iterator&lt; const T *, const T &amp; &gt; const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00148">intrusive_slist.hpp:148</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55492712468088f2683f039c4352cb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55492712468088f2683f039c4352cb07">&#9670;&nbsp;</a></span>push_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::push_front </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00150">150</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    <a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a186f18bcbe2031fb85d0b4c822e993a6">link_after</a>(v, &amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist__base_html_a186f18bcbe2031fb85d0b4c822e993a6"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a186f18bcbe2031fb85d0b4c822e993a6">std::intrusive_slist_base::link_after</a></div><div class="ttdeci">static void link_after(intrusive_slist_node *node, intrusive_slist_node *prevNode)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d57/intrusive__slist_8cpp_source.html#l00045">intrusive_slist.cpp:45</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9db782bb03074cbd7c5b9ff93e9a5047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db782bb03074cbd7c5b9ff93e9a5047">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">std::intrusive_slist</a>&lt; T &gt;::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html#a21ed571253c53ecdc01255a454ad484e">value_type</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00248">248</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            {</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    unlink(v);</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a71d5fd055a3cb2f1986d2c5dac26b5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d5fd055a3cb2f1986d2c5dac26b5c5">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">intrusive_slist_base::size_type</a> std::intrusive_slist_base::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html#l00033">33</a> der Datei <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html">intrusive_slist.cpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">std::intrusive_slist_base::m_root</a> und <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">std::intrusive_slist_node::next</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">size_type</a> numNodes(0);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">const</span> intrusive_slist_node* iter = &amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">do</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            iter = iter-&gt;<a class="code" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">next</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            ++numNodes;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        } <span class="keywordflow">while</span> (iter != &amp;<a class="code" href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">m_root</a>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> numNodes - 1;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="ttc" id="classstd_1_1intrusive__slist__base_html_add1ccfba2c0c4c08504aa50cb9a826a2"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#add1ccfba2c0c4c08504aa50cb9a826a2">std::intrusive_slist_base::m_root</a></div><div class="ttdeci">intrusive_slist_node m_root</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">intrusive_slist.hpp:135</a></div></div>
+<div class="ttc" id="structstd_1_1intrusive__slist__node_html_a6f1e6427f2b49b202b70c55bdf9729bd"><div class="ttname"><a href="../../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd">std::intrusive_slist_node::next</a></div><div class="ttdeci">intrusive_slist_node * next</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">intrusive_slist.hpp:51</a></div></div>
+<div class="ttc" id="classstd_1_1intrusive__slist__base_html_a3513173e280ec0848049a3f0e1847590"><div class="ttname"><a href="../../dd/dbc/classstd_1_1intrusive__slist__base.html#a3513173e280ec0848049a3f0e1847590">std::intrusive_slist_base::size_type</a></div><div class="ttdeci">int size_type</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/intrusive__slist_8hpp_source.html#l00117">intrusive_slist.hpp:117</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a04c875859ecec47505ac8c48294e97de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c875859ecec47505ac8c48294e97de">&#9670;&nbsp;</a></span>unlink_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::intrusive_slist_base::unlink_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html#l00051">51</a> der Datei <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html">intrusive_slist.cpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00046">std::intrusive_slist_node::in_list()</a> und <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00051">std::intrusive_slist_node::next</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        assert(node-&gt;in_list());</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        intrusive_slist_node* thisNode = node-&gt;next;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        node-&gt;next = thisNode-&gt;next;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        thisNode-&gt;next = thisNode;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a id="add1ccfba2c0c4c08504aa50cb9a826a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1ccfba2c0c4c08504aa50cb9a826a2">&#9670;&nbsp;</a></span>m_root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/dc1/structstd_1_1intrusive__slist__node.html">intrusive_slist_node</a> std::intrusive_slist_base::m_root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html#l00135">135</a> der Datei <a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../de/d57/intrusive__slist_8cpp_source.html#l00033">std::intrusive_slist_base::size()</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../dc/da6/intrusive__slist_8hpp_source.html">intrusive_slist.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -222,7 +1081,7 @@ class std::intrusive_slist&lt; T &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">intrusive_slist</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../db/df2/classstd_1_1intrusive__slist.html">intrusive_slist</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

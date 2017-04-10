@@ -1,0 +1,25 @@
+var color_8hpp =
+[
+    [ "color", "d9/def/classstd_1_1math_1_1color.html", "d9/def/classstd_1_1math_1_1color" ],
+    [ "color", "d9/def/classstd_1_1math_1_1color.html", "d9/def/classstd_1_1math_1_1color" ],
+    [ "cold", "d6/dfd/color_8hpp.html#a8e4673c88cd9920884053799fdd5c583", null ],
+    [ "colf", "d6/dfd/color_8hpp.html#a14b1452193e096079256021cbff6e4ec", null ],
+    [ "_max", "d6/dfd/color_8hpp.html#a5ee39c505dd91b953c598cf384f9e313", null ],
+    [ "_min", "d6/dfd/color_8hpp.html#a8ae6184cee42b608ef0527120991b302", null ],
+    [ "brightness", "d6/dfd/color_8hpp.html#ac0a348524105b3fe36d161084e73b243", null ],
+    [ "from_cmy", "d6/dfd/color_8hpp.html#a66a49b2de8cf724aa07d1262f6eb4621", null ],
+    [ "from_hsv", "d6/dfd/color_8hpp.html#a3dd1dc1f5379113655d2f6e07ef25411", null ],
+    [ "from_yuv", "d6/dfd/color_8hpp.html#af97c61b0f790faa9969251e7739a71b2", null ],
+    [ "interpolate", "d6/dfd/color_8hpp.html#adb1f279941b8942d6c3aab970eb51e33", null ],
+    [ "negate", "d6/dfd/color_8hpp.html#a5f3d2bf8fa13a829b2c692a30357091c", null ],
+    [ "operator!=", "d6/dfd/color_8hpp.html#a637cee37599143b7be496217678a3612", null ],
+    [ "operator*", "d6/dfd/color_8hpp.html#af272014535fe1ad7c2de459af9e272c5", null ],
+    [ "operator*", "d6/dfd/color_8hpp.html#a0ed2671f41beb1cab464061d0bbc30bb", null ],
+    [ "operator*", "d6/dfd/color_8hpp.html#a8bfcc82534192c688d7ce6c3a94fa327", null ],
+    [ "operator+", "d6/dfd/color_8hpp.html#a0027afbf52c17a2199c774d666b69973", null ],
+    [ "operator-", "d6/dfd/color_8hpp.html#a60940ab449d09c34ede75d29595b3a9a", null ],
+    [ "operator-", "d6/dfd/color_8hpp.html#ab96b943b255e7cec4e8b256693467d31", null ],
+    [ "operator/", "d6/dfd/color_8hpp.html#a6c3412e54fcbfc115837107294936997", null ],
+    [ "operator/", "d6/dfd/color_8hpp.html#a8d443d706d40e0342d8b96dc450b399b", null ],
+    [ "operator==", "d6/dfd/color_8hpp.html#aa70d078967b672dc4967e7c358f9ed67", null ]
+];

@@ -10,5 +10,19 @@ var classstd_1_1math_1_1plane =
     [ "plane", "dc/d81/classstd_1_1math_1_1plane.html#aa6ad9e5c3126730b7dc12d9625a28ffc", null ],
     [ "plane", "dc/d81/classstd_1_1math_1_1plane.html#a9892de7d2c4047da2dc50782c000c79c", null ],
     [ "plane", "dc/d81/classstd_1_1math_1_1plane.html#a9f00d5a360536e3cb42708c4702c8f0b", null ],
-    [ "to_string", "dc/d81/classstd_1_1math_1_1plane.html#a945806853ad61149f81d482072d24a6a", null ]
+    [ "operator value_type *", "dc/d81/classstd_1_1math_1_1plane.html#ae139fe35cc3a678f5101f276e6f397d5", null ],
+    [ "operator void *", "dc/d81/classstd_1_1math_1_1plane.html#acac957b3c59336c0da3634050bc6aeaf", null ],
+    [ "operator*=", "dc/d81/classstd_1_1math_1_1plane.html#a8a8130f658389c9a015ef69e11113011", null ],
+    [ "operator*=", "dc/d81/classstd_1_1math_1_1plane.html#ae88cded931a571835e1644168d2c3c50", null ],
+    [ "operator+=", "dc/d81/classstd_1_1math_1_1plane.html#ab6d6b41307717b67b25cfdc364c262de", null ],
+    [ "operator-=", "dc/d81/classstd_1_1math_1_1plane.html#a7ebbdbea9b420c1fb34607777235f306", null ],
+    [ "operator/=", "dc/d81/classstd_1_1math_1_1plane.html#a357ba5097add69f389e240a854afb2af", null ],
+    [ "operator/=", "dc/d81/classstd_1_1math_1_1plane.html#ad62b86032f534253d7494bf37d6678dc", null ],
+    [ "to_string", "dc/d81/classstd_1_1math_1_1plane.html#a945806853ad61149f81d482072d24a6a", null ],
+    [ "c", "dc/d81/classstd_1_1math_1_1plane.html#a8ee7bf710e0ac824c4a7294e17157b79", null ],
+    [ "w", "dc/d81/classstd_1_1math_1_1plane.html#a0b1ad17c8570f2f94a78e5823a1b15b4", null ],
+    [ "x", "dc/d81/classstd_1_1math_1_1plane.html#a6dc64b5d165a77ace8c7653408f0fcf5", null ],
+    [ "xyz", "dc/d81/classstd_1_1math_1_1plane.html#a9b8b7390c912b985e8c5eedd46632fff", null ],
+    [ "y", "dc/d81/classstd_1_1math_1_1plane.html#af86ddb26a0be1203205a41f9d75dc677", null ],
+    [ "z", "dc/d81/classstd_1_1math_1_1plane.html#aa6bcf59e97857e5eae560066822dfcdf", null ]
 ];

@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,15 +82,18 @@ $(document).ready(function(){initNavTree('dd/d84/structstd_1_1has__cheap__compar
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Öffentliche Typen</a>  </div>
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="../../df/d0a/structstd_1_1has__cheap__compare-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::has_cheap_compare&lt; T &gt; Template-Strukturreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:a5373daa8efe10428f152aa559d0da554"><td class="memItemLeft" align="right" valign="top"><a id="a5373daa8efe10428f152aa559d0da554"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a5373daa8efe10428f152aa559d0da554"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a5373daa8efe10428f152aa559d0da554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -105,7 +102,27 @@ struct std::has_cheap_compare&lt; T &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d54/type__traits_8hpp_source.html#l00116">116</a> der Datei <a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der Aufzählungstypen</h2>
+<a id="a5373daa8efe10428f152aa559d0da554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5373daa8efe10428f152aa559d0da554">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d54/type__traits_8hpp_source.html#l00118">118</a> der Datei <a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    value = <a class="code" href="../../df/d37/structstd_1_1has__trivial__copy.html#ad49e9a92d0ed142d7fbdf09f6337ff96a837eed5c339f53d1848955fdf91eab33">has_trivial_copy&lt;T&gt;::value</a> &amp;&amp; <span class="keyword">sizeof</span>(T) &lt;= 4</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            };</div><div class="ttc" id="structstd_1_1has__trivial__copy_html_ad49e9a92d0ed142d7fbdf09f6337ff96a837eed5c339f53d1848955fdf91eab33"><div class="ttname"><a href="../../df/d37/structstd_1_1has__trivial__copy.html#ad49e9a92d0ed142d7fbdf09f6337ff96a837eed5c339f53d1848955fdf91eab33">std::has_trivial_copy::value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d54/type__traits_8hpp_source.html#l00096">type_traits.hpp:96</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -113,7 +130,7 @@ struct std::has_cheap_compare&lt; T &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../dd/d84/structstd_1_1has__cheap__compare.html">has_cheap_compare</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../dd/d84/structstd_1_1has__cheap__compare.html">has_cheap_compare</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

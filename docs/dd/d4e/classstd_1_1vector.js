@@ -3,6 +3,7 @@ var classstd_1_1vector =
     [ "allocator_type", "dd/d4e/classstd_1_1vector.html#a8cb9a89bdee041141774c3a7a7215846", null ],
     [ "const_iterator", "dd/d4e/classstd_1_1vector.html#a9a86b199a9bbe1db05e061b4f709402d", null ],
     [ "iterator", "dd/d4e/classstd_1_1vector.html#a1f644e678ac05664c6353437c58111bf", null ],
+    [ "size_type", "dd/d4e/classstd_1_1vector.html#a154bd5d6226236f9df4b9fed1ab01140", null ],
     [ "value_type", "dd/d4e/classstd_1_1vector.html#a11d0a79dd49be02977c29361fc9057c8", null ],
     [ "vector", "dd/d4e/classstd_1_1vector.html#a6da16df6c5425bf600eba78738b4f3d7", null ],
     [ "vector", "dd/d4e/classstd_1_1vector.html#a42b40bb03f766883f677dd0c883e4e92", null ],

@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,15 +82,18 @@ $(document).ready(function(){initNavTree('df/d10/structstd_1_1is__fundamental.ht
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Öffentliche Typen</a>  </div>
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="../../d8/d18/structstd_1_1is__fundamental-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::is_fundamental&lt; T &gt; Template-Strukturreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:a087d3f321be74da930720e3ee1e055c6"><td class="memItemLeft" align="right" valign="top"><a id="a087d3f321be74da930720e3ee1e055c6"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>value</b> = is_integral&lt;T&gt;::value || is_floating_point&lt;T&gt;::value
+<tr class="memitem:a087d3f321be74da930720e3ee1e055c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/d10/structstd_1_1is__fundamental.html#a087d3f321be74da930720e3ee1e055c6a9062ac5f14650b42301da3fc64787698">value</a> = is_integral&lt;T&gt;::value || is_floating_point&lt;T&gt;::value
  }</td></tr>
 <tr class="separator:a087d3f321be74da930720e3ee1e055c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -106,7 +103,32 @@ struct std::is_fundamental&lt; T &gt;</h3>
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../dc/d54/type__traits_8hpp_source.html#l00076">76</a> der Datei <a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der Aufzählungstypen</h2>
+<a id="a087d3f321be74da930720e3ee1e055c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087d3f321be74da930720e3ee1e055c6">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Aufzählungswerte</th></tr><tr><td class="fieldname"><a id="a087d3f321be74da930720e3ee1e055c6a9062ac5f14650b42301da3fc64787698"></a>value&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../dc/d54/type__traits_8hpp_source.html#l00078">78</a> der Datei <a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="../../df/d10/structstd_1_1is__fundamental.html#a087d3f321be74da930720e3ee1e055c6a9062ac5f14650b42301da3fc64787698">value</a> = <a class="code" href="../../de/d6a/structstd_1_1is__integral.html#a2f5dad5eb58a0a023ebdedc696a25ef4aeb5d3f6b73a2fe8f4065d37cffc1357d">is_integral&lt;T&gt;::value</a> || <a class="code" href="../../dd/dca/structstd_1_1is__floating__point.html#a4ccbc84fc49cbd28862a738c67e18e83ac826c3c51ac0fb3455d09e3abc1703e6">is_floating_point&lt;T&gt;::value</a></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            };</div><div class="ttc" id="structstd_1_1is__integral_html_a2f5dad5eb58a0a023ebdedc696a25ef4aeb5d3f6b73a2fe8f4065d37cffc1357d"><div class="ttname"><a href="../../de/d6a/structstd_1_1is__integral.html#a2f5dad5eb58a0a023ebdedc696a25ef4aeb5d3f6b73a2fe8f4065d37cffc1357d">std::is_integral::value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d54/type__traits_8hpp_source.html#l00039">type_traits.hpp:39</a></div></div>
+<div class="ttc" id="structstd_1_1is__fundamental_html_a087d3f321be74da930720e3ee1e055c6a9062ac5f14650b42301da3fc64787698"><div class="ttname"><a href="../../df/d10/structstd_1_1is__fundamental.html#a087d3f321be74da930720e3ee1e055c6a9062ac5f14650b42301da3fc64787698">std::is_fundamental::value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d54/type__traits_8hpp_source.html#l00080">type_traits.hpp:80</a></div></div>
+<div class="ttc" id="structstd_1_1is__floating__point_html_a4ccbc84fc49cbd28862a738c67e18e83ac826c3c51ac0fb3455d09e3abc1703e6"><div class="ttname"><a href="../../dd/dca/structstd_1_1is__floating__point.html#a4ccbc84fc49cbd28862a738c67e18e83ac826c3c51ac0fb3455d09e3abc1703e6">std::is_floating_point::value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d54/type__traits_8hpp_source.html#l00044">type_traits.hpp:44</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../dc/d54/type__traits_8hpp_source.html">type_traits.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -114,7 +136,7 @@ struct std::is_fundamental&lt; T &gt;</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../df/d10/structstd_1_1is__fundamental.html">is_fundamental</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../df/d10/structstd_1_1is__fundamental.html">is_fundamental</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

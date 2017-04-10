@@ -3,8 +3,13 @@ var classstd_1_1rb__tree__base =
     [ "node", "d3/d24/structstd_1_1rb__tree__base_1_1node.html", "d3/d24/structstd_1_1rb__tree__base_1_1node" ],
     [ "allocator_type", "da/d5a/classstd_1_1rb__tree__base.html#a1bf2ab22316fbd696871f298954e5129", null ],
     [ "key_type", "da/d5a/classstd_1_1rb__tree__base.html#a16359a9284789b51c39b434b2fae9564", null ],
+    [ "size_type", "da/d5a/classstd_1_1rb__tree__base.html#a80da9eeab695a8f73038f274d884f7a6", null ],
     [ "TravFunc", "da/d5a/classstd_1_1rb__tree__base.html#af01858ec4ecb7d2671d8f8cd889a2b65", null ],
     [ "value_type", "da/d5a/classstd_1_1rb__tree__base.html#a220784d64fdabb356d3f9197563879a7", null ],
+    [ "color_e", "da/d5a/classstd_1_1rb__tree__base.html#ad316b0975ced712fc75d7317be4df5ab", [
+      [ "red", "da/d5a/classstd_1_1rb__tree__base.html#ad316b0975ced712fc75d7317be4df5abaef13439c6187ad06ba1a3a2b042a8256", null ],
+      [ "black", "da/d5a/classstd_1_1rb__tree__base.html#ad316b0975ced712fc75d7317be4df5abae942b3de69c2d40b34bbc285e387e2f0", null ]
+    ] ],
     [ "rb_tree_base", "da/d5a/classstd_1_1rb__tree__base.html#a57d458525f9f4bc634b8e759082f24c4", null ],
     [ "~rb_tree_base", "da/d5a/classstd_1_1rb__tree__base.html#a827af68b93604316746fee42966f764f", null ],
     [ "alloc_node", "da/d5a/classstd_1_1rb__tree__base.html#afe5eaa617eee8afa3ce2c42364547b13", null ],

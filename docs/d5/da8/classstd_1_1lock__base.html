@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,11 +82,14 @@ $(document).ready(function(){initNavTree('d5/da8/classstd_1_1lock__base.html','.
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Öffentliche Methoden</a>  </div>
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../d7/d7d/classstd_1_1lock__base-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::lock_base Klassenreferenz<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../df/df1/lock__base_8hpp_source.html">lock_base.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für std::lock_base:</div>
 <div class="dyncontent">
@@ -107,20 +104,170 @@ Klassendiagramm für std::lock_base:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a11a6fcfe95e53fcf7fa9ea1899795399"><td class="memItemLeft" align="right" valign="top"><a id="a11a6fcfe95e53fcf7fa9ea1899795399"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> (void)=0</td></tr>
+<tr class="memitem:a40542bbcdbabc587b03363ba1e6291c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html#a40542bbcdbabc587b03363ba1e6291c6">lock_base</a> ()</td></tr>
+<tr class="separator:a40542bbcdbabc587b03363ba1e6291c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2292c7877a72b49f0b59e08a7392c61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html#ad2292c7877a72b49f0b59e08a7392c61">~lock_base</a> ()</td></tr>
+<tr class="separator:ad2292c7877a72b49f0b59e08a7392c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a6fcfe95e53fcf7fa9ea1899795399"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html#a11a6fcfe95e53fcf7fa9ea1899795399">lock</a> (void)=0</td></tr>
 <tr class="separator:a11a6fcfe95e53fcf7fa9ea1899795399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a493cd8e3d4e08f82d1d64014153a032b"><td class="memItemLeft" align="right" valign="top"><a id="a493cd8e3d4e08f82d1d64014153a032b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>try_lock</b> ()=0</td></tr>
+<tr class="memitem:a493cd8e3d4e08f82d1d64014153a032b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html#a493cd8e3d4e08f82d1d64014153a032b">try_lock</a> ()=0</td></tr>
 <tr class="separator:a493cd8e3d4e08f82d1d64014153a032b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ab453523394a1c4b083b82766f555e"><td class="memItemLeft" align="right" valign="top"><a id="ad5ab453523394a1c4b083b82766f555e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> (void)=0</td></tr>
+<tr class="memitem:ad5ab453523394a1c4b083b82766f555e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html#ad5ab453523394a1c4b083b82766f555e">unlock</a> (void)=0</td></tr>
 <tr class="separator:ad5ab453523394a1c4b083b82766f555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock">
 <p class="definition">Definiert in Zeile <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00039">39</a> der Datei <a class="el" href="../../df/df1/lock__base_8hpp_source.html">lock_base.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a40542bbcdbabc587b03363ba1e6291c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40542bbcdbabc587b03363ba1e6291c6">&#9670;&nbsp;</a></span>lock_base()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::lock_base::lock_base </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00042">42</a> der Datei <a class="el" href="../../df/df1/lock__base_8hpp_source.html">lock_base.hpp</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00043">~lock_base()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{ }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad2292c7877a72b49f0b59e08a7392c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2292c7877a72b49f0b59e08a7392c61">&#9670;&nbsp;</a></span>~lock_base()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::lock_base::~lock_base </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00043">43</a> der Datei <a class="el" href="../../df/df1/lock__base_8hpp_source.html">lock_base.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d5/da8/classstd_1_1lock__base.html#a11a6fcfe95e53fcf7fa9ea1899795399">lock()</a>, <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00042">lock_base()</a>, <a class="el" href="../../d5/da8/classstd_1_1lock__base.html#a493cd8e3d4e08f82d1d64014153a032b">try_lock()</a> und <a class="el" href="../../d5/da8/classstd_1_1lock__base.html#ad5ab453523394a1c4b083b82766f555e">unlock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a11a6fcfe95e53fcf7fa9ea1899795399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a6fcfe95e53fcf7fa9ea1899795399">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void std::lock_base::lock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert in <a class="el" href="../../d1/d68/classstd_1_1atomic__spinlock.html#abd0af4e8d38e83e5b50e80c4ea01f4af">std::atomic_spinlock</a>, <a class="el" href="../../df/dc3/classstd_1_1mutex.html#a487c7cb3d4f1eafd7b351dd6dcd82422">std::mutex</a> und <a class="el" href="../../d5/d7a/classstd_1_1spinlock.html#abb56d76aad9b5ab8d865d2a1691ebf03">std::spinlock</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00043">~lock_base()</a>.</p>
+
+</div>
+</div>
+<a id="a493cd8e3d4e08f82d1d64014153a032b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493cd8e3d4e08f82d1d64014153a032b">&#9670;&nbsp;</a></span>try_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool std::lock_base::try_lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert in <a class="el" href="../../d1/d68/classstd_1_1atomic__spinlock.html#ac6ed4f2dea4ac50645a582d1495279d9">std::atomic_spinlock</a>, <a class="el" href="../../df/dc3/classstd_1_1mutex.html#a6d836f56c290b512299071b7e69c718c">std::mutex</a> und <a class="el" href="../../d5/d7a/classstd_1_1spinlock.html#aca18d2985a115a9f01ecd5aab1d6e12f">std::spinlock</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00043">~lock_base()</a>.</p>
+
+</div>
+</div>
+<a id="ad5ab453523394a1c4b083b82766f555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ab453523394a1c4b083b82766f555e">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void std::lock_base::unlock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementiert in <a class="el" href="../../d1/d68/classstd_1_1atomic__spinlock.html#a2b15f97e05795985bb7b5cbb9fae5eda">std::atomic_spinlock</a>, <a class="el" href="../../df/dc3/classstd_1_1mutex.html#a13f22c85c4954c20610ab2e9023d22e8">std::mutex</a> und <a class="el" href="../../d5/d7a/classstd_1_1spinlock.html#a48029fe3844ce4614875c893d20a970e">std::spinlock</a>.</p>
+
+<p class="reference">Wird benutzt von <a class="el" href="../../df/df1/lock__base_8hpp_source.html#l00043">~lock_base()</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../df/df1/lock__base_8hpp_source.html">lock_base.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -128,7 +275,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> (v
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html">lock_base</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d5/da8/classstd_1_1lock__base.html">lock_base</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

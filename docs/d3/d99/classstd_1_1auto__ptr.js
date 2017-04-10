@@ -16,5 +16,8 @@ var classstd_1_1auto__ptr =
     [ "operator=", "d3/d99/classstd_1_1auto__ptr.html#a1a6a76d365cd2e5fc8f988f2bc705c6e", null ],
     [ "operator=", "d3/d99/classstd_1_1auto__ptr.html#acc910aabd62b6c8edfe0c43aa3fcd1b8", null ],
     [ "release", "d3/d99/classstd_1_1auto__ptr.html#ad089b6ca906202d78a2f886a0f728670", null ],
-    [ "reset", "d3/d99/classstd_1_1auto__ptr.html#a48453668d284eff79d8ff1855949ccd0", null ]
+    [ "reset", "d3/d99/classstd_1_1auto__ptr.html#a48453668d284eff79d8ff1855949ccd0", null ],
+    [ "set", "d3/d99/classstd_1_1auto__ptr.html#a785a33354ccbe7eda65f4eefcbd422af", null ],
+    [ "set", "d3/d99/classstd_1_1auto__ptr.html#a35eacc94083ea2d2734620db257e209a", null ],
+    [ "_M_p", "d3/d99/classstd_1_1auto__ptr.html#ad544e60e93ed330f5982d5dbd9a30c14", null ]
 ];

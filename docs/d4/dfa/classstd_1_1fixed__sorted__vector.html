@@ -19,12 +19,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">aSTL
-   &#160;<span id="projectnumber">0.22.8</span>
+   &#160;<span id="projectnumber">0.22.9</span>
    </div>
    <div id="projectbrief">Heinberg</div>
   </td>
@@ -88,11 +82,15 @@ $(document).ready(function(){initNavTree('d4/dfa/classstd_1_1fixed__sorted__vect
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Öffentliche Methoden</a>  </div>
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../dd/da5/classstd_1_1fixed__sorted__vector-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">std::fixed_sorted_vector&lt; TKey, TValue, TCapacity, TGrowOnOverflow, TCompare, TAllocator &gt; Template-Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html">fixed_sorted_vector.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Klassendiagramm für std::fixed_sorted_vector&lt; TKey, TValue, TCapacity, TGrowOnOverflow, TCompare, TAllocator &gt;:</div>
 <div class="dyncontent">
@@ -104,73 +102,47 @@ Klassendiagramm für std::fixed_sorted_vector&lt; TKey, TValue, TCapacity, TGrow
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:a4d7c31d322d6b796ef3bc3a150d9e4b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> = TKey</td></tr>
+<tr class="separator:a4d7c31d322d6b796ef3bc3a150d9e4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce3d1d05f733abbbf1bf5b42707f51a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a2ce3d1d05f733abbbf1bf5b42707f51a">mapped_type</a> = TValue</td></tr>
+<tr class="separator:a2ce3d1d05f733abbbf1bf5b42707f51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8536b6a839c0f97ed486f1e87871179"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#ad8536b6a839c0f97ed486f1e87871179">size_type</a> = <a class="el" href="../../d3/d6d/structstd_1_1base__vector.html#a154bd5d6226236f9df4b9fed1ab01140">Base::size_type</a></td></tr>
+<tr class="separator:ad8536b6a839c0f97ed486f1e87871179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5879b6815b4d99155138bb46333a88"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">value_type</a> = <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a11d0a79dd49be02977c29361fc9057c8">Base::value_type</a></td></tr>
+<tr class="separator:a6a5879b6815b4d99155138bb46333a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd3ad604c8a45f3a514cedf70ed0c1d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> = <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a1f644e678ac05664c6353437c58111bf">Base::iterator</a></td></tr>
+<tr class="separator:a8dd3ad604c8a45f3a514cedf70ed0c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616d38b84b146a28959b47d3d3c457ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> = <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a9a86b199a9bbe1db05e061b4f709402d">Base::const_iterator</a></td></tr>
+<tr class="separator:a616d38b84b146a28959b47d3d3c457ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481527c0df696268826e6932ebce476e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a> = <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a8cb9a89bdee041141774c3a7a7215846">Base::allocator_type</a></td></tr>
+<tr class="separator:a481527c0df696268826e6932ebce476e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:abab718a13944985143bc2a882aeea657"><td class="memItemLeft" align="right" valign="top"><a id="abab718a13944985143bc2a882aeea657"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_sorted_vector</b> (const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
+<tr class="memitem:abab718a13944985143bc2a882aeea657"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfa/classstd_1_1fixed__sorted__vector.html#abab718a13944985143bc2a882aeea657">fixed_sorted_vector</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a> &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a>())</td></tr>
 <tr class="separator:abab718a13944985143bc2a882aeea657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classstd_1_1sorted__vector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classstd_1_1sorted__vector')"><img src="../../closed.png" alt="-"/>&#160;Öffentliche Methoden geerbt von <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;</a></td></tr>
-<tr class="memitem:ade74421a7454ac14c3e68f0230782713 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="ade74421a7454ac14c3e68f0230782713"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>sorted_vector</b> (const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
-<tr class="separator:ade74421a7454ac14c3e68f0230782713 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9cbd88103b1933c2fbe12a63e8fe5d2 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="af9cbd88103b1933c2fbe12a63e8fe5d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>sorted_vector</b> (InputIterator first, InputIterator last, const allocator_type &amp;<a class="el" href="../../d7/d75/classstd_1_1allocator.html">allocator</a>=allocator_type())</td></tr>
-<tr class="separator:af9cbd88103b1933c2fbe12a63e8fe5d2 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad55e670afba8c3b8a947c2007188ebe8 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="ad55e670afba8c3b8a947c2007188ebe8"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const <a class="el" href="../../d8/d71/structstd_1_1pair.html">value_type</a> &amp;val)</td></tr>
-<tr class="separator:ad55e670afba8c3b8a947c2007188ebe8 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a3d349013a3a8b429c8c17d01fc3a73 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a5a3d349013a3a8b429c8c17d01fc3a73"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (const key_type &amp;k, const mapped_type &amp;v)</td></tr>
-<tr class="separator:a5a3d349013a3a8b429c8c17d01fc3a73 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7827372b61d7a779057d11a2f2fc7287 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a7827372b61d7a779057d11a2f2fc7287"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;k)</td></tr>
-<tr class="separator:a7827372b61d7a779057d11a2f2fc7287 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80357d89e033ef0e8213b3b14e675b61 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a80357d89e033ef0e8213b3b14e675b61"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;k) const</td></tr>
-<tr class="separator:a80357d89e033ef0e8213b3b14e675b61 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5340ed31349b4ad6bc2010cece895c61 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a5340ed31349b4ad6bc2010cece895c61"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a> it)</td></tr>
-<tr class="separator:a5340ed31349b4ad6bc2010cece895c61 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a09470b09ced0d1e9b2dfe4999dcb4 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="ad3a09470b09ced0d1e9b2dfe4999dcb4"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (const key_type &amp;k)</td></tr>
-<tr class="separator:ad3a09470b09ced0d1e9b2dfe4999dcb4 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3554132678255108808abcfb93cd9a6b inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a3554132678255108808abcfb93cd9a6b"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lower_bound</b> (const key_type &amp;k)</td></tr>
-<tr class="separator:a3554132678255108808abcfb93cd9a6b inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1973321125b85937c51627cecf7526 inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a3d1973321125b85937c51627cecf7526"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lower_bound</b> (const key_type &amp;k) const</td></tr>
-<tr class="separator:a3d1973321125b85937c51627cecf7526 inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819e554776546c42857db0bb4fbc474c inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a819e554776546c42857db0bb4fbc474c"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (const key_type &amp;k)</td></tr>
-<tr class="separator:a819e554776546c42857db0bb4fbc474c inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c9a896bf7d257a85c24d65789efa7d inherit pub_methods_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a71c9a896bf7d257a85c24d65789efa7d"></a>
-<a class="el" href="../../d8/d71/structstd_1_1pair.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upper_bound</b> (const key_type &amp;k) const</td></tr>
-<tr class="separator:a71c9a896bf7d257a85c24d65789efa7d inherit pub_methods_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Weitere Geerbte Elemente</h2></td></tr>
-<tr class="inherit_header pub_types_classstd_1_1sorted__vector"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classstd_1_1sorted__vector')"><img src="../../closed.png" alt="-"/>&#160;Öffentliche Typen geerbt von <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;</a></td></tr>
-<tr class="memitem:a4d7c31d322d6b796ef3bc3a150d9e4b6 inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a4d7c31d322d6b796ef3bc3a150d9e4b6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = TKey</td></tr>
-<tr class="separator:a4d7c31d322d6b796ef3bc3a150d9e4b6 inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce3d1d05f733abbbf1bf5b42707f51a inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a2ce3d1d05f733abbbf1bf5b42707f51a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>mapped_type</b> = TValue</td></tr>
-<tr class="separator:a2ce3d1d05f733abbbf1bf5b42707f51a inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8536b6a839c0f97ed486f1e87871179 inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="ad8536b6a839c0f97ed486f1e87871179"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = Base::size_type</td></tr>
-<tr class="separator:ad8536b6a839c0f97ed486f1e87871179 inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5879b6815b4d99155138bb46333a88 inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a6a5879b6815b4d99155138bb46333a88"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = <a class="el" href="../../d8/d71/structstd_1_1pair.html">Base::value_type</a></td></tr>
-<tr class="separator:a6a5879b6815b4d99155138bb46333a88 inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd3ad604c8a45f3a514cedf70ed0c1d inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a8dd3ad604c8a45f3a514cedf70ed0c1d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="../../d8/d71/structstd_1_1pair.html">Base::iterator</a></td></tr>
-<tr class="separator:a8dd3ad604c8a45f3a514cedf70ed0c1d inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616d38b84b146a28959b47d3d3c457ca inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a616d38b84b146a28959b47d3d3c457ca"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="../../d8/d71/structstd_1_1pair.html">Base::const_iterator</a></td></tr>
-<tr class="separator:a616d38b84b146a28959b47d3d3c457ca inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a481527c0df696268826e6932ebce476e inherit pub_types_classstd_1_1sorted__vector"><td class="memItemLeft" align="right" valign="top"><a id="a481527c0df696268826e6932ebce476e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b> = Base::allocator_type</td></tr>
-<tr class="separator:a481527c0df696268826e6932ebce476e inherit pub_types_classstd_1_1sorted__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55e670afba8c3b8a947c2007188ebe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#ad55e670afba8c3b8a947c2007188ebe8">insert</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">value_type</a> &amp;val)</td></tr>
+<tr class="separator:ad55e670afba8c3b8a947c2007188ebe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3d349013a3a8b429c8c17d01fc3a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a5a3d349013a3a8b429c8c17d01fc3a73">insert</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k, const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a2ce3d1d05f733abbbf1bf5b42707f51a">mapped_type</a> &amp;v)</td></tr>
+<tr class="separator:a5a3d349013a3a8b429c8c17d01fc3a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7827372b61d7a779057d11a2f2fc7287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a7827372b61d7a779057d11a2f2fc7287">find</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k)</td></tr>
+<tr class="separator:a7827372b61d7a779057d11a2f2fc7287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80357d89e033ef0e8213b3b14e675b61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a80357d89e033ef0e8213b3b14e675b61">find</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k) const</td></tr>
+<tr class="separator:a80357d89e033ef0e8213b3b14e675b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5340ed31349b4ad6bc2010cece895c61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a5340ed31349b4ad6bc2010cece895c61">erase</a> (<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> it)</td></tr>
+<tr class="separator:a5340ed31349b4ad6bc2010cece895c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a09470b09ced0d1e9b2dfe4999dcb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6d/structstd_1_1base__vector.html#a154bd5d6226236f9df4b9fed1ab01140">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#ad3a09470b09ced0d1e9b2dfe4999dcb4">erase</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k)</td></tr>
+<tr class="separator:ad3a09470b09ced0d1e9b2dfe4999dcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3554132678255108808abcfb93cd9a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">lower_bound</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k)</td></tr>
+<tr class="separator:a3554132678255108808abcfb93cd9a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1973321125b85937c51627cecf7526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a3d1973321125b85937c51627cecf7526">lower_bound</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k) const</td></tr>
+<tr class="separator:a3d1973321125b85937c51627cecf7526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819e554776546c42857db0bb4fbc474c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a819e554776546c42857db0bb4fbc474c">upper_bound</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k)</td></tr>
+<tr class="separator:a819e554776546c42857db0bb4fbc474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c9a896bf7d257a85c24d65789efa7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a71c9a896bf7d257a85c24d65789efa7d">upper_bound</a> (const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;k) const</td></tr>
+<tr class="separator:a71c9a896bf7d257a85c24d65789efa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><h3>template&lt;typename TKey, typename TValue, int TCapacity, bool TGrowOnOverflow, class TCompare = std::less&lt;TKey&gt;, class TAllocator = std::allocator&gt;<br />
@@ -178,7 +150,542 @@ class std::fixed_sorted_vector&lt; TKey, TValue, TCapacity, TGrowOnOverflow, TCo
 
 
 <p class="definition">Definiert in Zeile <a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html#l00041">41</a> der Datei <a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html">fixed_sorted_vector.hpp</a>.</p>
-</div><hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="a481527c0df696268826e6932ebce476e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481527c0df696268826e6932ebce476e">&#9670;&nbsp;</a></span>allocator_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a> =  <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a8cb9a89bdee041141774c3a7a7215846">Base::allocator_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00074">74</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a616d38b84b146a28959b47d3d3c457ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616d38b84b146a28959b47d3d3c457ca">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> =  <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a9a86b199a9bbe1db05e061b4f709402d">Base::const_iterator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00073">73</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8dd3ad604c8a45f3a514cedf70ed0c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd3ad604c8a45f3a514cedf70ed0c1d">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> =  <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a1f644e678ac05664c6353437c58111bf">Base::iterator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00072">72</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d7c31d322d6b796ef3bc3a150d9e4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7c31d322d6b796ef3bc3a150d9e4b6">&#9670;&nbsp;</a></span>key_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> =  TKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00068">68</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ce3d1d05f733abbbf1bf5b42707f51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce3d1d05f733abbbf1bf5b42707f51a">&#9670;&nbsp;</a></span>mapped_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a2ce3d1d05f733abbbf1bf5b42707f51a">mapped_type</a> =  TValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00069">69</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad8536b6a839c0f97ed486f1e87871179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8536b6a839c0f97ed486f1e87871179">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d3/d6d/structstd_1_1base__vector.html#a154bd5d6226236f9df4b9fed1ab01140">size_type</a> =  <a class="el" href="../../d3/d6d/structstd_1_1base__vector.html#a154bd5d6226236f9df4b9fed1ab01140">Base::size_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00070">70</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a5879b6815b4d99155138bb46333a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5879b6815b4d99155138bb46333a88">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">value_type</a> =  <a class="el" href="../../dd/d4e/classstd_1_1vector.html#a11d0a79dd49be02977c29361fc9057c8">Base::value_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00071">71</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="abab718a13944985143bc2a882aeea657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab718a13944985143bc2a882aeea657">&#9670;&nbsp;</a></span>fixed_sorted_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKey , typename TValue , int TCapacity, bool TGrowOnOverflow, class TCompare  = std::less&lt;TKey&gt;, class TAllocator  = std::allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/dfa/classstd_1_1fixed__sorted__vector.html">std::fixed_sorted_vector</a>&lt; TKey, TValue, TCapacity, TGrowOnOverflow, TCompare, TAllocator &gt;::<a class="el" href="../../d4/dfa/classstd_1_1fixed__sorted__vector.html">fixed_sorted_vector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a481527c0df696268826e6932ebce476e">allocator_type</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html#l00044">44</a> der Datei <a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html">fixed_sorted_vector.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            : <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#ade74421a7454ac14c3e68f0230782713">sorted_vector</a>(allocator)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_ade74421a7454ac14c3e68f0230782713"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#ade74421a7454ac14c3e68f0230782713">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::sorted_vector</a></div><div class="ttdeci">sorted_vector(const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00076">sorted_vector.hpp:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a5340ed31349b4ad6bc2010cece895c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5340ed31349b4ad6bc2010cece895c61">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00133">133</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            assert(invariant());</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">return</span> Base::erase(it);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad3a09470b09ced0d1e9b2dfe4999dcb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a09470b09ced0d1e9b2dfe4999dcb4">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d6d/structstd_1_1base__vector.html#a154bd5d6226236f9df4b9fed1ab01140">size_type</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00138">138</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00153">std::find()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> i(<a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a7827372b61d7a779057d11a2f2fc7287">find</a>(k));</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">if</span> (i == <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>()) </div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a5340ed31349b4ad6bc2010cece895c61">erase</a>(i);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            assert(invariant());</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_a5340ed31349b4ad6bc2010cece895c61"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a5340ed31349b4ad6bc2010cece895c61">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::erase</a></div><div class="ttdeci">iterator erase(iterator it)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00133">sorted_vector.hpp:133</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a8dd3ad604c8a45f3a514cedf70ed0c1d"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::iterator</a></div><div class="ttdeci">Base::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00072">sorted_vector.hpp:72</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a7827372b61d7a779057d11a2f2fc7287"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a7827372b61d7a779057d11a2f2fc7287">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::find</a></div><div class="ttdeci">iterator find(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00112">sorted_vector.hpp:112</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7827372b61d7a779057d11a2f2fc7287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7827372b61d7a779057d11a2f2fc7287">&#9670;&nbsp;</a></span>find() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00112">112</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00119">std::lower_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            assert(invariant());</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> i(<a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">lower_bound</a>(k));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (i != <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>() &amp;&amp; m_compare(k, *i))</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                i = <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>();</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> i;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_a8dd3ad604c8a45f3a514cedf70ed0c1d"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::iterator</a></div><div class="ttdeci">Base::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00072">sorted_vector.hpp:72</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a3554132678255108808abcfb93cd9a6b"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::lower_bound</a></div><div class="ttdeci">iterator lower_bound(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00152">sorted_vector.hpp:152</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a80357d89e033ef0e8213b3b14e675b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80357d89e033ef0e8213b3b14e675b61">&#9670;&nbsp;</a></span>find() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00122">122</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00119">std::lower_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {       </div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            assert(invariant());</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> i(<a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">lower_bound</a>(k));</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">if</span> (i != <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>() &amp;&amp; m_compare(k, *i))</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                i = <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>();</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> i;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_a616d38b84b146a28959b47d3d3c457ca"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::const_iterator</a></div><div class="ttdeci">Base::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00073">sorted_vector.hpp:73</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a3554132678255108808abcfb93cd9a6b"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::lower_bound</a></div><div class="ttdeci">iterator lower_bound(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00152">sorted_vector.hpp:152</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad55e670afba8c3b8a947c2007188ebe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55e670afba8c3b8a947c2007188ebe8">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt;<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>, bool&gt; <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00093">93</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../d3/d9f/pair_8hpp_source.html#l00067">std::pair&lt; T1, T2 &gt;::first</a> und <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00119">std::lower_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            assert(invariant());</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">bool</span> found(<span class="keyword">true</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> it = <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">lower_bound</a>(val.first);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            assert(it == <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>() || !m_compare(*it, val));</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (it == <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>() || m_compare(*it, val))</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                it = Base::insert(it, val);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                found = <span class="keyword">false</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            assert(invariant());</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> pair&lt;iterator, bool&gt;(it, !found);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_a8dd3ad604c8a45f3a514cedf70ed0c1d"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::iterator</a></div><div class="ttdeci">Base::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00072">sorted_vector.hpp:72</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a3554132678255108808abcfb93cd9a6b"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a3554132678255108808abcfb93cd9a6b">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::lower_bound</a></div><div class="ttdeci">iterator lower_bound(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00152">sorted_vector.hpp:152</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5a3d349013a3a8b429c8c17d01fc3a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3d349013a3a8b429c8c17d01fc3a73">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt;<a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a>, bool&gt; <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a2ce3d1d05f733abbbf1bf5b42707f51a">mapped_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00107">107</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#ad55e670afba8c3b8a947c2007188ebe8">insert</a>(<a class="code" href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">value_type</a>(k, v));</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div><div class="ttc" id="classstd_1_1sorted__vector_html_ad55e670afba8c3b8a947c2007188ebe8"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#ad55e670afba8c3b8a947c2007188ebe8">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::insert</a></div><div class="ttdeci">pair&lt; iterator, bool &gt; insert(const value_type &amp;val)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00093">sorted_vector.hpp:93</a></div></div>
+<div class="ttc" id="classstd_1_1sorted__vector_html_a6a5879b6815b4d99155138bb46333a88"><div class="ttname"><a href="../../d8/d6b/classstd_1_1sorted__vector.html#a6a5879b6815b4d99155138bb46333a88">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::value_type</a></div><div class="ttdeci">Base::value_type value_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/sorted__vector_8hpp_source.html#l00071">sorted_vector.hpp:71</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3554132678255108808abcfb93cd9a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3554132678255108808abcfb93cd9a6b">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00152">152</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00119">std::lower_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        {</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d8/dcc/namespacestd.html#a7dd2c69a58c4d92febc82495f4ff2a90">std::lower_bound</a>(<a class="code" href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">begin</a>(), <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>(), k, m_compare);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div><div class="ttc" id="classstd_1_1vector_html_aca38490bcc8c40f3950d0ef828fb1d7a"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00181">vector.hpp:181</a></div></div>
+<div class="ttc" id="namespacestd_html_a7dd2c69a58c4d92febc82495f4ff2a90"><div class="ttname"><a href="../../d8/dcc/namespacestd.html#a7dd2c69a58c4d92febc82495f4ff2a90">std::lower_bound</a></div><div class="ttdeci">TIter lower_bound(TIter first, TIter last, const T &amp;val, const TPred &amp;pred)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/algorithm_8hpp_source.html#l00119">algorithm.hpp:119</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d1973321125b85937c51627cecf7526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1973321125b85937c51627cecf7526">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00156">156</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00119">std::lower_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d8/dcc/namespacestd.html#a7dd2c69a58c4d92febc82495f4ff2a90">std::lower_bound</a>(<a class="code" href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">begin</a>(), <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>(), k, m_compare);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div><div class="ttc" id="classstd_1_1vector_html_aca38490bcc8c40f3950d0ef828fb1d7a"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00181">vector.hpp:181</a></div></div>
+<div class="ttc" id="namespacestd_html_a7dd2c69a58c4d92febc82495f4ff2a90"><div class="ttname"><a href="../../d8/dcc/namespacestd.html#a7dd2c69a58c4d92febc82495f4ff2a90">std::lower_bound</a></div><div class="ttdeci">TIter lower_bound(TIter first, TIter last, const T &amp;val, const TPred &amp;pred)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/algorithm_8hpp_source.html#l00119">algorithm.hpp:119</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a819e554776546c42857db0bb4fbc474c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819e554776546c42857db0bb4fbc474c">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a8dd3ad604c8a45f3a514cedf70ed0c1d">iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00160">160</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00136">std::upper_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d8/dcc/namespacestd.html#a410dda3142cf688648d179dbd731252e">std::upper_bound</a>(<a class="code" href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">begin</a>(), <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>(), k, m_compare);</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div><div class="ttc" id="classstd_1_1vector_html_aca38490bcc8c40f3950d0ef828fb1d7a"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00181">vector.hpp:181</a></div></div>
+<div class="ttc" id="namespacestd_html_a410dda3142cf688648d179dbd731252e"><div class="ttname"><a href="../../d8/dcc/namespacestd.html#a410dda3142cf688648d179dbd731252e">std::upper_bound</a></div><div class="ttdeci">TIter upper_bound(TIter first, TIter last, const T &amp;val, const TPred &amp;pred)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/algorithm_8hpp_source.html#l00136">algorithm.hpp:136</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a71c9a896bf7d257a85c24d65789efa7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c9a896bf7d257a85c24d65789efa7d">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a616d38b84b146a28959b47d3d3c457ca">const_iterator</a> <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html">std::sorted_vector</a>&lt; TKey, TValue, TCompare, TAllocator, <a class="el" href="../../d0/d8e/structstd_1_1fixed__vector__storage.html">fixed_vector_storage</a>&lt; <a class="el" href="../../d8/d71/structstd_1_1pair.html">pair</a>&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt;  &gt;::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d6b/classstd_1_1sorted__vector.html#a4d7c31d322d6b796ef3bc3a150d9e4b6">key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definiert in Zeile <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html#l00164">164</a> der Datei <a class="el" href="../../d1/d75/sorted__vector_8hpp_source.html">sorted_vector.hpp</a>.</p>
+
+<p class="reference">Benutzt <a class="el" href="../../de/d55/algorithm_8hpp_source.html#l00136">std::upper_bound()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d8/dcc/namespacestd.html#a410dda3142cf688648d179dbd731252e">std::upper_bound</a>(<a class="code" href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">begin</a>(), <a class="code" href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">end</a>(), k, m_compare);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div><div class="ttc" id="classstd_1_1vector_html_aca38490bcc8c40f3950d0ef828fb1d7a"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aca38490bcc8c40f3950d0ef828fb1d7a">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00181">vector.hpp:181</a></div></div>
+<div class="ttc" id="namespacestd_html_a410dda3142cf688648d179dbd731252e"><div class="ttname"><a href="../../d8/dcc/namespacestd.html#a410dda3142cf688648d179dbd731252e">std::upper_bound</a></div><div class="ttdeci">TIter upper_bound(TIter first, TIter last, const T &amp;val, const TPred &amp;pred)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d55/algorithm_8hpp_source.html#l00136">algorithm.hpp:136</a></div></div>
+<div class="ttc" id="classstd_1_1vector_html_aa856f54e08cf9e7097953e4dc086ea6d"><div class="ttname"><a href="../../dd/d4e/classstd_1_1vector.html#aa856f54e08cf9e7097953e4dc086ea6d">std::vector&lt; pair&lt; TKey, TValue &gt;, TAllocator, fixed_vector_storage&lt; pair&lt; TKey, TValue &gt;, TAllocator, TCapacity, TGrowOnOverflow &gt; &gt;::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d16/vector_8hpp_source.html#l00189">vector.hpp:189</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li>include/<a class="el" href="../../d6/d21/fixed__sorted__vector_8hpp_source.html">fixed_sorted_vector.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -186,7 +693,7 @@ class std::fixed_sorted_vector&lt; TKey, TValue, TCapacity, TGrowOnOverflow, TCo
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="../../d4/dfa/classstd_1_1fixed__sorted__vector.html">fixed_sorted_vector</a></li>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../d4/dfa/classstd_1_1fixed__sorted__vector.html">fixed_sorted_vector</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
