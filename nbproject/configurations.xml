@@ -69,6 +69,7 @@
         <itemPath>include/cow_string_storage.hpp</itemPath>
         <itemPath>include/deleter.hpp</itemPath>
         <itemPath>include/event.hpp</itemPath>
+        <itemPath>include/exp_vector.hpp</itemPath>
         <itemPath>include/filestream.hpp</itemPath>
         <itemPath>include/fixed_array.hpp</itemPath>
         <itemPath>include/fixed_list.hpp</itemPath>
@@ -86,6 +87,7 @@
         <itemPath>include/iterator.hpp</itemPath>
         <itemPath>include/list.hpp</itemPath>
         <itemPath>include/lock_base.hpp</itemPath>
+        <itemPath>include/lock_ptr.hpp</itemPath>
         <itemPath>include/map.hpp</itemPath>
         <itemPath>include/memorystream.hpp</itemPath>
         <itemPath>include/mutex.hpp</itemPath>
@@ -110,6 +112,7 @@
         <itemPath>include/sstream.hpp</itemPath>
         <itemPath>include/stack.hpp</itemPath>
         <itemPath>include/stack_allocator.hpp</itemPath>
+        <itemPath>include/std_counter.hpp</itemPath>
         <itemPath>include/stl.hpp</itemPath>
         <itemPath>include/stream.hpp</itemPath>
         <itemPath>include/string.hpp</itemPath>
@@ -146,6 +149,7 @@
       <itemPath>list.cpp</itemPath>
       <itemPath>mutex.cpp</itemPath>
       <itemPath>new.cpp</itemPath>
+      <itemPath>safe_counter.cpp</itemPath>
       <itemPath>slist.cpp</itemPath>
       <itemPath>spinlock.cpp</itemPath>
       <itemPath>split.cpp</itemPath>
@@ -230,6 +234,8 @@
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_array.hpp" ex="false" tool="3" flavor2="0">
@@ -315,6 +321,8 @@
       <item path="include/list.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/lock_base.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/lock_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/map.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -407,6 +415,8 @@
       </item>
       <item path="include/stack_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/std_counter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/stl.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/stream.hpp" ex="false" tool="3" flavor2="0">
@@ -445,6 +455,8 @@
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="safe_counter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="slist.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="spinlock.cpp" ex="false" tool="1" flavor2="0">
@@ -454,7 +466,7 @@
     </conf>
     <conf name="Release" type="3" platformSpecific="true">
       <toolsSet>
-        <compilerSet>MinGW|MinGW</compilerSet>
+        <compilerSet>Base|MinGW</compilerSet>
         <platform>3</platform>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
@@ -536,6 +548,8 @@
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_array.hpp" ex="false" tool="3" flavor2="0">
@@ -621,6 +635,8 @@
       <item path="include/list.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/lock_base.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/lock_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/map.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -713,6 +729,8 @@
       </item>
       <item path="include/stack_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/std_counter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/stl.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/stream.hpp" ex="false" tool="3" flavor2="0">
@@ -750,6 +768,8 @@
       <item path="network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="safe_counter.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="slist.cpp" ex="false" tool="1" flavor2="0">
       </item>

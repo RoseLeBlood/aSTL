@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,45 +22,41 @@
  * THE SOFTWARE.
  */
 
-#include "include/mutex.hpp"
+/* 
+ * File:   std_counter.hpp
+ * Author: annas
+ *
+ * Created on 18. April 2017, 20:46
+ */
 
+#ifndef STD_COUNTER_HPP
+#define STD_COUNTER_HPP
 
+#include "lock_ptr.hpp"
 
-namespace std
-{
-
-    mutex::mutex(Sys::mutex_init_t type, 
-              bool shared, bool robust)
-    {
-        Sys::mutexInit(_m_locked, type, shared, robust);
-    }
-    mutex::~mutex()
-    {
-        unlock();
-        Sys::mutexDestroy( _m_locked );
-        delete _m_locked;
-    }
-    void mutex::lock()
-    {
-        Sys::mutexLock( _m_locked );
-    }
-    void mutex::unlock()
-    {
-        Sys::mutexUnLock( _m_locked );
-    }
-    bool mutex::try_lock()
-    {
-       return  Sys::mutexTryLock( _m_locked ) == 0;
-    }
-    mutex::native_handle_type mutex::native_handle()
-    {
-        return _m_locked;
-    }
-    mutex& mutex::operator=(const mutex& m) {
-        _m_locked = m._m_locked;
-        return *this;
-    }
-    mutex::mutex(const mutex& m) {
-        _m_locked = m._m_locked;
-    }
+namespace std {
+    class safe_counter {
+    public:
+        safe_counter() : m_iCount(0) {}
+        safe_counter(int start) : m_iCount(start) {}
+        
+        safe_counter& operator ++() {
+            ++(*lock_ptr<int>(m_iCount, m_mutex));
+            return *this;
+        }
+        safe_counter& operator --() {
+            --(*lock_ptr<int>(m_iCount, m_mutex));
+            return *this;
+        }
+        int64_t count() {
+            return *lock_ptr<int>(m_iCount, m_mutex);
+        }
+    protected:
+        mutex m_mutex;
+        volatile int m_iCount; 
+    };
 }
+
+
+#endif /* STD_COUNTER_HPP */
+

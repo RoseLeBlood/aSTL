@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,44 +23,56 @@
  */
 
 /* 
- * File:   lock.hpp
+ * File:   lock_ptr.hpp
  * Author: annas
  *
- * Created on 8. November 2016, 00:08
+ * Created on 18. April 2017, 20:23
  */
 
-#ifndef __STL_HPP_LOCKED__
-#define __STL_HPP_LOCKED__
+#ifndef LOCK_PTR_HPP
+#define LOCK_PTR_HPP
 
-#include "lock_base.hpp"
-#include "common.hpp"
+#include "mutex.hpp"
 
-
-namespace std
-{
-    class mutex : public lock_base
-    {
+namespace std {
+    template <typename T, class L = mutex>
+    class lock_ptr {
     public:
-        using native_handle_type = Sys::mutex_type*;
+        using value_type = T;
+        using lock_type = L;
+        using pointer = T*;
+        using reference = T&;
+        using self_type = lock_ptr<T, L>;
         
-        mutex(Sys::mutex_init_t type = Sys::mutex_init_t::Default, 
-              bool shared = false, bool robust = false);
-        virtual ~mutex();
-        
-        void lock( void );
-        bool try_lock( void );
-	void unlock( void );
-           
-        native_handle_type native_handle();
-        
-        mutex& operator=(const mutex& m);
-        mutex(const mutex& m);
+        explicit lock_ptr(volatile T& v, lock_type& m) 
+            : m_ptr(const_cast<T*>(&v)), m_lock(&m) {
+            m_lock->lock();
+        }
+        ~lock_ptr() {
+            m_lock->unlock();
+        }
+        value_type const *get() const {
+            return m_ptr; 
+        }
+        value_type *get() { 
+            return m_ptr; 
+        }
+     
+        value_type &operator *() { 
+            return *m_ptr; 
+        }
+      
+        value_type *operator->() { 
+            return m_ptr; 
+        }
+        lock_ptr(const lock_ptr&) = delete;
+        lock_ptr& operator = (const lock_ptr&) = delete;
     private:
-        native_handle_type _m_locked;
+        pointer m_ptr;
+        lock_type *m_lock;
     };
-   
-    
-    #define LOCK(m) if (std::lock_util<std::mutex> __csc = std::lock_util<std::mutex>(&m))
 }
-#endif
+
+
+#endif /* LOCK_PTR_HPP */
 

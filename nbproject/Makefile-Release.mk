@@ -21,7 +21,7 @@ FC=gfortran
 AS=nasm
 
 # Macros
-CND_PLATFORM=MinGW-Windows
+CND_PLATFORM=Base-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Release
 CND_DISTDIR=dist
@@ -48,6 +48,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/network/address.o \
 	${OBJECTDIR}/network/physicaladdress.o \
 	${OBJECTDIR}/new.o \
+	${OBJECTDIR}/safe_counter.o \
 	${OBJECTDIR}/slist.o \
 	${OBJECTDIR}/spinlock.o \
 	${OBJECTDIR}/split.o
@@ -143,6 +144,11 @@ ${OBJECTDIR}/new.o: new.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O3 -w -s -Iinclude -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/new.o new.cpp
+
+${OBJECTDIR}/safe_counter.o: safe_counter.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -w -s -Iinclude -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/safe_counter.o safe_counter.cpp
 
 ${OBJECTDIR}/slist.o: slist.cpp
 	${MKDIR} -p ${OBJECTDIR}
