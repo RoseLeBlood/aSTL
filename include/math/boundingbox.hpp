@@ -38,9 +38,10 @@ namespace std
 {
     namespace math
     {
+        /// @brief enum 
         typedef enum boundingcontains
         {
-            Disjoint,
+            Disjoint, 
             Contains,
             Intersects
         }contains_t;
@@ -48,23 +49,30 @@ namespace std
         template<typename T>
 	class boundingbox;
         
+        /// @brief bbox is a float boundingbox type
         typedef boundingbox<float>  bbox;
+        /// @brief dbox is a double boundingbox type
         typedef boundingbox<double> dbox;
         
+        ///@brief a clasd for a BoundingBox 
+        //@tparam T description type @see bbox @see dbox
         template<typename T>
 	class boundingbox
         {
         public:
-            typedef boundingbox<T> self_type;
-            typedef T value_type;
-            typedef T* pointer;
+            using self_type = boundingbox<T>;
+            using value_type = T;
+            using pointer = T*;
             const int CornerCount = 8;
             
+            /// @brief create the BoundingBox from max and min type 
             boundingbox (vector3<T> min, vector3<T> max) {
 		m_vMin = min;
 		m_vMax = max;
             }
-            
+            /// @brief contain the other box this box
+            /// @param box The other box
+            /// @return @see boundingcontains
             contains_t contains(const boundingbox<T>& box) {
                 if ((m_vMax.x < box.m_vMin.x || m_vMin.x > box.m_vMax.x) ||
 		   (m_vMax.y < box.m_vMin.y || m_vMin.y > box.m_vMax.y) ||
@@ -78,6 +86,9 @@ namespace std
                 }
                 return contains_t::Intersects;
             }
+            /// @brief cheak of the point contains this class
+            /// @param point The to cheaked point
+            /// @return @see boundingcontains
             contains_t contains (vector3<T> point)
             {
 		if ((m_vMin.x <= point.x && m_vMax.x >= point.x) &&
@@ -87,6 +98,8 @@ namespace std
 		}
 		return contains_t::Disjoint;
             }
+            /// @brief get the corners of this box
+            /// @param corners the out array
             void getcorners (vector3<T> corners[CornerCount])
 	    {
 		corners[0] = vector3<T> (m_vMin.x, m_vMax.y, m_vMax.z);
@@ -98,6 +111,9 @@ namespace std
 		corners[6] = vector3<T> (m_vMax.x, m_vMin.y, m_vMin.z);
 		corners[7] = vector3<T> (m_vMin.x, m_vMin.y, m_vMin.z);
             }
+            /// @brief cheak of intersect the other box this box
+            /// @param box The other box
+            /// @return true when this box contains the other box
             bool Intersects (const boundingbox<T>& box)
 	    {
 		return contains (box) == contains_t::Intersects;

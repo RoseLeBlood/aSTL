@@ -38,6 +38,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "delegate", "d2/d56/classstd_1_1delegate.html", "d2/d56/classstd_1_1delegate" ],
       [ "event", "d5/d46/classstd_1_1event.html", "d5/d46/classstd_1_1event" ]
     ] ],
+    [ "exp_vector.hpp", "d1/de4/exp__vector_8hpp.html", "d1/de4/exp__vector_8hpp" ],
     [ "filestream.hpp", "db/de9/filestream_8hpp.html", "db/de9/filestream_8hpp" ],
     [ "fixed_array.hpp", "d8/d4a/fixed__array_8hpp.html", [
       [ "fixed_array", "d0/d84/classstd_1_1fixed__array.html", "d0/d84/classstd_1_1fixed__array" ]
@@ -89,6 +90,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "list", "d4/dff/classstd_1_1list.html", "d4/dff/classstd_1_1list" ]
     ] ],
     [ "lock_base.hpp", "df/df1/lock__base_8hpp.html", "df/df1/lock__base_8hpp" ],
+    [ "lock_ptr.hpp", "dd/d8c/lock__ptr_8hpp.html", [
+      [ "lock_ptr", "dd/d48/classstd_1_1lock__ptr.html", "dd/d48/classstd_1_1lock__ptr" ]
+    ] ],
     [ "map.hpp", "df/d7c/map_8hpp.html", [
       [ "map", "d4/de8/classstd_1_1map.html", "d4/de8/classstd_1_1map" ]
     ] ],
@@ -150,6 +154,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "stack_allocator.hpp", "d1/df9/stack__allocator_8hpp.html", [
       [ "stack_allocator", "d8/d28/classstd_1_1stack__allocator.html", "d8/d28/classstd_1_1stack__allocator" ]
+    ] ],
+    [ "std_counter.hpp", "de/d5b/std__counter_8hpp.html", [
+      [ "safe_counter", "db/d9b/classstd_1_1safe__counter.html", "db/d9b/classstd_1_1safe__counter" ]
     ] ],
     [ "stl.hpp", "d3/d0b/stl_8hpp.html", "d3/d0b/stl_8hpp" ],
     [ "stream.hpp", "d9/d0f/stream_8hpp.html", "d9/d0f/stream_8hpp" ],

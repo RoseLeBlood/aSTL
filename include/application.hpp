@@ -34,7 +34,8 @@
 
 #include "list.hpp"
 #include "string.hpp"
-
+/// @brief asMain is the new entry point - auto init the libary and destroy.
+/// @param args Liste of the arguments
 extern int asMain(std::list<std::string> args);
 
 #endif /* APPLICATION_HPP */

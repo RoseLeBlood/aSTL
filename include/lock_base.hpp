@@ -33,16 +33,21 @@
 #define LOCK_BASE_HPP
 
 #include "common.hpp"
+#include "config.h"
 
 namespace std
 {
+    ///@brief abstract base class for loking   
     class lock_base
     {
     public:
         lock_base() { }
         virtual ~lock_base() { }
+        ///@brief abstract function lock the current context
         virtual void lock( void ) = 0;
+        ///@brief abstract function try to lock the current context 
         virtual bool try_lock() = 0;
+        ///@brief abstract function unlock the current locked context
 	virtual void unlock( void ) = 0;
     private:
         lock_base(const lock_base&) { }
@@ -54,19 +59,25 @@ namespace std
     template < class T = std::lock_base> void unlock(T* m1) { m1->unlock(); }
     template < class T = std::lock_base> void try_lock(T* m1) { m1->try_lock(); }
      
-    
+    ///@brief lock util for auto lock and unlock.
+    ///using: if(lock_util<std::mutex>(&varMutex)) { //locked } //and her unlocked
+    ///@tparam T lock class
     template <class T = std::lock_base> 
     class lock_util
     {
         public:
+            ///@brief Constructor auto lock the context 
             explicit lock_util(T* rc) :  m_rc(rc) 
             { 
-                m_rc->lock();
+                if(m_rc != 0)
+                 m_rc->lock();
             }
+            ///@brief auto unlock
             ~lock_util(void) 
             {
                 m_rc->unlock();
             }
+            ///@brief return true when the object not null - helper for if  
             operator bool() { return m_rc != 0; }
         private:
             T*		m_rc;

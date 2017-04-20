@@ -33,9 +33,13 @@
 #define LOCK_PTR_HPP
 
 #include "mutex.hpp"
+#include "spinlock.hpp"
 
 namespace std {
-    template <typename T, class L = mutex>
+    ///@brief auto lock pointer. 
+    ///@tparam T pointer type of this lock pointer
+    ///@tparam L lock class @see mutex @see spinlock 
+    template <typename T, class L = ASSTL_LOCK_DEFAULT>
     class lock_ptr {
     public:
         using value_type = T;
@@ -43,25 +47,30 @@ namespace std {
         using pointer = T*;
         using reference = T&;
         using self_type = lock_ptr<T, L>;
-        
-        explicit lock_ptr(volatile T& v, lock_type& m) 
+        ///@brief constructor make the pointer and auto lock
+        ///@param v Reference to locked area/object 
+        ///@param m LockType Reference to the using lock hekper class
+        explicit lock_ptr(volatile reference v, lock_type& m) 
             : m_ptr(const_cast<T*>(&v)), m_lock(&m) {
             m_lock->lock();
         }
+        ///@brief decunstructor and auto unlock the pointer
         ~lock_ptr() {
             m_lock->unlock();
         }
+        ///@brief get the pointer value const
         value_type const *get() const {
             return m_ptr; 
         }
+        ///@brief get the pointer value 
         value_type *get() { 
             return m_ptr; 
         }
-     
+        ///@brief return the reference of the pointer
         value_type &operator *() { 
             return *m_ptr; 
         }
-      
+        ///@brief helper to use this pointer as "native" pointer
         value_type *operator->() { 
             return m_ptr; 
         }

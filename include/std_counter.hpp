@@ -35,25 +35,28 @@
 #include "lock_ptr.hpp"
 
 namespace std {
+    ///@brief safe counter is a base of thread saftly counter 
     class safe_counter {
     public:
-        safe_counter() : m_iCount(0) {}
-        safe_counter(int start) : m_iCount(start) {}
-        
+        ///@param start Start value of this counter 
+        explicit safe_counter(int64_t start = 0) : m_iCount(start) {}
+        ///@brief thread saftly increment operator
         safe_counter& operator ++() {
             ++(*lock_ptr<int>(m_iCount, m_mutex));
             return *this;
         }
+        ///@brief thread saftly decrement operator
         safe_counter& operator --() {
-            --(*lock_ptr<int>(m_iCount, m_mutex));
+            --(*lock_ptr<int64_t>(m_iCount, m_mutex));
             return *this;
         }
+        ///@brief get the current count
         int64_t count() {
-            return *lock_ptr<int>(m_iCount, m_mutex);
+            return *lock_ptr<int64_t>(m_iCount, m_mutex);
         }
     protected:
         mutex m_mutex;
-        volatile int m_iCount; 
+        volatile int64_t m_iCount; 
     };
 }
 

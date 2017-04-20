@@ -8,5 +8,6 @@ var searchData=
   ['list_3c_20type_20_3e',['list&lt; TYPE &gt;',['../d4/dff/classstd_1_1list.html',1,'std']]],
   ['list_5fbase_5fnode',['list_base_node',['../dc/db6/structstd_1_1internal_1_1list__base__node.html',1,'std::internal']]],
   ['lock_5fbase',['lock_base',['../d5/da8/classstd_1_1lock__base.html',1,'std']]],
+  ['lock_5fptr',['lock_ptr',['../dd/d48/classstd_1_1lock__ptr.html',1,'std']]],
   ['lock_5futil',['lock_util',['../df/db8/classstd_1_1lock__util.html',1,'std']]]
 ];

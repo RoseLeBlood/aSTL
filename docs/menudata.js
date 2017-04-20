@@ -1,6 +1,5 @@
 var menudata={children:[
 {text:"Hauptseite",url:"index.html"},
-{text:"Zusätzliche Informationen",url:"pages.html"},
 {text:"Namensbereiche",url:"namespaces.html",children:[
 {text:"Liste aller Namensbereiche",url:"namespaces.html"},
 {text:"Elemente eines Namensbereiches",url:"namespacemembers.html",children:[

@@ -1,6 +1,5 @@
 var files =
 [
-    [ "build", "dir_4fef79e7177ba769987a8da36c892c5f.html", "dir_4fef79e7177ba769987a8da36c892c5f" ],
     [ "include", "dir_d44c64559bbebec7f509842c48db8b23.html", "dir_d44c64559bbebec7f509842c48db8b23" ],
     [ "math", "dir_296d53ceaeaa7e099814a6def439fe8a.html", "dir_296d53ceaeaa7e099814a6def439fe8a" ],
     [ "nbproject", "dir_2c333aeabd346f33518e235a93545ab3.html", "dir_2c333aeabd346f33518e235a93545ab3" ],
@@ -17,6 +16,7 @@ var files =
     [ "mutex.cpp", "d0/dbb/mutex_8cpp.html", null ],
     [ "new.cpp", "da/dc8/new_8cpp.html", "da/dc8/new_8cpp" ],
     [ "PLATFORM.cpp", "d3/db8/_p_l_a_t_f_o_r_m_8cpp.html", null ],
+    [ "safe_counter.cpp", "d8/da6/safe__counter_8cpp.html", null ],
     [ "slist.cpp", "df/db3/slist_8cpp.html", null ],
     [ "spinlock.cpp", "d9/da2/spinlock_8cpp.html", null ],
     [ "split.cpp", "d4/d59/split_8cpp.html", "d4/d59/split_8cpp" ]

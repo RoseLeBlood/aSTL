@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['safe_5fcounter',['safe_counter',['../db/d9b/classstd_1_1safe__counter.html',1,'std']]],
   ['save_5fptr',['save_ptr',['../d4/d23/classstd_1_1save__ptr.html',1,'std']]],
   ['scoped_5fptr',['scoped_ptr',['../d2/dcc/classstd_1_1scoped__ptr.html',1,'std']]],
   ['server',['Server',['../dc/db6/class_server.html',1,'']]],

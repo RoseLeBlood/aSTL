@@ -13,7 +13,6 @@ var searchData=
   ['negate',['negate',['../dd/d32/namespacestd_1_1math.html#a5f3d2bf8fa13a829b2c692a30357091c',1,'std::math']]],
   ['new_2ecpp',['new.cpp',['../da/dc8/new_8cpp.html',1,'']]],
   ['new_2ehpp',['new.hpp',['../df/d09/new_8hpp.html',1,'']]],
-  ['new_2eo_2ed',['new.o.d',['../d7/d26/new_8o_8d.html',1,'']]],
   ['new_5fhandler',['new_handler',['../d8/dcc/namespacestd.html#abacda397e52027e3aac448f94b157208',1,'std']]],
   ['next',['next',['../dd/d52/structstd_1_1intrusive__list__node.html#af64285858ab79a09cf2ed2ce843fc411',1,'std::intrusive_list_node::next()'],['../d3/dc1/structstd_1_1intrusive__slist__node.html#a6f1e6427f2b49b202b70c55bdf9729bd',1,'std::intrusive_slist_node::next()'],['../dc/db6/structstd_1_1internal_1_1list__base__node.html#a9a2f29d7a3396ae6b7fc19ee4afd1331',1,'std::internal::list_base_node::next()'],['../d5/d40/structstd_1_1internal_1_1slist__base__node.html#ab51c452c73a63bded6db92d617ac441e',1,'std::internal::slist_base_node::next()'],['../da/d4b/classstd_1_1intrusive__slist__iterator.html#acc9e458ccdff533ae1e51e15ed0f4100',1,'std::intrusive_slist_iterator::next()']]],
   ['nexthigher',['nexthigher',['../d8/dcc/namespacestd.html#a78d14607a10c86088237fadcdd4c84a1',1,'std']]],

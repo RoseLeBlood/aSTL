@@ -24,6 +24,7 @@ var searchData=
   ['exchange',['exchange',['../da/dec/classstd_1_1atomic.html#a03edda8277a189a8b9a4a4d64161a30b',1,'std::atomic']]],
   ['exit',['exit',['../d6/d35/classstd_1_1thread.html#a3bc704456a2473d0ed74e2e7198517cb',1,'std::thread']]],
   ['exp',['exp',['../dd/d32/namespacestd_1_1math.html#a24f29a031a413d2c87f7f462c83718c6',1,'std::math']]],
+  ['exp_5fvector_2ehpp',['exp_vector.hpp',['../d1/de4/exp__vector_8hpp.html',1,'']]],
   ['expired',['expired',['../da/d49/classstd_1_1weak__ptr.html#ada5fb9c659416a5cc8b97b4780499a18',1,'std::weak_ptr']]],
   ['ext_2ehpp',['ext.hpp',['../d5/da8/ext_8hpp.html',1,'']]]
 ];

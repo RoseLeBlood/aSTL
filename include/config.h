@@ -85,6 +85,11 @@
 #define ASSTL_RND_DEFAULT ASSTL_RND_STD
 #endif
 
+#ifndef ASSTL_LOCK_DEFAULT 
+#define ASSTL_LOCK_MUTEX std::mutex
+#define ASSTL_LOCK_SPINLOCK std::spinlock
+#define ASSTL_LOCK_DEFAULT ASSTL_LOCK_MUTEX
+#endif
 #ifndef ASSTL_HASH_DEFAULT
 #define ASSTL_HASH_ADLER32 std::adl32_t
 #define ASSTL_HASH_BERNSTEIN std::brnst_t

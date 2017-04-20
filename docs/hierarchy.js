@@ -133,6 +133,7 @@ var hierarchy =
       [ "std::mutex", "df/dc3/classstd_1_1mutex.html", null ],
       [ "std::spinlock", "d5/d7a/classstd_1_1spinlock.html", null ]
     ] ],
+    [ "std::lock_ptr< T, L >", "dd/d48/classstd_1_1lock__ptr.html", null ],
     [ "std::lock_util< T >", "df/db8/classstd_1_1lock__util.html", null ],
     [ "std::map< Tk, Tv, TAllocator >", "d4/de8/classstd_1_1map.html", null ],
     [ "std::math::matrix4x4< T >", "d5/ded/classstd_1_1math_1_1matrix4x4.html", null ],
@@ -176,6 +177,7 @@ var hierarchy =
     [ "std::internal::rb_tree_traits< TKey >", "d4/d92/structstd_1_1internal_1_1rb__tree__traits.html", null ],
     [ "std::ring_buffer< T, TAllocator >", "d8/da5/classstd_1_1ring__buffer.html", null ],
     [ "std::ring_buffer_iterator< T, E >", "db/dde/classstd_1_1ring__buffer__iterator.html", null ],
+    [ "std::safe_counter", "db/d9b/classstd_1_1safe__counter.html", null ],
     [ "std::save_ptr< T >", "d4/d23/classstd_1_1save__ptr.html", null ],
     [ "std::scoped_ptr< T >", "d2/dcc/classstd_1_1scoped__ptr.html", null ],
     [ "Server", "dc/db6/class_server.html", null ],
