@@ -31,6 +31,7 @@
 
 #include "include/application.hpp"
 #include "include/new.hpp"
+#include "../include/memory/palloc.h"
 
 void __new_handler()
 {
@@ -44,6 +45,7 @@ int main( int argc, char **argv )
     for(int i = 0; i < argc; i++)
         args.push_back(std::string(argv[i]));
     
+    //pinit(std::Sys::pTotalMem());
     return asMain(args);
 }
 

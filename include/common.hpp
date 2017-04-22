@@ -110,7 +110,9 @@ namespace std
             static int spinlockDestroy(spinlk_type* mutex);
             static int spinlockLock(spinlk_type* mutex);
             static int spinlockUnLock(spinlk_type* mutex);
-            static int spinlockTryLock(spinlk_type* mutex);      
+            static int spinlockTryLock(spinlk_type* mutex); 
+            
+            static uint64_t pTotalMem();
         }; 
 }
 

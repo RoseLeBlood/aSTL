@@ -105,22 +105,20 @@
           <developmentMode>5</developmentMode>
         </asmTool>
         <linkerTool>
-          <linkerAddLib>
-            <pElem>../../dist/Release/MinGW-Windows</pElem>
-          </linkerAddLib>
           <linkerLibItems>
             <linkerLibProjectItem>
               <makeArtifact PL="../.."
                             CT="3"
                             CN="Release"
                             AC="true"
-                            BL="false"
+                            BL="true"
                             WD="../.."
                             BC="${MAKE}  -f Makefile CONF=Release"
                             CC="${MAKE}  -f Makefile CONF=Release clean"
-                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libasstl.a">
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a">
               </makeArtifact>
             </linkerLibProjectItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
           </linkerLibItems>
           <commandLine>-msse2 -msse3 -mfpmath=sse -fpermissive -march=native</commandLine>
         </linkerTool>

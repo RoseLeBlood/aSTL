@@ -50,7 +50,7 @@ namespace std {
         ///@brief constructor make the pointer and auto lock
         ///@param v Reference to locked area/object 
         ///@param m LockType Reference to the using lock hekper class
-        explicit lock_ptr(volatile reference v, lock_type& m) 
+        explicit lock_ptr(volatile T& v, lock_type& m) 
             : m_ptr(const_cast<T*>(&v)), m_lock(&m) {
             m_lock->lock();
         }

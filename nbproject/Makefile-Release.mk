@@ -44,6 +44,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/iostream.o \
 	${OBJECTDIR}/list.o \
 	${OBJECTDIR}/math/math.o \
+	${OBJECTDIR}/memory/palloc.o \
 	${OBJECTDIR}/mutex.o \
 	${OBJECTDIR}/network/address.o \
 	${OBJECTDIR}/network/physicaladdress.o \
@@ -55,7 +56,7 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=-m32 -fpramisse
+CFLAGS=-m32
 
 # CC Compiler Flags
 CCFLAGS=-m32 -msse2 -msse3 -mfpmath=sse -fpermissive -march=native
@@ -124,6 +125,11 @@ ${OBJECTDIR}/math/math.o: math/math.cpp
 	${MKDIR} -p ${OBJECTDIR}/math
 	${RM} "$@.d"
 	$(COMPILE.cc) -O3 -w -s -Iinclude -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/math/math.o math/math.cpp
+
+${OBJECTDIR}/memory/palloc.o: memory/palloc.c
+	${MKDIR} -p ${OBJECTDIR}/memory
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -Iinclude -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/memory/palloc.o memory/palloc.c
 
 ${OBJECTDIR}/mutex.o: mutex.cpp
 	${MKDIR} -p ${OBJECTDIR}

@@ -23,43 +23,48 @@
  */
 
 /* 
- * File:   std_counter.hpp
+ * File:   palloc.h
  * Author: annas
  *
- * Created on 18. April 2017, 20:46
+ * Created on 22. April 2017, 23:31
  */
 
-#ifndef STD_COUNTER_HPP
-#define STD_COUNTER_HPP
+#ifndef PALLOC_H
+#define PALLOC_H
 
-#include "lock_ptr.hpp"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-namespace std {
-    ///@brief safe counter is a base of thread saftly counter 
-    class safe_counter {
-    public:
-        ///@param start Start value of this counter 
-        explicit safe_counter(int start = 0) : m_iCount(start) {}
-        ///@brief thread saftly increment operator
-        safe_counter& operator ++() {
-            ++(*lock_ptr<int>(m_iCount, m_mutex));
-            return *this;
-        }
-        ///@brief thread saftly decrement operator
-        safe_counter& operator --() {
-            --(*lock_ptr<int>(m_iCount, m_mutex));
-            return *this;
-        }
-        ///@brief get the current count
-        int64_t count() {
-            return *lock_ptr<int>(m_iCount, m_mutex);
-        }
-    protected:
-        mutex m_mutex;
-        volatile int m_iCount; 
-    };
+#define MAX_PALLOC 1048576
+#define PALLOC_SIZE 4
+#define PALLOC_MAX_BLOCKS (MAX_PALLOC / 32)
+
+typedef struct {
+    void* mem;
+    size_t dim;
+} palloc_t;
+
+/// @brief initialis the fixed block allocator with 512MB 
+/// @param memsize The used memory
+void pinit(uint64_t memsize);
+/// @brief allocated memory 
+/// @param size The to allocated memory
+void* palloc(size_t size);
+/// @brief DeAlloceted the memory
+/// @param addr The Memory to dealloceted
+void pfree(void* addr);
+
+/// @brief get the total memory size 
+uint64_t ptotalsize();
+/// @brief get the to usable size of memory
+/// @param m The to testing memory 
+uint64_t pgetusable(void* m);
+/// @brief get thebused memory
+uint64_t pusedmem();
+#ifdef __cplusplus
 }
+#endif
 
-
-#endif /* STD_COUNTER_HPP */
+#endif /* PALLOC_H */
 

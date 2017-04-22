@@ -33,6 +33,7 @@
 #define EXP_VECTOR_HPP
 
 #include "vector.hpp"
+#include "config.h"
 
 namespace std {
   
@@ -41,6 +42,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif
         for(int i = 0; i < size; i++)
             c.push_back(a[i] + b[i]);
         return c;    
@@ -50,6 +54,9 @@ namespace std {
                                                        const T& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif       
         for(int i = 0; i < size; i++)
             c.push_back(a[i] + b);
         return c;    
@@ -59,6 +66,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : b.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a + b[i]);
         return c;    
@@ -69,6 +79,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] - b[i]);
         return c;    
@@ -77,6 +90,9 @@ namespace std {
     inline vector<T, TAllocator, TStorage> operator - (const vector<T, TAllocator, TStorage>& a) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(-a[i]);
         return c;    
@@ -86,6 +102,9 @@ namespace std {
                                                 const T& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] - b);
         return c;    
@@ -95,6 +114,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : b.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a - b[i]);
         return c;    
@@ -105,6 +127,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] * b[i]);
         return c;    
@@ -114,6 +139,9 @@ namespace std {
                                                 const T& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] * b);
         return c;    
@@ -123,6 +151,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : b.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a * b[i]);
         return c;    
@@ -133,6 +164,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] / b[i]);
         return c;    
@@ -142,6 +176,9 @@ namespace std {
                                                 const T& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : a.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a[i] / b);
         return c;    
@@ -151,6 +188,9 @@ namespace std {
                                                 const vector<T, TAllocator, TStorage>& b) {
         vector<T, TAllocator, TStorage> c = vector<T, TAllocator, TStorage>();
         int size = (calc != 0 ? calc : b.size());
+#ifdef ASSTL_USE_OPENMP
+    #pragma omp parallel for
+#endif        
         for(int i = 0; i < size; i++)
             c.push_back(a / b[i]);
         return c;    

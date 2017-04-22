@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=MinGW-Windows
+CND_PLATFORM=Base-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -52,13 +52,13 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=D\:/annas/Documents/asstl/asstl/dist/Debug/MinGW-Windows/libasstl.a
+LDLIBSOPTIONS=D\:/annas/Documents/asstl/asstl/dist/Debug/Base-Windows/libasstl.a
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe: /D/annas/Documents/asstl/asstl/dist/Debug/MinGW-Windows/libasstl.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe: /D/annas/Documents/asstl/asstl/dist/Debug/Base-Windows/libasstl.a
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}

@@ -166,6 +166,9 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                     return  pthread_spin_trylock( (pthread_spinlock_t*)&spin );
                 }
+                uint64_t Sys::pTotalMem() {
+                    return 536870912;
+                }
 #else
                 void Sys::MemCpy(void* to, const void* from, size_t bytes) {
                   
@@ -270,6 +273,9 @@ namespace std {
                     
                 }
                 int Sys::spinlockTryLock(spinlk_type* spin) {
+                   
+                }
+                uint64_t Sys::pTotalMem() {
                    
                 }
             };

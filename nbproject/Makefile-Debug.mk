@@ -44,6 +44,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/iostream.o \
 	${OBJECTDIR}/list.o \
 	${OBJECTDIR}/math/math.o \
+	${OBJECTDIR}/memory/palloc.o \
 	${OBJECTDIR}/mutex.o \
 	${OBJECTDIR}/network/address.o \
 	${OBJECTDIR}/network/physicaladdress.o \
@@ -124,6 +125,11 @@ ${OBJECTDIR}/math/math.o: math/math.cpp
 	${MKDIR} -p ${OBJECTDIR}/math
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/math/math.o math/math.cpp
+
+${OBJECTDIR}/memory/palloc.o: memory/palloc.c
+	${MKDIR} -p ${OBJECTDIR}/memory
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/memory/palloc.o memory/palloc.c
 
 ${OBJECTDIR}/mutex.o: mutex.cpp
 	${MKDIR} -p ${OBJECTDIR}

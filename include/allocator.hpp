@@ -41,7 +41,7 @@ namespace std
 	class allocator 
 	{
 	public:
-	        explicit allocator(const char* name = "asdef"):       m_name(name) {}
+	        explicit allocator(const char* name = "alloc"):       m_name(name) {}
 	        ~allocator() {}
 
 

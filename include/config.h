@@ -30,11 +30,11 @@
  */
 
 #ifndef ASSTL_VERSION
-#define ASSTL_VERSION 0x00228 // v. 0.22.8
+#define ASSTL_VERSION 0x00242 // v. 0.22.8
 #endif
 
 #ifndef ASSTL_VERSION_STRING
-#define ASSTL_VERSION_STRING std::string("0.22.8")
+#define ASSTL_VERSION_STRING std::string("0.24.2")
 #endif
 #ifndef USER_SYSTEM_IMP_
 /*
@@ -106,4 +106,8 @@
 
 #ifndef ASSTL_USE_SSE
 #define ASSTL_USE_SSE
+#endif
+
+#ifndef ASSTL_USE_OPENMP
+#define ASSTL_USE_OPENMP
 #endif

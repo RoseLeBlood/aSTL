@@ -23,43 +23,46 @@
  */
 
 /* 
- * File:   std_counter.hpp
+ * File:   pallocator.hpp
  * Author: annas
  *
- * Created on 18. April 2017, 20:46
+ * Created on 22. April 2017, 23:35
  */
 
-#ifndef STD_COUNTER_HPP
-#define STD_COUNTER_HPP
+#ifndef PALLOCATOR_HPP
+#define PALLOCATOR_HPP
 
-#include "lock_ptr.hpp"
+#include "memory/palloc.h"
 
 namespace std {
-    ///@brief safe counter is a base of thread saftly counter 
-    class safe_counter {
+    
+    class pallocator {
     public:
-        ///@param start Start value of this counter 
-        explicit safe_counter(int start = 0) : m_iCount(start) {}
-        ///@brief thread saftly increment operator
-        safe_counter& operator ++() {
-            ++(*lock_ptr<int>(m_iCount, m_mutex));
-            return *this;
+	explicit allocator(const char* name = "palloc") : m_name(name) {}
+	~allocator() {}
+        
+        virtual void* allocate(unsigned int bytes, int flags = 0) {
+            unsigned bnum = (unsigned) ((bytes + 1) / (PALLOC_SIZE * 1024)) + 1; 
+            return palloc(bnum);
         }
-        ///@brief thread saftly decrement operator
-        safe_counter& operator --() {
-            --(*lock_ptr<int>(m_iCount, m_mutex));
-            return *this;
+        virtual void* allocate_aligned(unsigned int bytes, unsigned int alignment, int flags = 0) {
+            return 0;
         }
-        ///@brief get the current count
-        int64_t count() {
-            return *lock_ptr<int>(m_iCount, m_mutex);
+	virtual void deallocate(void* ptr, unsigned int bytes) {
+            return pfree(ptr);
         }
-    protected:
-        mutex m_mutex;
-        volatile int m_iCount; 
+	const char* get_name() const { return m_name; }
+    private:
+        const char* m_name;
     };
+    inline bool operator==(const pallocator& lhs, const pallocator& rhs) {
+	return !strcmp(lhs.get_name(), rhs.get_name());
+    }
+    inline bool operator!=(const pallocator& lhs, const pallocator& rhs) {
+	return !(lhs == rhs);
+    }
+
 }
 
-
-#endif /* STD_COUNTER_HPP */
+#endif /* PALLOCATOR_HPP */
 
