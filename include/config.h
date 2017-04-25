@@ -34,7 +34,7 @@
 #endif
 
 #ifndef ASSTL_VERSION_STRING
-#define ASSTL_VERSION_STRING std::string("0.24.2")
+#define ASSTL_VERSION_STRING "0.24.2"
 #endif
 #ifndef USER_SYSTEM_IMP_
 /*
@@ -72,7 +72,7 @@
 #endif // ASSTL_SYSTEM_NAME
 
 #ifndef ASSTL_LIB_NAME // see asstl.cpp
-#define ASSTL_LIB_NAME ((ASSTL_VERSION_STRING) << "-" << ASSTL_SYSTEM_NAME)
+#define ASSTL_LIB_NAME (std::string(ASSTL_VERSION_STRING) << "-" << std::string(ASSTL_SYSTEM_NAME))
 #endif
 
 #ifndef ASSTL_RND_DEFAULT

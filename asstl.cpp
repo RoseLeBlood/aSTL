@@ -29,7 +29,7 @@ namespace std
 {
 	string asstlVersion()
         {
-            return ASSTL_LIB_NAME;
+            return string(ASSTL_LIB_NAME);
         }
       
 }

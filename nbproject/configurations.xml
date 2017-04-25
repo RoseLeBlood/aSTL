@@ -72,6 +72,7 @@
         <itemPath>include/cow_string_storage.hpp</itemPath>
         <itemPath>include/deleter.hpp</itemPath>
         <itemPath>include/event.hpp</itemPath>
+        <itemPath>include/exception.hpp</itemPath>
         <itemPath>include/exp_vector.hpp</itemPath>
         <itemPath>include/filestream.hpp</itemPath>
         <itemPath>include/fixed_array.hpp</itemPath>
@@ -149,6 +150,7 @@
       <itemPath>PLATFORM.cpp</itemPath>
       <itemPath>application.cpp</itemPath>
       <itemPath>asstl.cpp</itemPath>
+      <itemPath>exception.cpp</itemPath>
       <itemPath>filestream.cpp</itemPath>
       <itemPath>intrusive_list.cpp</itemPath>
       <itemPath>intrusive_slist.cpp</itemPath>
@@ -205,6 +207,8 @@
       </item>
       <item path="asstl.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="exception.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="filestream.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="include/algorithm.hpp" ex="false" tool="3" flavor2="0">
@@ -240,6 +244,8 @@
       <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -524,6 +530,8 @@
       </item>
       <item path="asstl.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="exception.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="filestream.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="include/algorithm.hpp" ex="false" tool="3" flavor2="0">
@@ -559,6 +567,8 @@
       <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>

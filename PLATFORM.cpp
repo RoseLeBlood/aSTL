@@ -29,10 +29,16 @@
 #include <pthread.h>
 #include <malloc.h>
 #include <ctype.h>
+#include <cxxabi.h>
+
 #else
 
 #endif
 
+#ifdef _WIN32 || _WIN64
+inline int backtrace(void** p, int s) { return 0; }
+inline char** backtrace_symbols(void* const p, int s) { return nullptr; }
+#endif
 namespace std {
       
 #ifndef USER_SYSTEM_IMP_
@@ -64,7 +70,7 @@ namespace std {
                 int Sys::vsnPrintf(char *buffer, size_t count, const char *format, va_list argptr) {
                     return _vsnprintf(buffer, count, format, argptr);
                 }
-                
+          
                 void* Sys::fOpen(const char* file, const char* fmt) {
                      return fopen(file, fmt);
                 }
@@ -166,8 +172,57 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                     return  pthread_spin_trylock( (pthread_spinlock_t*)&spin );
                 }
-                uint64_t Sys::pTotalMem() {
-                    return 536870912;
+                Sys::stacktrace_t* Sys::getStackTrace() {
+                    Sys::stacktrace_t *r = new stacktrace_t();
+                    sprintf(r->system, ASSTL_SYSTEM_NAME);
+                    sprintf(r->version, ASSTL_VERSION_STRING);
+                    
+                    r->empty = true;
+                    r->size = 1;
+                    
+                    void* addrlist[64];
+                    int addrlen = backtrace(addrlist, 64);
+                    if(addrlen == 0) { return r; }
+                    char** symbollist = backtrace_symbols(addrlist, addrlen);
+                    int status;
+                    
+                    char* funcname = (char*)Sys::mAlloc(256);
+                    int funcnamesize = 256;
+                    
+                    r->size = addrlen;
+                    r->empty = false;
+                    
+                    for(int i =1; i < addrlen; i++) {
+                        char* begin, *end, *name;
+                        for(char *c = symbollist[i]; *c; ++c ) {
+                            if(*c == '(') name = c;
+                            else if(*c == '+') begin = c;
+                            else if(*c == ')' && begin) { end = c; break;}   
+                        }
+                        if(begin && end && name && name < begin) {
+                            *name++ = '\0';
+                            *begin++ = '\0';
+                            *end++ = '\0';
+                            
+                            char* ret = abi::__cxa_demangle(name, funcname, 
+                                    &funcnamesize, &status);
+                            
+                            if(status == 0) {
+                                funcname = ret;
+                                sprintf(r->trace[i], "  %s, %s+%s\n",
+                                        symbollist[1], funcname, begin);
+                            } else {
+                               sprintf(r->trace[i], "  %s, %s()+%s\n",
+                                        symbollist[1], name, begin);
+                            }
+                        } else {
+                            sprintf(r->trace[i], "  %s\n", symbollist[1]);
+                        }
+                    }
+                    free(symbollist);
+                    free(funcname);
+                    
+                    return r;
                 }
 #else
                 void Sys::MemCpy(void* to, const void* from, size_t bytes) {
@@ -275,8 +330,10 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                    
                 }
-                uint64_t Sys::pTotalMem() {
-                   
+                const char* Sys::getStackTrace() {
+                }
+                int Sys::sPrintf(char* buffer, const char* format) {
+                    
                 }
             };
 #endif

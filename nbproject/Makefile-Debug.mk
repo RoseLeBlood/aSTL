@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/PLATFORM.o \
 	${OBJECTDIR}/application.o \
 	${OBJECTDIR}/asstl.o \
+	${OBJECTDIR}/exception.o \
 	${OBJECTDIR}/filestream.o \
 	${OBJECTDIR}/intrusive_list.o \
 	${OBJECTDIR}/intrusive_slist.o \
@@ -95,6 +96,11 @@ ${OBJECTDIR}/asstl.o: asstl.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/asstl.o asstl.cpp
+
+${OBJECTDIR}/exception.o: exception.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exception.o exception.cpp
 
 ${OBJECTDIR}/filestream.o: filestream.cpp
 	${MKDIR} -p ${OBJECTDIR}

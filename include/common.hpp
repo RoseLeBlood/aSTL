@@ -63,7 +63,8 @@ namespace std
             static void wMemCpy(void* to, const void* from, size_t bytes);
             static void wMemMove(void* to, const void* from, size_t bytes);
             static void wMemSet(void* buf, unsigned char value, size_t bytes);
-                
+            
+   
             static int vsnPrintf(char *buffer, size_t count, const char *format, va_list argptr);
             static int fPrintf(void* file, const char* str);
                 
@@ -112,7 +113,14 @@ namespace std
             static int spinlockUnLock(spinlk_type* mutex);
             static int spinlockTryLock(spinlk_type* mutex); 
             
-            static uint64_t pTotalMem();
+            struct stacktrace_t {
+                bool empty;
+                int size;
+                const char* trace[64];  
+                const char* system;
+                uint32_t    version;
+            };
+            static stacktrace_t* getStackTrace();
         }; 
 }
 
