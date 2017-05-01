@@ -80,6 +80,18 @@ namespace std {
             for(size_t i=0; i<N; i++)
                 m_vecPointer.push_back(false);
         }
+        template<typename E, class TAllocator = std::allocator, 
+                typename TStorage = std::simple_string_storage<E, TAllocator> >
+        bitset(basic_string<E, TAllocator, TStorage> value) {
+            basic_string<E, TAllocator, TStorage>::const_iterator it =
+                    value.end();
+            for(size_t i =0; i < N; i++ )
+                for(value_type b = 1; b; b <<= 1 )
+                    if(it == value.begin() || *--it == '0')
+                        m_vecPointer[i] = false;
+                    else
+                        m_vecPointer[i] = true;
+        }
         
         inline void flip(value_type n) { 
             m_vecPointer[n] = !(m_vecPointer[n]);

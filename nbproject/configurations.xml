@@ -75,6 +75,7 @@
         <itemPath>include/event.hpp</itemPath>
         <itemPath>include/exception.hpp</itemPath>
         <itemPath>include/exp_vector.hpp</itemPath>
+        <itemPath>include/fast_type.hpp</itemPath>
         <itemPath>include/filestream.hpp</itemPath>
         <itemPath>include/fixed_array.hpp</itemPath>
         <itemPath>include/fixed_list.hpp</itemPath>
@@ -251,6 +252,8 @@
       <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/fast_type.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -576,6 +579,8 @@
       <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/fast_type.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
