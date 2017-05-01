@@ -38,7 +38,8 @@
 
 namespace std
 {
-	template<typename T, class TAllocator, int TCapacity, bool TGrowOnOverflow> struct fixed_vector_storage 
+	template<typename T, class TAllocator, int TCapacity, bool TGrowOnOverflow>
+        struct fixed_vector_storage 
 	{
         explicit fixed_vector_storage(const TAllocator& allocator)
         	: m_begin((T*)&m_data[0]),  m_end(m_begin), m_capacityEnd(m_begin + TCapacity), m_allocator(allocator) , m_max_size(0)

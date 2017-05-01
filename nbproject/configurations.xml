@@ -64,6 +64,7 @@
         <itemPath>include/atomic.hpp</itemPath>
         <itemPath>include/auto_ptr.hpp</itemPath>
         <itemPath>include/basic_string.hpp</itemPath>
+        <itemPath>include/bitset.hpp</itemPath>
         <itemPath>include/buffer_allocator.hpp</itemPath>
         <itemPath>include/bytebuffer.hpp</itemPath>
         <itemPath>include/clone_ptr.hpp</itemPath>
@@ -228,6 +229,8 @@
       <item path="include/auto_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/basic_string.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/bitset.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -551,6 +554,8 @@
       <item path="include/auto_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/basic_string.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/bitset.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
