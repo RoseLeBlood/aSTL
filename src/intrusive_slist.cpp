@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-#include "include/intrusive_slist.hpp"
+#include "../include/intrusive_slist.hpp"
 
 namespace std
 {

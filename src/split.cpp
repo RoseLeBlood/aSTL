@@ -21,29 +21,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+#include "../include/common.hpp"
+#include "../include/split.hpp"
 
-/* 
- * File:   application.cpp
- * Author: annas
- * 
- * Created on 5. Dezember 2016, 04:34
- */
-
-#include "include/application.hpp"
-
-void __new_handler()
+namespace std
 {
-    
+	std::vector<std::string> split(std::string&  strString, const char*  delimiter)
+	{
+		std::vector<std::string> container;
+		tokenize<char, std::string>
+			((char*)strString.c_str(), delimiter[0], container);
+		return container;
+	}
+	
 }
-int main( int argc, char **argv )
-{
-    std::set_new_handler(__new_handler);
-    
-    std::list<std::string> args;
-    for(int i = 1; i < argc; i++)
-        args.push_back(std::string(argv[i]));
-    
-    //pinit(std::Sys::pTotalMem());
-    return asMain(args);
-}
-

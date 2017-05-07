@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 #include <stddef.h>
-#include "include/filestream.hpp"
-#include "include/sstream.hpp"
+#include "../include/filestream.hpp"
+#include "../include/sstream.hpp"
 
 
 

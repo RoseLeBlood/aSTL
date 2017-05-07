@@ -21,46 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-#include "include/mutex.hpp"
-
-
+#include "../include/stl.hpp"
+#include "../include/memorystream.hpp"
+#include "../include/common.hpp"
 
 namespace std
 {
-
-    mutex::mutex(Sys::mutex_init_t type, 
-              bool shared, bool robust)
-    {
-        Sys::mutexInit(_m_locked, type, shared, robust);
-    }
-    mutex::~mutex()
-    {
-        unlock();
-        Sys::mutexDestroy( _m_locked );
-        delete _m_locked;
-    }
-    void mutex::lock()
-    {
-        Sys::mutexLock( _m_locked );
-    }
-    void mutex::unlock()
-    {
-        Sys::mutexUnLock( _m_locked );
-    }
-    bool mutex::try_lock()
-    {
-       return  Sys::mutexTryLock( _m_locked ) == 0;
-    }
-    mutex::native_handle_type mutex::native_handle()
-    {
-        return _m_locked;
-    }
-    mutex& mutex::operator=(const mutex& m) {
-        _m_locked = m._m_locked;
-        return *this;
-    }
-    mutex::mutex(const mutex& m) {
-        _m_locked = m._m_locked;
-    }
+	string asstlVersion()
+        {
+            return ASSTL_LIB_NAME;
+        }
+      
 }
