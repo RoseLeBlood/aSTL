@@ -21,8 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "include/exception.hpp"
-#include "include/common.hpp"
+#include "../include/exception.hpp"
+#include "../include/common.hpp"
 
 namespace std {
     _exception::_exception() {
@@ -48,7 +48,7 @@ namespace std {
     const char* _exception::what(bool stacktrace) {
         string s = m_strMessage ;
         s += string("\n");
-        if(stacktrace) s += getStackTrace();
+        
         return s.c_str();
     }
     const char* exception::what(bool stacktrace) {

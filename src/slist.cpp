@@ -22,38 +22,24 @@
  * THE SOFTWARE.
  */
 
-#include "include/mutex.hpp"
-
-
+#include "../include/slist.hpp"
 
 namespace std
 {
-
-    mutex::mutex(Sys::mutex_init_t type, 
-              bool shared, bool robust)
+    namespace internal
     {
-        Sys::mutexInit(_m_locked, type, shared, robust);
-    }
-    mutex::~mutex()
-    {
-        unlock();
-        Sys::mutexDestroy( _m_locked );
-        delete _m_locked;
-    }
-    void mutex::lock()
-    {
-        Sys::mutexLock( _m_locked );
-    }
-    void mutex::unlock()
-    {
-        Sys::mutexUnLock( _m_locked );
-    }
-    bool mutex::try_lock()
-    {
-       return  Sys::mutexTryLock( _m_locked ) == 0;
-    }
-    mutex::native_handle_type mutex::native_handle()
-    {
-        return _m_locked;
+        void slist_base_node::link_after(slist_base_node* prevNode)
+        {
+                assert(!in_list());
+                next = prevNode->next;
+                prevNode->next = this;
+        }
+        void slist_base_node::unlink(slist_base_node* prevNode)
+        {
+            assert(in_list());
+            assert(prevNode->next == this);
+            prevNode->next = next;
+            next = this;
+        }
     }
 }

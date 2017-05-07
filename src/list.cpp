@@ -21,17 +21,27 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "include/common.hpp"
-#include "include/split.hpp"
+
+#include "../include/list.hpp"
 
 namespace std
 {
-	std::vector<std::string> split(std::string&  strString, const char*  delimiter)
-	{
-		std::vector<std::string> container;
-		tokenize<char, std::string>
-			((char*)strString.c_str(), delimiter[0], container);
-		return container;
-	}
-	
+    namespace internal
+    {
+        void list_base_node::link_before(list_base_node* nextNode)
+        {
+            assert(!in_list());
+            prev = nextNode->prev;
+            prev->next = this;
+            nextNode->prev = this;
+            next = nextNode;
+        }
+        void list_base_node::unlink()
+        {
+            assert(in_list());
+            prev->next = next;
+            next->prev = prev;
+            next = prev = this;
+        }
+    } 
 }

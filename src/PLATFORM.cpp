@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-#include "include/common.hpp"
+#include "../include/common.hpp"
 
 #ifndef USER_SYSTEM_IMP_
 #include <sys/stat.h>
@@ -172,58 +172,7 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                     return  pthread_spin_trylock( (pthread_spinlock_t*)&spin );
                 }
-                Sys::stacktrace_t* Sys::getStackTrace() {
-                    Sys::stacktrace_t *r = new stacktrace_t();
-                    sprintf(r->system, ASSTL_SYSTEM_NAME);
-                    sprintf(r->version, ASSTL_VERSION_STRING);
-                    
-                    r->empty = true;
-                    r->size = 1;
-                    
-                    void* addrlist[64];
-                    int addrlen = backtrace(addrlist, 64);
-                    if(addrlen == 0) { return r; }
-                    char** symbollist = backtrace_symbols(addrlist, addrlen);
-                    int status;
-                    
-                    char* funcname = (char*)Sys::mAlloc(256);
-                    int funcnamesize = 256;
-                    
-                    r->size = addrlen;
-                    r->empty = false;
-                    
-                    for(int i =1; i < addrlen; i++) {
-                        char* begin, *end, *name;
-                        for(char *c = symbollist[i]; *c; ++c ) {
-                            if(*c == '(') name = c;
-                            else if(*c == '+') begin = c;
-                            else if(*c == ')' && begin) { end = c; break;}   
-                        }
-                        if(begin && end && name && name < begin) {
-                            *name++ = '\0';
-                            *begin++ = '\0';
-                            *end++ = '\0';
-                            
-                            char* ret = abi::__cxa_demangle(name, funcname, 
-                                    &funcnamesize, &status);
-                            
-                            if(status == 0) {
-                                funcname = ret;
-                                sprintf(r->trace[i], "  %s, %s+%s\n",
-                                        symbollist[1], funcname, begin);
-                            } else {
-                               sprintf(r->trace[i], "  %s, %s()+%s\n",
-                                        symbollist[1], name, begin);
-                            }
-                        } else {
-                            sprintf(r->trace[i], "  %s\n", symbollist[1]);
-                        }
-                    }
-                    free(symbollist);
-                    free(funcname);
-                    
-                    return r;
-                }
+                
 #else
                 void Sys::MemCpy(void* to, const void* from, size_t bytes) {
                   

@@ -21,6 +21,39 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "include/common.hpp"
 
-  
+#include "../include/mutex.hpp"
+
+
+
+namespace std
+{
+
+    mutex::mutex(Sys::mutex_init_t type, 
+              bool shared, bool robust)
+    {
+        Sys::mutexInit(_m_locked, type, shared, robust);
+    }
+    mutex::~mutex()
+    {
+        unlock();
+        Sys::mutexDestroy( _m_locked );
+        delete _m_locked;
+    }
+    void mutex::lock()
+    {
+        Sys::mutexLock( _m_locked );
+    }
+    void mutex::unlock()
+    {
+        Sys::mutexUnLock( _m_locked );
+    }
+    bool mutex::try_lock()
+    {
+       return  Sys::mutexTryLock( _m_locked ) == 0;
+    }
+    mutex::native_handle_type mutex::native_handle()
+    {
+        return _m_locked;
+    }
+}

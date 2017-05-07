@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#include "../include/network/address.hpp"
-#include "../include/common.hpp"
+#include "../../include/network/address.hpp"
+#include "../../include/common.hpp"
 
 namespace std {
     namespace net {

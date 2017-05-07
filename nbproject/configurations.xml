@@ -5,30 +5,28 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="include" displayName="include" projectFiles="true">
-        <logicalFolder name="f4" displayName="crypt" projectFiles="true">
-          <logicalFolder name="f1" displayName="rand" projectFiles="true">
-            <itemPath>include/hash/discard_block_engine.hpp</itemPath>
-            <itemPath>include/hash/independent_bits_engine.hpp</itemPath>
-            <itemPath>include/hash/isaac_engine.hpp</itemPath>
-            <itemPath>include/hash/linear_congruential_engine.hpp</itemPath>
-            <itemPath>include/hash/mersenne_twister_engine.hpp</itemPath>
-            <itemPath>include/hash/random.hpp</itemPath>
-            <itemPath>include/hash/shuffle_order_engine.hpp</itemPath>
-            <itemPath>include/hash/subtract_with_carry_engine.hpp</itemPath>
-          </logicalFolder>
+        <logicalFolder name="graphic" displayName="graphic" projectFiles="true">
+          <itemPath>include/graphic/image.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="hash" displayName="hash" projectFiles="true">
           <itemPath>include/hash/adler32.hpp</itemPath>
           <itemPath>include/hash/bernstein.hpp</itemPath>
           <itemPath>include/hash/crc32.hpp</itemPath>
+          <itemPath>include/hash/discard_block_engine.hpp</itemPath>
           <itemPath>include/hash/fletcher.hpp</itemPath>
           <itemPath>include/hash/fnv1a.hpp</itemPath>
           <itemPath>include/hash/hash.hpp</itemPath>
+          <itemPath>include/hash/independent_bits_engine.hpp</itemPath>
+          <itemPath>include/hash/isaac_engine.hpp</itemPath>
+          <itemPath>include/hash/linear_congruential_engine.hpp</itemPath>
+          <itemPath>include/hash/mersenne_twister_engine.hpp</itemPath>
           <itemPath>include/hash/ramakrishna.hpp</itemPath>
+          <itemPath>include/hash/random.hpp</itemPath>
+          <itemPath>include/hash/shuffle_order_engine.hpp</itemPath>
+          <itemPath>include/hash/subtract_with_carry_engine.hpp</itemPath>
           <itemPath>include/hash/weinberg.hpp</itemPath>
         </logicalFolder>
-        <logicalFolder name="f3" displayName="graphic" projectFiles="true">
-          <itemPath>include/graphic/image.hpp</itemPath>
-        </logicalFolder>
-        <logicalFolder name="f1" displayName="math" projectFiles="true">
+        <logicalFolder name="math" displayName="math" projectFiles="true">
           <itemPath>include/math/boundingbox.hpp</itemPath>
           <itemPath>include/math/color.hpp</itemPath>
           <itemPath>include/math/colors.hpp</itemPath>
@@ -45,10 +43,10 @@
           <itemPath>include/math/vector3.hpp</itemPath>
           <itemPath>include/math/vector4.hpp</itemPath>
         </logicalFolder>
-        <logicalFolder name="f5" displayName="memory" projectFiles="true">
+        <logicalFolder name="memory" displayName="memory" projectFiles="true">
           <itemPath>include/memory/palloc.h</itemPath>
         </logicalFolder>
-        <logicalFolder name="f2" displayName="network" projectFiles="true">
+        <logicalFolder name="network" displayName="network" projectFiles="true">
           <itemPath>include/network/address.hpp</itemPath>
           <itemPath>include/network/endpoint.hpp</itemPath>
           <itemPath>include/network/host.hpp</itemPath>
@@ -73,12 +71,9 @@
         <itemPath>include/cow_string_storage.hpp</itemPath>
         <itemPath>include/deleter.hpp</itemPath>
         <itemPath>include/event.hpp</itemPath>
-<<<<<<< HEAD
         <itemPath>include/exception.hpp</itemPath>
         <itemPath>include/exp_vector.hpp</itemPath>
         <itemPath>include/fast_type.hpp</itemPath>
-=======
->>>>>>> parent of 29475d5... lock_ptr and vector math
         <itemPath>include/filestream.hpp</itemPath>
         <itemPath>include/fixed_array.hpp</itemPath>
         <itemPath>include/fixed_list.hpp</itemPath>
@@ -96,6 +91,7 @@
         <itemPath>include/iterator.hpp</itemPath>
         <itemPath>include/list.hpp</itemPath>
         <itemPath>include/lock_base.hpp</itemPath>
+        <itemPath>include/lock_ptr.hpp</itemPath>
         <itemPath>include/map.hpp</itemPath>
         <itemPath>include/memorystream.hpp</itemPath>
         <itemPath>include/mutex.hpp</itemPath>
@@ -114,6 +110,7 @@
         <itemPath>include/simple_string_storage.hpp</itemPath>
         <itemPath>include/singleton.hpp</itemPath>
         <itemPath>include/slist.hpp</itemPath>
+        <itemPath>include/smath.hpp</itemPath>
         <itemPath>include/sort.hpp</itemPath>
         <itemPath>include/sorted_vector.hpp</itemPath>
         <itemPath>include/spinlock.hpp</itemPath>
@@ -121,10 +118,12 @@
         <itemPath>include/sstream.hpp</itemPath>
         <itemPath>include/stack.hpp</itemPath>
         <itemPath>include/stack_allocator.hpp</itemPath>
+        <itemPath>include/std_counter.hpp</itemPath>
         <itemPath>include/stl.hpp</itemPath>
         <itemPath>include/stream.hpp</itemPath>
         <itemPath>include/string.hpp</itemPath>
         <itemPath>include/string_utils.hpp</itemPath>
+        <itemPath>include/thread.hpp</itemPath>
         <itemPath>include/type_traits.hpp</itemPath>
         <itemPath>include/unknown.hpp</itemPath>
         <itemPath>include/utility.hpp</itemPath>
@@ -140,30 +139,31 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="f1" displayName="math" projectFiles="true">
-        <itemPath>math/math.cpp</itemPath>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="math" displayName="math" projectFiles="true">
+          <itemPath>src/math/math.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="memory" displayName="memory" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="network" displayName="network" projectFiles="true">
+          <itemPath>src/network/address.cpp</itemPath>
+          <itemPath>src/network/physicaladdress.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>src/PLATFORM.cpp</itemPath>
+        <itemPath>src/application.cpp</itemPath>
+        <itemPath>src/asstl.cpp</itemPath>
+        <itemPath>src/exception.cpp</itemPath>
+        <itemPath>src/filestream.cpp</itemPath>
+        <itemPath>src/intrusive_list.cpp</itemPath>
+        <itemPath>src/intrusive_slist.cpp</itemPath>
+        <itemPath>src/iostream.cpp</itemPath>
+        <itemPath>src/list.cpp</itemPath>
+        <itemPath>src/mutex.cpp</itemPath>
+        <itemPath>src/new.cpp</itemPath>
+        <itemPath>src/slist.cpp</itemPath>
+        <itemPath>src/spinlock.cpp</itemPath>
+        <itemPath>src/split.cpp</itemPath>
       </logicalFolder>
-      <logicalFolder name="f3" displayName="memory" projectFiles="true">
-        <itemPath>memory/palloc.c</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f2" displayName="network" projectFiles="true">
-        <itemPath>network/address.cpp</itemPath>
-        <itemPath>network/physicaladdress.cpp</itemPath>
-      </logicalFolder>
-      <itemPath>PLATFORM.cpp</itemPath>
-      <itemPath>application.cpp</itemPath>
-      <itemPath>asstl.cpp</itemPath>
-      <itemPath>exception.cpp</itemPath>
-      <itemPath>filestream.cpp</itemPath>
-      <itemPath>intrusive_list.cpp</itemPath>
-      <itemPath>intrusive_slist.cpp</itemPath>
-      <itemPath>iostream.cpp</itemPath>
-      <itemPath>list.cpp</itemPath>
-      <itemPath>mutex.cpp</itemPath>
-      <itemPath>new.cpp</itemPath>
-      <itemPath>slist.cpp</itemPath>
-      <itemPath>spinlock.cpp</itemPath>
-      <itemPath>split.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -177,9 +177,10 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
   <sourceRootList>
-    <Elem>platform</Elem>
     <Elem>include</Elem>
+    <Elem>src</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -190,29 +191,13 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
-        <cTool>
-          <architecture>1</architecture>
-          <standard>10</standard>
-        </cTool>
         <ccTool>
-          <architecture>1</architecture>
           <standard>11</standard>
-          <commandLine>-msse2 -msse3 -mfpmath=sse -fpermissive -march=native --with-mfpmath=sse</commandLine>
           <warningLevel>0</warningLevel>
         </ccTool>
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="PLATFORM.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="application.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="asstl.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="exception.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="filestream.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="include/algorithm.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/alignment.hpp" ex="false" tool="3" flavor2="0">
@@ -249,15 +234,12 @@
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
-<<<<<<< HEAD
       <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fast_type.hpp" ex="false" tool="3" flavor2="0">
       </item>
-=======
->>>>>>> parent of 29475d5... lock_ptr and vector math
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_array.hpp" ex="false" tool="3" flavor2="0">
@@ -344,6 +326,8 @@
       </item>
       <item path="include/lock_base.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/lock_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/map.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/boundingbox.hpp" ex="false" tool="3" flavor2="0">
@@ -425,6 +409,8 @@
       </item>
       <item path="include/slist.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/smath.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/sort.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/sorted_vector.hpp" ex="false" tool="3" flavor2="0">
@@ -439,6 +425,8 @@
       </item>
       <item path="include/stack_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/std_counter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/stl.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/stream.hpp" ex="false" tool="3" flavor2="0">
@@ -446,6 +434,8 @@
       <item path="include/string.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/string_utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/thread.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/type_traits.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -459,84 +449,63 @@
       </item>
       <item path="include/weak_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="intrusive_list.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/PLATFORM.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="intrusive_slist.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/application.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="iostream.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/asstl.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="list.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/exception.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="math/math.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/filestream.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="memory/palloc.c" ex="false" tool="0" flavor2="0">
+      <item path="src/intrusive_list.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/intrusive_slist.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/iostream.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/list.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="new.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/math/math.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="slist.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/mutex.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="spinlock.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/network/address.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="split.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/slist.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/spinlock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/split.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
-    <conf name="Release" type="3" platformSpecific="true">
+    <conf name="Release" type="3">
       <toolsSet>
-        <compilerSet>MinGW|MinGW</compilerSet>
-        <platform>3</platform>
+        <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <cTool>
           <developmentMode>5</developmentMode>
-          <stripSymbols>true</stripSymbols>
-          <architecture>1</architecture>
-          <standard>10</standard>
-          <incDir>
-            <pElem>include</pElem>
-          </incDir>
-          <useLinkerLibraries>false</useLinkerLibraries>
         </cTool>
         <ccTool>
-          <developmentMode>6</developmentMode>
-          <stripSymbols>true</stripSymbols>
-          <architecture>1</architecture>
-          <standard>11</standard>
-          <incDir>
-            <pElem>include</pElem>
-          </incDir>
-          <commandLine>-msse2 -msse3 -mfpmath=sse -fpermissive -march=native</commandLine>
-          <useLinkerLibraries>false</useLinkerLibraries>
-          <warningLevel>0</warningLevel>
+          <developmentMode>5</developmentMode>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
         </fortranCompilerTool>
         <asmTool>
           <developmentMode>5</developmentMode>
-          <architecture>1</architecture>
-          <commandlineTool>nasm</commandlineTool>
         </asmTool>
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="PLATFORM.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="application.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="asstl.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="exception.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="filestream.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="include/algorithm.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/alignment.hpp" ex="false" tool="3" flavor2="0">
@@ -573,15 +542,12 @@
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
       </item>
-<<<<<<< HEAD
       <item path="include/exception.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fast_type.hpp" ex="false" tool="3" flavor2="0">
       </item>
-=======
->>>>>>> parent of 29475d5... lock_ptr and vector math
       <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/fixed_array.hpp" ex="false" tool="3" flavor2="0">
@@ -668,6 +634,8 @@
       </item>
       <item path="include/lock_base.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/lock_ptr.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/map.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/math/boundingbox.hpp" ex="false" tool="3" flavor2="0">
@@ -749,6 +717,8 @@
       </item>
       <item path="include/slist.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/smath.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/sort.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/sorted_vector.hpp" ex="false" tool="3" flavor2="0">
@@ -763,6 +733,8 @@
       </item>
       <item path="include/stack_allocator.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/std_counter.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/stl.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/stream.hpp" ex="false" tool="3" flavor2="0">
@@ -770,6 +742,8 @@
       <item path="include/string.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/string_utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/thread.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/type_traits.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -783,34 +757,39 @@
       </item>
       <item path="include/weak_ptr.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="intrusive_list.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/PLATFORM.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="intrusive_slist.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/application.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="iostream.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/asstl.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="list.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/exception.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="math/math.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/filestream.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="memory/palloc.c" ex="false" tool="0" flavor2="10">
-        <cTool>
-          <stripSymbols>false</stripSymbols>
-        </cTool>
+      <item path="src/intrusive_list.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="mutex.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/intrusive_slist.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="network/address.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/iostream.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/list.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="new.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/math/math.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="slist.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/mutex.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="spinlock.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/network/address.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="split.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/slist.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/spinlock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/split.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

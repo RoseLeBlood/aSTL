@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "include/spinlock.hpp"
+#include "../include/spinlock.hpp"
 
 namespace std
 {
