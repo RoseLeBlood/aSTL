@@ -56,11 +56,4 @@ namespace std
     {
         return _m_locked;
     }
-    mutex& mutex::operator=(const mutex& m) {
-        _m_locked = m._m_locked;
-        return *this;
-    }
-    mutex::mutex(const mutex& m) {
-        _m_locked = m._m_locked;
-    }
 }
