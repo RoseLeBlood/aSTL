@@ -22,37 +22,45 @@
  * THE SOFTWARE.
  */
 
-#include "../nclude/intrusive_slist.hpp"
+#include "include/mutex.hpp"
+
+
 
 namespace std
 {
-    intrusive_slist_base::intrusive_slist_base()
-    {
-    }
 
-    intrusive_slist_base::size_type intrusive_slist_base::size() const
+    mutex::mutex(Sys::mutex_init_t type, 
+              bool shared, bool robust)
     {
-        size_type numNodes(0);
-        const intrusive_slist_node* iter = &m_root;
-        do
-        {
-            iter = iter->next;
-            ++numNodes;
-        } while (iter != &m_root);
-        return numNodes - 1;
+        Sys::mutexInit(_m_locked, type, shared, robust);
     }
-
-    void intrusive_slist_base::link_after(intrusive_slist_node* node, intrusive_slist_node* prevNode)
+    mutex::~mutex()
     {
-        assert(!node->in_list());
-        node->next = prevNode->next;
-        prevNode->next = node;
+        unlock();
+        Sys::mutexDestroy( _m_locked );
+        delete _m_locked;
     }
-    void intrusive_slist_base::unlink_after(intrusive_slist_node* node)
+    void mutex::lock()
     {
-        assert(node->in_list());
-        intrusive_slist_node* thisNode = node->next;
-        node->next = thisNode->next;
-        thisNode->next = thisNode;
+        Sys::mutexLock( _m_locked );
+    }
+    void mutex::unlock()
+    {
+        Sys::mutexUnLock( _m_locked );
+    }
+    bool mutex::try_lock()
+    {
+       return  Sys::mutexTryLock( _m_locked ) == 0;
+    }
+    mutex::native_handle_type mutex::native_handle()
+    {
+        return _m_locked;
+    }
+    mutex& mutex::operator=(const mutex& m) {
+        _m_locked = m._m_locked;
+        return *this;
+    }
+    mutex::mutex(const mutex& m) {
+        _m_locked = m._m_locked;
     }
 }

@@ -35,31 +35,32 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/src/PLATFORM.o \
-	${OBJECTDIR}/src/application.o \
-	${OBJECTDIR}/src/asstl.o \
-	${OBJECTDIR}/src/exception.o \
-	${OBJECTDIR}/src/filestream.o \
-	${OBJECTDIR}/src/intrusive_list.o \
-	${OBJECTDIR}/src/intrusive_slist.o \
-	${OBJECTDIR}/src/iostream.o \
-	${OBJECTDIR}/src/list.o \
-	${OBJECTDIR}/src/math/math.o \
-	${OBJECTDIR}/src/mutex.o \
-	${OBJECTDIR}/src/network/address.o \
-	${OBJECTDIR}/src/network/physicaladdress.o \
-	${OBJECTDIR}/src/new.o \
-	${OBJECTDIR}/src/slist.o \
-	${OBJECTDIR}/src/spinlock.o \
-	${OBJECTDIR}/src/split.o
+	${OBJECTDIR}/PLATFORM.o \
+	${OBJECTDIR}/application.o \
+	${OBJECTDIR}/asstl.o \
+	${OBJECTDIR}/filestream.o \
+	${OBJECTDIR}/intrusive_list.o \
+	${OBJECTDIR}/intrusive_slist.o \
+	${OBJECTDIR}/iostream.o \
+	${OBJECTDIR}/list.o \
+	${OBJECTDIR}/math/math.o \
+	${OBJECTDIR}/memory/palloc.o \
+	${OBJECTDIR}/mutex.o \
+	${OBJECTDIR}/network/address.o \
+	${OBJECTDIR}/network/physicaladdress.o \
+	${OBJECTDIR}/new.o \
+	${OBJECTDIR}/safe_counter.o \
+	${OBJECTDIR}/slist.o \
+	${OBJECTDIR}/spinlock.o \
+	${OBJECTDIR}/split.o
 
 
 # C Compiler Flags
-CFLAGS=
+CFLAGS=-m32
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-m32 -msse2 -msse3 -mfpmath=sse -fpermissive -march=native --with-mfpmath=sse
+CXXFLAGS=-m32 -msse2 -msse3 -mfpmath=sse -fpermissive -march=native --with-mfpmath=sse
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -80,90 +81,95 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a: ${OBJECTFILES}
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a ${OBJECTFILES} 
 	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libastl.a
 
-${OBJECTDIR}/src/PLATFORM.o: src/PLATFORM.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/PLATFORM.o: PLATFORM.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/PLATFORM.o src/PLATFORM.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PLATFORM.o PLATFORM.cpp
 
-${OBJECTDIR}/src/application.o: src/application.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/application.o: application.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/application.o src/application.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/application.o application.cpp
 
-${OBJECTDIR}/src/asstl.o: src/asstl.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/asstl.o: asstl.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/asstl.o src/asstl.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/asstl.o asstl.cpp
 
-${OBJECTDIR}/src/exception.o: src/exception.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/filestream.o: filestream.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/exception.o src/exception.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/filestream.o filestream.cpp
 
-${OBJECTDIR}/src/filestream.o: src/filestream.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/intrusive_list.o: intrusive_list.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/filestream.o src/filestream.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/intrusive_list.o intrusive_list.cpp
 
-${OBJECTDIR}/src/intrusive_list.o: src/intrusive_list.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/intrusive_slist.o: intrusive_slist.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/intrusive_list.o src/intrusive_list.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/intrusive_slist.o intrusive_slist.cpp
 
-${OBJECTDIR}/src/intrusive_slist.o: src/intrusive_slist.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/iostream.o: iostream.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/intrusive_slist.o src/intrusive_slist.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/iostream.o iostream.cpp
 
-${OBJECTDIR}/src/iostream.o: src/iostream.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/list.o: list.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/iostream.o src/iostream.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/list.o list.cpp
 
-${OBJECTDIR}/src/list.o: src/list.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/math/math.o: math/math.cpp
+	${MKDIR} -p ${OBJECTDIR}/math
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/list.o src/list.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/math/math.o math/math.cpp
 
-${OBJECTDIR}/src/math/math.o: src/math/math.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/math
+${OBJECTDIR}/memory/palloc.o: memory/palloc.c
+	${MKDIR} -p ${OBJECTDIR}/memory
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/math/math.o src/math/math.cpp
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/memory/palloc.o memory/palloc.c
 
-${OBJECTDIR}/src/mutex.o: src/mutex.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/mutex.o: mutex.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/mutex.o src/mutex.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mutex.o mutex.cpp
 
-${OBJECTDIR}/src/network/address.o: src/network/address.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/network
+${OBJECTDIR}/network/address.o: network/address.cpp
+	${MKDIR} -p ${OBJECTDIR}/network
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/network/address.o src/network/address.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/network/address.o network/address.cpp
 
-${OBJECTDIR}/src/network/physicaladdress.o: src/network/physicaladdress.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/network
+${OBJECTDIR}/network/physicaladdress.o: network/physicaladdress.cpp
+	${MKDIR} -p ${OBJECTDIR}/network
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/network/physicaladdress.o src/network/physicaladdress.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/network/physicaladdress.o network/physicaladdress.cpp
 
-${OBJECTDIR}/src/new.o: src/new.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/new.o: new.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/new.o src/new.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/new.o new.cpp
 
-${OBJECTDIR}/src/slist.o: src/slist.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/safe_counter.o: safe_counter.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/slist.o src/slist.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/safe_counter.o safe_counter.cpp
 
-${OBJECTDIR}/src/spinlock.o: src/spinlock.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/slist.o: slist.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/spinlock.o src/spinlock.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/slist.o slist.cpp
 
-${OBJECTDIR}/src/split.o: src/split.cpp
-	${MKDIR} -p ${OBJECTDIR}/src
+${OBJECTDIR}/spinlock.o: spinlock.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/split.o src/split.cpp
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/spinlock.o spinlock.cpp
+
+${OBJECTDIR}/split.o: split.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -w -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/split.o split.cpp
 
 # Subprojects
 .build-subprojects:

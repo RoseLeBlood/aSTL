@@ -96,7 +96,7 @@ namespace std
             
             template<typename E = char, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
             std::basic_string<E, TAllocator, TStorage> to_string() {   
-                return frmstring<E, TAllocator, TStorage>("{ %.3f %.3f }", x, y ); }
+                return std::frmstring<E, TAllocator, TStorage>("{ %.3f %.3f }", x, y ); }
 	};
         
         template < typename T >

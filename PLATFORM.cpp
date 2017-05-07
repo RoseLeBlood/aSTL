@@ -22,23 +22,17 @@
  * THE SOFTWARE.
  */
 
-#include "../include/common.hpp"
+#include "include/common.hpp"
 
 #ifndef USER_SYSTEM_IMP_
 #include <sys/stat.h>
 #include <pthread.h>
 #include <malloc.h>
 #include <ctype.h>
-#include <cxxabi.h>
-
 #else
 
 #endif
 
-#ifdef _WIN32 || _WIN64
-inline int backtrace(void** p, int s) { return 0; }
-inline char** backtrace_symbols(void* const p, int s) { return nullptr; }
-#endif
 namespace std {
       
 #ifndef USER_SYSTEM_IMP_
@@ -70,7 +64,7 @@ namespace std {
                 int Sys::vsnPrintf(char *buffer, size_t count, const char *format, va_list argptr) {
                     return _vsnprintf(buffer, count, format, argptr);
                 }
-          
+                
                 void* Sys::fOpen(const char* file, const char* fmt) {
                      return fopen(file, fmt);
                 }
@@ -172,7 +166,9 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                     return  pthread_spin_trylock( (pthread_spinlock_t*)&spin );
                 }
-                
+                uint64_t Sys::pTotalMem() {
+                    return 536870912;
+                }
 #else
                 void Sys::MemCpy(void* to, const void* from, size_t bytes) {
                   
@@ -279,10 +275,8 @@ namespace std {
                 int Sys::spinlockTryLock(spinlk_type* spin) {
                    
                 }
-                const char* Sys::getStackTrace() {
-                }
-                int Sys::sPrintf(char* buffer, const char* format) {
-                    
+                uint64_t Sys::pTotalMem() {
+                   
                 }
             };
 #endif

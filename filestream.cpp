@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 #include <stddef.h>
-#include "../include/filestream.hpp"
-#include "../include/sstream.hpp"
+#include "include/filestream.hpp"
+#include "include/sstream.hpp"
 
 
 
@@ -31,7 +31,7 @@ namespace std
 {
     inline const char* filemodetostring(filemode_t m, bool a)
     {
-        string s;
+        std::string s;
         if(m == filemode::rw) s << "rw";
         else if(m == filemode::read) s << "r";
         else if(m == filemode::write) s << "w";
@@ -61,7 +61,7 @@ namespace std
         m_strFile = "IoFile";
         m_binary = b;
     }
-    filestream::filestream(string file, filemode_t mode,
+    filestream::filestream(std::string file, filemode_t mode,
             bool a)
             : stream()
         {
@@ -130,11 +130,11 @@ namespace std
         return Sys::fGetc(m_fFile.get());
     }
         
-    bool  filestream::isfile(string file) {
+    bool  filestream::isfile(std::string file) {
         return Sys::fIsFile(file.c_str());
 
     }
-    bool  filestream::canread(string file) {
+    bool  filestream::canread(std::string file) {
         void* f = Sys::fOpen(file.c_str(), "r");
         if(f != 0)
         {
@@ -143,7 +143,7 @@ namespace std
         }
         return false;
     }
-    bool  filestream::canwrite(string file) {
+    bool  filestream::canwrite(std::string file) {
         void* f = Sys::fOpen(file.c_str(), "w");
         if(f != 0)
         {

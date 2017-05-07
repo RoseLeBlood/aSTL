@@ -41,7 +41,7 @@ namespace std {
     {
     public:
         ifstream() {}
-        ifstream(string file, bool binary)
+        ifstream(std::string file, bool binary)
                 : filestream(file, filemode::read, binary) { }
         ifstream(FILE* file, bool binary)
                 : filestream(file, filemode::read, binary) { }
@@ -71,7 +71,7 @@ namespace std {
     {
     public:
         ofstream() {}
-        ofstream(string file, bool binary)
+        ofstream(std::string file, bool binary)
                 : filestream(file, filemode::write, binary) { }
         ofstream(FILE* file, bool binary)
                 : filestream(file, filemode::write, binary) { }
@@ -80,22 +80,22 @@ namespace std {
             if(m_fFile.get() !=0 ) 
                 Sys::fPrintf(m_fFile.get(), str); 
         } 
-        virtual ofstream& write (string str) { 
+        virtual ofstream& write (std::string str) { 
             if(m_fFile.get() !=0 ) 
                 Sys::fPrintf(m_fFile.get(), str.c_str()); 
         } 
         virtual ofstream& writeline(const char* str) {
-            write(string(str) << "\n"); 
+            write(std::string(str) << "\n"); 
         }
-        virtual ofstream& writeline(const string str) {
-            string d = str;
+        virtual ofstream& writeline(const std::string str) {
+            std::string d = str;
             write(d << ("\n")); 
         }
     };
     class iofstream : public ofstream, public ifstream
     {
     public:
-        iofstream(string file, bool binary)
+        iofstream(std::string file, bool binary)
                 : ofstream(file, binary),
                   ifstream(file, binary) { }
     };

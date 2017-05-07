@@ -56,7 +56,7 @@ namespace std
         {
             const int len = strlen(str);
             m_data = construct_string(len, m_capacity);
-            Sys::MemCpy(m_data, str, len*sizeof(value_type));
+            std::Sys::MemCpy(m_data, str, len*sizeof(value_type));
             m_length = len;
             m_data[len] = 0;
         }
@@ -64,7 +64,7 @@ namespace std
         	: m_allocator(allocator)
         {
             m_data = construct_string(len, m_capacity);
-            Sys::MemCpy(m_data, str, len*sizeof(value_type));
+            std::Sys::MemCpy(m_data, str, len*sizeof(value_type));
             m_length = len;
             m_data[len] = 0;
         }
@@ -102,7 +102,7 @@ namespace std
                     release_string();
                     m_data = construct_string(len, m_capacity);
             }
-            Sys::MemCpy(m_data, str, len*sizeof(value_type));
+            std::Sys::MemCpy(m_data, str, len*sizeof(value_type));
             m_length = len;
             m_data[len] = 0;
         }
@@ -114,7 +114,7 @@ namespace std
             {
                     size_type newCapacity;
                     value_type* newData = construct_string(newLen, newCapacity);
-                    Sys::MemCpy(newData, m_data, prevLen * sizeof(value_type));
+                    std::Sys::MemCpy(newData, m_data, prevLen * sizeof(value_type));
                     release_string();
         			m_data = newData;
                     m_capacity = newCapacity;

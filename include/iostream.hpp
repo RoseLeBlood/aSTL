@@ -41,12 +41,12 @@ namespace std
     {
     public: 
         static void write(const char* cstr);
-        static void write (string str);
+        static void write (std::string str);
         static void writeline(const char* cstr);
-        static void writeline(string str);
+        static void writeline(std::string str);
     
         static char read();
-        static string readline();
+        static std::string readline();
         
         static void reset();
         

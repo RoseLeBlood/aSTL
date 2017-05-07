@@ -53,8 +53,8 @@ namespace std
            
         native_handle_type native_handle();
         
-        mutex& operator=(const mutex&) = delete;
-        mutex(const mutex& m) = delete;
+        mutex& operator=(const mutex& m);
+        mutex(const mutex& m);
     private:
         native_handle_type _m_locked;
     };

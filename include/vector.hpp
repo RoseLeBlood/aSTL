@@ -38,25 +38,29 @@
 
 namespace std
 {
-    struct base_vector {
-        using size_type = int;
-        static const size_type  npos = size_type(-1);
-    };
-    template<typename T, class TAllocator> 
-    struct standard_vector_storage {
+	struct base_vector
+	{
+            using size_type = int;
+            static const size_type  npos = size_type(-1);
+	};
+	template<typename T, class TAllocator> struct standard_vector_storage 
+	{
         explicit standard_vector_storage(const TAllocator& allocator)
-        	: m_begin(0), m_end(0), m_capacityEnd(0), m_allocator(allocator){
+        	: m_begin(0), m_end(0), m_capacityEnd(0), m_allocator(allocator)
+        {
         }       
-        explicit standard_vector_storage(e_noinitialize) {
+        explicit standard_vector_storage(e_noinitialize) 
+        {
         }
 
-        void reallocate(base_vector::size_type newCapacity, base_vector::size_type oldSize){
+        void reallocate(base_vector::size_type newCapacity, base_vector::size_type oldSize)
+        {
             T* newBegin = static_cast<T*>(m_allocator.allocate(newCapacity * sizeof(T)));
             const base_vector::size_type newSize = oldSize < newCapacity ? oldSize : newCapacity;
             // Copy old data if needed.
             if (m_begin)
             {
-                    copy_construct_n(m_begin, newSize, newBegin);
+                    std::copy_construct_n(m_begin, newSize, newBegin);
                     destroy(m_begin, oldSize);
             }
             m_begin = newBegin;
@@ -101,24 +105,25 @@ namespace std
         T*              m_end;
         T*              m_capacityEnd;
         TAllocator      m_allocator;
-    };
+	};
 
-    template<typename T, class TAllocator = allocator, class TStorage = standard_vector_storage<T, TAllocator> >
-    class vector : public base_vector, private TStorage {
-    private:
-	using TStorage::m_begin;
-	using TStorage::m_end;
-        using TStorage::m_capacityEnd;
-	using TStorage::m_allocator;
-	using TStorage::invariant;
-	using TStorage::reallocate;
+	template<typename T, class TAllocator = std::allocator, class TStorage = standard_vector_storage<T, TAllocator> >
+	class vector : public base_vector, private TStorage
+	{
+	private:
+	    using TStorage::m_begin;
+	    using TStorage::m_end;
+	    using TStorage::m_capacityEnd;
+	    using TStorage::m_allocator;
+	    using TStorage::invariant;
+	    using TStorage::reallocate;
     
-    public:
-        using value_type = T;
-        using iterator = T*;
-        using const_iterator = const T*;
-        using allocator_type = TAllocator;
-        static const size_type  kInitialCapacity = 16;
+	public:
+            using value_type = T;
+            using iterator = T*;
+            using const_iterator = const T*;
+            using allocator_type = TAllocator;
+            static const size_type  kInitialCapacity = 16;
    
         explicit vector(const allocator_type& allocator = allocator_type())
         	: TStorage(allocator)
@@ -363,7 +368,7 @@ namespace std
                 assert(index <= prevSize);
                 const size_type toMove = prevSize - index;
 
-                internal::move_n(it, toMove, it + 1, int_to_type<has_trivial_copy<T>::value>());
+                std::internal::move_n(it, toMove, it + 1, int_to_type<has_trivial_copy<T>::value>());
             }
             else
             {

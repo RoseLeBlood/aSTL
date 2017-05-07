@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "../include/iostream.hpp"
+#include "include/iostream.hpp"
 
 namespace std {
  
@@ -31,7 +31,7 @@ namespace std {
         outstream() 
         : ofstream(stdout, false)
         {
-             filestream::m_strFile = string("stdout");
+             filestream::m_strFile = std::string(std::string("stdout"));
         }
         
     };
@@ -41,7 +41,7 @@ namespace std {
         instream() 
          : ifstream(stdout, false)
         {
-             filestream::m_strFile = string("stdin");
+             filestream::m_strFile = std::string(std::string("stdin"));
         }
     };
     
@@ -63,21 +63,21 @@ namespace std {
     void Console::writeline(const char* cstr) {
         __cout.writeline(cstr); 
     }
-    void Console::write (string str) { 
+    void Console::write (std::string str) { 
         __cout.write(str);
     } 
-    void Console::writeline(string str) { 
+    void Console::writeline(std::string str) { 
         __cout.writeline(str); 
     }
     
     char Console::read() { 
         return __cin.read(); 
     }
-    string Console::readline() { 
+    std::string Console::readline() { 
        char buf[256];
        
        size_t len = __cin.readline(buf, 0, 256); 
-       return string(buf, len);
+       return std::string(buf, len);
     }
     void Console::setio(ofstream out, ifstream in) {
         __cout = (out);
@@ -91,5 +91,4 @@ namespace std {
         ifstream v = __cin;
         return auto_ptr<ifstream>(&v);
     }
-}
 }

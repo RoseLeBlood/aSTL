@@ -21,25 +21,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-#include "../include/slist.hpp"
+#include "include/spinlock.hpp"
 
 namespace std
 {
-    namespace internal
+
+    spinlock::spinlock()
     {
-        void slist_base_node::link_after(slist_base_node* prevNode)
-        {
-                assert(!in_list());
-                next = prevNode->next;
-                prevNode->next = this;
-        }
-        void slist_base_node::unlink(slist_base_node* prevNode)
-        {
-            assert(in_list());
-            assert(prevNode->next == this);
-            prevNode->next = next;
-            next = this;
-        }
+        Sys::spinlockInit(_m_locked, 0);
+    }
+    spinlock::~spinlock()
+    {
+        unlock();
+        Sys::spinlockDestroy(_m_locked);
+        delete _m_locked;
+    }
+    void spinlock::lock()
+    {
+       return Sys::spinlockLock(_m_locked);
+    }
+    void spinlock::unlock()
+    {
+        return Sys::spinlockUnLock( _m_locked );
+    }
+    bool spinlock::try_lock()
+    {
+        return Sys::spinlockTryLock(_m_locked) == 0;
+    }
+    spinlock::native_handle_type spinlock::native_handle()
+    {
+        return _m_locked;
     }
 }

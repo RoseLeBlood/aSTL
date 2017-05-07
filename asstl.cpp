@@ -21,35 +21,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "../include/spinlock.hpp"
+#include "include/stl.hpp"
+#include "include/memorystream.hpp"
+#include "include/common.hpp"
 
 namespace std
 {
-
-    spinlock::spinlock()
-    {
-        Sys::spinlockInit(_m_locked, 0);
-    }
-    spinlock::~spinlock()
-    {
-        unlock();
-        Sys::spinlockDestroy(_m_locked);
-        delete _m_locked;
-    }
-    void spinlock::lock()
-    {
-       return Sys::spinlockLock(_m_locked);
-    }
-    void spinlock::unlock()
-    {
-        return Sys::spinlockUnLock( _m_locked );
-    }
-    bool spinlock::try_lock()
-    {
-        return Sys::spinlockTryLock(_m_locked) == 0;
-    }
-    spinlock::native_handle_type spinlock::native_handle()
-    {
-        return _m_locked;
-    }
+	string asstlVersion()
+        {
+            return ASSTL_LIB_NAME;
+        }
+      
 }

@@ -32,8 +32,9 @@
 #ifndef _STD_ALLOCATOR_H_
 #define _STD_ALLOCATOR_H_
 
-
+#include <string.h>
 #include "common.hpp"
+
 
 namespace std
 {

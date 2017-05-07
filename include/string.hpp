@@ -37,11 +37,12 @@
 #include "basic_string.hpp"
 #include "hash.hpp"
 #include "vector.hpp"
+#include "common.hpp"
 
-
-namespace std {
-    typedef basic_string<char> string;
-    	
+namespace std
+{
+	using string = basic_string<char>;
+	
         
         enum class flags_t
 	{
@@ -63,20 +64,22 @@ namespace std {
             return ((int)a) & ((int)b);
         }
 	namespace internal {
-            template<typename E, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
-            inline basic_string<E, TAllocator, TStorage> __flagstostring(flags_t f = flags_t::dec ) {
+            template<typename E, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+            inline basic_string<E, TAllocator, TStorage> __flagstostring(std::flags_t f = std::flags_t::dec ) {
                 if (f & flags_t::dec)
                     return basic_string<E, TAllocator, TStorage>("d");
 		else if (f & flags_t::hex && f & flags_t::showbase)
                     return basic_string<E, TAllocator, TStorage>("0x%X");
 		else if (f & flags_t::hex)
                     return basic_string<E, TAllocator, TStorage>("%X");
+		else if (f & flags_t::oct)
+                    {}//itoa(buf, 8, i);
 		else if (f & flags_t::bin)
                     return basic_string<E, TAllocator, TStorage>("%b");
 		return basic_string<E, TAllocator, TStorage>("%d");
             }
-            template<class TAllocator = allocator, typename TStorage = simple_string_storage<char, TAllocator> >
-            inline basic_string<char, TAllocator, TStorage> __flagstostring(flags_t f = flags_t::dec ) {
+            template<class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<char, TAllocator> >
+            inline basic_string<char, TAllocator, TStorage> __flagstostring(std::flags_t f = std::flags_t::dec ) {
                 return __flagstostring<char, TAllocator, TStorage>(f); 
             }
         }
@@ -92,7 +95,7 @@ namespace std {
 	
 	
 
-        template<typename E, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
+        template<typename E, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
         inline size_t frmstring(
             basic_string<E, TAllocator, TStorage>& dest, const char* format, va_list arg)
         {
@@ -110,7 +113,7 @@ namespace std {
                
             return length;
         }
-	template<typename E, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
+	template<typename E, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
 	inline basic_string<E, TAllocator, TStorage> frmstring( const char* format, ...)
         {
             va_list ap;
@@ -120,7 +123,7 @@ namespace std {
             va_end(ap);
             return dest;
         }
-        template<class TAllocator = allocator, typename TStorage = simple_string_storage<char, TAllocator> >
+        template<class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<char, TAllocator> >
 	inline basic_string<char> frmstring( const char* format, ...)
         {
             va_list ap;
@@ -132,45 +135,45 @@ namespace std {
         }
         
        
-        template<typename E = char, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
-        inline basic_string<E, TAllocator, TStorage> to_string(const int32_t v, flags_t f = flags_t::dec  ) { 
-            basic_string<E, TAllocator, TStorage> fmt = 
+        template<typename E = char, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const int32_t v, flags_t f = flags_t::dec  ) { 
+            std::basic_string<E, TAllocator, TStorage> fmt = 
                     internal::__flagstostring<E, TAllocator, TStorage >(f);
-            return frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
+            return std::frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
         
-        template<typename E = char, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
-        inline basic_string<E, TAllocator, TStorage> to_string(const int64_t v, flags_t f = flags_t::dec  ) { 
-            basic_string<E, TAllocator, TStorage> fmt = 
+        template<typename E = char, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const int64_t v, flags_t f = flags_t::dec  ) { 
+            std::basic_string<E, TAllocator, TStorage> fmt = 
                     internal::__flagstostring<E, TAllocator, TStorage >(f);
-            return frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
+            return std::frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
         
-        template<typename E = char, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
-        inline basic_string<E, TAllocator, TStorage> to_string(const uint32_t v, flags_t f = flags_t::dec  ) { 
-            basic_string<E, TAllocator, TStorage> fmt = 
+        template<typename E = char, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const uint32_t v, flags_t f = flags_t::dec  ) { 
+            std::basic_string<E, TAllocator, TStorage> fmt = 
                     internal::__flagstostring<E, TAllocator, TStorage >(f);
-            return frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
+            return std::frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
         
-        template<typename E = char, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
-        inline basic_string<E, TAllocator, TStorage> to_string(const uint64_t v, flags_t f = flags_t::dec  ) { 
-            basic_string<E, TAllocator, TStorage> fmt = 
+        template<typename E = char, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const uint64_t v, flags_t f = flags_t::dec  ) { 
+            std::basic_string<E, TAllocator, TStorage> fmt = 
                     internal::__flagstostring<E, TAllocator, TStorage >(f);
-            return frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
+            return std::frmstring<E, TAllocator, TStorage>(fmt.c_str(), v); }
         
         template<typename E = char, class TAllocator, typename TStorage>
-        inline basic_string<E, TAllocator, TStorage> to_string(const float v, flags_t f = flags_t::dec  ) {  
-            return frmstring("%f", v); }
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const float v, flags_t f = flags_t::dec  ) {  
+            return std::frmstring("%f", v); }
         
         template<typename E = char, class TAllocator, typename TStorage>
-        inline basic_string<E, TAllocator, TStorage> to_string(const double v, flags_t f = flags_t::dec  ) {  
-            return frmstring("%f", v); }
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const double v, flags_t f = flags_t::dec  ) {  
+            return std::frmstring("%f", v); }
         
         template<typename E = char, class TAllocator, typename TStorage>
-        inline basic_string<E, TAllocator, TStorage> to_string(const bool v, flags_t f = flags_t::dec  ) {   
-            return frmstring("%s", (v ? "true" : "false") ); }
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const bool v, flags_t f = flags_t::dec  ) {   
+            return std::frmstring("%s", (v ? "true" : "false") ); }
         
         template<typename E = char, class TAllocator, typename TStorage>
-        inline basic_string<E, TAllocator, TStorage> to_string(const void* v, flags_t f = flags_t::dec  ) {   
-            return frmstring("%p", v ); }
+        inline std::basic_string<E, TAllocator, TStorage> to_string(const void* v, flags_t f = flags_t::dec  ) {   
+            return std::frmstring("%p", v ); }
 }
 
 #endif 

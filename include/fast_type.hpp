@@ -240,4 +240,3 @@ namespace std {
 
 
 #endif /* FAST_TYPE_HPP */
-

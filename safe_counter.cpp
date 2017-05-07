@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,28 +21,5 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+#include "include/std_counter.hpp"
 
-/* 
- * File:   application.cpp
- * Author: annas
- * 
- * Created on 5. Dezember 2016, 04:34
- *
-
-#include "../include/application.hpp"
-
-void __new_handler()
-{
-    
-}
-int main( int argc, char **argv )
-{
-    std::set_new_handler(__new_handler);
-    
-    std::list<std::string> args;
-    for(int i = 0; i < argc; i++)
-        args.push_back(std::string(argv[i]));
-    
-    return asMain(args);
-}
-*/

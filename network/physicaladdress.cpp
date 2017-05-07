@@ -21,47 +21,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "../include/exception.hpp"
+
+/* 
+ * File:   physicaladdress.cpp
+ * Author: annas
+ * 
+ * Created on 9. April 2017, 22:01
+ */
+
+#include "../include/network/physicaladdress.hpp"
 #include "../include/common.hpp"
 
 namespace std {
-    _exception::_exception() {
-        
-    }
-    _exception::_exception(string msg,
-                           string source,
-                           string helplink)
-            : m_strMessage(msg),
-              m_strHelpLink(helplink), m_strSource(source)
-    {
-        
-    }
-    string _exception::getStackTrace() {
-        Sys::stacktrace_t* trace = Sys::getStackTrace();
-        string str = frmstring("StackTrace (%s %d)",
-                trace->system, trace->version); 
-        for(int i=0; i < trace->size; i++) {
-            str += string(trace->trace[i]);
+    namespace net {
+   
+        physicaladdress::physicaladdress(unsigned char *addr, int elements) {
+            m_iElements = elements;
+            m_cAddress = std::Sys::mAllocE<unsigned char>(m_iElements);
+            std::Sys::MemCpy(this->m_cAddress, addr, m_iElements);
         }
-        return str;
-    }
-    const char* _exception::what(bool stacktrace) {
-        string s = m_strMessage ;
-        s += string("\n");
-        
-        return s.c_str();
-    }
-    const char* exception::what(bool stacktrace) {
-        string s = getMessage();
-        
-        if(m_innerException.format() != xmf_t::NoException) {
-            s += frmstring(" Inner exception: %s", 
-                 string(m_innerException.what(false)) );
+        physicaladdress::physicaladdress(const physicaladdress& orig) {
+            m_iElements = orig.m_iElements;
+            m_cAddress = std::Sys::mAllocE<unsigned char>(m_iElements);
+            std::Sys::MemCpy(this->m_cAddress, orig.m_cAddress, m_iElements);
+        }
+
+        physicaladdress::~physicaladdress() {
+            std::Sys::mFree(m_cAddress);
         }
         
-        if(stacktrace) s += getStackTrace();
-        return s.c_str();
+        
     }
 }
-
-

@@ -21,8 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "../include/new.hpp"
-#include "../include/common.hpp"
+#include "include/new.hpp"
+#include "include/common.hpp"
 
 std::new_handler handler = NULL;
 
