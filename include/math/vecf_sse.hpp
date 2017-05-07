@@ -43,10 +43,6 @@
 #include "../common.hpp"
 #include "../unknown.hpp"
 
-#include "vector2.hpp"
-#include "vector3.hpp"
-#include "vector4.hpp"
-
 namespace std
 {
     namespace math {
@@ -66,11 +62,7 @@ namespace std
             vecf_sse (float x, float y) { m_xmm = _mm_set_ps(0,0,y,x); }
             vecf_sse (float x, float y, float z) { m_xmm = _mm_set_ps(0,z,y,x); }
             vecf_sse (float x, float y, float z, float w) { m_xmm = _mm_set_ps(w,z,y,x); }
-            
-            vecf_sse (const vec2f &v) { m_xmm = _mm_set_ps(0,0,v.y,v.x); }
-            vecf_sse (const vec3f &v) { m_xmm = _mm_set_ps(0,v.z,v.y,v.x); }
-            vecf_sse (const vec4f &v) { m_xmm = _mm_set_ps(v.w,v.z,v.y,v.x); }
-            
+
             vecf_sse (const float *v) { m_xmm = _mm_load_ps(v); }
 
 
@@ -86,10 +78,7 @@ namespace std
             void operator -= (const vecf_sse &v) { m_xmm = _mm_sub_ps(m_xmm, v.m_xmm); }
             void operator /= (const vecf_sse &v) { m_xmm = _mm_div_ps(m_xmm, v.m_xmm); }
 
-            operator vec2f () { return vec2f(X(), Y()); }
-            operator vec3f () { return vec3f(X(), Y(), Z()); }
-            operator vec4f () { return vec4f(X(), Y(), Z(), W()); }
-            
+
         private:
             __m128 m_xmm;
         };
@@ -183,8 +172,6 @@ namespace std
         inline vecf_sse rcp (const vecf_sse &v) const { 
             return vecf_sse(_mm_rcp_ps(v.M() )); 
         }
-        
-     
     }   
 }
 
