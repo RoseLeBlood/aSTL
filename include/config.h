@@ -71,9 +71,6 @@
     #endif // USER_SYSTEM_IMP_
 #endif // ASSTL_SYSTEM_NAME
 
-#ifndef ASSTL_LIB_NAME // see asstl.cpp
-#define ASSTL_LIB_NAME (std::string(ASSTL_VERSION_STRING) << "-" << std::string(ASSTL_SYSTEM_NAME))
-#endif
 
 #ifndef ASSTL_RND_DEFAULT
 #define ASSTL_RND_STD  std::minstd_rand

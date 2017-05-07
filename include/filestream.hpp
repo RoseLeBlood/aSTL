@@ -49,7 +49,7 @@ namespace std
     {
     public:
         filestream() {}
-        filestream(std::string file, filemode_t mode, bool binary);
+        filestream(string file, filemode_t mode, bool binary);
         filestream(const filestream& fs);
         
         virtual ~filestream();
@@ -70,11 +70,11 @@ namespace std
         virtual bool iseof();
         virtual void flush();
         
-        static bool isfile(std::string file);
-        static bool canread(std::string file);
-        static bool canwrite(std::string file);
+        static bool isfile(string file);
+        static bool canread(string file);
+        static bool canwrite(string file);
         
-        virtual std::string filename() { return m_strFile; }
+        virtual string filename() { return m_strFile; }
         virtual bool isbinary() { return m_binary; }
         virtual filemode_t mode() { return m_mode;}
         
@@ -85,7 +85,7 @@ namespace std
     protected:
         filemode_t m_mode;
         auto_ptr<FILE> m_fFile;
-        std::string m_strFile;
+        string m_strFile;
         bool m_binary;
     };
     

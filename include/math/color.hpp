@@ -45,7 +45,7 @@ namespace std
         typedef color<double> cold;
         
         template < typename T >
-        class color : public std::object
+        class color : public object
         {
             const T colorcon = 0.003921568627450980392156862745098;
         public:   
@@ -95,8 +95,8 @@ namespace std
 	    self_type& operator /= (const self_type& c)	{r /= c.r; g /= c.g; b /= c.b; a /= c.a; return *this;}
 	    self_type& operator /= (const value_type f)	{r /= f; g /= f; b /= f; a /= f; return *this;}
        
-            virtual std::string to_string() {
-                return std::frmstring("Color: R:%d G:%d B:%d A:%d",
+            virtual string to_string() {
+                return frmstring("Color: R:%d G:%d B:%d A:%d",
                         red, green, blue, alpha);
             }
         };
@@ -180,7 +180,7 @@ namespace std
             if(i == 3) return color<T>(p, q, v);
             if(i == 4) return color<T>(t, p, v);
 
-            return raColor(v, p, q);
+            return color<T>(v, p, q);
         }
     }
 }

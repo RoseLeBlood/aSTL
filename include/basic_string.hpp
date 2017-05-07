@@ -35,13 +35,10 @@
 #include "allocator.hpp"
 #include "common.hpp"
 #include "simple_string_storage.hpp"
-#include "string_utils.hpp"
 
 namespace std
 {
-	
-	
-	template<typename E, class TAllocator = std::allocator, typename TStorage = std::simple_string_storage<E, TAllocator> >
+	template<typename E, class TAllocator = allocator, typename TStorage = simple_string_storage<E, TAllocator> >
 	class basic_string : private TStorage
 	{
 	public:

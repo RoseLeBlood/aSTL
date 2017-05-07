@@ -28,35 +28,35 @@ namespace std {
     _exception::_exception() {
         
     }
-    _exception::_exception(std::string msg,
-                         std::string source,
-                         std::string helplink)
+    _exception::_exception(string msg,
+                           string source,
+                           string helplink)
             : m_strMessage(msg),
               m_strHelpLink(helplink), m_strSource(source)
     {
         
     }
-    std::string _exception::getStackTrace() {
+    string _exception::getStackTrace() {
         Sys::stacktrace_t* trace = Sys::getStackTrace();
-        std::string str = std::frmstring("StackTrace (%s %d)",
+        string str = frmstring("StackTrace (%s %d)",
                 trace->system, trace->version); 
         for(int i=0; i < trace->size; i++) {
-            str += std::string(trace->trace[i]);
+            str += string(trace->trace[i]);
         }
         return str;
     }
     const char* _exception::what(bool stacktrace) {
-        std::string s = m_strMessage ;
-        s += std::string("\n");
+        string s = m_strMessage ;
+        s += string("\n");
         if(stacktrace) s += getStackTrace();
         return s.c_str();
     }
     const char* exception::what(bool stacktrace) {
-        std::string s = getMessage();
+        string s = getMessage();
         
         if(m_innerException.format() != xmf_t::NoException) {
-            s += std::frmstring(" Inner exception: %s", 
-                 std::string(m_innerException.what(false)) );
+            s += frmstring(" Inner exception: %s", 
+                 string(m_innerException.what(false)) );
         }
         
         if(stacktrace) s += getStackTrace();

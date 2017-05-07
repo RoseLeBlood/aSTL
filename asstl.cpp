@@ -21,15 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "include/stl.hpp"
-#include "include/memorystream.hpp"
 #include "include/common.hpp"
 
-namespace std
-{
-	string asstlVersion()
-        {
-            return string(ASSTL_LIB_NAME);
-        }
-      
-}
+  

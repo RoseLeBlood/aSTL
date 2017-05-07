@@ -53,6 +53,10 @@
 
 namespace std 
 { 
+        enum class e_noinitialize
+	{
+	        noinitialize
+	};
         class Sys 
         {
         public:
@@ -123,15 +127,6 @@ namespace std
             static stacktrace_t* getStackTrace();
         }; 
 }
-
-namespace std
-{
-	enum class e_noinitialize
-	{
-	        noinitialize
-	};
-}
-
 #endif
 
 

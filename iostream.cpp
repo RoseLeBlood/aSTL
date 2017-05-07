@@ -31,7 +31,7 @@ namespace std {
         outstream() 
         : ofstream(stdout, false)
         {
-             filestream::m_strFile = std::string(std::string("stdout"));
+             filestream::m_strFile = string("stdout");
         }
         
     };
@@ -41,7 +41,7 @@ namespace std {
         instream() 
          : ifstream(stdout, false)
         {
-             filestream::m_strFile = std::string(std::string("stdin"));
+             filestream::m_strFile = string("stdin");
         }
     };
     
@@ -63,21 +63,21 @@ namespace std {
     void Console::writeline(const char* cstr) {
         __cout.writeline(cstr); 
     }
-    void Console::write (std::string str) { 
+    void Console::write (string str) { 
         __cout.write(str);
     } 
-    void Console::writeline(std::string str) { 
+    void Console::writeline(string str) { 
         __cout.writeline(str); 
     }
     
     char Console::read() { 
         return __cin.read(); 
     }
-    std::string Console::readline() { 
+    string Console::readline() { 
        char buf[256];
        
        size_t len = __cin.readline(buf, 0, 256); 
-       return std::string(buf, len);
+       return string(buf, len);
     }
     void Console::setio(ofstream out, ifstream in) {
         __cout = (out);
@@ -91,4 +91,5 @@ namespace std {
         ifstream v = __cin;
         return auto_ptr<ifstream>(&v);
     }
+}
 }

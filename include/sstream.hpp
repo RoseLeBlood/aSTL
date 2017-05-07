@@ -39,7 +39,7 @@
 
 namespace std 
 {
-    template< typename E, typename TAlloc = std::allocator > 
+    template< typename E, typename TAlloc = allocator > 
     class basic_stringstream
     {
         using value_type = E;
@@ -108,7 +108,7 @@ namespace std
                 x = atof((const char*)current.c_str());
             return *this;
         }
-        basic_stringstream& operator>>(std::string& x) 
+        basic_stringstream& operator>>(string& x) 
         {
             if( next() ) 
                 x = current;

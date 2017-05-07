@@ -56,31 +56,31 @@ namespace std {
     class _exception { 
     public: 
         _exception() ;
-        _exception(std::string msg,
-                  std::string source = std::string(""),
-                  std::string helplink = std::string("https://github.io/")) ;
+        _exception(string msg,
+                   string source = string(""),
+                   string helplink = string("https://github.io/")) ;
      
-        std::string getMessage()  { return m_strMessage; }
-        std::string getHelpLink() { return m_strHelpLink; }
-        std::string getSource()   { return m_strSource; }
-        std::string getStackTrace();
+        string getMessage()  { return m_strMessage; }
+        string getHelpLink() { return m_strHelpLink; }
+        string getSource()   { return m_strSource; }
+        string getStackTrace();
       
         xmf_t format() { return m_eFormat; }
         virtual const char* what(bool stacktrace = false);
     protected:
         virtual void set_format(xmf_t format) { m_eFormat = format; }
     
-        std::string m_strMessage;
-        std::string m_strHelpLink;
-        std::string m_strSource;
+        string m_strMessage;
+        string m_strHelpLink;
+        string m_strSource;
         xmf_t m_eFormat;
     }; 
     class exception : public _exception {
     public:
         exception() : _exception() {}
-        exception(std::string msg,
-                  std::string source = std::string(""),
-                  std::string helplink = std::string("https://github.io/"))
+        exception(string msg,
+                  string source = string(""),
+                  string helplink = string("https://github.io/"))
             : _exception(msg, source, helplink)  {}
         
         _exception getInnerException() { return m_innerException; } 
@@ -92,25 +92,25 @@ namespace std {
     };
     class NoException : public exception {
     public:
-        NoException() : exception(std::string("No Exception")) {
+        NoException() : exception(string("No Exception")) {
             set_format(xmf_t::NoException); 
         }
     };
     class BadCastException : public exception {
     public:
-        BadCastException() : exception(std::string("Bad Cast"))  {
+        BadCastException() : exception(string("Bad Cast"))  {
             set_format(xmf_t::BadCastException); 
         }
     };
     class BadTypeID : public exception {
     public:
-        BadTypeID() : exception(std::string("Bad Type ID"))  {
+        BadTypeID() : exception(string("Bad Type ID"))  {
             set_format(xmf_t::BadTypeID); 
         }
     };
     class BadAlloc : public exception {
     public:
-        BadAlloc(int byteRequest) : exception(std::string("Bad Alloc")),
+        BadAlloc(int byteRequest) : exception(string("Bad Alloc")),
             m_byteRequest(byteRequest)  {
             set_format(xmf_t::BadAlloc); 
         }
