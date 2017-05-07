@@ -1,0 +1,4 @@
+*.o
+*.d
+*.a
+dist/Release/MinGW-Windows/package/ASTL.TAR
