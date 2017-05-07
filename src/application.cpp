@@ -30,20 +30,39 @@
  */
 
 #include "../include/application.hpp"
+#include "../include/iostream.hpp"
+
+
+extern std::auto_ptr<std::Program> mainPrg;
 
 void __new_handler()
 {
-    
+    std::application::get().newHandler();
 }
+namespace std {
+    void application::setup(int argc, char** argv) {
+        std::set_new_handler(__new_handler);
+        
+        m_strName = std::string(argv[0]);
+        for(int i = 1; i < argc; i++)
+            m_args.push_back(std::string(argv[i]));
+    }
+    int application::run(auto_ptr<Program> prg) {
+        try {
+            onStart();
+            m_iExitCode = prg->Main();
+            onExit();
+        } catch(...) {
+            m_iExitCode = -1;
+        }
+               
+        return m_iExitCode;
+    }
+}
+
 int main( int argc, char **argv )
 {
-    std::set_new_handler(__new_handler);
-    
-    std::list<std::string> args;
-    for(int i = 1; i < argc; i++)
-        args.push_back(std::string(argv[i]));
-    
-    //pinit(std::Sys::pTotalMem());
-    return asMain(args);
+    std::application::get().setup(argc, argv);
+    return std::application::get().run(mainPrg);
 }
 

@@ -50,7 +50,9 @@
 #include <sys/unistd.h>
 #include <wchar.h>
 
-
+#ifndef override
+#define override virtual 
+#endif
 namespace std 
 { 
         class Sys 

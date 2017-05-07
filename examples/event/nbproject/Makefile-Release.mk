@@ -39,11 +39,11 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=-m32 -fpermissive
+CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=-m32 -msse2 -msse3 -mfpmath=sse -fpermissive -march=native
-CXXFLAGS=-m32 -msse2 -msse3 -mfpmath=sse -fpermissive -march=native
+CCFLAGS=-msse2 -msse3 -mfpmath=sse -fpermissive -march=native
+CXXFLAGS=-msse2 -msse3 -mfpmath=sse -fpermissive -march=native
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -56,22 +56,21 @@ LDLIBSOPTIONS=../../dist/Release/Base-Windows/libastl.a -lpthread
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/helloworld.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/helloworld.exe: ../../dist/Release/Base-Windows/libastl.a
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe: ../../dist/Release/Base-Windows/libastl.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/helloworld.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/helloworld ${OBJECTFILES} ${LDLIBSOPTIONS} -msse2 -msse3 -mfpmath=sse -fpermissive -march=native
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/event ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O3 -w -s -I../../include/ -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -w -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
-	cd ../.. && ${MAKE}  -f Makefile CONF=Release
 
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
@@ -79,7 +78,6 @@ ${OBJECTDIR}/main.o: main.cpp
 
 # Subprojects
 .clean-subprojects:
-	cd ../.. && ${MAKE}  -f Makefile CONF=Release clean
 
 # Enable dependency checking
 .dep.inc: .depcheck-impl

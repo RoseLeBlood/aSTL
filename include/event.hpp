@@ -35,36 +35,30 @@
 #include "common.hpp"
 #include "auto_ptr.hpp"
 #include "list.hpp"
+#include "unknown.hpp"
 
 namespace std 
 {
-    template<typename TYPE>
-    class delegateparam 
-    {
-    public:
-	delegateparam() {
-	}
-        void operator += (TYPE data) {
-	   m_data.push_back(data);
-	}
-    
-        std::list<TYPE> m_data;
-    };
 
-    template<class TSender, typename TYPE>
+    template<typename TYPE, class TSender = object>
     class delegate_base
     {
     public:
-	virtual bool equals( const delegate_base<TSender, TYPE>* pOther) = 0;
-	virtual void operator()( const TSender* pSender, delegateparam<TYPE>* pParam) = 0;
-	virtual void call( const TSender* pSender, delegateparam<TYPE>* pParam) = 0;
+        using self_type = delegate_base<TYPE, TSender>;
+        using const_self_type = const delegate_base<TYPE, TSender>;
+        using sender_type = TSender;
+        using value_type = TYPE;
+        
+	virtual bool equals( const_self_type* pOther) = 0;
+	virtual void operator()( const sender_type* pSender, value_type pParam) = 0;
+	virtual void call( const sender_type* pSender, value_type pParam) = 0;
     };
 
-    template<class TReciever, class TSender, typename TYPE>
-    class delegate : public delegate_base<TSender, TYPE>
+    template<class TReciever, typename TYPE, class TSender = object>
+    class delegate : public delegate_base<TYPE, TSender>
     {
     private:
-	typedef void (TReciever::*callFunction)(const TSender*, delegateparam<TYPE>* pParam);
+	typedef void (TReciever::*callFunction)(const TSender*, TYPE pParam);
 	callFunction         m_ptr2Func;
 	TReciever*  m_ptr2Object;
 
@@ -74,31 +68,31 @@ namespace std
             m_ptr2Object    = p_ptr2Object;
 	}
 
-	bool equals(const delegate_base<TSender, TYPE>* pOther){
-            const delegate<TReciever, TSender, TYPE>* other;
-            other = static_cast<const delegate<TReciever, TSender, TYPE>*>(pOther);
+	bool equals(const delegate_base<TYPE, TSender>* pOther){
+            const delegate<TReciever, TYPE, TSender>* other;
+            other = static_cast<const delegate<TReciever, TYPE, TSender>*>(pOther);
             assert(other != NULL);
             assert(m_ptr2Object != NULL);
             return other->m_ptr2Object == m_ptr2Object && other->m_ptr2Func == m_ptr2Func;
 	}
-        virtual void operator()(const TSender* pSender, delegateparam<TYPE>* pParam){
+        virtual void operator()(const TSender* pSender, TYPE pParam){
 	    assert(pSender != NULL);
 	    (m_ptr2Object->*m_ptr2Func)(pSender, pParam);
 	}
 
-	virtual void call(const TSender* pSender, delegateparam<TYPE>* pParam){
+	virtual void call(const TSender* pSender, TYPE pParam){
             assert(pSender != NULL);
             (m_ptr2Object->*m_ptr2Func)(pSender, pParam);
 	}
     };
-    template<class TSender, typename TYPE>
+    template< typename TYPE, class TSender = object>
     class event
     {
     public:
 	event() { }
 	~event() { }
 
-	void call( const TSender* pSender, delegateparam<TYPE>* pParameter) {
+	void call( const TSender* pSender, TYPE pParameter) {
             for(auto itr = m_observers.begin();
 			itr != m_observers.end();
 			itr++)
@@ -107,21 +101,21 @@ namespace std
             }
         }
 
-	void operator += ( const delegate_base<TSender, TYPE>* pHandler) {
+	void operator += ( const delegate_base<TYPE, TSender>* pHandler) {
             add(pHandler);
         }
-	void operator -= ( const delegate_base<TSender, TYPE>* pHandler) {
+	void operator -= ( const delegate_base<TYPE, TSender>* pHandler) {
             rem(pHandler);
         }
-	void operator () ( const TSender* pSender, delegateparam<TYPE>* pParameter) {
+	void operator () ( const TSender* pSender, TYPE pParameter) {
             call(pSender, pParameter);
         }
     private:
-	void add( const delegate_base<TSender, TYPE>* pHandler) {
+	void add( const delegate_base< TYPE, TSender>* pHandler) {
             assert(pHandler != NULL);
-            m_observers.push_back(const_cast<delegate_base<TSender, TYPE>*>(pHandler));
+            m_observers.push_back(const_cast<delegate_base<TYPE, TSender>*>(pHandler));
         }
-	void rem( const delegate_base<TSender, TYPE>* pHandler) {
+	void rem( const delegate_base<TYPE, TSender>* pHandler) {
             assert(pHandler != NULL);
             for(auto itr = m_observers.begin();
 			itr != m_observers.end();
@@ -136,7 +130,7 @@ namespace std
             }
         }
     private:
-	std::list< delegate_base<TSender, TYPE>* > m_observers;
+	std::list< delegate_base<TYPE, TSender>* > m_observers;
     };
 
 	

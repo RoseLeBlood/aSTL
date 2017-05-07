@@ -34,9 +34,81 @@
 
 #include "list.hpp"
 #include "string.hpp"
-/// @brief asMain is the new entry point - auto init the libary and destroy.
-/// @param args Liste of the arguments
-extern int asMain(std::list<std::string> args);
+#include "singleton.hpp"
+#include "unknown.hpp"
+#include "event.hpp"
+
+
+
+namespace std {
+    class Program : public object {
+    public:
+        virtual int Main() {
+            return 0;
+        }
+    };
+    
+   
+    
+    class application : public singleton<application>, 
+        public object 
+    {
+        friend class singleton<application>;
+    public:
+        using ExitApp = event<int>;
+        using StartApp = event<int>;
+        using Exception = event<void*>;
+        
+        ExitApp                ExitAppEvent;
+        StartApp               StartAppEvent;
+        Exception              ExceptionEvent;
+        
+        void setup(int argc, char** argv);
+        
+        list<string> getArgumente() {
+            return m_args;
+        }
+        string       getAppName() {
+            return m_strName;
+        }
+        int          getExitCode() {
+            return m_iExitCode;
+        }
+        auto_ptr<Program>   getProgram() {
+            return m_iMainPrg;
+        }
+        virtual int run(auto_ptr<Program> prg);
+        virtual void newHandler() { }
+        
+        
+    protected:
+        application() { }
+        
+        void onExit() {
+             ExitAppEvent(this, m_iExitCode);
+        }
+        void onStart() {
+            StartAppEvent(this, 0);
+        }
+        void onException() {
+        }
+    private:
+        list<string>           m_args;
+        string                 m_strName;
+        auto_ptr<Program>     m_iMainPrg;
+        int                    m_iExitCode;
+        
+        
+    };
+}
+
+#ifndef SET_PROGRAM
+#define SET_PROGRAM(P) \
+std::auto_ptr<std::Program> mainPrg = std::auto_ptr<std::Program>(new (P)());
+
+#endif
+
+
 
 #endif /* APPLICATION_HPP */
 

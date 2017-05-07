@@ -31,6 +31,7 @@
 
 #ifndef IUNKNOWN_HPP
 #define IUNKNOWN_HPP
+#include "common.hpp"
 
 namespace std
 {
