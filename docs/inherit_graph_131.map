@@ -1,0 +1,10 @@
+<map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
+<area shape="rect" id="node1" href="$df/d5b/classstd_1_1stream.html" title="std::stream" alt="" coords="5,56,93,83"/>
+<area shape="rect" id="node2" href="$de/dbc/classstd_1_1filestream.html" title="std::filestream" alt="" coords="141,56,245,83"/>
+<area shape="rect" id="node3" href="$d6/de4/classstd_1_1ifstream.html" title="std::ifstream" alt="" coords="313,5,408,32"/>
+<area shape="rect" id="node6" href="$d8/dd6/classstd_1_1memorystream.html" title="std::memorystream" alt="" coords="293,56,428,83"/>
+<area shape="rect" id="node7" href="$d0/db3/classstd_1_1ofstream.html" title="std::ofstream" alt="" coords="311,107,410,133"/>
+<area shape="rect" id="node4" href="$d8/d14/classstd_1_1instream.html" title="std::instream" alt="" coords="480,5,579,32"/>
+<area shape="rect" id="node5" href="$d4/dae/classstd_1_1iofstream.html" title="std::iofstream" alt="" coords="479,56,580,83"/>
+<area shape="rect" id="node8" href="$dd/db5/classstd_1_1outstream.html" title="std::outstream" alt="" coords="476,107,583,133"/>
+</map>

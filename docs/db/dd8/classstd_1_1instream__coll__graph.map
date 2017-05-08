@@ -1,0 +1,9 @@
+<map id="std::instream" name="std::instream">
+<area shape="rect" id="node2" href="$d6/de4/classstd_1_1ifstream.html" title="std::ifstream" alt="" coords="134,291,229,317"/>
+<area shape="rect" id="node3" href="$de/dbc/classstd_1_1filestream.html" title="std::filestream" alt="" coords="129,215,233,241"/>
+<area shape="rect" id="node4" href="$df/d5b/classstd_1_1stream.html" title="std::stream" alt="" coords="5,118,93,145"/>
+<area shape="rect" id="node5" href="$d4/de8/classstd_1_1basic__string.html" title="std::basic_string\&lt;\l char \&gt;" alt="" coords="118,111,245,152"/>
+<area shape="rect" id="node6" href="$d6/d62/classstd_1_1simple__string__storage.html" title="std::simple_string\l_storage\&lt; char, std\l::allocator \&gt;" alt="" coords="113,5,247,61"/>
+<area shape="rect" id="node7" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; FILE \&gt;" alt="" coords="271,118,417,145"/>
+<area shape="rect" id="node8" href="$d7/d6a/classstd_1_1____auto__ptr__base.html" title="std::__auto_ptr_base" alt="" coords="272,20,416,47"/>
+</map>

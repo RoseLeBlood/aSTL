@@ -1,0 +1,31 @@
+<map id="include/memorystream.hpp" name="include/memorystream.hpp">
+<area shape="rect" id="node2" href="$db/de9/filestream_8hpp.html" title="filestream.hpp" alt="" coords="509,80,612,107"/>
+<area shape="rect" id="node3" href="$d9/d0f/stream_8hpp.html" title="stream.hpp" alt="" coords="5,229,92,256"/>
+<area shape="rect" id="node18" href="$d4/da0/string_8hpp.html" title="string.hpp" alt="" coords="521,155,600,181"/>
+<area shape="rect" id="node33" href="$d1/de0/auto__ptr_8hpp.html" title="auto_ptr.hpp" alt="" coords="1688,453,1783,480"/>
+<area shape="rect" id="node4" href="$dd/d3a/common_8hpp.html" title="common.hpp" alt="" coords="564,528,661,555"/>
+<area shape="rect" id="node5" href="$db/d16/config_8h.html" title="config.h" alt="" coords="1050,603,1117,629"/>
+<area shape="rect" id="node6" href="$d6/d88/unknown_8hpp.html" title="unknown.hpp" alt="" coords="1141,603,1239,629"/>
+<area shape="rect" id="node19" href="$da/d71/basic__string_8hpp.html" title="basic_string.hpp" alt="" coords="426,379,543,405"/>
+<area shape="rect" id="node23" href="$d9/d04/hash_8hpp.html" title="hash.hpp" alt="" coords="901,229,975,256"/>
+<area shape="rect" id="node35" href="$da/d16/vector_8hpp.html" title="vector.hpp" alt="" coords="581,304,663,331"/>
+<area shape="rect" id="node20" href="$d5/d61/allocator_8hpp.html" title="allocator.hpp" alt="" coords="522,453,618,480"/>
+<area shape="rect" id="node21" href="$df/dc8/simple__string__storage_8hpp.html" title="simple_string_storage.hpp" alt="" coords="272,453,447,480"/>
+<area shape="rect" id="node22" href="$dc/d11/string__utils_8hpp.html" title="string_utils.hpp" alt="" coords="137,453,248,480"/>
+<area shape="rect" id="node24" href="$dc/d35/hash_2hash_8hpp.html" title="hash/hash.hpp" alt="" coords="1138,304,1245,331"/>
+<area shape="rect" id="node25" href="$da/d90/adler32_8hpp.html" title="adler32.hpp" alt="" coords="1520,379,1609,405"/>
+<area shape="rect" id="node26" href="$db/d86/bernstein_8hpp.html" title="bernstein.hpp" alt="" coords="813,379,913,405"/>
+<area shape="rect" id="node27" href="$df/d26/fletcher_8hpp.html" title="fletcher.hpp" alt="" coords="937,379,1027,405"/>
+<area shape="rect" id="node28" href="$dc/dcf/crc32_8hpp.html" title="crc32.hpp" alt="" coords="1051,379,1129,405"/>
+<area shape="rect" id="node29" href="$d6/d37/fnv1a_8hpp.html" title="fnv1a.hpp" alt="" coords="1153,379,1229,405"/>
+<area shape="rect" id="node30" href="$d0/def/ramakrishna_8hpp.html" title="ramakrishna.hpp" alt="" coords="1253,379,1372,405"/>
+<area shape="rect" id="node31" href="$dd/d77/weinberg_8hpp.html" title="weinberg.hpp" alt="" coords="1397,379,1495,405"/>
+<area shape="rect" id="node32" href="$de/d6d/singleton_8hpp.html" title="../singleton.hpp" alt="" coords="1633,379,1744,405"/>
+<area shape="rect" id="node34" href="$df/d98/property_8hpp.html" title="property.hpp" alt="" coords="1688,528,1783,555"/>
+<area shape="rect" id="node36" href="$de/d55/algorithm_8hpp.html" title="algorithm.hpp" alt="" coords="689,379,789,405"/>
+<area shape="rect" id="node37" href="$d8/d8f/inttokey_8hpp.html" title="inttokey.hpp" alt="" coords="1006,528,1099,555"/>
+<area shape="rect" id="node38" href="$d9/dde/iterator_8hpp.html" title="iterator.hpp" alt="" coords="693,453,780,480"/>
+<area shape="rect" id="node39" href="$dc/d54/type__traits_8hpp.html" title="type_traits.hpp" alt="" coords="804,453,912,480"/>
+<area shape="rect" id="node40" href="$d1/d4e/utility_8hpp.html" title="utility.hpp" alt="" coords="936,453,1015,480"/>
+<area shape="rect" id="node41" href="$df/d09/new_8hpp.html" title="new.hpp" alt="" coords="911,528,981,555"/>
+</map>

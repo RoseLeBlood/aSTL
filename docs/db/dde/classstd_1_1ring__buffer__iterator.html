@@ -1,0 +1,852 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.13"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>aSTL: std::ring_buffer_iterator&lt; T, E &gt; Template-Klassenreferenz</title>
+        <!--<link href="../../tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="../../dynsections.js"></script>
+        <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="../../customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="../../jquery.smartmenus.bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.smartmenus.js"></script>
+        <!-- SmartMenus jQuery Bootstrap Addon -->
+        <script type="text/javascript" src="../../jquery.smartmenus.bootstrap.js"></script>
+        <!-- SmartMenus jQuery plugin -->
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">aSTL 0.24.2</a>
+                </div>
+            </div>
+        </nav>
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',false,false,'search.php','Suchen');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../dd/df1/classstd_1_1ring__buffer__iterator-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">std::ring_buffer_iterator&lt; T, E &gt; Template-Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../">ringbuffer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:a3506afb89368eb7dead72660d2d9114b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a3506afb89368eb7dead72660d2d9114b">value_type</a> = T</td></tr>
+<tr class="separator:a3506afb89368eb7dead72660d2d9114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13285aa0e4379625542a077d07f7aff2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a13285aa0e4379625542a077d07f7aff2">size_type</a> = size_t</td></tr>
+<tr class="separator:a13285aa0e4379625542a077d07f7aff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0f1c4a3257ab60b76ba177a2eed37a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> = ptrdiff_t</td></tr>
+<tr class="separator:aeb0f1c4a3257ab60b76ba177a2eed37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5cced33c949425bd3b7b1cd745115b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aef5cced33c949425bd3b7b1cd745115b">pointer</a> = T *</td></tr>
+<tr class="separator:aef5cced33c949425bd3b7b1cd745115b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd368113a7a61c97caaa3229185e82c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a0cd368113a7a61c97caaa3229185e82c">const_pointer</a> = const T *</td></tr>
+<tr class="separator:a0cd368113a7a61c97caaa3229185e82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a54e022413f050187d9e4e7696a4a45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a8a54e022413f050187d9e4e7696a4a45">reference</a> = T &amp;</td></tr>
+<tr class="separator:a8a54e022413f050187d9e4e7696a4a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab135acb6b4d745c006433305e827d605"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ab135acb6b4d745c006433305e827d605">const_reference</a> = const T &amp;</td></tr>
+<tr class="separator:ab135acb6b4d745c006433305e827d605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42317374fe6893555d9fce5d534fffea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> = <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a>&lt; T &gt;</td></tr>
+<tr class="separator:a42317374fe6893555d9fce5d534fffea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:aee9f27648f3441d09675922e37fbc99f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aee9f27648f3441d09675922e37fbc99f">ring_buffer_iterator</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aef5cced33c949425bd3b7b1cd745115b">pointer</a> b, size_t start_pos)</td></tr>
+<tr class="separator:aee9f27648f3441d09675922e37fbc99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f54de586ec4ea51c91dd3d9cde7a37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a85f54de586ec4ea51c91dd3d9cde7a37">ring_buffer_iterator</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a> &amp;it)</td></tr>
+<tr class="separator:a85f54de586ec4ea51c91dd3d9cde7a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b43a66b9f666b18dc08e25f05f64483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a9b43a66b9f666b18dc08e25f05f64483">operator=</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a> &amp;it)</td></tr>
+<tr class="separator:a9b43a66b9f666b18dc08e25f05f64483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c70027895a84b92465a90ca7f92bdd"><td class="memItemLeft" align="right" valign="top">E &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ae4c70027895a84b92465a90ca7f92bdd">operator*</a> ()</td></tr>
+<tr class="separator:ae4c70027895a84b92465a90ca7f92bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d158e9eddd86bc8cb7e79ce077e3a6"><td class="memItemLeft" align="right" valign="top">E *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ab8d158e9eddd86bc8cb7e79ce077e3a6">operator-&gt;</a> ()</td></tr>
+<tr class="separator:ab8d158e9eddd86bc8cb7e79ce077e3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea064d97b6e200c272227b3b4d895a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aea064d97b6e200c272227b3b4d895a08">operator++</a> ()</td></tr>
+<tr class="separator:aea064d97b6e200c272227b3b4d895a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdf482556c45e89a492f6e2d500ce4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a7fdf482556c45e89a492f6e2d500ce4b">operator--</a> ()</td></tr>
+<tr class="separator:a7fdf482556c45e89a492f6e2d500ce4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281cd719ffd94b7265667110b7cdd247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a281cd719ffd94b7265667110b7cdd247">operator++</a> (int)</td></tr>
+<tr class="separator:a281cd719ffd94b7265667110b7cdd247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b004dbd7f5a35c96a4550d5e381252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a07b004dbd7f5a35c96a4550d5e381252">operator--</a> (int)</td></tr>
+<tr class="separator:a07b004dbd7f5a35c96a4550d5e381252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a954e6e95f7a9371ca9949918749072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a8a954e6e95f7a9371ca9949918749072">operator+</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> n)</td></tr>
+<tr class="separator:a8a954e6e95f7a9371ca9949918749072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacfdce2e4aaa8f151d6678976137257"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeacfdce2e4aaa8f151d6678976137257">operator-</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> n)</td></tr>
+<tr class="separator:aeacfdce2e4aaa8f151d6678976137257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa514a6cf9d6afe9f9b2a5b97c0d70c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aa514a6cf9d6afe9f9b2a5b97c0d70c01">operator+=</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> n)</td></tr>
+<tr class="separator:aa514a6cf9d6afe9f9b2a5b97c0d70c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5197fe8f8ff31c72b9010f028066c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a2d5197fe8f8ff31c72b9010f028066c9">operator-=</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> n)</td></tr>
+<tr class="separator:a2d5197fe8f8ff31c72b9010f028066c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e7f61cd5ad377a293508b204b9edc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ac5e7f61cd5ad377a293508b204b9edc0">operator==</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;other) const</td></tr>
+<tr class="separator:ac5e7f61cd5ad377a293508b204b9edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf8f1237f8f70f735aaf1ab5ebfc5ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeaf8f1237f8f70f735aaf1ab5ebfc5ed">operator!=</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;other) const</td></tr>
+<tr class="separator:aeaf8f1237f8f70f735aaf1ab5ebfc5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d570220cff96a4087db74020c95aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a3506afb89368eb7dead72660d2d9114b">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a96d570220cff96a4087db74020c95aa1">operator[]</a> (<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> n) const</td></tr>
+<tr class="separator:a96d570220cff96a4087db74020c95aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5ab997f9ebb2fc900d1ab8b605e27e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a8b5ab997f9ebb2fc900d1ab8b605e27e">operator&lt;</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;it) const</td></tr>
+<tr class="separator:a8b5ab997f9ebb2fc900d1ab8b605e27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d171b666394d6da77749ab59bfd68ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a8d171b666394d6da77749ab59bfd68ff">operator&gt;</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;it) const</td></tr>
+<tr class="separator:a8d171b666394d6da77749ab59bfd68ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9a90cb2647f22d4923a421bdc27fdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aae9a90cb2647f22d4923a421bdc27fdf">operator&lt;=</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;it) const</td></tr>
+<tr class="separator:aae9a90cb2647f22d4923a421bdc27fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e1153d77b92db1457855b4baa5cf54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a05e1153d77b92db1457855b4baa5cf54">operator&gt;=</a> (const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;it) const</td></tr>
+<tr class="separator:a05e1153d77b92db1457855b4baa5cf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><h3>template&lt;typename T, typename E = typename T::value_type&gt;<br />
+class std::ring_buffer_iterator&lt; T, E &gt;</h3>
+
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="a0cd368113a7a61c97caaa3229185e82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd368113a7a61c97caaa3229185e82c">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a0cd368113a7a61c97caaa3229185e82c">const_pointer</a> =  const T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab135acb6b4d745c006433305e827d605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab135acb6b4d745c006433305e827d605">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ab135acb6b4d745c006433305e827d605">const_reference</a> =  const T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb0f1c4a3257ab60b76ba177a2eed37a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0f1c4a3257ab60b76ba177a2eed37a">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a> =  ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef5cced33c949425bd3b7b1cd745115b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5cced33c949425bd3b7b1cd745115b">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aef5cced33c949425bd3b7b1cd745115b">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a54e022413f050187d9e4e7696a4a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a54e022413f050187d9e4e7696a4a45">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a8a54e022413f050187d9e4e7696a4a45">reference</a> =  T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42317374fe6893555d9fce5d534fffea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42317374fe6893555d9fce5d534fffea">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> =  <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13285aa0e4379625542a077d07f7aff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13285aa0e4379625542a077d07f7aff2">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a13285aa0e4379625542a077d07f7aff2">size_type</a> =  size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3506afb89368eb7dead72660d2d9114b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3506afb89368eb7dead72660d2d9114b">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a3506afb89368eb7dead72660d2d9114b">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="aee9f27648f3441d09675922e37fbc99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9f27648f3441d09675922e37fbc99f">&#9670;&nbsp;</a></span>ring_buffer_iterator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aef5cced33c949425bd3b7b1cd745115b">pointer</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>start_pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            : m_buf(b), m_pos(start_pos) { }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a85f54de586ec4ea51c91dd3d9cde7a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f54de586ec4ea51c91dd3d9cde7a37">&#9670;&nbsp;</a></span>ring_buffer_iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::<a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a>&lt; T, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            : m_buf(it.m_buf), m_pos(it.m_pos) { }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="aeaf8f1237f8f70f735aaf1ab5ebfc5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf8f1237f8f70f735aaf1ab5ebfc5ed">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                        {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;             <span class="keywordflow">return</span> (this-&gt;m_pos != other.m_pos);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae4c70027895a84b92465a90ca7f92bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c70027895a84b92465a90ca7f92bdd">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">E&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                       {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> (*m_buf)[m_pos]; </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8a954e6e95f7a9371ca9949918749072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a954e6e95f7a9371ca9949918749072">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                 {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> tmp(*<span class="keyword">this</span>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            tmp.m_pos += n;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> tmp;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div><div class="ttc" id="classstd_1_1ring__buffer__iterator_html_a42317374fe6893555d9fce5d534fffea"><div class="ttname"><a href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">std::ring_buffer_iterator::self_type</a></div><div class="ttdeci">ring_buffer_iterator&lt; T &gt; self_type</div><div class="ttdef"><b>Definition:</b> ringbuffer.hpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aea064d97b6e200c272227b3b4d895a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea064d97b6e200c272227b3b4d895a08">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;             ++m_pos;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;             <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a281cd719ffd94b7265667110b7cdd247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281cd719ffd94b7265667110b7cdd247">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                    {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> tmp(*<span class="keyword">this</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            ++(*this);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> tmp;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div><div class="ttc" id="classstd_1_1ring__buffer__iterator_html_a42317374fe6893555d9fce5d534fffea"><div class="ttname"><a href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">std::ring_buffer_iterator::self_type</a></div><div class="ttdeci">ring_buffer_iterator&lt; T &gt; self_type</div><div class="ttdef"><b>Definition:</b> ringbuffer.hpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa514a6cf9d6afe9f9b2a5b97c0d70c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa514a6cf9d6afe9f9b2a5b97c0d70c01">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                   {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            m_pos += n;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aeacfdce2e4aaa8f151d6678976137257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacfdce2e4aaa8f151d6678976137257">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                 {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> tmp(*<span class="keyword">this</span>);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            tmp.m_pos -= n;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> tmp;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div><div class="ttc" id="classstd_1_1ring__buffer__iterator_html_a42317374fe6893555d9fce5d534fffea"><div class="ttname"><a href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">std::ring_buffer_iterator::self_type</a></div><div class="ttdeci">ring_buffer_iterator&lt; T &gt; self_type</div><div class="ttdef"><b>Definition:</b> ringbuffer.hpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fdf482556c45e89a492f6e2d500ce4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdf482556c45e89a492f6e2d500ce4b">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;             --m_pos;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;             <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a07b004dbd7f5a35c96a4550d5e381252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b004dbd7f5a35c96a4550d5e381252">&#9670;&nbsp;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                    {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> tmp(*<span class="keyword">this</span>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            --(*this);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> tmp;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div><div class="ttc" id="classstd_1_1ring__buffer__iterator_html_a42317374fe6893555d9fce5d534fffea"><div class="ttname"><a href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">std::ring_buffer_iterator::self_type</a></div><div class="ttdeci">ring_buffer_iterator&lt; T &gt; self_type</div><div class="ttdef"><b>Definition:</b> ringbuffer.hpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d5197fe8f8ff31c72b9010f028066c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5197fe8f8ff31c72b9010f028066c9">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                   {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            m_pos -= n;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab8d158e9eddd86bc8cb7e79ce077e3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d158e9eddd86bc8cb7e79ce077e3a6">&#9670;&nbsp;</a></span>operator->()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">E* <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        { </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> &amp;(<a class="code" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ae4c70027895a84b92465a90ca7f92bdd">operator*</a>()); </div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div><div class="ttc" id="classstd_1_1ring__buffer__iterator_html_ae4c70027895a84b92465a90ca7f92bdd"><div class="ttname"><a href="../../db/dde/classstd_1_1ring__buffer__iterator.html#ae4c70027895a84b92465a90ca7f92bdd">std::ring_buffer_iterator::operator*</a></div><div class="ttdeci">E &amp; operator*()</div><div class="ttdef"><b>Definition:</b> ringbuffer.hpp:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8b5ab997f9ebb2fc900d1ab8b605e27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5ab997f9ebb2fc900d1ab8b605e27e">&#9670;&nbsp;</a></span>operator<()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                    {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                  <span class="keywordflow">return</span> m_pos &lt; it.m_pos;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aae9a90cb2647f22d4923a421bdc27fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9a90cb2647f22d4923a421bdc27fdf">&#9670;&nbsp;</a></span>operator<=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                     { </div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> !(it &lt; *<span class="keyword">this</span>); </div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a9b43a66b9f666b18dc08e25f05f64483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b43a66b9f666b18dc08e25f05f64483">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">ring_buffer_iterator</a>&lt; T, E &gt; &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                          {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              m_buf = it.m_buf; m_pos = it.m_pos; <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac5e7f61cd5ad377a293508b204b9edc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e7f61cd5ad377a293508b204b9edc0">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                        {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> (this-&gt;m_pos == other.m_pos);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8d171b666394d6da77749ab59bfd68ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d171b666394d6da77749ab59bfd68ff">&#9670;&nbsp;</a></span>operator>()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                    {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span>   it &lt; *<span class="keyword">this</span>;  </div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a05e1153d77b92db1457855b4baa5cf54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e1153d77b92db1457855b4baa5cf54">&#9670;&nbsp;</a></span>operator>=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a42317374fe6893555d9fce5d534fffea">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                     { </div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> !(*<span class="keyword">this</span> &lt; it); </div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a96d570220cff96a4087db74020c95aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d570220cff96a4087db74020c95aa1">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename E  = typename T::value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#a3506afb89368eb7dead72660d2d9114b">value_type</a>&amp; <a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html">std::ring_buffer_iterator</a>&lt; T, E &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dde/classstd_1_1ring__buffer__iterator.html#aeb0f1c4a3257ab60b76ba177a2eed37a">difference_type</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                          {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> *(*<span class="keyword">this</span> + n); </div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>include/<a class="el" href="../../">ringbuffer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+        <script type="text/javascript" src="../../doxy-boot.js"></script>
+</html>
