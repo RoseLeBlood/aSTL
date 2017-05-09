@@ -101,6 +101,7 @@
         <itemPath>include/node_ptr.hpp</itemPath>
         <itemPath>include/pair.hpp</itemPath>
         <itemPath>include/pallocator.hpp</itemPath>
+        <itemPath>include/property.hpp</itemPath>
         <itemPath>include/radix_sorter.hpp</itemPath>
         <itemPath>include/random.hpp</itemPath>
         <itemPath>include/rb_tree.hpp</itemPath>
@@ -414,6 +415,8 @@
       <item path="include/pair.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/pallocator.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/property.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/radix_sorter.hpp" ex="false" tool="3" flavor2="0">
       </item>
