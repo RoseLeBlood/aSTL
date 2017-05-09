@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">aSTL 0.24.2</a>
+                    <a class="navbar-brand">aSTL 0.25.0</a>
                 </div>
             </div>
         </nav>
@@ -65,6 +65,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../">singleton.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../">unknown.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../">event.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../">applications_events.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include-Abhängigkeitsdiagramm für application.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -72,35 +73,36 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/df7/application_8hpp__incl.png" border="0" usemap="#include_2application_8hpp" alt=""/></div>
 <map name="include_2application_8hpp" id="include_2application_8hpp">
-<area shape="rect" id="node2" href="../../dc/d1d/list_8hpp.html" title="list.hpp" alt="" coords="1436,304,1500,331"/>
-<area shape="rect" id="node7" href="../../d6/d88/unknown_8hpp.html" title="unknown.hpp" alt="" coords="1491,528,1589,555"/>
-<area shape="rect" id="node20" href="../../d4/da0/string_8hpp.html" title="string.hpp" alt="" coords="414,80,493,107"/>
-<area shape="rect" id="node33" href="../../de/d6d/singleton_8hpp.html" title="../singleton.hpp" alt="" coords="1575,304,1686,331"/>
-<area shape="rect" id="node41" href="../../dc/d94/event_8hpp.html" title="event.hpp" alt="" coords="1685,229,1763,256"/>
-<area shape="rect" id="node3" href="../../d5/d61/allocator_8hpp.html" title="allocator.hpp" alt="" coords="481,379,577,405"/>
-<area shape="rect" id="node18" href="../../d9/dde/iterator_8hpp.html" title="iterator.hpp" alt="" coords="786,379,873,405"/>
-<area shape="rect" id="node19" href="../../df/d09/new_8hpp.html" title="new.hpp" alt="" coords="1394,453,1465,480"/>
-<area shape="rect" id="node5" href="../../dd/d3a/common_8hpp.html" title="common.hpp" alt="" coords="630,453,727,480"/>
-<area shape="rect" id="node6" href="../../db/d16/config_8h.html" title="config.h" alt="" coords="104,528,171,555"/>
-<area shape="rect" id="node21" href="../../da/d71/basic__string_8hpp.html" title="basic_string.hpp" alt="" coords="197,304,315,331"/>
-<area shape="rect" id="node24" href="../../d9/d04/hash_8hpp.html" title="hash.hpp" alt="" coords="737,155,812,181"/>
-<area shape="rect" id="node36" href="../../da/d16/vector_8hpp.html" title="vector.hpp" alt="" coords="413,229,494,256"/>
-<area shape="rect" id="node22" href="../../df/dc8/simple__string__storage_8hpp.html" title="simple_string_storage.hpp" alt="" coords="45,379,219,405"/>
-<area shape="rect" id="node23" href="../../dc/d11/string__utils_8hpp.html" title="string_utils.hpp" alt="" coords="295,379,406,405"/>
-<area shape="rect" id="node25" href="../../dc/d35/hash_2hash_8hpp.html" title="hash/hash.hpp" alt="" coords="968,229,1075,256"/>
-<area shape="rect" id="node26" href="../../da/d90/adler32_8hpp.html" title="adler32.hpp" alt="" coords="739,304,829,331"/>
-<area shape="rect" id="node27" href="../../db/d86/bernstein_8hpp.html" title="bernstein.hpp" alt="" coords="853,304,953,331"/>
-<area shape="rect" id="node28" href="../../df/d26/fletcher_8hpp.html" title="fletcher.hpp" alt="" coords="977,304,1066,331"/>
-<area shape="rect" id="node29" href="../../dc/dcf/crc32_8hpp.html" title="crc32.hpp" alt="" coords="1090,304,1169,331"/>
-<area shape="rect" id="node30" href="../../d6/d37/fnv1a_8hpp.html" title="fnv1a.hpp" alt="" coords="1193,304,1269,331"/>
-<area shape="rect" id="node31" href="../../d0/def/ramakrishna_8hpp.html" title="ramakrishna.hpp" alt="" coords="1293,304,1411,331"/>
-<area shape="rect" id="node32" href="../../dd/d77/weinberg_8hpp.html" title="weinberg.hpp" alt="" coords="616,304,715,331"/>
-<area shape="rect" id="node34" href="../../d1/de0/auto__ptr_8hpp.html" title="auto_ptr.hpp" alt="" coords="1545,379,1639,405"/>
-<area shape="rect" id="node35" href="../../df/d98/property_8hpp.html" title="property.hpp" alt="" coords="1545,453,1639,480"/>
-<area shape="rect" id="node37" href="../../de/d55/algorithm_8hpp.html" title="algorithm.hpp" alt="" coords="491,304,591,331"/>
-<area shape="rect" id="node38" href="../../d8/d8f/inttokey_8hpp.html" title="inttokey.hpp" alt="" coords="988,453,1081,480"/>
-<area shape="rect" id="node39" href="../../dc/d54/type__traits_8hpp.html" title="type_traits.hpp" alt="" coords="602,379,710,405"/>
-<area shape="rect" id="node40" href="../../d1/d4e/utility_8hpp.html" title="utility.hpp" alt="" coords="1351,379,1430,405"/>
+<area shape="rect" id="node2" href="../../dc/d1d/list_8hpp.html" title="list.hpp" alt="" coords="1472,304,1536,331"/>
+<area shape="rect" id="node7" href="../../d6/d88/unknown_8hpp.html" title="unknown.hpp" alt="" coords="1879,528,1977,555"/>
+<area shape="rect" id="node20" href="../../d4/da0/string_8hpp.html" title="string.hpp" alt="" coords="1023,80,1102,107"/>
+<area shape="rect" id="node33" href="../../de/d6d/singleton_8hpp.html" title="../singleton.hpp" alt="" coords="914,304,1025,331"/>
+<area shape="rect" id="node40" href="../../dc/d94/event_8hpp.html" title="event.hpp" alt="" coords="1389,229,1467,256"/>
+<area shape="rect" id="node42" href="../../d5/d27/applications__events_8hpp.html" title="applications_events.hpp" alt="" coords="1604,80,1764,107"/>
+<area shape="rect" id="node3" href="../../d5/d61/allocator_8hpp.html" title="allocator.hpp" alt="" coords="1393,379,1489,405"/>
+<area shape="rect" id="node18" href="../../d9/dde/iterator_8hpp.html" title="iterator.hpp" alt="" coords="1514,379,1601,405"/>
+<area shape="rect" id="node19" href="../../df/d09/new_8hpp.html" title="new.hpp" alt="" coords="1665,453,1735,480"/>
+<area shape="rect" id="node5" href="../../dd/d3a/common_8hpp.html" title="common.hpp" alt="" coords="1281,453,1378,480"/>
+<area shape="rect" id="node6" href="../../db/d16/config_8h.html" title="config.h" alt="" coords="1491,528,1557,555"/>
+<area shape="rect" id="node21" href="../../da/d71/basic__string_8hpp.html" title="basic_string.hpp" alt="" coords="1151,304,1268,331"/>
+<area shape="rect" id="node24" href="../../d9/d04/hash_8hpp.html" title="hash.hpp" alt="" coords="869,155,944,181"/>
+<area shape="rect" id="node35" href="../../da/d16/vector_8hpp.html" title="vector.hpp" alt="" coords="1271,229,1353,256"/>
+<area shape="rect" id="node22" href="../../df/dc8/simple__string__storage_8hpp.html" title="simple_string_storage.hpp" alt="" coords="1093,379,1267,405"/>
+<area shape="rect" id="node23" href="../../dc/d11/string__utils_8hpp.html" title="string_utils.hpp" alt="" coords="415,379,526,405"/>
+<area shape="rect" id="node25" href="../../dc/d35/hash_2hash_8hpp.html" title="hash/hash.hpp" alt="" coords="496,229,603,256"/>
+<area shape="rect" id="node26" href="../../da/d90/adler32_8hpp.html" title="adler32.hpp" alt="" coords="563,304,653,331"/>
+<area shape="rect" id="node27" href="../../db/d86/bernstein_8hpp.html" title="bernstein.hpp" alt="" coords="677,304,777,331"/>
+<area shape="rect" id="node28" href="../../df/d26/fletcher_8hpp.html" title="fletcher.hpp" alt="" coords="801,304,890,331"/>
+<area shape="rect" id="node29" href="../../dc/dcf/crc32_8hpp.html" title="crc32.hpp" alt="" coords="94,304,173,331"/>
+<area shape="rect" id="node30" href="../../d6/d37/fnv1a_8hpp.html" title="fnv1a.hpp" alt="" coords="197,304,273,331"/>
+<area shape="rect" id="node31" href="../../d0/def/ramakrishna_8hpp.html" title="ramakrishna.hpp" alt="" coords="297,304,415,331"/>
+<area shape="rect" id="node32" href="../../dd/d77/weinberg_8hpp.html" title="weinberg.hpp" alt="" coords="440,304,539,331"/>
+<area shape="rect" id="node34" href="../../d1/de0/auto__ptr_8hpp.html" title="auto_ptr.hpp" alt="" coords="922,379,1017,405"/>
+<area shape="rect" id="node36" href="../../de/d55/algorithm_8hpp.html" title="algorithm.hpp" alt="" coords="1658,304,1758,331"/>
+<area shape="rect" id="node37" href="../../d8/d8f/inttokey_8hpp.html" title="inttokey.hpp" alt="" coords="1823,453,1916,480"/>
+<area shape="rect" id="node38" href="../../dc/d54/type__traits_8hpp.html" title="type_traits.hpp" alt="" coords="1677,379,1785,405"/>
+<area shape="rect" id="node39" href="../../d1/d4e/utility_8hpp.html" title="utility.hpp" alt="" coords="1809,379,1887,405"/>
+<area shape="rect" id="node41" href="../../d7/d40/eventargs_8hpp.html" title="eventargs.hpp" alt="" coords="1782,304,1885,331"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -133,7 +135,7 @@ Namensbereiche</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Makrodefinitionen</h2></td></tr>
-<tr class="memitem:af8dac2c9bd2fdc832e66c598e19cea3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d01/application_8hpp.html#af8dac2c9bd2fdc832e66c598e19cea3b">SET_PROGRAM</a>(P)&#160;&#160;&#160;<a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt; <a class="el" href="../../df/d7b/application_8cpp.html#acdd70e2c8fee01244f0201e9a4b22c53">mainPrg</a> = <a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt;(new (P)());</td></tr>
+<tr class="memitem:af8dac2c9bd2fdc832e66c598e19cea3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d01/application_8hpp.html#af8dac2c9bd2fdc832e66c598e19cea3b">SET_PROGRAM</a>(P)&#160;&#160;&#160;<a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt; <a class="el" href="../../df/d7b/application_8cpp.html#aab0607e0b60c5ebd481730c7d6797e32">__astl_startabi</a>() { return <a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt;(new (P)); }</td></tr>
 <tr class="separator:af8dac2c9bd2fdc832e66c598e19cea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Makro-Dokumentation</h2>
@@ -148,7 +150,7 @@ Makrodefinitionen</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">P</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt; <a class="el" href="../../df/d7b/application_8cpp.html#acdd70e2c8fee01244f0201e9a4b22c53">mainPrg</a> = <a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt;(new (P)());</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt; <a class="el" href="../../df/d7b/application_8cpp.html#aab0607e0b60c5ebd481730c7d6797e32">__astl_startabi</a>() { return <a class="el" href="../../d3/d99/classstd_1_1auto__ptr.html">std::auto_ptr</a>&lt;<a class="el" href="../../d7/d5a/classstd_1_1_program.html">std::Program</a>&gt;(new (P)); }</td>
         </tr>
       </table>
 </div><div class="memdoc">

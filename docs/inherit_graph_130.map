@@ -1,18 +1,3 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node2" href="$d4/de8/classstd_1_1basic__string.html" title="std::basic_string\&lt;\l E, TAllocator, TStorage \&gt;" alt="" coords="295,5,469,47"/>
-<area shape="rect" id="node3" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; T, TAllocator,\l TStorage \&gt;" alt="" coords="297,152,467,193"/>
-<area shape="rect" id="node4" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; pair\&lt;\l TKey, TValue \&gt;, TAllocator,\l TStorage \&gt;" alt="" coords="289,71,475,127"/>
-<area shape="rect" id="node5" href="$d8/d6b/classstd_1_1sorted__vector.html" title="std::sorted_vector\l\&lt; TKey, TValue, TCompare,\l TAllocator, TStorage \&gt;" alt="" coords="631,71,813,127"/>
-<area shape="rect" id="node6" href="$d3/d6d/structstd_1_1base__vector.html" title="std::base_vector" alt="" coords="40,266,157,293"/>
-<area shape="rect" id="node7" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; pair\&lt;\l TKey, TValue \&gt;, TAllocator,\l fixed_vector_storage\&lt; pair\l\&lt; TKey, TValue \&gt;, TAllocator,\l TCapacity, TGrowOnOverflow \&gt; \&gt;" alt="" coords="273,218,491,303"/>
-<area shape="rect" id="node10" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; T \&gt;" alt="" coords="325,327,439,354"/>
-<area shape="rect" id="node11" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; T, TAllocator,\l fixed_vector_storage\&lt; T,\l TAllocator, TCapacity, TGrowOnOverflow \&gt; \&gt;" alt="" coords="240,382,524,438"/>
-<area shape="rect" id="node13" href="$dd/d4e/classstd_1_1vector.html" title="std::vector\&lt; value\l_type, TAlloc \&gt;" alt="" coords="321,465,443,507"/>
-<area shape="rect" id="node8" href="$d8/d6b/classstd_1_1sorted__vector.html" title="std::sorted_vector\l\&lt; TKey, TValue, TCompare,\l TAllocator, fixed_vector\l_storage\&lt; pair\&lt; TKey, TValue\l \&gt;, TAllocator, TCapacity, TGrowOnOverflow \&gt; \&gt;" alt="" coords="572,218,872,303"/>
-<area shape="rect" id="node9" href="$d4/dfa/classstd_1_1fixed__sorted__vector.html" title="std::fixed_sorted_vector\l\&lt; TKey, TValue, TCapacity,\l TGrowOnOverflow, TCompare,\l TAllocator \&gt;" alt="" coords="920,225,1119,296"/>
-<area shape="rect" id="node12" href="$d9/d50/classstd_1_1fixed__vector.html" title="std::fixed_vector\&lt;\l T, TCapacity, TGrowOnOverflow,\l TAllocator \&gt;" alt="" coords="615,382,829,438"/>
-<area shape="rect" id="node14" href="$d0/d8e/structstd_1_1fixed__vector__storage.html" title="std::fixed_vector_storage\l\&lt; T, TAllocator, TCapacity,\l TGrowOnOverflow \&gt;" alt="" coords="10,383,187,439"/>
-<area shape="rect" id="node15" href="$d0/d8e/structstd_1_1fixed__vector__storage.html" title="std::fixed_vector_storage\l\&lt; pair\&lt; TKey, TValue \&gt;,\l TAllocator, TCapacity,\l TGrowOnOverflow \&gt;" alt="" coords="15,171,182,241"/>
-<area shape="rect" id="node16" href="$db/dc3/structstd_1_1standard__vector__storage.html" title="std::standard_vector\l_storage\&lt; T, std::allocator \&gt;" alt="" coords="5,317,192,359"/>
-<area shape="rect" id="node17" href="$db/dc3/structstd_1_1standard__vector__storage.html" title="std::standard_vector\l_storage\&lt; value_type,\l TAlloc \&gt;" alt="" coords="24,463,173,519"/>
+<area shape="rect" id="node1" href="$db/d43/classstd_1_1stack.html" title="std::stack\&lt; T, TAllocator,\l TContainer \&gt;" alt="" coords="5,5,175,47"/>
 </map>

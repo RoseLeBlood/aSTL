@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">aSTL 0.24.2</a>
+                    <a class="navbar-brand">aSTL 0.25.0</a>
                 </div>
             </div>
         </nav>
@@ -86,15 +86,13 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a4ffa82bacc0c9d9e11fb7bdd8c71f985"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a4ffa82bacc0c9d9e11fb7bdd8c71f985">equals</a> (<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a955f2eab88026eb6032ed1d73a6852d8">const_self_type</a> *pOther)=0</td></tr>
-<tr class="separator:a4ffa82bacc0c9d9e11fb7bdd8c71f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0a606289e7faae488c196699356fadf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#aa0a606289e7faae488c196699356fadf">operator()</a> (const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">sender_type</a> *pSender, <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a> pParam)=0</td></tr>
-<tr class="separator:aa0a606289e7faae488c196699356fadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b5e70c15422e663401d7cc231dcd60d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a1b5e70c15422e663401d7cc231dcd60d">call</a> (const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">sender_type</a> *pSender, <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a> pParam)=0</td></tr>
-<tr class="separator:a1b5e70c15422e663401d7cc231dcd60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5836c4048314bcfab9efcefaeb75c42"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#af5836c4048314bcfab9efcefaeb75c42">operator==</a> (<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a955f2eab88026eb6032ed1d73a6852d8">const_self_type</a> *pOther)=0</td></tr>
+<tr class="separator:af5836c4048314bcfab9efcefaeb75c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17f55f7f3ce247559edfc066998486d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ad17f55f7f3ce247559edfc066998486d">call</a> (const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">sender_type</a> *pSender, const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a> pParam)=0</td></tr>
+<tr class="separator:ad17f55f7f3ce247559edfc066998486d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
-<div class="textblock"><h3>template&lt;typename TYPE, class TSender = object&gt;<br />
+<div class="textblock"><h3>template&lt;typename TYPE, class TSender = eventArgs&gt;<br />
 class std::delegate_base&lt; TYPE, TSender &gt;</h3>
 
 </div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
@@ -104,7 +102,7 @@ class std::delegate_base&lt; TYPE, TSender &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a955f2eab88026eb6032ed1d73a6852d8">const_self_type</a> =  const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">delegate_base</a>&lt;TYPE, TSender&gt;</td>
@@ -120,7 +118,7 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae6573d56f7a601689ce743e3f57b29aa">self_type</a> =  <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">delegate_base</a>&lt;TYPE, TSender&gt;</td>
@@ -136,7 +134,7 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">sender_type</a> =  TSender</td>
@@ -152,7 +150,7 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::<a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a> =  TYPE</td>
@@ -163,13 +161,13 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
-<a id="a1b5e70c15422e663401d7cc231dcd60d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5e70c15422e663401d7cc231dcd60d">&#9670;&nbsp;</a></span>call()</h2>
+<a id="ad17f55f7f3ce247559edfc066998486d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17f55f7f3ce247559edfc066998486d">&#9670;&nbsp;</a></span>call()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -183,7 +181,7 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a>&#160;</td>
           <td class="paramname"><em>pParam</em>&#160;</td>
         </tr>
         <tr>
@@ -199,23 +197,23 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implementiert in <a class="el" href="../../d2/d56/classstd_1_1delegate.html#a6985a852cac9c7880d1427a75bcbf190">std::delegate&lt; TReciever, TYPE, TSender &gt;</a>.</p>
+<p>Implementiert in <a class="el" href="../../d2/d56/classstd_1_1delegate.html#ae7d3e2c778ee1cce9689d1ea6845c1b2">std::delegate&lt; TReciever, TYPE, TSender &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a4ffa82bacc0c9d9e11fb7bdd8c71f985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ffa82bacc0c9d9e11fb7bdd8c71f985">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="af5836c4048314bcfab9efcefaeb75c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5836c4048314bcfab9efcefaeb75c42">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
+template&lt;typename TYPE , class TSender  = eventArgs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::equals </td>
+          <td class="memname">virtual bool <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::operator== </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a955f2eab88026eb6032ed1d73a6852d8">const_self_type</a> *&#160;</td>
           <td class="paramname"><em>pOther</em></td><td>)</td>
@@ -228,46 +226,6 @@ template&lt;typename TYPE , class TSender  = object&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa0a606289e7faae488c196699356fadf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a606289e7faae488c196699356fadf">&#9670;&nbsp;</a></span>operator()()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TYPE , class TSender  = object&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html">std::delegate_base</a>&lt; TYPE, TSender &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">sender_type</a> *&#160;</td>
-          <td class="paramname"><em>pSender</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/ddb/classstd_1_1delegate__base.html#ae21351e5fd929cf4b366d5ae127d2d36">value_type</a>&#160;</td>
-          <td class="paramname"><em>pParam</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implementiert in <a class="el" href="../../d2/d56/classstd_1_1delegate.html#aa0f2735b1aec8b4deeb763634ff60ca2">std::delegate&lt; TReciever, TYPE, TSender &gt;</a>.</p>
 
 </div>
 </div>

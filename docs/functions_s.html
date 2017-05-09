@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">aSTL 0.24.2</a>
+                    <a class="navbar-brand">aSTL 0.25.0</a>
                 </div>
             </div>
         </nav>
@@ -106,7 +106,6 @@ $(function() {
 , <a class="el" href="db/ddb/classstd_1_1delegate__base.html#ae6573d56f7a601689ce743e3f57b29aa">std::delegate_base&lt; TYPE, TSender &gt;</a>
 , <a class="el" href="dc/d7b/classstd_1_1fast__type.html#a012fe12b509818682128b9354621a199">std::fast_type&lt; Bits, TBaseType &gt;</a>
 , <a class="el" href="dc/d67/classstd_1_1graphic_1_1image.html#a57294997edb2f920b2f16a78af3d1024">std::graphic::image&lt; T, BC &gt;</a>
-, <a class="el" href="de/d9b/classstd_1_1iproperty__base.html#ad45043bccc69b6a18b7c918273243d30">std::iproperty_base&lt; T, C &gt;</a>
 , <a class="el" href="dd/d48/classstd_1_1lock__ptr.html#a4e8a48d983b0d2e1f892961e5a6c7850">std::lock_ptr&lt; T, L &gt;</a>
 , <a class="el" href="d0/d19/classstd_1_1math_1_1boundingbox.html#a07ea1d68c658b26793636ae4af0e2824">std::math::boundingbox&lt; T &gt;</a>
 , <a class="el" href="d9/def/classstd_1_1math_1_1color.html#aa4a543611b3f0cf5d37f07fcb468aac6">std::math::color&lt; T &gt;</a>
@@ -126,20 +125,21 @@ $(function() {
 , <a class="el" href="d4/d23/classstd_1_1save__ptr.html#a4865d4b16e0a555dc265e0a44461492a">std::save_ptr&lt; T &gt;</a>
 , <a class="el" href="d2/dcc/classstd_1_1scoped__ptr.html#ad05f954ce79a9fff398771d148d39603">std::scoped_ptr&lt; T &gt;</a>
 , <a class="el" href="df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">std::shared_ptr&lt; T &gt;</a>
-, <a class="el" href="dd/dbc/classstd_1_1value__property.html#a0bf3279e3e0cd4067dabd46418605bd3">std::value_property&lt; T, read, write &gt;</a>
 , <a class="el" href="da/d49/classstd_1_1weak__ptr.html#aadc27004cd0780a915e9f6e9f389325a">std::weak_ptr&lt; T &gt;</a>
 </li>
 <li>sender_type
 : <a class="el" href="db/ddb/classstd_1_1delegate__base.html#a8fcec6234b7afc676b5738d9233708f2">std::delegate_base&lt; TYPE, TSender &gt;</a>
 </li>
 <li>SendMessage()
-: <a class="el" href="dc/db6/class_server.html#a49b175ce04a78e1eeba0214de00bd972">Server</a>
+: <a class="el" href="dc/db6/class_server.html#a8252f96787fc2bd0485fd7985dfdd62a">Server</a>
+</li>
+<li>serverEventArgs()
+: <a class="el" href="dc/dc6/classserver_event_args.html#a117d435cee9ca4e7de35205d72f2f55e">serverEventArgs</a>
 </li>
 <li>set()
 : <a class="el" href="d7/d6a/classstd_1_1____auto__ptr__base.html#a785a33354ccbe7eda65f4eefcbd422af">std::__auto_ptr_base</a>
 , <a class="el" href="dc/d7b/classstd_1_1fast__type.html#a25f1d8c3523aa038b35548b41fbe01a1">std::fast_type&lt; Bits, TBaseType &gt;</a>
 , <a class="el" href="d0/d3d/classstd_1_1net_1_1ip__address4.html#ad46d302f9ee896678a07bfe4fe7afcf3">std::net::ip_address4</a>
-, <a class="el" href="dd/dbc/classstd_1_1value__property.html#ac2791220c16991b954d76fe6acbc7cc0">std::value_property&lt; T, read, write &gt;</a>
 </li>
 <li>set_accelerate()
 : <a class="el" href="d1/d7c/classstd_1_1math_1_1physik.html#ab8a385a1074e429fcc4f1de97691867e">std::math::physik&lt; T &gt;</a>
@@ -264,7 +264,7 @@ $(function() {
 : <a class="el" href="d6/d35/classstd_1_1thread.html#a015d46aaf1c07d24ca5c5bb9d572fb13">std::thread</a>
 </li>
 <li>slist()
-: <a class="el" href="d5/d64/classstd_1_1slist.html#a61f6570d0e7572ac7d68e6e8967dd098">std::slist&lt; T, TAllocator &gt;</a>
+: <a class="el" href="d5/d64/classstd_1_1slist.html#a140815ea1f9e91fe058f933f1ae8ed55">std::slist&lt; T, TAllocator &gt;</a>
 </li>
 <li>slist_base_node()
 : <a class="el" href="d5/d40/structstd_1_1internal_1_1slist__base__node.html#a0e1fe1f53aeebb7d860d8630a02d71ec">std::internal::slist_base_node</a>
@@ -276,13 +276,13 @@ $(function() {
 : <a class="el" href="d9/dd0/classstd_1_1radix__sorter.html#acbb41f56ef4a87e70afc5be426f2412d">std::radix_sorter&lt; T &gt;</a>
 </li>
 <li>sorted_vector()
-: <a class="el" href="d8/d6b/classstd_1_1sorted__vector.html#ade74421a7454ac14c3e68f0230782713">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, TStorage &gt;</a>
+: <a class="el" href="d8/d6b/classstd_1_1sorted__vector.html#af9cbd88103b1933c2fbe12a63e8fe5d2">std::sorted_vector&lt; TKey, TValue, TCompare, TAllocator, TStorage &gt;</a>
 </li>
 <li>spinlk_type
 : <a class="el" href="da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">std::Sys</a>
 </li>
 <li>spinlock()
-: <a class="el" href="d5/d7a/classstd_1_1spinlock.html#aa4caf15c25859ff4c23fcf4d978023d2">std::spinlock</a>
+: <a class="el" href="d5/d7a/classstd_1_1spinlock.html#a6d010c79795532eac8503d24b5c14312">std::spinlock</a>
 </li>
 <li>spinlockDestroy()
 : <a class="el" href="da/d13/classstd_1_1_sys.html#a3e7ba115ebb0f563e37927cfb7e85344">std::Sys</a>
@@ -303,22 +303,25 @@ $(function() {
 : <a class="el" href="de/de2/classstd_1_1math_1_1colors__base.html#a8b78030c4ca0d4795c2fdfe2a3e0310b">std::math::colors_base&lt; T &gt;</a>
 </li>
 <li>stack()
-: <a class="el" href="db/d43/classstd_1_1stack.html#a222bbf15383e5d0fd95d1adb19cf71e3">std::stack&lt; T, TAllocator, TContainer &gt;</a>
+: <a class="el" href="db/d43/classstd_1_1stack.html#ae4f1aecf68e921c3f06b1c658f801d7c">std::stack&lt; T, TAllocator, TContainer &gt;</a>
 </li>
 <li>stack_allocator()
 : <a class="el" href="d8/d28/classstd_1_1stack__allocator.html#a497fb6a31de2e6dd31372256844c2922">std::stack_allocator&lt; TBytes &gt;</a>
 </li>
 <li>standard_vector_storage()
-: <a class="el" href="db/dc3/structstd_1_1standard__vector__storage.html#a26d6b20fcb75404c271b15497316e3a7">std::standard_vector_storage&lt; T, TAllocator &gt;</a>
+: <a class="el" href="db/dc3/structstd_1_1standard__vector__storage.html#a7db1ab54439fbcd983eb1d0c2ba1554b">std::standard_vector_storage&lt; T, TAllocator &gt;</a>
 </li>
 <li>start()
 : <a class="el" href="d6/d35/classstd_1_1thread.html#a13d16dea37ffaec614b1382ec2d0ec12">std::thread</a>
 </li>
 <li>StartApp
-: <a class="el" href="de/d2f/classstd_1_1application.html#a9002267395462daa948be1ca71164369">std::application</a>
+: <a class="el" href="de/d2f/classstd_1_1application.html#a454d4734a508053a12aff3c4fedc6b64">std::application</a>
 </li>
 <li>StartAppEvent
 : <a class="el" href="de/d2f/classstd_1_1application.html#a48ef1f906ffaad8a896f1a65d3c4ef39">std::application</a>
+</li>
+<li>startEventArgs()
+: <a class="el" href="d8/d35/classstd_1_1start_event_args.html#aa0185cfac5294f1ee6f18d3a33f33ddc">std::startEventArgs</a>
 </li>
 <li>state_size
 : <a class="el" href="dc/da4/classstd_1_1mersenne__twister__engine.html#a7e234124c17ca7a509d80463597a5df8">std::mersenne_twister_engine&lt; UIntType, w, n, m, r, a, u, d, s, b, t, c, l, f &gt;</a>
@@ -336,7 +339,7 @@ $(function() {
 : <a class="el" href="da/dec/classstd_1_1atomic.html#ac70c1fd8f708ae6bea7dbf2a8a0ab4e7">std::atomic&lt; T &gt;</a>
 </li>
 <li>substr()
-: <a class="el" href="d4/de8/classstd_1_1basic__string.html#a5f93368f7fb6a2874bf8da801aa526d1">std::basic_string&lt; E, TAllocator, TStorage &gt;</a>
+: <a class="el" href="d4/de8/classstd_1_1basic__string.html#a19700f17170ad1f72867c379b2d0d75e">std::basic_string&lt; E, TAllocator, TStorage &gt;</a>
 </li>
 <li>subtract_with_carry_engine()
 : <a class="el" href="d7/d48/classstd_1_1subtract__with__carry__engine.html#ac7b681a9394bcc642d2f91387a33c40e">std::subtract_with_carry_engine&lt; UIntType, word_size, short_lag, long_lag &gt;</a>

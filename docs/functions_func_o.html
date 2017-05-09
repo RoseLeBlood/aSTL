@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">aSTL 0.24.2</a>
+                    <a class="navbar-brand">aSTL 0.25.0</a>
                 </div>
             </div>
         </nav>
@@ -57,11 +57,23 @@ $(function() {
 <li>ofstream()
 : <a class="el" href="d0/db3/classstd_1_1ofstream.html#acd67a5bf24702528c27bca80bd1ce36e">std::ofstream</a>
 </li>
+<li>OnAppException()
+: <a class="el" href="d7/d5a/classstd_1_1_program.html#abca6e054f9e224a9511a5967eab49967">std::Program</a>
+</li>
+<li>OnAppExit()
+: <a class="el" href="d7/d5a/classstd_1_1_program.html#a40d45949d054ece88e73a24aefa01f13">std::Program</a>
+</li>
+<li>OnAppStart()
+: <a class="el" href="d7/d5a/classstd_1_1_program.html#acf392dfcb57599d32ed93cc82487f2fd">std::Program</a>
+</li>
 <li>onException()
 : <a class="el" href="de/d2f/classstd_1_1application.html#a82322f2cd4a529f1e646d2acfe6b5d52">std::application</a>
 </li>
 <li>onExit()
 : <a class="el" href="de/d2f/classstd_1_1application.html#a064f95a77c14f1ccc1e34ea2bffdfb81">std::application</a>
+</li>
+<li>OnNewHandler()
+: <a class="el" href="d7/d5a/classstd_1_1_program.html#a68a7574c0a6117c3b4454431dba7a1a7">std::Program</a>
 </li>
 <li>onStart()
 : <a class="el" href="de/d2f/classstd_1_1application.html#a454a0303f85ec620c7e6cdfe24a0f348">std::application</a>
@@ -100,8 +112,6 @@ $(function() {
 </li>
 <li>operator value_type()
 : <a class="el" href="da/dec/classstd_1_1atomic.html#ad25a20c52f8e64ced7b74f75dc906f80">std::atomic&lt; T &gt;</a>
-, <a class="el" href="de/d9b/classstd_1_1iproperty__base.html#aa45c0b3c6e440224f9027e9e9c39c67a">std::iproperty_base&lt; T, C &gt;</a>
-, <a class="el" href="dd/dbc/classstd_1_1value__property.html#a72d8419eb7abae0db780dd85f457839d">std::value_property&lt; T, read, write &gt;</a>
 </li>
 <li>operator value_type *()
 : <a class="el" href="d4/d00/classstd_1_1math_1_1vector4.html#ae139fe35cc3a678f5101f276e6f397d5">std::math::vector4&lt; T &gt;</a>
@@ -127,11 +137,9 @@ $(function() {
 </li>
 <li>operator()()
 : <a class="el" href="d2/d44/structstd_1_1default__delete.html#a9a53fa7827cf5918d430a597cd127e93">std::default_delete&lt; T &gt;</a>
-, <a class="el" href="d2/d56/classstd_1_1delegate.html#aa0f2735b1aec8b4deeb763634ff60ca2">std::delegate&lt; TReciever, TYPE, TSender &gt;</a>
-, <a class="el" href="db/ddb/classstd_1_1delegate__base.html#aa0a606289e7faae488c196699356fadf">std::delegate_base&lt; TYPE, TSender &gt;</a>
 , <a class="el" href="d2/dee/classstd_1_1discard__block__engine.html#aff8047cf9a75594b3355a7beab4a9048">std::discard_block_engine&lt; TEngine, p, r &gt;</a>
 , <a class="el" href="d7/de9/structstd_1_1equal__to.html#a2e2d74dd926dbcbd9a93ed84398cadd7">std::equal_to&lt; T &gt;</a>
-, <a class="el" href="d5/d46/classstd_1_1event.html#a749e7c40359932374f628018628b3568">std::event&lt; TYPE, TSender &gt;</a>
+, <a class="el" href="d5/d46/classstd_1_1event.html#ae9459294918a688d5b389ed80b54cd58">std::event&lt; TYPE, TSender &gt;</a>
 , <a class="el" href="dc/ddc/structstd_1_1greater.html#add41fb0b2f9dbabb3a11638ce5b18692">std::greater&lt; T &gt;</a>
 , <a class="el" href="d8/dcf/structstd_1_1hash.html#aab6033d5f7917b2baa261b8c83d988ba">std::hash&lt; T, THasher &gt;</a>
 , <a class="el" href="d6/df1/structstd_1_1hash_3_01basic__string_3_01_e_00_01_t_allocator_00_01_t_storage_01_4_01_4.html#a5a498aaab4a20bfd13a1fce890263960">std::hash&lt; basic_string&lt; E, TAllocator, TStorage &gt; &gt;</a>
@@ -270,7 +278,6 @@ $(function() {
 , <a class="el" href="db/d27/classstd_1_1fixed__substring.html#aa0fd09e4172b6f60ee482ebe6dec4dac">std::fixed_substring&lt; E, N &gt;</a>
 , <a class="el" href="d9/d50/classstd_1_1fixed__vector.html#a6c3edd8da46b0f8d22234d0bdd5caa8e">std::fixed_vector&lt; T, TCapacity, TGrowOnOverflow, TAllocator &gt;</a>
 , <a class="el" href="d7/dfc/classstd_1_1hash__map.html#af867c3e55204a7272a63090b9532d108">std::hash_map&lt; TKey, TValue, THashFunc, TLoadFactor4, TKeyEqualFunc, TAllocator &gt;</a>
-, <a class="el" href="de/d9b/classstd_1_1iproperty__base.html#a3de8fd54f51a56fa3d6f2080ce629fd1">std::iproperty_base&lt; T, C &gt;</a>
 , <a class="el" href="d4/dff/classstd_1_1list.html#a41a418c3113d8c12fe012f774be80597">std::list&lt; T, TAllocator &gt;</a>
 , <a class="el" href="dd/d48/classstd_1_1lock__ptr.html#a7965477e67556af421e330f53e70f2af">std::lock_ptr&lt; T, L &gt;</a>
 , <a class="el" href="d0/d19/classstd_1_1math_1_1boundingbox.html#a700373dcc6c0185cfe76ae3bdf90d210">std::math::boundingbox&lt; T &gt;</a>
@@ -290,12 +297,13 @@ $(function() {
 , <a class="el" href="d5/d64/classstd_1_1slist.html#a3660e14a008464ecc897c731968ecd81">std::slist&lt; T, TAllocator &gt;</a>
 , <a class="el" href="d5/d7a/classstd_1_1spinlock.html#a1c0cb294f8af28dee9a63807a982b0ed">std::spinlock</a>
 , <a class="el" href="db/d43/classstd_1_1stack.html#a960548ed0b6be96d314f29c26f739675">std::stack&lt; T, TAllocator, TContainer &gt;</a>
-, <a class="el" href="dd/dbc/classstd_1_1value__property.html#ac80277e7aa20fdcc7a3a8efbe287a5b9">std::value_property&lt; T, read, write &gt;</a>
 , <a class="el" href="dd/d4e/classstd_1_1vector.html#ab0a9481d524914db7798187d40010a25">std::vector&lt; T, TAllocator, TStorage &gt;</a>
 , <a class="el" href="da/d49/classstd_1_1weak__ptr.html#a8b2caa086b3c573b2ebdf5066b4b0e4e">std::weak_ptr&lt; T &gt;</a>
 </li>
 <li>operator==()
-: <a class="el" href="dc/d7b/classstd_1_1fast__type.html#a1ddb6fb6e1db69181bc788eba1d53d1d">std::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="d2/d56/classstd_1_1delegate.html#a1658ec8a86feea1b4e51c2ee2106f139">std::delegate&lt; TReciever, TYPE, TSender &gt;</a>
+, <a class="el" href="db/ddb/classstd_1_1delegate__base.html#af5836c4048314bcfab9efcefaeb75c42">std::delegate_base&lt; TYPE, TSender &gt;</a>
+, <a class="el" href="dc/d7b/classstd_1_1fast__type.html#a1ddb6fb6e1db69181bc788eba1d53d1d">std::fast_type&lt; Bits, TBaseType &gt;</a>
 , <a class="el" href="df/d16/classstd_1_1fbit.html#afc672b1bb87e22fad8f7c2f3cdb385fb">std::fbit</a>
 , <a class="el" href="db/d27/classstd_1_1fixed__substring.html#a1640746ab276fcdd51e63618db3bbfc2">std::fixed_substring&lt; E, N &gt;</a>
 , <a class="el" href="d9/dcc/classstd_1_1intrusive__list__iterator.html#a77a34f796f6516c59e350044037419c2">std::intrusive_list_iterator&lt; Pointer, Reference &gt;</a>
@@ -317,7 +325,7 @@ $(function() {
 : <a class="el" href="dc/d7b/classstd_1_1fast__type.html#a6ca78cad7a1f68b25ca68a9c34f32684">std::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator[]()
-: <a class="el" href="d4/d04/classstd_1_1array.html#ad488e6488682ed3af3f6e7c11ffcc791">std::array&lt; T, N &gt;</a>
+: <a class="el" href="d4/d04/classstd_1_1array.html#a2e5a7adb0dc7fc3658aaf42bb829e888">std::array&lt; T, N &gt;</a>
 , <a class="el" href="d4/de8/classstd_1_1basic__string.html#a9e4d69675aff6909e70935e4368ca859">std::basic_string&lt; E, TAllocator, TStorage &gt;</a>
 , <a class="el" href="dc/d7b/classstd_1_1fast__type.html#aa4c12ce0116327543c466d9b7eea7cc1">std::fast_type&lt; Bits, TBaseType &gt;</a>
 , <a class="el" href="dc/d67/classstd_1_1graphic_1_1image.html#a78d6b26d6ac9427c4e397ac3d516f29e">std::graphic::image&lt; T, BC &gt;</a>

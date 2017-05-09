@@ -1,3 +1,5 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$d8/d71/structstd_1_1pair.html" title="std::pair\&lt; T1, T2 \&gt;" alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node1" href="$dd/d9c/classstd_1_1net_1_1ip__address__base.html" title="std::net::ip_address_base" alt="" coords="5,31,177,57"/>
+<area shape="rect" id="node2" href="$d0/d3d/classstd_1_1net_1_1ip__address4.html" title="std::net::ip_address4" alt="" coords="225,5,369,32"/>
+<area shape="rect" id="node3" href="$d1/d4d/classstd_1_1net_1_1ip__address6.html" title="std::net::ip_address6" alt="" coords="225,56,369,83"/>
 </map>
