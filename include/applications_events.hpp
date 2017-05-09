@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,39 +23,56 @@
  */
 
 /* 
- * File:   iostream.hpp
+ * File:   applications_events.hpp
  * Author: annas
  *
- * Created on 24. November 2016, 21:53
+ * Created on 9. Mai 2017, 00:55
  */
 
-#ifndef IOSTREAM_HPP
-#define IOSTREAM_HPP
+#ifndef APPLICATIONS_EVENTS_HPP
+#define APPLICATIONS_EVENTS_HPP
 
-#include "iofstream.hpp"
-#include "singleton.hpp"
-namespace std 
-{
-    class Console 
-    {
-    public: 
-        static void write(const char* cstr);
-        static void write (std::string str);
-        static void writeline(const char* cstr);
-        static void writeline(std::string str);
-    
-        static char read();
-        static std::string readline();
+#include "eventargs.hpp"
+
+namespace std {
+    class exitEventArgs : public eventArgs {
+    public:
+        exitEventArgs(int exitcode) : eventArgs() {
+            m_iExitCode = exitcode; 
+        }
+        exitEventArgs(const exitEventArgs& o) {
+            m_iExitCode = o.m_iExitCode;
+        }
+        int getExitCode() {
+            return m_iExitCode;
+        }
+    private:
+        int m_iExitCode;
+    };
+    class startEventArgs : public eventArgs {
+    public:
+        startEventArgs( list<string> args, string name) {
+            m_lstArgumente = args;
+            m_prgName = name;
+        }
+        list<string> getArgs() {
+            return m_lstArgumente;
+        }
+        string getName() {
+            return m_prgName;
+        }
+    private:
+        list<string> m_lstArgumente;
+        string       m_prgName;
+    };
+    class exceptionEventArgs : public eventArgs {
         
-        static void reset();
+    };
+    class handlerEventsArgs : public eventArgs {
         
-        static void setio(ofstream out, ifstream in);
-        
-        static auto_ptr<ofstream> getout();
-        static auto_ptr<ifstream> getin();
     };
 }
 
 
-#endif /* IOSTREAM_HPP */
+#endif /* APPLICATIONS_EVENTS_HPP */
 

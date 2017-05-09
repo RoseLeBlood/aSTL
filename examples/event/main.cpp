@@ -6,51 +6,53 @@
 
 #include <conio.h>
 
-
+class serverEventArgs : public std::eventArgs {
+public:
+   serverEventArgs(std::string msg)  { m_msg = msg; }
+   std::string getMessage() { return m_msg; }
+private:
+    std::string m_msg;   
+};
 class Server : public std::object
 {
 public:
-    std::event<const char*> MessageSent;
+    std::event<serverEventArgs> MessageSent;
 
-    void SendMessage(std::string p_msg)
+    void SendMessage(serverEventArgs p_msg)
     {
         std::Console::writeline("Server send message: ");
-        MessageSent(this, p_msg.c_str());
+        MessageSent(this, p_msg);
     }
 };
 
 
 class test : public std::Program {
 public:
-    override int Main() {
-        std::application::get().ExitAppEvent +=
-             new std::delegate<test, int>(this, &test::Application_OnAppExit);
-        
+    int Main() {
         Server server;
         
-        server.MessageSent += new std::delegate<test, const char*>
+        server.MessageSent += new std::delegate<test, serverEventArgs>
                 (this, &test::Server_OnMessageSent);
-        server.MessageSent += new std::delegate<test, const char*>
+        server.MessageSent += new std::delegate<test, serverEventArgs>
                 (this, &test::Server_OnMessageSent);
-        server.MessageSent += new std::delegate<test, const char*>
+        server.MessageSent += new std::delegate<test, serverEventArgs>
                 (this, &test::Server_OnMessageSent);
         
-        server.SendMessage(std::string("Hallo C++ EventSystem"));
+        server.SendMessage(serverEventArgs(std::string("Hallo C++ EventSystem")));
+        
+        std::Console::writeline("Bitte druecken Sie eine Taste ...");
+        _getch();
         
         return 0;
     }
 private:
-    void Server_OnMessageSent(const std::object* sender, const char* msg) {
+    void Server_OnMessageSent(const std::object* sender, serverEventArgs msg) {
         static int iindex; iindex++;
         
         std::Console::writeline(std::frmstring("Client%d reach messages: %s", 
-                iindex, msg));
+                iindex, msg.getMessage().c_str()));
     }
-    void Application_OnAppExit(const std::object* sender, int p) {
-        std::Console::writeline(
-        std::frmstring("ExitCode: %d\nBitte druecken Sie eine Taste ...", p));
-        _getch();
-     }
+
 };
 
 SET_PROGRAM(test);

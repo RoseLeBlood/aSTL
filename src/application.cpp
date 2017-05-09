@@ -33,11 +33,11 @@
 #include "../include/iostream.hpp"
 
 
-extern std::auto_ptr<std::Program> mainPrg;
+extern std::auto_ptr<std::Program> __astl_startabi();
 
 void __new_handler()
 {
-    std::application::get().newHandler();
+      std::application::get().newHandler();
 }
 namespace std {
     void application::setup(int argc, char** argv) {
@@ -54,15 +54,53 @@ namespace std {
             onExit();
         } catch(...) {
             m_iExitCode = -1;
+            onException();
         }
                
         return m_iExitCode;
+    }
+    
+    void application::onExit() {
+        ExitAppEvent(this, exitEventArgs(m_iExitCode));
+    }
+    void application::onStart() {
+        StartAppEvent(this, startEventArgs(m_args, m_strName));
+    }
+    void application::onException() {
+        ExceptionEvent(this, exceptionEventArgs());
+    }
+     void application::newHandler() {
+         NewHandlerEvent(this, handlerEventsArgs());
+     }
+     
+     
+    Program::Program() {
+        application::get().ExitAppEvent +=
+                new delegate<Program, exitEventArgs>(this, &Program::OnAppExit);
+        application::get().StartAppEvent +=
+                new delegate<Program, startEventArgs>(this, &Program::OnAppStart);
+        application::get().NewHandlerEvent +=
+                new delegate<Program, handlerEventsArgs>(this, &Program::OnNewHandler);
+        application::get().ExceptionEvent +=
+                new delegate<Program, exceptionEventArgs>(this, &Program::OnAppException);
+    }
+    void Program::OnAppExit(const std::object* sender, const std::exitEventArgs p) {
+        Console::writeline(frmstring("ExitCode: %d", p.getExitCode()));
+    }
+    void Program::OnAppStart(const std::object* sender, const std::startEventArgs p) {
+       Console::writeline("App Started");
+    }
+    void Program::OnAppException(const std::object* sender, const std::exceptionEventArgs p) {
+        
+    }
+    void Program::OnNewHandler(const std::object* sender, const std::handlerEventsArgs p) {
+        
     }
 }
 
 int main( int argc, char **argv )
 {
     std::application::get().setup(argc, argv);
-    return std::application::get().run(mainPrg);
+    return std::application::get().run(__astl_startabi());
 }
 

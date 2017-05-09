@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 annas.
+ * Copyright 2017 annas.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,39 +23,25 @@
  */
 
 /* 
- * File:   iostream.hpp
+ * File:   eventargs.hpp
  * Author: annas
  *
- * Created on 24. November 2016, 21:53
+ * Created on 9. Mai 2017, 00:01
  */
 
-#ifndef IOSTREAM_HPP
-#define IOSTREAM_HPP
+#ifndef EVENTARGS_HPP
+#define EVENTARGS_HPP
 
-#include "iofstream.hpp"
-#include "singleton.hpp"
-namespace std 
-{
-    class Console 
-    {
-    public: 
-        static void write(const char* cstr);
-        static void write (std::string str);
-        static void writeline(const char* cstr);
-        static void writeline(std::string str);
-    
-        static char read();
-        static std::string readline();
-        
-        static void reset();
-        
-        static void setio(ofstream out, ifstream in);
-        
-        static auto_ptr<ofstream> getout();
-        static auto_ptr<ifstream> getin();
+#include "unknown.hpp"
+
+namespace std {
+    class eventArgs : public object {
+    public:
+        eventArgs() {
+            
+        }
     };
 }
 
-
-#endif /* IOSTREAM_HPP */
+#endif /* EVENTARGS_HPP */
 

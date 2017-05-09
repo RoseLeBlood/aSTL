@@ -35,12 +35,12 @@
 #include "common.hpp"
 #include "auto_ptr.hpp"
 #include "list.hpp"
-#include "unknown.hpp"
+#include "eventargs.hpp"
 
 namespace std 
 {
 
-    template<typename TYPE, class TSender = object>
+    template<typename TYPE, class TSender = eventArgs>
     class delegate_base
     {
     public:
@@ -49,16 +49,15 @@ namespace std
         using sender_type = TSender;
         using value_type = TYPE;
         
-	virtual bool equals( const_self_type* pOther) = 0;
-	virtual void operator()( const sender_type* pSender, value_type pParam) = 0;
-	virtual void call( const sender_type* pSender, value_type pParam) = 0;
+	virtual bool operator == ( const_self_type* pOther) = 0;
+	virtual void call( const sender_type* pSender, const value_type pParam) = 0;
     };
 
     template<class TReciever, typename TYPE, class TSender = object>
     class delegate : public delegate_base<TYPE, TSender>
     {
     private:
-	typedef void (TReciever::*callFunction)(const TSender*, TYPE pParam);
+	typedef void (TReciever::*callFunction)(const TSender*, const TYPE pParam);
 	callFunction         m_ptr2Func;
 	TReciever*  m_ptr2Object;
 
@@ -68,19 +67,16 @@ namespace std
             m_ptr2Object    = p_ptr2Object;
 	}
 
-	bool equals(const delegate_base<TYPE, TSender>* pOther){
+	bool operator == (const delegate_base<TYPE, TSender>* pOther){
             const delegate<TReciever, TYPE, TSender>* other;
             other = static_cast<const delegate<TReciever, TYPE, TSender>*>(pOther);
             assert(other != NULL);
             assert(m_ptr2Object != NULL);
             return other->m_ptr2Object == m_ptr2Object && other->m_ptr2Func == m_ptr2Func;
 	}
-        virtual void operator()(const TSender* pSender, TYPE pParam){
-	    assert(pSender != NULL);
-	    (m_ptr2Object->*m_ptr2Func)(pSender, pParam);
-	}
+     
 
-	virtual void call(const TSender* pSender, TYPE pParam){
+	virtual void call(const TSender* pSender,const TYPE pParam){
             assert(pSender != NULL);
             (m_ptr2Object->*m_ptr2Func)(pSender, pParam);
 	}
@@ -92,7 +88,7 @@ namespace std
 	event() { }
 	~event() { }
 
-	void call( const TSender* pSender, TYPE pParameter) {
+	void call( const TSender* pSender, const TYPE pParameter) {
             for(auto itr = m_observers.begin();
 			itr != m_observers.end();
 			itr++)
@@ -107,7 +103,7 @@ namespace std
 	void operator -= ( const delegate_base<TYPE, TSender>* pHandler) {
             rem(pHandler);
         }
-	void operator () ( const TSender* pSender, TYPE pParameter) {
+	void operator () ( const TSender* pSender, const TYPE pParameter) {
             call(pSender, pParameter);
         }
     private:
@@ -120,9 +116,8 @@ namespace std
             for(auto itr = m_observers.begin();
 			itr != m_observers.end();
 			itr++)
-            //std::vector< delegate_base<TSender, TYPE>* >::iterator itr = m_observers.begin();
             {
-                if(itr->equals(pHandler))
+                if(itr == pHandler)
                 {
                     m_observers.erase(itr);
                     break;

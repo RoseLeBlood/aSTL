@@ -37,31 +37,44 @@
 #include "singleton.hpp"
 #include "unknown.hpp"
 #include "event.hpp"
-
+#include "applications_events.hpp"
 
 
 namespace std {
     class Program : public object {
     public:
+        Program();
+        
         virtual int Main() {
             return 0;
         }
+    protected:
+        virtual void OnAppExit(const std::object* sender, 
+                               const std::exitEventArgs p);
+        virtual void OnAppStart(const std::object* sender, 
+                                const std::startEventArgs p);
+        virtual void OnAppException(const std::object* sender, 
+                                const std::exceptionEventArgs p);
+        virtual void OnNewHandler(const std::object* sender, 
+                                  const std::handlerEventsArgs p);
     };
     
-   
+    
     
     class application : public singleton<application>, 
         public object 
     {
         friend class singleton<application>;
     public:
-        using ExitApp = event<int>;
-        using StartApp = event<int>;
-        using Exception = event<void*>;
+        using ExitApp = event<exitEventArgs>;
+        using StartApp = event<startEventArgs>;
+        using Exception = event<exceptionEventArgs>;
+        using NewHandler = event<handlerEventsArgs>;
         
         ExitApp                ExitAppEvent;
         StartApp               StartAppEvent;
         Exception              ExceptionEvent;
+        NewHandler             NewHandlerEvent;
         
         void setup(int argc, char** argv);
         
@@ -77,21 +90,17 @@ namespace std {
         auto_ptr<Program>   getProgram() {
             return m_iMainPrg;
         }
-        virtual int run(auto_ptr<Program> prg);
-        virtual void newHandler() { }
+        int run(auto_ptr<Program> prg);
+        void newHandler();
         
         
     protected:
         application() { }
         
-        void onExit() {
-             ExitAppEvent(this, m_iExitCode);
-        }
-        void onStart() {
-            StartAppEvent(this, 0);
-        }
-        void onException() {
-        }
+        void onExit();
+        void onStart();
+        void onException();
+        
     private:
         list<string>           m_args;
         string                 m_strName;
@@ -104,7 +113,8 @@ namespace std {
 
 #ifndef SET_PROGRAM
 #define SET_PROGRAM(P) \
-std::auto_ptr<std::Program> mainPrg = std::auto_ptr<std::Program>(new (P)());
+std::auto_ptr<std::Program> __astl_startabi() { return std::auto_ptr<std::Program>(new (P)); }
+//std::auto_ptr<std::Program> mainPrg = std::auto_ptr<std::Program>(new (P)());
 
 #endif
 

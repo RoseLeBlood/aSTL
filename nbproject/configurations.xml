@@ -59,6 +59,7 @@
         <itemPath>include/alignment.hpp</itemPath>
         <itemPath>include/allocator.hpp</itemPath>
         <itemPath>include/application.hpp</itemPath>
+        <itemPath>include/applications_events.hpp</itemPath>
         <itemPath>include/arguments.hpp</itemPath>
         <itemPath>include/array.hpp</itemPath>
         <itemPath>include/atomic.hpp</itemPath>
@@ -72,6 +73,7 @@
         <itemPath>include/cow_string_storage.hpp</itemPath>
         <itemPath>include/deleter.hpp</itemPath>
         <itemPath>include/event.hpp</itemPath>
+        <itemPath>include/eventargs.hpp</itemPath>
         <itemPath>include/exp_vector.hpp</itemPath>
         <itemPath>include/fast_type.hpp</itemPath>
         <itemPath>include/filestream.hpp</itemPath>
@@ -99,7 +101,6 @@
         <itemPath>include/node_ptr.hpp</itemPath>
         <itemPath>include/pair.hpp</itemPath>
         <itemPath>include/pallocator.hpp</itemPath>
-        <itemPath>include/property.hpp</itemPath>
         <itemPath>include/radix_sorter.hpp</itemPath>
         <itemPath>include/random.hpp</itemPath>
         <itemPath>include/rb_tree.hpp</itemPath>
@@ -184,308 +185,6 @@
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="Debug" type="3">
-      <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
-      </toolsSet>
-      <compileType>
-        <cTool>
-          <architecture>1</architecture>
-          <standard>10</standard>
-        </cTool>
-        <ccTool>
-          <architecture>1</architecture>
-          <standard>11</standard>
-          <commandLine>-msse2 -msse3 -mfpmath=sse -fpermissive -march=native --with-mfpmath=sse</commandLine>
-          <warningLevel>0</warningLevel>
-        </ccTool>
-        <archiverTool>
-        </archiverTool>
-      </compileType>
-      <item path="include/algorithm.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/alignment.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/allocator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/application.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/arguments.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/array.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/atomic.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/auto_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/basic_string.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/buffer_allocator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/bytebuffer.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/clone_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/common.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/config.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/cow_string_storage.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fast_type.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/filestream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fixed_array.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fixed_list.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fixed_sorted_vector.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fixed_substring.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/fixed_vector.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/functional.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/graphic/image.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/adler32.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/bernstein.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/crc32.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/discard_block_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/fletcher.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/fnv1a.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/hash.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/independent_bits_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/isaac_engine.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/linear_congruential_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/mersenne_twister_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/ramakrishna.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/random.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash/shuffle_order_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/subtract_with_carry_engine.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/hash/weinberg.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/hash_map.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/intrusive_list.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/intrusive_slist.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/inttokey.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/iofstream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/iostream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/iterator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/list.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/lock_base.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/lock_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/map.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/boundingbox.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/color.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/colors.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/ext.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/matrix4x4.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/physik.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/plane.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/quaternion.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/ray.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/rectangle.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/utils.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/vecf_sse.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/vector2.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/vector3.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/math/vector4.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/memory/palloc.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/memorystream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/mutex.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/network/address.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/network/endpoint.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/network/physicaladdress.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="include/network/socket.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/new.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/node_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/pair.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/pallocator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/property.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/radix_sorter.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/random.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/rb_tree.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/ringbuffer.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/save_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/scoped_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/shared_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/simple_string_storage.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/singleton.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/slist.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/sort.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/sorted_vector.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/spinlock.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/split.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/sstream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/stack.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/stack_allocator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/std_counter.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/stl.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/stream.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/string.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/string_utils.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/type_traits.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/unknown.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/utility.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/utils.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/vector.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/weak_ptr.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/PLATFORM.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/README.md" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/application.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/asstl.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/filestream.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/intrusive_list.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/intrusive_slist.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/iostream.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/list.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/math/math.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/memory/palloc.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="src/mutex.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/network/address.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/network/physicaladdress.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/new.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/safe_counter.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/slist.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/spinlock.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/split.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-    </conf>
     <conf name="Release" type="3" platformSpecific="true">
       <toolsSet>
         <compilerSet>Base|MinGW</compilerSet>
@@ -535,6 +234,8 @@
       </item>
       <item path="include/application.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/applications_events.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/arguments.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/array.hpp" ex="false" tool="3" flavor2="0">
@@ -560,6 +261,8 @@
       <item path="include/deleter.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/event.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/eventargs.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/exp_vector.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -711,8 +414,6 @@
       <item path="include/pair.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/pallocator.hpp" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/property.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/radix_sorter.hpp" ex="false" tool="3" flavor2="0">
       </item>

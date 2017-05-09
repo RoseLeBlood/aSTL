@@ -33,7 +33,6 @@
 #define _STD_AUTO_PTR_H
 
 #include "common.hpp"
-#include "property.hpp"
 #include "string.hpp"
 
 namespace std
