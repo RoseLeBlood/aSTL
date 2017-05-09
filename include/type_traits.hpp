@@ -32,20 +32,61 @@
 #ifndef _STD_TYPETRAITS_H_
 #define _STD_TYPETRAITS_H_
 
+//#include "iostream.hpp"
+
+
 namespace std
 {
+        template <class ...ts> struct make_void { typedef void type; };
+        template <class ...ts> using void_t = typename make_void<ts ...>::type;
+        
+        template<class T, T v> struct integral_constant {
+            enum {
+                value = v
+            };
+        };
+        typedef integral_constant<bool, true> true_type;
+        typedef integral_constant<bool, false> false_type;
+        
+        template<typename T> struct is_enum
+          : public integral_constant<bool, __is_enum(T)> { };
+
+        template<typename T> struct is_union
+          : public integral_constant<bool, __is_union(T)> { };
+
+        template<typename T> struct is_class 
+            : public integral_constant<bool, __is_class(T)> { };
+        template<typename> struct is_function 
+            : public false_type { };
+        
+        template<typename T> struct is_empty
+            : public integral_constant<bool, __is_empty(T)> { };
+        
+        template<typename T> struct is_abstract
+            : public integral_constant<bool, __is_abstract(T)> { };
+        
+        template<typename T> struct is_polymorphic
+            : public integral_constant<bool, __is_polymorphic(T)> { };
+            
+        template<typename T> struct is_literal_type 
+            : public integral_constant<bool, __is_literal_type(T)> { };
+            
+        template<typename T> struct is_pod 
+            : public integral_constant<bool, __is_pod(T)> { };
+            
+        
+
 	template<typename T> struct is_integral 
-	{
-	        enum { value = false };
-	};
-
-	template<typename T> struct is_floating_point
-	{
-	        enum { value = false };
-	};
-
-	#define STL_INTEGRAL(TYPE)      template<> struct is_integral<TYPE> { enum { value = true }; }
-
+            : public integral_constant<bool, false> { };
+	template<class T> struct is_integral<const T> 
+            : public is_integral<T> { };
+        template<class T> struct is_integral<volatile T>
+            : public is_integral<T> { };
+        template<class T> struct is_integral<const volatile T> 
+            : public is_integral<T> { };
+        
+        #define STL_INTEGRAL(T) template<> struct is_integral<T> \
+                            : public integral_constant<bool, true> { };
 	STL_INTEGRAL(char);
 	STL_INTEGRAL(unsigned char);
 	STL_INTEGRAL(short);
@@ -55,75 +96,86 @@ namespace std
 	STL_INTEGRAL(long);
 	STL_INTEGRAL(unsigned long);
 	STL_INTEGRAL(wchar_t);
+        STL_INTEGRAL(bool);
 
-	template<> struct is_floating_point<float> { enum { value = true }; };
-	template<> struct is_floating_point<double> { enum { value = true }; };
+        template<typename T> struct is_rational
+            : public integral_constant<bool, false> { };
+	template<class T> struct is_rational<const T> 
+            : public is_rational<T> { };
+        template<class T> struct is_rational<volatile T>
+            : public is_rational<T> { };
+        template<class T> struct is_rational<const volatile T> 
+            : public is_rational<T> { };
+        
+        #define STL_RATIONAL(T) template<> struct is_rational<T> \
+                            : public integral_constant<bool, true> { };
+        STL_RATIONAL(float);
+        STL_RATIONAL(double);
+        STL_RATIONAL(long double);
+        
+        template<typename T> struct is_void
+            : public integral_constant<bool, false> { };
+	template<class T> struct is_void<const T> 
+            : public is_void<T> { };
+        template<class T> struct is_void<volatile T>
+            : public is_void<T> { };
+        template<class T> struct is_void<const volatile T> 
+            : public is_void<T> { };
+        
+        #define STL_VOIDTYPE(T) template<> struct is_void<T> \
+                            : public integral_constant<bool, true> { };
+        STL_VOIDTYPE(void);
+        STL_VOIDTYPE(const void);
+        STL_VOIDTYPE(volatile void );
+        STL_VOIDTYPE(const volatile void );
+        
+        template<typename T> struct is_floating_point 
+            : public integral_constant<bool, false> { };
+            
+	template<> struct is_floating_point<float> 
+             : public integral_constant<bool, true> { };
+	template<> struct is_floating_point<double>
+            : public integral_constant<bool, true> { };
 
-	template<typename T> struct is_pointer
-	{
-	        enum { value = false };
-	};
-	template<typename T> struct is_pointer<T*>
-	{
-	        enum { value = true };
-	};
-
-	template<typename T> struct is_pod
-	{
-	        enum { value = false };
-	};
+	template<typename T> struct is_pointer 
+            : public integral_constant<bool, false> { };
+            
+        template<typename T> struct is_pointer<T*>
+            : public integral_constant<bool, true> { };
 
 	template<typename T> struct is_fundamental
-	{
-	        enum 
-	        {
-	                value = is_integral<T>::value || is_floating_point<T>::value
-	        };
-	};
+            : public integral_constant<bool,  is_integral<T>::value || is_rational<T>::value> { };
+	
 
 	template<typename T> struct has_trivial_constructor
-	{
-	        enum
-	        {
-	                value = is_fundamental<T>::value || is_pointer<T>::value || is_pod<T>::value
-	        };
-	};
+            : public integral_constant<bool,  is_fundamental<T>::value | is_pointer<T>::value | is_pod<T>::value> { };
+	
+
 
 	template<typename T> struct has_trivial_copy
-	{
-	        enum
-	        {
-	                value = is_fundamental<T>::value || is_pointer<T>::value || is_pod<T>::value
-	        };
-	};
+            : public integral_constant<bool, is_fundamental<T>::value | is_pointer<T>::value | is_pod<T>::value> { };
+	
+	
 
 	template<typename T> struct has_trivial_assign
-	{
-	        enum
-	        {
-	                value = is_fundamental<T>::value || is_pointer<T>::value || is_pod<T>::value
-	        };
-	};
+            : public integral_constant<bool, is_fundamental<T>::value | is_pointer<T>::value | is_pod<T>::value> { };
+	
 
 	template<typename T> struct has_trivial_destructor
-	{
-	        enum
-	        {
-	                value = is_fundamental<T>::value || is_pointer<T>::value || is_pod<T>::value
-	        };
-	};
+            : public integral_constant<bool, is_fundamental<T>::value || is_pointer<T>::value || is_pod<T>::value> { };
+	
 
 	template<typename T> struct has_cheap_compare
-	{
-	        enum
-	        {
-	                value = has_trivial_copy<T>::value && sizeof(T) <= 4
-	        };
-	};
+           : public integral_constant<bool, has_trivial_copy<T>::value && sizeof(T) <= 4 > { };
 
+        
+       
+        
+      
+        
+        
+        
 } 
 
 #endif 
-
-
 
