@@ -33,7 +33,6 @@
 #define IOSTREAM_HPP
 
 #include "iofstream.hpp"
-#include "singleton.hpp"
 namespace std 
 {
     class Console 
