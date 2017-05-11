@@ -186,18 +186,8 @@ namespace std
         }
        
         
-        namespace simd 
-        {
-		    #define ALL_MMX_REGS_CHANGELIST "mm0","mm1","mm2","mm3","mm4","mm5","mm6","mm7","st","st(1)","st(2)","st(3)","st(4)","st(5)","st(6)","st(7)"
-			#if CPU_HAS_3DNOW
-			    inline void reset_mmx (void) { asm ("femms":::ALL_MMX_REGS_CHANGELIST); }
-			#elif CPU_HAS_MMX
-			    inline void reset_mmx (void) { asm ("emms":::ALL_MMX_REGS_CHANGELIST); }
-			#else
-			    inline void reset_mmx (void) {}
-			#endif
-		} 
-	} 
+       
+    } 
 }
 #endif
 

@@ -34,11 +34,7 @@
 
 #include "string.hpp"
 
-namespace std
-{
-    
-        
-}
+
 
 #endif /* STRING_UTILS_HPP */
 

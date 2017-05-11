@@ -32,7 +32,7 @@
 #ifndef ADDRESS_HPP
 #define ADDRESS_HPP
 
-#include "socket.hpp"
+#include "enums.hpp"
 #include "../string.hpp"
 
 namespace std {

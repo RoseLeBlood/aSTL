@@ -39,7 +39,7 @@ namespace std {
     template <typename T, class TBase> 
     class property {
     public:
-        using setter_type = void (TBase::*)(T);
+        using setter_type = void (TBase::*)(const T);
         using getter_type = T (TBase::*)();
         
         property(auto_ptr<TBase> base, getter_type gtyp, setter_type styp ) {
@@ -86,7 +86,7 @@ namespace std {
 
 #ifndef prop_t
 #define prop_t(base, type, name, get, set) \
-         property<(type), (base)>(auto_ptr<base>((this)), (get), (set) ) (name)
+         property<(type), (base)> (name){auto_ptr<base>((this)), (get), (set)}
 
 #define prop8_t(base, name, get, set) prop_t(base, int8_t, (name), (get), (set))
 #define prop16_t(base, name, get, set) prop_t(base, int16_t, (name), (get), (set))

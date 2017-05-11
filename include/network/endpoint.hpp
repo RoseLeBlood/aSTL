@@ -35,7 +35,7 @@
 #define ENDPOINT_HPP
 
 #include "address.hpp"
-
+#include "../property.hpp"
 
 namespace std {
     namespace net {
@@ -67,6 +67,18 @@ namespace std {
         private:
             ip_type m_ipAddr;
             uint32_t m_port;
+        };
+        class end_point4 : public end_point<ip_address4> {
+        public:
+            end_point4() : end_point() { }
+            end_point4(ip_address4 addr, uint32_t port) 
+                : end_point(addr, port) { }
+        };
+        class end_point6 : public end_point<ip_address6> {
+        public:
+            end_point4() : end_point() { }
+            end_point4(ip_address6 addr, uint32_t port) 
+                : end_point(addr, port) { }
         };
     }
 }

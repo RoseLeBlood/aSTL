@@ -49,8 +49,10 @@
           <itemPath>include/memory/palloc.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="network" projectFiles="true">
+          <itemPath>include/network/TcpClient.hpp</itemPath>
           <itemPath>include/network/address.hpp</itemPath>
           <itemPath>include/network/endpoint.hpp</itemPath>
+          <itemPath>include/network/enums.hpp</itemPath>
           <itemPath>include/network/host.hpp</itemPath>
           <itemPath>include/network/physicaladdress.hpp</itemPath>
           <itemPath>include/network/socket.hpp</itemPath>
@@ -395,9 +397,13 @@
       </item>
       <item path="include/mutex.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/network/TcpClient.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/network/address.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/network/endpoint.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/network/enums.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/network/host.hpp" ex="false" tool="3" flavor2="0">
       </item>
