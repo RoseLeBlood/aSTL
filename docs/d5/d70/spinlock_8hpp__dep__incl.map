@@ -1,7 +1,0 @@
-<map id="include/spinlock.hpp" name="include/spinlock.hpp">
-<area shape="rect" id="node2" href="$da/da1/cow__string__storage_8hpp.html" title="include/cow_string\l_storage.hpp" alt="" coords="5,80,135,121"/>
-<area shape="rect" id="node3" href="$dd/d8c/lock__ptr_8hpp.html" title="include/lock_ptr.hpp" alt="" coords="159,87,298,114"/>
-<area shape="rect" id="node6" href="$d9/da2/spinlock_8cpp.html" title="src/spinlock.cpp" alt="" coords="322,87,439,114"/>
-<area shape="rect" id="node4" href="$de/d5b/std__counter_8hpp.html" title="include/std_counter.hpp" alt="" coords="149,169,309,196"/>
-<area shape="rect" id="node5" href="$d8/da6/safe__counter_8cpp.html" title="src/safe_counter.cpp" alt="" coords="157,244,300,271"/>
-</map>

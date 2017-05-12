@@ -1,7 +1,0 @@
-<map id="include/mutex.hpp" name="include/mutex.hpp">
-<area shape="rect" id="node2" href="$dd/d8c/lock__ptr_8hpp.html" title="include/lock_ptr.hpp" alt="" coords="16,80,155,107"/>
-<area shape="rect" id="node5" href="$db/d0f/ringbuffer_8hpp.html" title="include/ringbuffer.hpp" alt="" coords="179,80,323,107"/>
-<area shape="rect" id="node6" href="$d0/dbb/mutex_8cpp.html" title="src/mutex.cpp" alt="" coords="347,80,453,107"/>
-<area shape="rect" id="node3" href="$de/d5b/std__counter_8hpp.html" title="include/std_counter.hpp" alt="" coords="5,155,165,181"/>
-<area shape="rect" id="node4" href="$d8/da6/safe__counter_8cpp.html" title="src/safe_counter.cpp" alt="" coords="14,229,157,256"/>
-</map>

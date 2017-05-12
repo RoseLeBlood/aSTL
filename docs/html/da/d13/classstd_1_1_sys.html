@@ -1,0 +1,1450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>alternative Standard Libary: std::Sys Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Logo128x128.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">alternative Standard Libary
+   &#160;<span id="projectnumber">0.29.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',false,false,'search.php','Suchen');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('da/d13/classstd_1_1_sys.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Klassen</a> &#124;
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-static-methods">Öffentliche, statische Methoden</a> &#124;
+<a href="../../da/d52/classstd_1_1_sys-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">std::Sys Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../">common.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Klassen</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7e/structstd_1_1_sys_1_1mutex__struct.html">mutex_struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc2/structstd_1_1_sys_1_1spinlock__struct.html">spinlock_struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:ac4f3ff28de45a311f03a1e72af0c15f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9">mutex_init_t</a> { <a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0">mutex_init_t::Normal</a>, 
+<a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a556c3dd912453ae5cb3095cd5054e6f4">mutex_init_t::Recursive</a>, 
+<a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a0c598d5b5d2c5b7817b5cb5d11d12f82">mutex_init_t::ErrorCheak</a>, 
+<a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a7a1920d61156abc05a60135aefe8bc67">mutex_init_t::Default</a> = mutex_init_t::Normal
+ }</td></tr>
+<tr class="separator:ac4f3ff28de45a311f03a1e72af0c15f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f019109cea02d650c0da099f1d70a2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d5/d7e/structstd_1_1_sys_1_1mutex__struct.html">std::Sys::mutex_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a></td></tr>
+<tr class="separator:af9f019109cea02d650c0da099f1d70a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19eaed4ae0cf3ec1e333b6f9901d67a7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/dc2/structstd_1_1_sys_1_1spinlock__struct.html">std::Sys::spinlock_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a></td></tr>
+<tr class="separator:a19eaed4ae0cf3ec1e333b6f9901d67a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Öffentliche, statische Methoden</h2></td></tr>
+<tr class="memitem:a9c9c270714511ce17ca1ffd134597907"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a9c9c270714511ce17ca1ffd134597907">MemCpy</a> (void *to, const void *from, size_t bytes)</td></tr>
+<tr class="separator:a9c9c270714511ce17ca1ffd134597907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf561c077094bd7b266b7734c73e66da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#abf561c077094bd7b266b7734c73e66da">MemMove</a> (void *to, const void *from, size_t bytes)</td></tr>
+<tr class="separator:abf561c077094bd7b266b7734c73e66da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bfc790ccaf985e62ad98da9c947ab0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ad5bfc790ccaf985e62ad98da9c947ab0">MemSet</a> (void *buf, unsigned char value, size_t bytes)</td></tr>
+<tr class="separator:ad5bfc790ccaf985e62ad98da9c947ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac49efae5fffa0c4ab9fd88060b8f218"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#aac49efae5fffa0c4ab9fd88060b8f218">wMemCpy</a> (void *to, const void *from, size_t bytes)</td></tr>
+<tr class="separator:aac49efae5fffa0c4ab9fd88060b8f218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3979b4517ff8cad46e14abf65d9604cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a3979b4517ff8cad46e14abf65d9604cc">wMemMove</a> (void *to, const void *from, size_t bytes)</td></tr>
+<tr class="separator:a3979b4517ff8cad46e14abf65d9604cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df3f8541dc4ba26336983134b6772d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a7df3f8541dc4ba26336983134b6772d3">wMemSet</a> (void *buf, unsigned char value, size_t bytes)</td></tr>
+<tr class="separator:a7df3f8541dc4ba26336983134b6772d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478df7ee0c293a50d589680380c9cbfc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a478df7ee0c293a50d589680380c9cbfc">vsnPrintf</a> (char *buffer, size_t count, const char *format, va_list argptr)</td></tr>
+<tr class="separator:a478df7ee0c293a50d589680380c9cbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025c18bdd6a88e4d26482d10429a95ec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a025c18bdd6a88e4d26482d10429a95ec">fPrintf</a> (void *file, const char *<a class="el" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>)</td></tr>
+<tr class="separator:a025c18bdd6a88e4d26482d10429a95ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6ea3afc7237d4234b5bc43dc3231c6"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#aee6ea3afc7237d4234b5bc43dc3231c6">fOpen</a> (const char *file, const char *fmt)</td></tr>
+<tr class="separator:aee6ea3afc7237d4234b5bc43dc3231c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f240e055773c6ef6b320ed3d9f3acf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac9f240e055773c6ef6b320ed3d9f3acf">fClose</a> (void *file)</td></tr>
+<tr class="separator:ac9f240e055773c6ef6b320ed3d9f3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca38e582c676c1087650aef98c7c0543"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#aca38e582c676c1087650aef98c7c0543">fTell</a> (void *file)</td></tr>
+<tr class="separator:aca38e582c676c1087650aef98c7c0543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3038727c96c808d92532b62382e037"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a2f3038727c96c808d92532b62382e037">fPutc</a> (int c, void *file)</td></tr>
+<tr class="separator:a2f3038727c96c808d92532b62382e037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27592f565d19984eac4e5c16dbb52429"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a27592f565d19984eac4e5c16dbb52429">fPuts</a> (const char *<a class="el" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>, void *file)</td></tr>
+<tr class="separator:a27592f565d19984eac4e5c16dbb52429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69ad2e413c751ae56644ccf69daba3a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ae69ad2e413c751ae56644ccf69daba3a">fGetc</a> (void *file)</td></tr>
+<tr class="separator:ae69ad2e413c751ae56644ccf69daba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14981aad284603b985b1e6470843e88"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac14981aad284603b985b1e6470843e88">fSeek</a> (void *file, int off, int org)</td></tr>
+<tr class="separator:ac14981aad284603b985b1e6470843e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e07d03fdef76804b9a6eea7e97e1035"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a8e07d03fdef76804b9a6eea7e97e1035">fRead</a> (void *data, const int count, const int size, void *file)</td></tr>
+<tr class="separator:a8e07d03fdef76804b9a6eea7e97e1035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8032132dd583eb289416a1b19ce85e37"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a8032132dd583eb289416a1b19ce85e37">fWrite</a> (void *data, const int count, const int size, void *file)</td></tr>
+<tr class="separator:a8032132dd583eb289416a1b19ce85e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610720c05d13d45ac5f1ad892feaef7f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a610720c05d13d45ac5f1ad892feaef7f">fFlush</a> (void *file)</td></tr>
+<tr class="separator:a610720c05d13d45ac5f1ad892feaef7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cb96093b35fe96793d756c2888a1f1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac9cb96093b35fe96793d756c2888a1f1">fEOF</a> (void *file)</td></tr>
+<tr class="separator:ac9cb96093b35fe96793d756c2888a1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd94047f1bedca9a81b335874d2733a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a8fd94047f1bedca9a81b335874d2733a">fError</a> (void *file)</td></tr>
+<tr class="separator:a8fd94047f1bedca9a81b335874d2733a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4d49f77b2b856c91a44a38b64c1d53"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a6e4d49f77b2b856c91a44a38b64c1d53">fIsFile</a> (const char *file)</td></tr>
+<tr class="separator:a6e4d49f77b2b856c91a44a38b64c1d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae3057f26fbb3e72e4a8af62efdf5c6"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a3ae3057f26fbb3e72e4a8af62efdf5c6">mAlloc</a> (size_t size)</td></tr>
+<tr class="separator:a3ae3057f26fbb3e72e4a8af62efdf5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d71e77caef7d86e01af361b1cb13353"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a0d71e77caef7d86e01af361b1cb13353">mReAlloc</a> (void *old, size_t newSize)</td></tr>
+<tr class="separator:a0d71e77caef7d86e01af361b1cb13353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9b2d41667f1c106815c6f9edc698fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a9a9b2d41667f1c106815c6f9edc698fc">mFree</a> (void *mem)</td></tr>
+<tr class="separator:a9a9b2d41667f1c106815c6f9edc698fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e4cc78efb94cd4b50162d1637288ae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a04e4cc78efb94cd4b50162d1637288ae"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a04e4cc78efb94cd4b50162d1637288ae">mAllocE</a> (int elements)</td></tr>
+<tr class="separator:a04e4cc78efb94cd4b50162d1637288ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0d6b0dc8bbe584027581f446d4279d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a6c0d6b0dc8bbe584027581f446d4279d">mutexInit</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>, <a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9">mutex_init_t</a> type=<a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0">mutex_init_t::Normal</a>, bool shared=false, bool robust=false)</td></tr>
+<tr class="separator:a6c0d6b0dc8bbe584027581f446d4279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb1f1b9ac68790344334a2200e8021c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#abfb1f1b9ac68790344334a2200e8021c">mutexDestroy</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:abfb1f1b9ac68790344334a2200e8021c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef59477c62a5153727cba3626c5e259"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#acef59477c62a5153727cba3626c5e259">mutexLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:acef59477c62a5153727cba3626c5e259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7221035092b3fa10172d60c821a1064a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a7221035092b3fa10172d60c821a1064a">mutexUnLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:a7221035092b3fa10172d60c821a1064a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe695d31d915cdc7c2476bfbeae35a0e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#abe695d31d915cdc7c2476bfbeae35a0e">mutexTryLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:abe695d31d915cdc7c2476bfbeae35a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e031f3724520464f9a98dc7bb48e9e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a65e031f3724520464f9a98dc7bb48e9e">spinlockInit</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>, const void *attr)</td></tr>
+<tr class="separator:a65e031f3724520464f9a98dc7bb48e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7ba115ebb0f563e37927cfb7e85344"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a3e7ba115ebb0f563e37927cfb7e85344">spinlockDestroy</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:a3e7ba115ebb0f563e37927cfb7e85344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb5c5bcc747c46c3670944a327727af"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#abcb5c5bcc747c46c3670944a327727af">spinlockLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:abcb5c5bcc747c46c3670944a327727af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae408c7a7438d031c7c853229a31eff63"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ae408c7a7438d031c7c853229a31eff63">spinlockUnLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:ae408c7a7438d031c7c853229a31eff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9453448f147d0c2d83187ec2c8033089"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a9453448f147d0c2d83187ec2c8033089">spinlockTryLock</a> (<a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *<a class="el" href="../../df/dc3/classstd_1_1mutex.html">mutex</a>)</td></tr>
+<tr class="separator:a9453448f147d0c2d83187ec2c8033089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa77232e349020516438ac4940e8f1a"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a2fa77232e349020516438ac4940e8f1a">pTotalMem</a> ()</td></tr>
+<tr class="separator:a2fa77232e349020516438ac4940e8f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"></div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="af9f019109cea02d650c0da099f1d70a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f019109cea02d650c0da099f1d70a2">&#9670;&nbsp;</a></span>mutex_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d5/d7e/structstd_1_1_sys_1_1mutex__struct.html">std::Sys::mutex_struct</a>  <a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">std::Sys::mutex_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19eaed4ae0cf3ec1e333b6f9901d67a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19eaed4ae0cf3ec1e333b6f9901d67a7">&#9670;&nbsp;</a></span>spinlk_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d9/dc2/structstd_1_1_sys_1_1spinlock__struct.html">std::Sys::spinlock_struct</a>  <a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">std::Sys::spinlk_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Aufzählungstypen</h2>
+<a id="ac4f3ff28de45a311f03a1e72af0c15f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f3ff28de45a311f03a1e72af0c15f9">&#9670;&nbsp;</a></span>mutex_init_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9">std::Sys::mutex_init_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Aufzählungswerte</th></tr><tr><td class="fieldname"><a id="ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4f3ff28de45a311f03a1e72af0c15f9a556c3dd912453ae5cb3095cd5054e6f4"></a>Recursive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4f3ff28de45a311f03a1e72af0c15f9a0c598d5b5d2c5b7817b5cb5d11d12f82"></a>ErrorCheak&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4f3ff28de45a311f03a1e72af0c15f9a7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                    {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                Normal,</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                Recursive,</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                ErrorCheak,</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                Default = <a class="code" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0">mutex_init_t::Normal</a>,</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }; </div><div class="ttc" id="classstd_1_1_sys_html_ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0">std::Sys::mutex_init_t::Normal</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="ac9f240e055773c6ef6b320ed3d9f3acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f240e055773c6ef6b320ed3d9f3acf">&#9670;&nbsp;</a></span>fClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::fClose </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                            {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    fclose((FILE*)file);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac9cb96093b35fe96793d756c2888a1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cb96093b35fe96793d756c2888a1f1">&#9670;&nbsp;</a></span>fEOF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fEOF </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                        {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    <span class="keywordflow">return</span> feof((FILE*)file);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8fd94047f1bedca9a81b335874d2733a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd94047f1bedca9a81b335874d2733a">&#9670;&nbsp;</a></span>fError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fError </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                          {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <span class="keywordflow">return</span> ferror((FILE*)file);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a610720c05d13d45ac5f1ad892feaef7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610720c05d13d45ac5f1ad892feaef7f">&#9670;&nbsp;</a></span>fFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fFlush </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                          {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">return</span> fflush((FILE*)file);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae69ad2e413c751ae56644ccf69daba3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69ad2e413c751ae56644ccf69daba3a">&#9670;&nbsp;</a></span>fGetc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fGetc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                         {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <span class="keywordflow">return</span> fgetc((FILE*)file);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6e4d49f77b2b856c91a44a38b64c1d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4d49f77b2b856c91a44a38b64c1d53">&#9670;&nbsp;</a></span>fIsFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool std::Sys::fIsFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                  {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="keyword">struct </span>stat buffer;   </div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">return</span> (stat (file, &amp;buffer) == 0);  </div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aee6ea3afc7237d4234b5bc43dc3231c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6ea3afc7237d4234b5bc43dc3231c6">&#9670;&nbsp;</a></span>fOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * std::Sys::fOpen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                  {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     <span class="keywordflow">return</span> fopen(file, fmt);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a025c18bdd6a88e4d26482d10429a95ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025c18bdd6a88e4d26482d10429a95ec">&#9670;&nbsp;</a></span>fPrintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fPrintf </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                            {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <span class="keywordflow">return</span> fprintf((FILE*)file, <a class="code" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div><div class="ttc" id="utils_8hpp_html_aa11cf742f6008935afc301cac1feec01"><div class="ttname"><a href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a></div><div class="ttdeci">std::string str(T begin, T end)</div><div class="ttdef"><b>Definition:</b> utils.hpp:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2f3038727c96c808d92532b62382e037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3038727c96c808d92532b62382e037">&#9670;&nbsp;</a></span>fPutc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fPutc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordflow">return</span> fputc(c, (FILE*)file);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a27592f565d19984eac4e5c16dbb52429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27592f565d19984eac4e5c16dbb52429">&#9670;&nbsp;</a></span>fPuts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fPuts </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                          {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    <span class="keywordflow">return</span> fputs(<a class="code" href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a>, (FILE*)file);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div><div class="ttc" id="utils_8hpp_html_aa11cf742f6008935afc301cac1feec01"><div class="ttname"><a href="../../df/d93/utils_8hpp.html#aa11cf742f6008935afc301cac1feec01">str</a></div><div class="ttdeci">std::string str(T begin, T end)</div><div class="ttdef"><b>Definition:</b> utils.hpp:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8e07d03fdef76804b9a6eea7e97e1035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e07d03fdef76804b9a6eea7e97e1035">&#9670;&nbsp;</a></span>fRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fRead </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                                      {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    <span class="keywordflow">return</span> fread(data, count, size, (FILE*)file);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac14981aad284603b985b1e6470843e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14981aad284603b985b1e6470843e88">&#9670;&nbsp;</a></span>fSeek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fSeek </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>off</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>org</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                           {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordflow">return</span> fseek((FILE*)file, off, org);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aca38e582c676c1087650aef98c7c0543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca38e582c676c1087650aef98c7c0543">&#9670;&nbsp;</a></span>fTell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fTell </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                         {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">return</span> ftell((FILE*)file);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8032132dd583eb289416a1b19ce85e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8032132dd583eb289416a1b19ce85e37">&#9670;&nbsp;</a></span>fWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::fWrite </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                       {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordflow">return</span> fwrite(data, count, size, (FILE*)file);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3ae3057f26fbb3e72e4a8af62efdf5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae3057f26fbb3e72e4a8af62efdf5c6">&#9670;&nbsp;</a></span>mAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * std::Sys::mAlloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                             {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">return</span> malloc(size);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a04e4cc78efb94cd4b50162d1637288ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e4cc78efb94cd4b50162d1637288ae">&#9670;&nbsp;</a></span>mAllocE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T* std::Sys::mAllocE </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>elements</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                            {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span> (T*)<a class="code" href="../../da/d13/classstd_1_1_sys.html#a3ae3057f26fbb3e72e4a8af62efdf5c6">Sys::mAlloc</a>(<span class="keyword">sizeof</span>(T) * elements);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }    </div><div class="ttc" id="classstd_1_1_sys_html_a3ae3057f26fbb3e72e4a8af62efdf5c6"><div class="ttname"><a href="../../da/d13/classstd_1_1_sys.html#a3ae3057f26fbb3e72e4a8af62efdf5c6">std::Sys::mAlloc</a></div><div class="ttdeci">static void * mAlloc(size_t size)</div><div class="ttdef"><b>Definition:</b> PLATFORM.cpp:111</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c9c270714511ce17ca1ffd134597907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9c270714511ce17ca1ffd134597907">&#9670;&nbsp;</a></span>MemCpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::MemCpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        memcpy(to, from, bytes);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abf561c077094bd7b266b7734c73e66da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf561c077094bd7b266b7734c73e66da">&#9670;&nbsp;</a></span>MemMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::MemMove </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        memmove(to, from, bytes);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad5bfc790ccaf985e62ad98da9c947ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bfc790ccaf985e62ad98da9c947ab0">&#9670;&nbsp;</a></span>MemSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::MemSet </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        memset(buf, value, bytes);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a9a9b2d41667f1c106815c6f9edc698fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9b2d41667f1c106815c6f9edc698fc">&#9670;&nbsp;</a></span>mFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::mFree </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                          {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    free(mem);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0d71e77caef7d86e01af361b1cb13353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d71e77caef7d86e01af361b1cb13353">&#9670;&nbsp;</a></span>mReAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * std::Sys::mReAlloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>newSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                             {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="keywordflow">return</span> realloc(old, newSize);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abfb1f1b9ac68790344334a2200e8021c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb1f1b9ac68790344334a2200e8021c">&#9670;&nbsp;</a></span>mutexDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::mutexDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                                       {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <span class="keywordflow">return</span> pthread_mutex_destroy( (pthread_mutex_t*)&amp;mutex );</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6c0d6b0dc8bbe584027581f446d4279d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c0d6b0dc8bbe584027581f446d4279d">&#9670;&nbsp;</a></span>mutexInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::mutexInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9">mutex_init_t</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a960b44c579bc2f6818d2daaf9e4c16f0">mutex_init_t::Normal</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shared</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>robust</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                  {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    pthread_mutexattr_t attr;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    pthread_mutexattr_init(&amp;attr);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    pthread_mutexattr_setpshared(&amp;attr, </div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                            (shared ? PTHREAD_PROCESS_SHARED : PTHREAD_PROCESS_PRIVATE) );</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <span class="keywordtype">int</span> t = PTHREAD_MUTEX_NORMAL;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">if</span>(type == <a class="code" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a556c3dd912453ae5cb3095cd5054e6f4">mutex_init_t::Recursive</a>)</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        t = PTHREAD_MUTEX_RECURSIVE;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <a class="code" href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a0c598d5b5d2c5b7817b5cb5d11d12f82">mutex_init_t::ErrorCheak</a>) </div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        t = PTHREAD_MUTEX_ERRORCHECK;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    </div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    pthread_mutexattr_setrobust(&amp;attr, (robust ? PTHREAD_MUTEX_ROBUST : PTHREAD_MUTEX_STALLED));</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    pthread_mutexattr_settype(&amp;attr, t);</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    </div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                   <span class="keywordtype">int</span> exit =  pthread_mutex_init( (pthread_mutex_t*)&amp;mutex, &amp;attr );</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                   pthread_mutexattr_destroy(&amp;attr);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                   <span class="keywordflow">return</span> exit;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div><div class="ttc" id="classstd_1_1_sys_html_ac4f3ff28de45a311f03a1e72af0c15f9a0c598d5b5d2c5b7817b5cb5d11d12f82"><div class="ttname"><a href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a0c598d5b5d2c5b7817b5cb5d11d12f82">std::Sys::mutex_init_t::ErrorCheak</a></div></div>
+<div class="ttc" id="classstd_1_1_sys_html_ac4f3ff28de45a311f03a1e72af0c15f9a556c3dd912453ae5cb3095cd5054e6f4"><div class="ttname"><a href="../../da/d13/classstd_1_1_sys.html#ac4f3ff28de45a311f03a1e72af0c15f9a556c3dd912453ae5cb3095cd5054e6f4">std::Sys::mutex_init_t::Recursive</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acef59477c62a5153727cba3626c5e259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef59477c62a5153727cba3626c5e259">&#9670;&nbsp;</a></span>mutexLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::mutexLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                                    {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    <span class="keywordflow">return</span> pthread_mutex_lock( (pthread_mutex_t*)&amp;mutex );</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abe695d31d915cdc7c2476bfbeae35a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe695d31d915cdc7c2476bfbeae35a0e">&#9670;&nbsp;</a></span>mutexTryLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::mutexTryLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                       {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    <span class="keywordflow">return</span> pthread_mutex_trylock( (pthread_mutex_t*)&amp;mutex );</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7221035092b3fa10172d60c821a1064a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7221035092b3fa10172d60c821a1064a">&#9670;&nbsp;</a></span>mutexUnLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::mutexUnLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#af9f019109cea02d650c0da099f1d70a2">mutex_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                                      {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    <span class="keywordflow">return</span> pthread_mutex_unlock( (pthread_mutex_t*)&amp;mutex );</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2fa77232e349020516438ac4940e8f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa77232e349020516438ac4940e8f1a">&#9670;&nbsp;</a></span>pTotalMem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t std::Sys::pTotalMem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                        {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <span class="keywordflow">return</span> 536870912;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3e7ba115ebb0f563e37927cfb7e85344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7ba115ebb0f563e37927cfb7e85344">&#9670;&nbsp;</a></span>spinlockDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::spinlockDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                          {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    <span class="keywordflow">return</span> pthread_spin_destroy( (pthread_spinlock_t*)&amp;spin );</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a65e031f3724520464f9a98dc7bb48e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e031f3724520464f9a98dc7bb48e9e">&#9670;&nbsp;</a></span>spinlockInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::spinlockInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                                         {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                   <span class="keywordflow">return</span> pthread_spin_init( (pthread_spinlock_t*)&amp;spin, 0);</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abcb5c5bcc747c46c3670944a327727af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb5c5bcc747c46c3670944a327727af">&#9670;&nbsp;</a></span>spinlockLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::spinlockLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                                       {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                   <span class="keywordflow">return</span> pthread_spin_lock( (pthread_spinlock_t*)&amp;spin );</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a9453448f147d0c2d83187ec2c8033089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9453448f147d0c2d83187ec2c8033089">&#9670;&nbsp;</a></span>spinlockTryLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::spinlockTryLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                          {</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <span class="keywordflow">return</span>  pthread_spin_trylock( (pthread_spinlock_t*)&amp;spin );</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae408c7a7438d031c7c853229a31eff63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae408c7a7438d031c7c853229a31eff63">&#9670;&nbsp;</a></span>spinlockUnLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::spinlockUnLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d13/classstd_1_1_sys.html#a19eaed4ae0cf3ec1e333b6f9901d67a7">spinlk_type</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                                         {</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    <span class="keywordflow">return</span> pthread_spin_unlock( (pthread_spinlock_t*)&amp;spin );</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a478df7ee0c293a50d589680380c9cbfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478df7ee0c293a50d589680380c9cbfc">&#9670;&nbsp;</a></span>vsnPrintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int std::Sys::vsnPrintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>argptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                                                 {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keywordflow">return</span> _vsnprintf(buffer, count, format, argptr);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aac49efae5fffa0c4ab9fd88060b8f218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac49efae5fffa0c4ab9fd88060b8f218">&#9670;&nbsp;</a></span>wMemCpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::wMemCpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        wmemcpy((<span class="keywordtype">wchar_t</span>*)to, (<span class="keywordtype">wchar_t</span>*)from, bytes);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3979b4517ff8cad46e14abf65d9604cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3979b4517ff8cad46e14abf65d9604cc">&#9670;&nbsp;</a></span>wMemMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::wMemMove </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        wmemmove((<span class="keywordtype">wchar_t</span>*)to, (<span class="keywordtype">wchar_t</span>*)from, bytes);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7df3f8541dc4ba26336983134b6772d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df3f8541dc4ba26336983134b6772d3">&#9670;&nbsp;</a></span>wMemSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void std::Sys::wMemSet </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        wmemset((<span class="keywordtype">wchar_t</span>*)buf, value, bytes);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
+<li>include/<a class="el" href="../../">common.hpp</a></li>
+<li>src/<a class="el" href="../../">PLATFORM.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../da/d13/classstd_1_1_sys.html">Sys</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

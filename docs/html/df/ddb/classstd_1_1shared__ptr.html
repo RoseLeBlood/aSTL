@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>alternative Standard Libary: std::shared_ptr&lt; T &gt; Template-Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Logo128x128.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">alternative Standard Libary
+   &#160;<span id="projectnumber">0.29.8</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',false,false,'search.php','Suchen');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('df/ddb/classstd_1_1shared__ptr.html','../../');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="../../dc/d9a/classstd_1_1shared__ptr-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">std::shared_ptr&lt; T &gt; Template-Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../">shared_ptr.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:a6f28cb62049db8cda9dedd2f4432ee0f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a> = T</td></tr>
+<tr class="separator:a6f28cb62049db8cda9dedd2f4432ee0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69110086903c8e83dc84b57f02d795d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a69110086903c8e83dc84b57f02d795d7">ref_type</a> = long</td></tr>
+<tr class="separator:a69110086903c8e83dc84b57f02d795d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8817fdef988cf07c1a0d7e7e1317cb6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a8817fdef988cf07c1a0d7e7e1317cb6e">const_value_type</a> = const <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a></td></tr>
+<tr class="separator:a8817fdef988cf07c1a0d7e7e1317cb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeecb273f34d7488d0954b0a50afd439"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> = <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a> *</td></tr>
+<tr class="separator:abeecb273f34d7488d0954b0a50afd439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3e730006e00ee11aac018be9403410"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> = <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a> &gt;</td></tr>
+<tr class="separator:acf3e730006e00ee11aac018be9403410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a1b459e67f32bac8beb72730b6a1a0ce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a1b459e67f32bac8beb72730b6a1a0ce9">shared_ptr</a> (<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> ptr)</td></tr>
+<tr class="separator:a1b459e67f32bac8beb72730b6a1a0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204d3cd6769a57de3d52870361d009c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a204d3cd6769a57de3d52870361d009c1">shared_ptr</a> (const <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;sp)</td></tr>
+<tr class="separator:a204d3cd6769a57de3d52870361d009c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34727c5f715c78bfd7c0c882f53e352a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a34727c5f715c78bfd7c0c882f53e352a">~shared_ptr</a> ()</td></tr>
+<tr class="separator:a34727c5f715c78bfd7c0c882f53e352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8f7feca21b8a921f84206e481bc42a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#aff8f7feca21b8a921f84206e481bc42a">release</a> ()</td></tr>
+<tr class="separator:aff8f7feca21b8a921f84206e481bc42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13b53f40d894a8a81a26eb012d98f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#ac13b53f40d894a8a81a26eb012d98f72">reset</a> (<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> pValue=0)</td></tr>
+<tr class="separator:ac13b53f40d894a8a81a26eb012d98f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414be931109aab865f3cadc5eb8a9bef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a414be931109aab865f3cadc5eb8a9bef">get</a> () const</td></tr>
+<tr class="separator:a414be931109aab865f3cadc5eb8a9bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adf3cbc167857a4a1e8b22bd0c28626"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a69110086903c8e83dc84b57f02d795d7">ref_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a8adf3cbc167857a4a1e8b22bd0c28626">ref</a> ()</td></tr>
+<tr class="separator:a8adf3cbc167857a4a1e8b22bd0c28626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3a9799a1a5e3bb2c16f368a49746cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a1c3a9799a1a5e3bb2c16f368a49746cb">swap</a> (<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;b)</td></tr>
+<tr class="separator:a1c3a9799a1a5e3bb2c16f368a49746cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e5298bd3bed3059cddd938566367df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a94e5298bd3bed3059cddd938566367df">operator=</a> (<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;sp)</td></tr>
+<tr class="separator:a94e5298bd3bed3059cddd938566367df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9f16ccbaeda11890cdc1f38daf73cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abb9f16ccbaeda11890cdc1f38daf73cb">operator-&gt;</a> () const</td></tr>
+<tr class="separator:abb9f16ccbaeda11890cdc1f38daf73cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7920b3351d0f9cd074b0701bba59e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a8817fdef988cf07c1a0d7e7e1317cb6e">const_value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#ae7920b3351d0f9cd074b0701bba59e7a">operator*</a> ()</td></tr>
+<tr class="separator:ae7920b3351d0f9cd074b0701bba59e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f83598d4cd801df3e27e5629df7df0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#af5f83598d4cd801df3e27e5629df7df0">operator bool</a> ()</td></tr>
+<tr class="separator:af5f83598d4cd801df3e27e5629df7df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class std::shared_ptr&lt; T &gt;</h3>
+
+</div><h2 class="groupheader">Dokumentation der benutzerdefinierten Datentypen</h2>
+<a id="a8817fdef988cf07c1a0d7e7e1317cb6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8817fdef988cf07c1a0d7e7e1317cb6e">&#9670;&nbsp;</a></span>const_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a8817fdef988cf07c1a0d7e7e1317cb6e">const_value_type</a> =  const <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeecb273f34d7488d0954b0a50afd439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeecb273f34d7488d0954b0a50afd439">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> =  <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69110086903c8e83dc84b57f02d795d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69110086903c8e83dc84b57f02d795d7">&#9670;&nbsp;</a></span>ref_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a69110086903c8e83dc84b57f02d795d7">ref_type</a> =  long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf3e730006e00ee11aac018be9403410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3e730006e00ee11aac018be9403410">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> =  <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a>&lt;<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f28cb62049db8cda9dedd2f4432ee0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f28cb62049db8cda9dedd2f4432ee0f">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a6f28cb62049db8cda9dedd2f4432ee0f">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="a1b459e67f32bac8beb72730b6a1a0ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b459e67f32bac8beb72730b6a1a0ce9">&#9670;&nbsp;</a></span>shared_ptr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a>&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                              : _m_ptr(ptr),</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    _m_ref(<span class="keyword">new</span> atomic&lt;ref_type&gt;(1))  { }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a204d3cd6769a57de3d52870361d009c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204d3cd6769a57de3d52870361d009c1">&#9670;&nbsp;</a></span>shared_ptr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                            {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">if</span> (++(*_m_ref) != 1) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    _m_ptr = sp._m_ptr;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">else</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="comment">//tried to copy a shared pointer targeted for deletion</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a34727c5f715c78bfd7c0c882f53e352a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34727c5f715c78bfd7c0c882f53e352a">&#9670;&nbsp;</a></span>~shared_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::~<a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                          { </div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">if</span> (--(*_m_ref) == 0) {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keyword">delete</span> _m_ptr;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keyword">delete</span> _m_ref;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a414be931109aab865f3cadc5eb8a9bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414be931109aab865f3cadc5eb8a9bef">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                { </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T*<span class="keyword">&gt;</span>(_m_ptr);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af5f83598d4cd801df3e27e5629df7df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f83598d4cd801df3e27e5629df7df0">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                            {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">return</span> _m_ptr != 0;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae7920b3351d0f9cd074b0701bba59e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7920b3351d0f9cd074b0701bba59e7a">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a8817fdef988cf07c1a0d7e7e1317cb6e">const_value_type</a>&amp; <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                      {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        assert(<span class="keyword">get</span>() != 0);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> *this-&gt;<span class="keyword">get</span>();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="abb9f16ccbaeda11890cdc1f38daf73cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9f16ccbaeda11890cdc1f38daf73cb">&#9670;&nbsp;</a></span>operator->()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                   {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        assert(<span class="keyword">get</span>() != 0);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> this-&gt;<span class="keyword">get</span>();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a94e5298bd3bed3059cddd938566367df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e5298bd3bed3059cddd938566367df">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a>&amp; <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                  {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="../../df/ddb/classstd_1_1shared__ptr.html#aff8f7feca21b8a921f84206e481bc42a">release</a>();                </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                _m_ptr = sp._m_ptr;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                _m_ref = sp._m_ref;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div><div class="ttc" id="classstd_1_1shared__ptr_html_aff8f7feca21b8a921f84206e481bc42a"><div class="ttname"><a href="../../df/ddb/classstd_1_1shared__ptr.html#aff8f7feca21b8a921f84206e481bc42a">std::shared_ptr::release</a></div><div class="ttdeci">pointer release()</div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:68</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8adf3cbc167857a4a1e8b22bd0c28626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adf3cbc167857a4a1e8b22bd0c28626">&#9670;&nbsp;</a></span>ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#a69110086903c8e83dc84b57f02d795d7">ref_type</a> <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::ref </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                           {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">return</span> _m_ref-&gt;<a class="code" href="../../da/dec/classstd_1_1atomic.html#a8ff9f3776536561ff0f532d4d6ab9777">get</a>();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div><div class="ttc" id="classstd_1_1atomic_html_a8ff9f3776536561ff0f532d4d6ab9777"><div class="ttname"><a href="../../da/dec/classstd_1_1atomic.html#a8ff9f3776536561ff0f532d4d6ab9777">std::atomic::get</a></div><div class="ttdeci">value_type get()</div><div class="ttdef"><b>Definition:</b> atomic.hpp:61</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff8f7feca21b8a921f84206e481bc42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8f7feca21b8a921f84206e481bc42a">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                              {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a> __px = this-&gt;<span class="keyword">get</span>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">if</span> (--(*_m_ref) == 0) {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keyword">delete</span> _m_ptr;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keyword">delete</span> _m_ref;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> __px;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div><div class="ttc" id="classstd_1_1shared__ptr_html_abeecb273f34d7488d0954b0a50afd439"><div class="ttname"><a href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">std::shared_ptr::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac13b53f40d894a8a81a26eb012d98f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13b53f40d894a8a81a26eb012d98f72">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#abeecb273f34d7488d0954b0a50afd439">pointer</a>&#160;</td>
+          <td class="paramname"><em>pValue</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                { <a class="code" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a>(pValue).swap(*<span class="keyword">this</span>); }</div><div class="ttc" id="classstd_1_1shared__ptr_html_acf3e730006e00ee11aac018be9403410"><div class="ttname"><a href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">std::shared_ptr::self_type</a></div><div class="ttdeci">shared_ptr&lt; value_type &gt; self_type</div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1c3a9799a1a5e3bb2c16f368a49746cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3a9799a1a5e3bb2c16f368a49746cb">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">std::shared_ptr</a>&lt; T &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html#acf3e730006e00ee11aac018be9403410">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                    {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                std::swap&lt;value_type*&gt;(_m_ptr, b._m_ptr);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                std::swap&lt;atomic&lt;ref_type&gt;*&gt;(_m_ref, b._m_ref);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>include/<a class="el" href="../../">shared_ptr.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/dcc/namespacestd.html">std</a></li><li class="navelem"><a class="el" href="../../df/ddb/classstd_1_1shared__ptr.html">shared_ptr</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

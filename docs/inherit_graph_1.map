@@ -1,8 +1,0 @@
-<map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$d7/d6a/classstd_1_1____auto__ptr__base.html" title="std::__auto_ptr_base" alt="" coords="5,115,149,141"/>
-<area shape="rect" id="node2" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; application \&gt;" alt="" coords="197,5,379,32"/>
-<area shape="rect" id="node3" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; FILE \&gt;" alt="" coords="215,56,361,83"/>
-<area shape="rect" id="node4" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; hasher\l\&lt; HashClass \&gt; \&gt;" alt="" coords="215,107,361,149"/>
-<area shape="rect" id="node5" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; std\l::Program \&gt;" alt="" coords="225,173,351,214"/>
-<area shape="rect" id="node6" href="$d3/d99/classstd_1_1auto__ptr.html" title="std::auto_ptr\&lt; T \&gt;" alt="" coords="225,239,351,265"/>
-</map>
