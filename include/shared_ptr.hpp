@@ -37,76 +37,78 @@
 
 namespace std
 {
-    template < typename T > class shared_ptr
-    {
-        public:
-            using value_type = T;
-            using ref_type = long;
-            using const_value_type = const value_type;
-            using pointer = value_type*;
-            using self_type = shared_ptr<value_type>;
-            
-            explicit shared_ptr(pointer ptr ) : _m_ptr(ptr),
-                    _m_ref(new atomic<ref_type>(1))  { }
-            
-            shared_ptr(const self_type& sp) {
-                if (++(*_m_ref) != 1) {
-                    _m_ptr = sp._m_ptr;
-                }
-                else
-                {
-                    //tried to copy a shared pointer targeted for deletion
-                }
-            }
-
-            ~shared_ptr() { 
-                if (--(*_m_ref) == 0) {
-                    delete _m_ptr;
-                    delete _m_ref;
-                }
-            }
-            pointer release() {
-                pointer __px = this->get();
-                if (--(*_m_ref) == 0) {
-                    delete _m_ptr;
-                    delete _m_ref;
-                }
-                return __px;
-            }
-            void reset( pointer pValue = 0) 
-                { self_type(pValue).swap(*this); }
-           
-            pointer get() const { 
-		return static_cast<T*>(_m_ptr);
-	    }
-
-            ref_type ref() {
-                return _m_ref->get();
-            }
-            void swap(self_type& b) {
-                std::swap<value_type*>(_m_ptr, b._m_ptr);
-                std::swap<atomic<ref_type>*>(_m_ref, b._m_ref);
-            }
-            self_type& operator = (self_type& sp) {
-                release();                
+    template < typename T > 
+    class shared_ptr {
+    public:
+        using value_type = T;
+        using ref_type = T&;
+        using const_value_type = const value_type;
+        using pointer = value_type*;
+        using self_type = shared_ptr<T>;
+        using atomic_type = long;
+        
+        explicit shared_ptr(pointer ptr ) : _m_ptr(ptr),
+            _m_ref(new atomic<atomic_type> (1) )  { }
+        
+        shared_ptr(const self_type& sp) {
+            if (++(*_m_ref) != 1) {
                 _m_ptr = sp._m_ptr;
-                _m_ref = sp._m_ref;
-                return *this;
             }
-	    pointer operator->() const {
-		assert(get() != 0);
-		return this->get();
-	    }
-	    const_value_type& operator*() {
-		assert(get() != 0);
-		return *this->get();
-	    }
-            operator bool() {
-                return _m_ptr != 0;
+            else
+            {
+                //tried to copy a shared pointer targeted for deletion
             }
-        private:
-            pointer  _m_ptr;
-            atomic<ref_type>* _m_ref;
+        }
+
+        ~shared_ptr() { 
+            if (--(*_m_ref) == 0) {
+                delete _m_ptr;
+                delete _m_ref;
+            }
+        }
+        pointer release() {
+            pointer __px = this->get();
+
+            if (--(*_m_ref) == 0) {
+                delete _m_ptr;
+                delete _m_ref;
+            }
+            return __px;
+        }
+        void reset( pointer pValue = 0) 
+            { self_type(pValue).swap(*this); }
+        
+        pointer get() const { 
+            return static_cast<T*>(_m_ptr);
+        }
+
+        atomic_type ref() {
+            return _m_ref->get();
+        }
+        void swap(self_type& b) {
+            std::swap<value_type*>(_m_ptr, b._m_ptr);
+            std::swap<atomic<atomic_type>*>(_m_ref, b._m_ref);
+        }
+        self_type& operator = (self_type& sp) {
+            release();                
+            _m_ptr = sp._m_ptr;
+            _m_ref = sp._m_ref;
+            return *this;
+        }
+        pointer operator->() const {
+            assert(get() != 0);
+            return this->get();
+        }
+        const_value_type& operator*() {
+            assert(get() != 0);
+            return *this->get();
+        }
+        operator bool() {
+            return _m_ptr != 0;
+        }
+    private:
+        pointer  _m_ptr;
+        atomic<atomic_type>* _m_ref;
     };
 }
 

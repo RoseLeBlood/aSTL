@@ -37,8 +37,7 @@
 namespace std
 {
     template<typename T>
-    class save_ptr
-    {
+    class save_ptr {
     public:
         using value_type = T;
         using pointer = T*;

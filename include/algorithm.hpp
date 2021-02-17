@@ -92,20 +92,17 @@ namespace std
 	template<typename T> inline void fill_n(T* first, size_t n, const T& val)
 	{
 	        T* last = first + n;
-	        switch (n & 0x7)
-	        {
-	        case 0:
-	                while (first != last)
-	                {
-	                        *first = val; ++first;
-	        case 7: *first = val; ++first;
-	        case 6: *first = val; ++first;
-	        case 5: *first = val; ++first;
-	        case 4: *first = val; ++first;
-	        case 3: *first = val; ++first;
-	        case 2: *first = val; ++first;
-	        case 1: *first = val; ++first;
-	                }
+			while (first != last) {
+				switch (n & 0x7) {
+					case 0: *first = val; ++first;
+					case 7: *first = val; ++first;
+					case 6: *first = val; ++first;
+					case 5: *first = val; ++first;
+					case 4: *first = val; ++first;
+					case 3: *first = val; ++first;
+					case 2: *first = val; ++first;
+					case 1: *first = val; ++first;
+				}
 	        }
 	}
 	template<typename TIter, typename TDist> inline void distance(TIter first, TIter last, TDist& dist)

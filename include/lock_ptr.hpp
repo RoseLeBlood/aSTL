@@ -47,6 +47,7 @@ namespace std {
         using pointer = T*;
         using reference = T&;
         using self_type = lock_ptr<T, L>;
+        
         ///@brief constructor make the pointer and auto lock
         ///@param v Reference to locked area/object 
         ///@param m LockType Reference to the using lock hekper class

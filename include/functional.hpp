@@ -55,14 +55,12 @@ namespace std
 	                return lhs == rhs;
 	        }
 	};
-        template <typename T> T nexthigher(T k) 
-        {
-            k--;
-            for (unsigned int i=1; i< sizeof(T) * 8; i <<= 1)
-                k |= (k >> i);
-            return k+1;
-        }
-
-
+	template <typename T> T nexthigher(T k) 
+	{
+		k--;
+		for (unsigned int i=1; i< sizeof(T) * 8; i <<= 1)
+			k |= (k >> i);
+		return k+1;
+	}
 }
 #endif 

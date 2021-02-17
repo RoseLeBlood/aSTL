@@ -122,4 +122,3 @@ namespace std {
 }
 
 #endif /* WEAK_PTR_HPP */
-
