@@ -52,8 +52,16 @@ namespace std
 	            }
 	            bool in_list() const { return this != next; }
 
-	            void link_before(list_base_node* nextNode);
-	            void unlink();
+	            void link_before(list_base_node* pNext) {
+                        next = pNext;
+                        prev = pNext->prev;
+                        pNext->prev->next = this;
+                        pNext->prev = this;
+                    }
+	            void unlink(){
+                        next->prev = prev;
+                        prev->next = next;
+                    }
 
 	            list_base_node* prev;
 	            list_base_node* next;
@@ -75,68 +83,67 @@ namespace std
 	           	return (node*)n;
 	        }
 
-	        template<typename TNodePtr, typename TPtr, typename TRef> class node_iterator
-	        {
+	        template<typename TNodePtr, typename TPtr, typename TRef> 
+                class node_iterator {
 	        public:
-	         	typedef bidirectional_iterator_tag      iterator_category;
+                        typedef bidirectional_iterator_tag      iterator_category;
 
-	        	explicit node_iterator(): m_node(NULL) {/**/}
-	                
-	        	explicit node_iterator(TNodePtr node):  m_node(node) {/**/}
-	        
-                template<typename UNodePtr, typename UPtr, typename URef> node_iterator(const node_iterator<UNodePtr, UPtr, URef>& rhs)
-                	: m_node(rhs.node())
-                {
-                }
+                        explicit node_iterator(): m_node(NULL) {/**/}
+                        
+                        explicit node_iterator(TNodePtr node):  m_node(node) {/**/}
+                
+                        template<typename UNodePtr, typename UPtr, typename URef> 
+                        node_iterator(const node_iterator<UNodePtr, UPtr, URef>& rhs)
+                        : m_node(rhs.node()) { }
 
-                TRef operator*() const
-                {
-                    assert(m_node != 0);
-                    return m_node->value;
-                }
-                TPtr operator->() const
-                {
-                	return &m_node->value;
-                }
-                TNodePtr node() const
-                {
-                	return m_node;
-                }
+                        TRef operator*() const
+                        {
+                        assert(m_node != 0);
+                        return m_node->value;
+                        }
+                        TPtr operator->() const
+                        {
+                                return &m_node->value;
+                        }
+                        TNodePtr node() const
+                        {
+                                return m_node;
+                        }
 
-                node_iterator& operator++()
-                {
-                	m_node = upcast(m_node->next);
-                 	return *this;
-                }
-                node_iterator& operator--()
-                {
-                	m_node = upcast(m_node->prev);
-                	return *this;
-                }
-                node_iterator operator++(int)
-                {
-               		node_iterator copy(*this);
-               		++(*this);
-                	return copy;
-                }
-                node_iterator operator--(int)
-                {
-                	node_iterator copy(*this);
-               		--(*this);
-             		return copy;
-                }
+                        node_iterator& operator++()
+                        {
+                                m_node = upcast(m_node->next);
+                                return *this;
+                        }
+                        node_iterator& operator--()
+                        {
+                                m_node = upcast(m_node->prev);
+                                return *this;
+                        }
+                        node_iterator operator++(int)
+                        {
+                                node_iterator copy(*this);
+                                ++(*this);
+                                return copy;
+                        }
+                        node_iterator operator--(int)
+                        {
+                                node_iterator copy(*this);
+                                --(*this);
+                                return copy;
+                        }
 
-                bool operator==(const node_iterator& rhs) const
-                {
-                 	return rhs.m_node == m_node;
-                }
-                bool operator!=(const node_iterator& rhs) const
-                {
-                 	return !(rhs == *this);
-                }
-	        private:
-	                TNodePtr        m_node;
-	        };
+                        bool operator==(const node_iterator& rhs) const
+                        {
+                                return rhs.m_node == m_node;
+                        }
+                        bool operator!=(const node_iterator& rhs) const
+                        {
+                                return !(rhs == *this);
+                        }
+                        private:
+                                TNodePtr        m_node;
+                };
 
 	public:
             typedef T						value_type;
